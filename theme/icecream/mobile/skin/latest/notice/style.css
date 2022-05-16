@@ -26,6 +26,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9d80fc', end
 @media (max-width: 639px){
     .notice_wr{margin:15px 0;padding-left:80px}
     .notice_wr h2{padding:0 15px}
-    .notice_wr .bx-controls-direction{right:15px}
+    .notice_wr .bx-controls-direction{top:14px;right:15px}
     .notice_wr{line-height:55px}
 }

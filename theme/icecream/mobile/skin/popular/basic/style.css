@@ -6,3 +6,7 @@
 #popular div{padding:30px}
 #popular a{display:inline-block;height:22px;line-height:22px;background:#b9bdd3;color:#fff;margin:2px 0;padding: 0 5px;border-radius:3px}
 #popular a:hover{background:#646982}
+
+@media (max-width: 639px){
+    #popular {margin:15px 0 }
+}

@@ -98,15 +98,17 @@
 #bo_list td:nth-of-type(2) {text-align:center}
 
 /* 게시판 목록 공통 */
-.bo_fx {margin-bottom:5px;padding:5px 10px}
+.bo_fx {margin-bottom:5px;padding:5px 0}
 .bo_fx:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_fx ul {margin:0;padding:0;list-style:none}
+.bo_fx a, .bo_fx .btn_bo_adm input {padding:0 10px;height:24px;line-height:24px}
+.bo_fx .btn_top {float:right}
 #bo_list_total {float:left;padding:0;height:2.5em;line-height:2.5em}
 .btn_bo_user {float:right;margin:0;padding:0;list-style:none}
 .btn_bo_user li {float:left;margin-left:5px}
 .btn_bo_adm {float:left}
 .btn_bo_adm li {float:left;margin-right:5px}
-.btn_bo_adm input {padding:0 10px;height:2em;border:1px solid #e8180c !important;background:#e8180c;color:#fff;text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-appearance:none}
+.btn_bo_adm input {padding:0 10px;height:2em;border:1px solid #e8180c !important;background:#e8180c;color:#fff;text-decoration:none;vertical-align:middle;cursor:pointer;-webkit-appearance:none;}
 .bo_notice td {background:#f7f7f7}
 .bo_notice td a {font-weight:bold}
 .td_num strong {color:#000}
@@ -218,7 +220,7 @@
 #bo_v_ans h2 span{display:block}
 #bo_v_ans h2 .tit_rpl{display:inline-block;font-size:11px;padding:0 5px;line-height:23px;font-weight:normal;background:#646982;color:#fff;}
 #bo_v_ans #ans_datetime {padding:5px 0 10px;border-bottom:1px solid #eee;color:#777}
-#bo_v_ans #ans_con {margin:10px 0 ;line-height:1.8em}
+#bo_v_ans #ans_con {margin:20px 0 ;line-height:1.8em}
 #bo_v_ans #ans_con img{max-width:100%;height:auto}
 #bo_v_ans #ans_add {text-align:right}
 #bo_v_ans #ans_msg {padding:40px 0;background:#f2f5f9;text-align:center}
@@ -240,8 +242,7 @@
 
 @media (max-width: 639px){
     #bo_list{margin:0 }
-    #bo_v .bo_v_wr{margin:15px 0}
-
+    #bo_v .bo_v_wr, #bo_v_top, #bo_v_ans {margin:15px 0}
 }
 
 /* 게시판 댓글 */
@@ -279,14 +280,14 @@
 #bo_vc form {padding:0}
 
 
-                                                     
+
 /*글쓰기*/
-#bo_w {background:#fff;padding:20px;margin:15px }
+#bo_w {margin:15px }
 #bo_w .bo_w_select select{border:1px solid #3497d9;background:#fff;width:100%}
 #bo_w .bo_w_link label{position:absolute;top:1px;left:1px;border-radius:3px 0 0 3px;height:38px;line-height:38px;width:40px;background:#eee;text-align:center}
 #bo_w .bo_w_link .frm_input{padding-left:50px}
-#bo_w .bo_w_flie .lb_icon{position:absolute;top:0px;left:0px;border-radius:3px 0 0 3px;height:38px;line-height:38px;width:40px;background:#eee;text-align:center}
-#bo_w .bo_w_flie .frm_file{padding-left:50px;}
+#bo_w .bo_w_flie .lb_icon{position:absolute;top:1px;left:0px;border-radius:3px 0 0 3px;height:38px;line-height:38px;width:40px;background:#eee;text-align:center}
+#bo_w .bo_w_flie .frm_file{padding-left:50px;line-height:30px}
 #bo_w .bo_w_flie .file_wr{border:1px solid #ccc;background:#fff;color:#000;vertical-align:middle;border-radius:3px;padding:5px;height:40px;margin:0}
 #bo_w .bo_w_flie .frm_input{margin:5px 0 0 }
 .write_btn_wr{text-align:right;}

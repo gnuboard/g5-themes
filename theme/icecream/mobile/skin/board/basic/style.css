@@ -99,7 +99,8 @@
 
 
 @media (max-width: 639px){
-    #bo_list{margin:0 }
+    #bo_sch {margin: 10px 0}
+    #bo_list{margin:0}
     .board_list li{margin:15px 0}    .board_list li{padding:20px}
     .board_list .bo_pf_img{display:none}
     .board_list .bo_img img{height:90px;width:auto}
@@ -205,7 +206,7 @@ box-shadow: 1px 2px 8px #e2e4f1}
 
 .btn_share{display:none;}
 .bo_v_snswr{position:relative;float:right}
-#bo_v_sns {;padding:0;list-style:none;zoom:1}
+#bo_v_sns {padding:0;list-style:none;zoom:1}
 #bo_v_sns:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_sns li {float:left;width:50px;text-align:center;margin-left:3px}
 #bo_v_sns li a{height:40px;padding:10px 0;}
@@ -216,7 +217,7 @@ box-shadow: 1px 2px 8px #e2e4f1}
 #bo_v_sns li img{vertical-align:top}
 
 @media (max-width: 639px){
-    #bo_v,.bo_v_nb,#bo_v_top{margin:15px 0}
+    #bo_v,.bo_v_nb,#bo_v_top {margin:15px 0}
 }
 /* 게시판 댓글 */
 .cmt_btn{text-align:left ;width:100% ;border:0;color:#696ae6;font-weight:bold;font-size:1.154em;margin: 20px 0 ;padding:15px;background:none;position:relative}
