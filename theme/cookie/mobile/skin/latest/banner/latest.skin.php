@@ -53,7 +53,7 @@ $thumb_height = 200;
     <div id="bx_pager">
         <?php
         for ($i=0; $i<count($list); $i++) { 
-        $i1 = $i1 + 1;
+        $i1 = $i + 1;
         ?>
         <a data-slide-index="<?php echo $i ?>" href="">0<?php echo $i1 ?><span></span></a>
         <?php 
