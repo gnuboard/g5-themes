@@ -52,11 +52,9 @@ if (G5_IS_MOBILE) {
         $v_img_count = count($view['file']);
         if($v_img_count) {
             echo "<div id=\"bo_v_img\">\n";
-            for ($i=0; $i<=count($view['file']); $i++) {
-                if ($view['file'][$i]['view']) {
-                    //echo $view['file'][$i]['view'];
-                    echo get_view_thumbnail($view['file'][$i]['view']);
-                }
+
+            foreach($view['file'] as $view_file) {
+                echo get_file_thumbnail($view_file);
             }
 
             echo "</div>\n";
