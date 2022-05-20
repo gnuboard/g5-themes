@@ -17,8 +17,8 @@ $thumb_height = 350;
 
     if($thumb['src']) {
         $img = $thumb['src'];
+        $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" >';
     } 
-    $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" >';
     ?>
         <li>
             <?php if ($thumb['src']) { ?> <a href="<?php echo $list[$i]['href'] ?>" class="lt_img"><?php echo $img_content; ?></a>  <?php } ?>
