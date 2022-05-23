@@ -66,7 +66,7 @@ white-space: nowrap;overflow-x: auto;
 #bo_sch .sch_input:focus{outline:none;border-bottom:2px solid #e32464}
 #bo_sch .sch_btn{height:42px;position:absolute;color:#aaa;top:0;right:0;border:0;width:40px;background:none;font-size:15px;vertical-align:top}
 
-#bo_list_total{position:absolute;top:300px;color:#fff;left:0;width:100%;z-index:10;text-align:center;font-size:0.923em;width:100% ;}
+#bo_list_total{position:absolute;right:10px;color:#fff;width:100%;z-index:10;text-align:right;font-size:0.923em;width:100%;}
 
 #bo_list{margin:0 auto;max-width:1280px;padding: 20px;clear:both}
 #bo_list .all_chk {float:left;margin-top:20px}

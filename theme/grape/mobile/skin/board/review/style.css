@@ -66,7 +66,7 @@ white-space: nowrap;overflow-x: auto;
 #bo_sch .sch_input:focus{outline:none;border-bottom:2px solid #e32464}
 #bo_sch .sch_btn{height:42px;position:absolute;color:#aaa;top:0;right:0;border:0;width:40px;background:none;font-size:15px;vertical-align:top}
 
-#bo_list_total{position:absolute;top:300px;color:#fff;left:0;width:100%;z-index:10;text-align:center;font-size:0.923em;width:100% ;}
+#bo_list_total{position:absolute;right:10px;color:#fff;width:100%;z-index:10;text-align:right;font-size:0.923em;width:100%;}
 
 #bo_list{margin:0 auto;max-width:1280px;padding: 20px;clear:both}
 #bo_list .all_chk {float:left;margin-top:20px}
@@ -78,9 +78,7 @@ white-space: nowrap;overflow-x: auto;
 
 .review_ul .lt_img{display:block;position:absolute;top:0;left:0;border-radius:50px;overflow:hidden;width:50px;height:50px}
 .review_ul .lt_img img{width:100%;height:auto}
-.review_ul .li_wr{padding:20px;border:1px solid #eee;
- box-shadow:0px 3px 5px rgba(0, 0, 0, 0.1)}
-
+.review_ul .li_wr{padding:20px;border:1px solid #eee;box-shadow:0px 3px 5px rgba(0, 0, 0, 0.1)}
 
 .review_ul .bo_subject{font-size:1.154em;display:block;margin-bottom:10px;}
 .review_ul .lt_detail{}
@@ -104,8 +102,7 @@ white-space: nowrap;overflow-x: auto;
     #bo_sch {float:right;}
     .board_list .li_cate{padding-left:120px}
     .board_list .bo_cate_link{position:absolute;top:15px;left:0;color:#ea185f;width:100px}
-
- }
+}
 
 /* 게시판 쓰기 */
 #bo_w #wr_email, #bo_w #wr_homepage, #bo_w #wr_subject {width:100%}

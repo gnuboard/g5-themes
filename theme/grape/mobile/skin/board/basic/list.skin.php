@@ -15,7 +15,7 @@ if (G5_IS_MOBILE) {
     echo '<div class="bo_top_img">';
     // 모바일의 경우 설정을 따르지 않는다.
     echo html_purifier(stripslashes($board['bo_mobile_content_head']));
-     echo '</div>';
+    echo '</div>';
 
 } 
 ?>

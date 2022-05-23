@@ -11,9 +11,9 @@
 filter: blur(3px);}
 
 
- @media (max-width: 969px){
-      .bo_top_img {height:150px}
- }
+@media (max-width: 969px){
+    .bo_top_img {height:150px}
+}
 /* 게시판 버튼 */
 /* 목록 버튼 */
 #bo_gall a.btn_b01 {}
@@ -82,9 +82,7 @@ filter: blur(3px);}
 
 #bo_cate h2 {width:0;height:0;font-size:0;line-height:0;overflow:hidden}
 #bo_cate {background:#fff;color:#333;border-bottom:1px solid #eee;
-white-space: nowrap;overflow-x: auto;
--webkit-overflow-scrolling: touch
- -ms-overflow-style: -ms-autohiding-scrollbar;}
+white-space: nowrap;overflow-x: auto;-webkit-overflow-scrolling: touch;-ms-overflow-style: -ms-autohiding-scrollbar;}
 #bo_cate::-webkit-scrollbar {display: none;}
 #bo_cate ul{margin:0 auto;max-width:1280px;padding:0 10px}
 #bo_cate ul:after {display:block;visibility:hidden;clear:both;content:""} 
@@ -103,7 +101,7 @@ white-space: nowrap;overflow-x: auto;
 #bo_sch .sch_input:focus{outline:none;border-bottom:2px solid #e32464}
 #bo_sch .sch_btn{height:42px;position:absolute;color:#aaa;top:0;right:0;border:0;width:40px;background:none;font-size:15px;vertical-align:top}
 
-#bo_list_total{position:absolute;top:300px;color:#fff;left:0;width:100%;z-index:10;text-align:center;font-size:0.923em;width:100% ;}
+#bo_list_total{position:absolute;right:10px;color:#fff;width:100%;z-index:10;text-align:right;font-size:0.923em;width:100%;}
 
 #bo_gallery{margin:0 auto;max-width:1280px;padding: 10px;clear:both}
 #bo_gallery .all_chk {float:left;margin-top:20px}
@@ -129,8 +127,7 @@ transform: scale( 1.2 );}
 #team_ul .gall_li_tit{font-size:1.538em;font-weight:900;margin-bottom:10px;display:block}}
 #team_ul .notice_icon{color:#6683be}
 #team_ul .bo_cate_link{color:#ea185f;margin-bottom:10px;display:block}
-#team_ul i{position:absolute;top:-30px;left:50%;margin-left:-30px;width:60px;line-height:60px;background:#fff;border-radius:50px;color:#39c9df;font-size:25px;
-#aab3c1;border-radius:;;vertical-align:top;
+#team_ul i{position:absolute;top:-30px;left:50%;margin-left:-30px;width:60px;line-height:60px;background:#fff;border-radius:50px;color:#39c9df;font-size:25px;vertical-align:top;
 -webkit-box-shadow: 0 -3px 4px rgba(0,0,0,0.2);
 -moz-box-shadow:  0 -3px 4px rgba(0,0,0,0.2) ;
 box-shadow: 0 -3px 4px rgba(0,0,0,0.2)}
@@ -153,10 +150,8 @@ box-shadow: 0 -3px 4px rgba(0,0,0,0.2)}
     #team_ul li:nth-child(2n+1){clear:both}
 
 }
-@media (min-width: 970px){
-    
+@media (min-width: 970px){}
 
- }
 /* 게시판 쓰기 */
 #char_count_desc {display:block;margin:0 0 5px;padding:0}
 #char_count_wrap {margin:5px 0 0;text-align:right}
@@ -278,15 +273,15 @@ box-shadow: 1px 2px 8px #e2e4f1}
 #bo_v_sns li img{vertical-align:top}
 .btn_scrap {float:left;margin-left:5px}
 
- @media (max-width: 639px){
+@media (max-width: 639px){
     #bo_v_img {width:100%;padding:20px} 
     #bo_v_con {width:100%;padding:20px}
     #bo_v_con .team_name{font-size:1.5em;margin:15px 0}
     #bo_v_con ul{margin:15px 0}
- }
+}
 
 /* 게시판 댓글 */
-.cmt_btn{;text-align:left ;width:100% ;background:none;border:0;color:#000;font-weight:bold;margin:20px 0 0px;cursor:pointer}
+.cmt_btn{text-align:left;width:100%;background:none;border:0;color:#000;font-weight:bold;margin:20px 0 0px;cursor:pointer}
 #bo_vc h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 #bo_vc article {margin:20px 0;position:relative}
 #bo_vc article .profile_img img{border-radius:50%}
@@ -339,7 +334,7 @@ box-shadow: 1px 2px 8px #e2e4f1}
 .bo_vl_opt .cmt_opt{background:none;border:0;width:20px;height:30px;color:#86949a;font-size:15px}
 .bo_vl_opt .cmt_opt:hover{color:#447eec}
 .bo_vl_act{display:none;position:absolute;right:0;border:1px solid #ddd;width:60px;padding:5px 0;background:#fff;z-index:10;text-align:center;
- -webkit-box-shadow:  2px 2px 6px #f3f3f3;
+-webkit-box-shadow:  2px 2px 6px #f3f3f3;
 -moz-box-shadow:  2px 2px 6px #f3f3f3;
 box-shadow: 2px 2px 6px #f3f3f3} 
 .bo_vl_act li{padding:5px 0;}
