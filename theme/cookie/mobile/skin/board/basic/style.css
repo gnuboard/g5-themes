@@ -124,7 +124,7 @@ white-space: nowrap;overflow-x: auto;
 #bo_v header {margin:10px 0 }
 #bo_v_title {}
 .bo_v_cate{color:#ea185f}
-.bo_v_tit{display:block;font-size:2em;margin:10px 0 0}
+.bo_v_tit{display:block;font-size:2em;margin:30px 0 0}
 
 #bo_v_info {margin:0 0px 30px;color:#86909a;line-height:20px;}
 #bo_v_info h2 {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}

@@ -116,8 +116,11 @@ box-shadow:none}
 #fregisterform .btn_frmline2 {display:inline-block;;margin-left:5px;padding:0 5px;height:40px;border:0;background:#1ec679;border:1px solid #12b46a;color:#fff;text-decoration:none;vertical-align:top;border-radius:3px}
 #fregisterform .btn_frmline {height:40px;padding:0 10px}
 #fregisterform .rgs_name_li button {margin:5px 0 0}
+#fregisterform .cert_req {vertical-align: middle;}
+#fregisterform .selec_chk, #fregisterform .chk_box label {display: inline-block; width: auto !important; padding: 0;}
 
 .btn_confirm {text-align:right;margin:20px 0}
+.btn_confirm .btn {vertical-align: bottom;}
 
 .personal_date .frm_label {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 .personal_setting li.mem_pic {clear:both;margin-top:10px}
@@ -194,7 +197,7 @@ box-shadow:none}
 #mb_login_odinfo h2{font-size:1.167em}
 
 @media (max-width: 969px){
-#mb_login {margin:0;border:0}
+#mb_login {margin:0 auto;border:0}
 
 }
 

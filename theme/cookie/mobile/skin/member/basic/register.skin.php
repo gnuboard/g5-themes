@@ -58,9 +58,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         <fieldset class="fregister_agree bo_chk li_chk">
             <input type="checkbox" name="agree2" value="1" id="agree21">
             <label for="agree21"><span class="chk_img"></span> 개인정보처리방침안내의 내용에 동의합니다.</label>
-       </fieldset>
+        </fieldset>
     </section>
- 
+
     <div class="chk_all all_chk">
         <input type="checkbox" name="chk_all" id="chk_all">
         <label for="chk_all"><span class="chk_img"></span> 전체동의</label>
