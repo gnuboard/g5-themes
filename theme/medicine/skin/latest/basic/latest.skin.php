@@ -21,6 +21,7 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/owl.carousel.min.js"></script>'
             
 			
 			if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>";
+            $content_length = 100;
             ?>
 			</div>
 			
