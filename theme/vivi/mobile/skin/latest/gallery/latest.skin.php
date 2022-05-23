@@ -47,7 +47,7 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/owl.carousel.min.js"></script>'
 	            if ($list[$i]['icon_hot']) echo " <span class=\"heart_icon\"><b class=\"sound_only\">인기글</b>H</span>";
 				echo "</span>";
 				echo "</a>";
-	
+				$content_length = 100;
 		        ?>
 		        <div class="lt_detail">
 	            	<?php echo get_text(cut_str(strip_tags($list[$i]['wr_content']), $content_length), 1); ?>

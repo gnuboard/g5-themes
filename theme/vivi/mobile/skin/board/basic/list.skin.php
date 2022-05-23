@@ -119,7 +119,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 		                <a href="<?php echo $list[$i]['ca_name_href'] ?>" class="bo_cate_link">[<?php echo $list[$i]['ca_name'] ?>]</a>
 		                <?php } ?>
 		                
-	                    <a href="<?php echo $list[$i]['href'] ?>" style="<?php echo $list[$i]['wr_reply_style']; ?>">
+	                    <a href="<?php echo $list[$i]['href'] ?>" style="<?php //echo $list[$i]['wr_reply_style']; ?>">
 	                        <?php echo $list[$i]['icon_reply']; ?>
 	                        <?php echo $list[$i]['subject'] ?>
 	                        <?php
@@ -197,7 +197,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 		    <select name="sfl" id="sfl">
 		        <?php echo get_board_sfl_select_options($sfl); ?>
 		    </select>
-		    <input name="stx" value="<?php echo $list['input_search'] ?>" placeholder="검색어" required id="stx" class="sch_input" size="15" maxlength="20">
+		    <input name="stx" value="" placeholder="검색어" required id="stx" class="sch_input" size="15" maxlength="20">
 		    <button type="submit" value="검색" class="sch_btn"><i class="fa fa-search" aria-hidden="true"></i> <span class="sound_only">검색</span></button>
 		    </form>
 		</fieldset>

@@ -33,6 +33,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
 					echo "</span>";
 	
 	            echo "</a>";
+				$content_length = 100;
 	            ?>
 	            <div class="lt_detail">
 	            	<?php echo get_text(cut_str(strip_tags($list[$i]['wr_content']), $content_length), 1); ?>
