@@ -4,14 +4,6 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 	    </div>
 		<!-- } container 끝 -->
-		
-		<?php
-	    // 사이드 메뉴 오른쪽 배치
-	    if( ($tconfig['layout_side_movable'] && $config['cf_layout_side_area'] == 'right')
-	        || (!$tconfig['layout_side_movable'] && $tconfig['cf_layout_side_area'] == 'right')) {
-	        echo $side_menu_html;
-	    }
-	    ?>
 	
 		<div id="ft">
 		    <div id="ft_copy">

@@ -23,9 +23,9 @@ $thumb_height = 150;
 		    } else {
 		        $img = G5_THEME_IMG_URL.'/no_img.png';
 		        $thumb['alt'] = '이미지가 없습니다.';
-				$class['no_img'] ='no_img';
+				//$class['no_img'] ='no_img';
 		    }
-		    $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" class="'.$class['no_img'].'">';
+		    $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" class="no_img">';
 		    ?>
 		        <li>
 		            <a href="<?php echo $list[$i]['href'] ?>" class="lt_img"><?php echo $img_content; ?></a>
