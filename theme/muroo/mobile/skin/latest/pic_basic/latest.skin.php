@@ -41,6 +41,7 @@ $thumb_height = 80;
 			            if ($list[$i]['icon_hot']) echo "<span class=\"hot_icon\">H<span class=\"sound_only\">인기글</span></span>";
 			
 			            echo "</a>";
+						$content_length = 100;
 			            ?>
 			            <div class="lt_subject_pre">
 	                    	<?php echo get_text(cut_str(strip_tags($list[$i]['wr_content']), $content_length), 50); ?>

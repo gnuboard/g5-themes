@@ -44,7 +44,7 @@ $thumb_height = 80;
 		        if ($list[$i]['icon_hot']) echo " <i class=\"fa fa-heart\" aria-hidden=\"true\"></i>";
 	
 		        echo "</a>";
-	
+				$content_length = 100;
 		        ?>
 		        <div class="lt_subject_pre">
 	            	<?php echo get_text(cut_str(strip_tags($list[$i]['wr_content']), $content_length), 50); ?>
