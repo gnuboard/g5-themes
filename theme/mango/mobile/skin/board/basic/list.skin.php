@@ -185,7 +185,7 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/waterfall-light.js"></script>',
 
 
 <script>
- $('#gall_ul').show().waterfall({
+$('#gall_ul').show().waterfall({
      // top offset
     top : false, 
 
@@ -211,7 +211,7 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/waterfall-light.js"></script>',
 
     // execute a function as the page is scrolled to the bottom
     scrollbottom : false
- });
+});
 </script>
 
 <?php if ($is_checkbox) { ?>

@@ -1,8 +1,8 @@
 @charset "utf-8";
 
 /* 최근게시물 스킨 (latest) */
-.lt_notice {position:relative;background:#fe5d5d;border-radius:5px;margin:0 0 15px;padding: 0 110px;line-height:60px;overflow:hidden;font-size:1.077em;color:#fff}
-.lt_notice .lt_title{float:left;width:100px;position:absolute;top:0;left:0;background:#f54e4e;color:#fff;padding:0 0 0 20px;font-weight:bold}
+.lt_notice {position:relative;background:#fe5d5d;border-radius:5px;margin:0 0 15px;padding: 0 120px;line-height:60px;overflow:hidden;font-size:1.077em;color:#fff}
+.lt_notice .lt_title{float:left;width:100px;position:absolute;top:0;left:0;background:#f54e4e;color:#fff;padding:0 0 0 15px;font-weight:bold}
 .lt_notice ul {display:none}
 .lt_notice li{text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .lt_notice li a{color:#fff}

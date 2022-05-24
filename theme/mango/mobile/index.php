@@ -14,7 +14,7 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/waterfall-light.js"></script>',
 </div>
 
 <script>
- $('.latest_wr').show().waterfall({
+$('.latest_wr').show().waterfall({
      // top offset
     top : false, 
 
@@ -40,9 +40,9 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/waterfall-light.js"></script>',
 
     // execute a function as the page is scrolled to the bottom
     scrollbottom : false
- });
+});
 
- $("#wrapper").addClass("idx_wrp");
+$("#wrapper").addClass("idx_wrp");
 </script>
 
 
