@@ -24,7 +24,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
 		$c_reply_href = $comment_common_url.'&amp;c_id='.$comment_id.'&amp;w=c#bo_vc_w';
 		$c_edit_href = $comment_common_url.'&amp;c_id='.$comment_id.'&amp;w=cu#bo_vc_w';
     ?>
-    <article id="c_<?php echo $comment_id ?>" <?php echo $comment_class ?> <?php if ($cmt_depth) { ?>style="padding-left:<?php echo $cmt_depth ?>px;"<?php } ?>>
+    <article id="c_<?php echo $comment_id ?>"<?php if ($cmt_depth) { ?>style="padding-left:<?php echo $cmt_depth ?>px;"<?php } ?>>
         <header>
             <h2><?php echo get_text($list[$i]['wr_name']); ?>님의 댓글<?php if ($cmt_depth) { ?><span class="sound_only">의 댓글</span><?php } ?></h2>
             <?php echo get_member_profile_img($view['mb_id']) ?>
