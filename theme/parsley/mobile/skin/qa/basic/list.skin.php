@@ -88,7 +88,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
 		                <?php if ($is_checkbox) { // 게시글별 체크박스 ?>
 		                <span class="sel bo_chk li_chk">
 		                    <label for="chk_wr_id_<?php echo $i ?>"><span class="sound_only"><?php echo $list[$i]['subject'] ?></span></label>
-		                    <input type="checkbox" name="chk_wr_id[]" value="<?php echo $list[$i]['wr_id'] ?>" id="chk_wr_id_<?php echo $i ?>">
+		                    <input type="checkbox" name="chk_wr_id[]" value='<?php echo $list[$i]['wr_id'] ?>' id="chk_wr_id_<?php echo $i ?>">
 		                </span>
 		                <?php } ?>
 		                
@@ -134,7 +134,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
 		</fieldset>
 		<!-- } qa 검색 끝 -->
 		
-		<?php if ($rss_href || $write_href) { ?>
+		<?php if ($write_href) { ?>
 		<ul class="<?php echo isset($view) ? 'view_is_list btn_top' : 'btn_top2';?>">
 		    <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b01">문의등록</a></li><?php } ?>
 			<?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin">관리자</a></li><?php } ?>
