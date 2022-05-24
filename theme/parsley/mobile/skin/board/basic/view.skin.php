@@ -71,18 +71,17 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 	        
 	        <?php
 	        // 파일 출력
-	        $v_img_count = count($view['file']);
-	        if($v_img_count) {
-	            echo "<div id=\"bo_v_img\">\n";
-	
-	            for ($i=0; $i<=count($view['file']); $i++) {
-	                if ($view['file'][$i]['view']) {
-	                    //echo $view['file'][$i]['view'];
-	                    echo get_view_thumbnail($view['file'][$i]['view']);
-	                }
-	            }
-	            echo "</div>\n";
-			}
+        $v_img_count = count($view['file']);
+        if($v_img_count) {
+            echo "<div id=\"bo_v_img\">\n";
+
+            foreach($view['file'] as $view_file) {
+                echo get_file_thumbnail($view_file);
+            }
+
+            echo "</div>\n";
+        }
+
 			?>
 			
 			<div id="bo_v_con"><?php echo get_view_thumbnail($view['content']); ?></div>
@@ -91,8 +90,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         	<?php if ($is_signature) { ?><p><?php echo $signature ?></p><?php } ?>
         	
         	<?php
+			$cnt = 0;
 		    if ($view['file']['count']) {
-		        $cnt = 0;
+		        
 		        for ($i=0; $i<count($view['file']); $i++) {
 		            if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view'])
 		                $cnt++;
@@ -166,7 +166,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 	
 	<div id="bo_btn">
 		<div id="bo_v_option">
-			<?php echo $view['btn_option'] // 게시물 옵션 ?>
+			<?php //echo $view['btn_option'] // 게시물 옵션 ?>
 			<?php if($update_href || $delete_href || $copy_href || $move_href || $search_href) { ?>
 		    <ul id="bo_v_opt">
 		    	<?php ob_start(); ?>
