@@ -76,7 +76,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
 	            <?php } ?>
 	            <li class="tit">제목</li>
 	            <li class="wri">글쓴이</li>
-	            <li class="date"><?php echo subject_sort_link('wr_datetime', $qstr2, 1) ?>날짜</a></th>
+	            <li class="date"><?php echo subject_sort_link('wr_datetime', $page, 1) ?>날짜</a></th>
 	            <li class="status">딥변상태</li>
 	    	</ul>
 
