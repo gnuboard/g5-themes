@@ -90,7 +90,7 @@
 /* 회원가입 입력 */
 #fregisterform{margin:10px 0 !important}
 #fregisterform #reg_mb_email, #fregisterform .frm_address {width:100%}
-#fregisterform textarea {width:100%;height:50px}
+#fregisterform textarea {width:100%;min-width:100%;max-width:100%;height:50px}
 #fregisterform #msg_certify {margin:5px 0 0;padding:5px;border:1px solid #dbecff;background:#eaf4ff;text-align:center}
 #fregisterform .frm_address {margin:5px 0 0}
 #fregisterform #mb_addr3 {display:block;margin:5px 0 0}
@@ -102,6 +102,7 @@
 #fregisterform .btn_frmline {height:40px;padding:0 10px}
 #fregisterform .rgs_name_li button{margin:5px 0 0 }
 #fregisterform .reg_mb_img_file img{max-width:100%;height:auto}
+#fregisterform .btn_submit {height: 40px;}
 
 /* 회원가입 완료 */
 #reg_result {padding:20px 10px 10px}
@@ -190,7 +191,7 @@ box-shadow: 0 1px 5px rgba(50,50,50,0.2);}
 #scrap_do label{color:#666}
 
 /* 포인트 */
-#point_ul {;padding:0;border-top:1px solid #e9e9e9;list-style:none}
+#point_ul {padding:0;border-top:1px solid #e9e9e9;list-style:none}
 #point_ul li {position:relative;}
 #point_ul li:after {display:block;visibility:hidden;clear:both;content:""}
 #point_ul .point_wrap01 {float:left}

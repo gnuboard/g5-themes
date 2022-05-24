@@ -199,7 +199,7 @@ box-shadow: 0 1px 4px #cbd1df;}
 #bo_v_contact dt {clear:both;padding:3px 0 ;width:30px;text-align:center;font-weight:bold}
 #bo_v_contact dd {padding:3px 0;width:80%}
 
-#bo_v_top {margin:0 0 10px;padding:10px}
+#bo_v_top {margin:0 0 10px;padding:10px 0}
 #bo_v_top:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_top h2 {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 #bo_v_top ul {margin:0;padding:0;list-style:none}

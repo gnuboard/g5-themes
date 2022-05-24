@@ -6,11 +6,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
 ?>
 
 <div class="lt_notice box">
-    <a href="<?php echo get_pretty_url($bo_table); ?>" class="lt_title"><?php echo $bo_subject ?></a>
+    <a href="<?php echo get_pretty_url($bo_table); ?>" class="lt_title">공지</a>
     <ul>
     <?php
     for ($i=0; $i<count($list); $i++) {
-
     ?>
         <li>
             <?php
@@ -34,16 +33,15 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
     <?php } ?>
     </ul>
 </div>
-  
+
 <script>
 $(function(){
-  $('.lt_notice ul').bxSlider({
+$('.lt_notice ul').bxSlider({
     mode: 'fade',
     auto: true,
     controls:false,
     pager:false
-
-  });
+});
 });
 </script>
 
