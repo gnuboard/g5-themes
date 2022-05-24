@@ -87,8 +87,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 	        <?php if ($is_signature) { ?><p><?php echo $signature ?></p><?php } //서명 ?>
 			
 			<?php
+			$cnt = 0;
 		    if ($view['file']['count']) {
-		        $cnt = 0;
+		        
 		        for ($i=0; $i<count($view['file']); $i++) {
 		            if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view'])
 		                $cnt++;
