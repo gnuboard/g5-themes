@@ -22,7 +22,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 <button id="menu-toggle" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars fa-lg" aria-hidden="true" title="Toggle navigation"></i><span class="sound_only">사이드메뉴 열기</span></button>
 <nav id="sidebar-wrapper">
     <div class="home">
-        <?php if ($is_admin == 'super' || $is_auth) { ?>
+        <?php if ($is_admin == 'super') { ?>
         <a href="<?php echo correct_goto_url(G5_ADMIN_URL); ?>"><i class="fa fa-lg fa-cog" aria-hidden="true"></i><span class="sound_only">관리자</span></a>
         <?php } ?>
         <?php if ($is_member) {  ?>

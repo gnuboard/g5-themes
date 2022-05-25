@@ -1,5 +1,5 @@
 <?php
-define('_INDEX_', true);
+if (!defined('_INDEX_')) define('_INDEX_', true);
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
 include_once(G5_CAPTCHA_PATH.'/captcha.lib.php');
@@ -34,12 +34,13 @@ include_once(G5_THEME_PATH.'/head.php');
             $row = sql_fetch($sql);
             $arr = explode("\n", $row['wr_content']);
             $i=0;
+            $about = array();
             foreach($arr as $str) {
                 // 공백이 있는 라인으로 구분함
                 if (trim($str) == '') {
                     $i++;
                 }
-                $about[$i] .= $str.'<br>'; 
+                $about[$i] = $str.'<br>'; 
             }
             ?>
         
@@ -77,12 +78,13 @@ include_once(G5_THEME_PATH.'/head.php');
 	        $row = sql_fetch($sql);
 	        $arr = explode("\n", $row['wr_content']);
 	        $i=0;
+            $resume = array();
 	        foreach($arr as $str) {
 	            // 공백이 있는 라인으로 구분함
 	            if (trim($str) == '') {
 	                $i++;
 	            }
-	            $resume[$i] .= $str."\n"; 
+	            $resume[$i] = $str."\n"; 
 	        }
 	        $education  = explode("\n", $resume[0]);
 	        $license    = explode("\n", $resume[1]);
