@@ -20,7 +20,7 @@
 .mbskin a.btn02 {}
 .mbskin a.btn02:focus, .mbskin .btn02:hover {}
 .mbskin .btn_confirm {} /* 서식단계 진행 */
-.mbskin .btn_submit {float:right;width:100px;height:40px;background:#2aba8a;color:#fff;border:0;border-radius:2px;line-height:30px;font-weight:bold;font-size:1em}
+.mbskin .btn_submit {width:100px;height:40px;background:#2aba8a;color:#fff;border:0;border-radius:2px;line-height:30px;font-weight:bold;font-size:1em}
 .mbskin .btn_submit:after {display:block;visibility:hidden;clear:both;content:""}
 .mbskin .btn_cancel {}
 .mbskin .btn_frmline {} /* 우편번호검색버튼 등 */
@@ -116,15 +116,19 @@
 
 #fregisterform:after {display:block;visibility:hidden;clear:both;content:""}
 #fregisterform .form_01 h2 {padding:15px;background:#ececec;color:#000;font-size:1.167em;text-align:left}
-#fregisterform .form_01 label {float:left;width:25%;padding:10px 0;text-align:left}
-#fregisterform .form_01 input {float:left;width:75%;margin-bottom:5px;background:#fff}
-#fregisterform .form_01 #reg_mb_zip {width:55%}
+#fregisterform .form_01 label {padding:10px 0;text-align:left}
+#fregisterform .form_01 input {width:100%;margin-bottom:5px;background:#fff}
+#fregisterform .form_01 #reg_mb_zip {width:55%;margin-right:5px;}
 #fregisterform .form_01:after {display:block;visibility:hidden;clear:both;content:""}
-#fregisterform .frm_info {display:block;padding:5px 0;margin-left:27%;text-align:left;color:#b1b1b1;font-size:0.92em}
+#fregisterform .frm_info {display:block;padding:5px 0;text-align:left;color:#b1b1b1;font-size:0.92em}
 #fregisterform .frm_center {margin-left:0 !important;text-align:center;margin:5px 0}
 #fregisterform .btn_frmline2 {display:inline-block;float:left;margin-left:5px;padding:0 5px;height:40px;border:0;background:#1ec679;border:1px solid #12b46a;color:#fff;text-decoration:none;vertical-align:top;border-radius:3px}
-#fregisterform .btn_frmline {height:40px;padding:0 10px}
+#fregisterform .btn_frmline {height:40px;padding:0 10px;color:#000;}
 #fregisterform .rgs_name_li button {margin:5px 0 0}
+#fregisterform .form_01 li {text-align:left;}
+#fregisterform .chk_box input[type=checkbox] {display:none;}
+#fregisterform .chk_box input[type="checkbox"] + label span {margin-right:5px;}
+#fregisterform #del_mb_icon, #fregisterform #del_mb_img {width:auto;}
 
 .btn_confirm {text-align:center;margin:20px 0}
 .btn_confirm .btn_submit {height:45px;padding:0 30px;font-weight:bold;font-size:1.083em;border-radius:2px;background:#2aba8a;color:#fff;border:0}
@@ -169,18 +173,20 @@
 #find_info #mb_email {margin:10px 0}
 
 /* 로그인 */
-#mb_login {background:#fff;text-align:center;margin:60px auto;max-width:340px;border:1px solid #2aba8a}
+#mb_login {background:#fff;text-align:center;margin:60px auto;padding:40px;max-width:400px;border:1px solid #2aba8a;}
 #mb_login h1 {font-size:1.75em;padding:20px 0;margin-bottom:20px;text-align:center;border-bottom:1px solid #f1f3f6}
 #mb_login .mbskin_inner {width:300px;display:inline-block}
 
 #mb_login .login_btn_inner {}
 #mb_login #login_fs .frm_input {background:#f8f9fb;border:1px solid #d0d4df;margin-bottom:10px;border-radius:3px}
-#mb_login #login_info {margin:15px 0;text-align:right}
+#mb_login #login_info {margin:15px 0 30px;text-align:right}
 #mb_login #login_info:after {display:block;visibility:hidden;clear:both;content:""}
 #mb_login #login_info h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-#mb_login #login_info span {display:inline-block}
+#mb_login #login_info span {display:inline-block;float:none;vertical-align:middle;}
 #mb_login #login_info a {display:inline-block;float:left;margin-left:5px;padding:8px 10px;border:1px solid #d5d9dd;color:#555;border-radius:30px}
 #mb_login #login_info a:hover {color:#694ecc}
+.mb_login_join {position:relative;float:left;margin-top:15px;z-index:10;}
+.mb_login_join a {color:#676e70;vertical-align:middle;}
 
 /* 자동 로그인 */
 .login_auto {display:inline-block;float:left;text-align:left;padding:10px 0;vertical-align:middle}

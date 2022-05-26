@@ -24,12 +24,12 @@ $thumb_height = 200;
         $thumb['alt'] = '이미지가 없습니다.';
     }
     ?>
-        <li class="list_<?php echo $i ?>" style="background-image:url('<?php echo $img; ?>')">
+        <li class="list_<?php echo $i ?>" style="background:url('<?php echo $img; ?>') 100% center/cover">
             <?php
             echo "<a href=\"".$list[$i]['href']."\" class=\"lt_tit\">";
-	            echo "<div class=\"bn_txt\">";
-					echo $list[$i]['subject'];
-	            echo "</div>";
+                echo "<div class=\"bn_txt\">";
+                    echo $list[$i]['subject'];
+                echo "</div>";
             echo "</a>";
             ?>
         </li>

@@ -202,7 +202,7 @@
 .bo_v_com li a {display:block;padding:0 10px}
 .bo_v_com li i {display:inline-block;float:right;color:#92a1af;line-height:30px}
 
-.bo_cv_opt {display:inline-block;float:right;background:transparent;padding:0 10px;border:0;font-size:1.6em}
+.bo_cv_opt {display:inline-block;float:right;background:transparent;padding:0 10px;border:0;font-size:1.3em}
 
 #bo_cv_opt {display:none;position:absolute;top:45px;right:20px;width:100px;padding:0;list-style:none;background:#fff;border:1px solid #d9dee9}
 #bo_cv_opt:before {content:"";position:absolute;top:-6px;right:5px;width:10px;height:10px;background:url('img/ico_arrow.png') no-repeat}
@@ -414,7 +414,7 @@
 	
 	#bo_v_aside {float:inherit;width:100%;margin:0;margin-bottom:20px;border:0}
 	#bo_v_act .bo_v_act_gng {display:inline-block;float:left;width:16.666%;height:55px;border:1px solid #f1f1f1;margin-left:-1px}
-	#bo_v_atc .btn_scrap, #bo_v_share li {float:left;width:16.666%;border:1px solid #f1f1f1;margin-left:-1px;height:55px}
+	#bo_v_atc .btn_scrap, #bo_v_share li {float:left;width:50px;border:1px solid #f1f1f1;margin-left:-1px;height:50px}
 	#bo_v_con {min-height:100px}
 	#bo_v_link li strong {width:50%;display:inline-block;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}
 	

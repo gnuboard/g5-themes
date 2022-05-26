@@ -17,10 +17,19 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         <label for="login_pw" class="sound_only">비밀번호<strong class="sound_only"> 필수</strong></label>
         <input type="password" name="mb_password" id="login_pw" placeholder="비밀번호" required class="frm_input required" maxLength="20">
         
+        <section class="mb_login_join">
+            <h2 class="sound_only">회원로그인 안내</h2>
+            <div>
+                <a href="<?php echo G5_BBS_URL ?>/password_lost.php" target="_blank" id="login_password_lost">회원정보찾기</a>
+                <a href="./register.php">회원 가입</a>
+            </div>
+        </section>
+        
         <div id="login_info" class="chk_box">
             <input type="checkbox" name="auto_login" id="login_auto_login" class="selec_chk">
             <label for="login_auto_login"><span></span> 자동로그인</label>
         </div>
+
 		<button type="submit" class="btn_submit">로그인</button>
     </div>
 
@@ -28,14 +37,6 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     // 소셜로그인 사용시 소셜로그인 버튼
     @include_once(get_social_skin_path().'/social_login.skin.php');
     ?>
-
-    <section class="mb_login_join">
-        <h2>회원로그인 안내</h2>
-        <div>
-            <a href="<?php echo G5_BBS_URL ?>/password_lost.php" target="_blank" id="login_password_lost">회원정보찾기</a>
-            <a href="./register.php">회원 가입</a>
-        </div>
-    </section>
     </form>
 </div>
 
