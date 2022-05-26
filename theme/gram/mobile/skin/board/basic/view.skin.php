@@ -126,8 +126,9 @@ jQuery(function($){
     </section>
     
     <?php
+    $cnt = 0;
     if ($view['file']['count']) {
-        $cnt = 0;
+        
         for ($i=0; $i<count($view['file']); $i++) {
             if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view'])
                 $cnt++;
