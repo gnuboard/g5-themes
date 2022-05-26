@@ -22,7 +22,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
     } ?>
 
     <div id="hd_wrapper">
-		<?php if ($is_admin == 'super' || $is_auth) { ?>
+		<?php if ($is_admin == 'super' || $is_admin) { ?>
 			<a href="<?php echo G5_ADMIN_URL ?>" class="hd_admin"><span class="sound_only">관리자</span></a>
 		<?php } ?>
 		
