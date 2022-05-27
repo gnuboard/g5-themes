@@ -22,8 +22,8 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 $sql = " select bo_table, bo_subject
             from {$g5['board_table']}
             where gr_id = '{$gr_id}'
-              and bo_list_level <= '{$member['mb_level']}'
-              and bo_device <> 'mobile' ";
+            and bo_list_level <= '{$member['mb_level']}'
+            and bo_device <> 'mobile' ";
 if(!$is_admin)
     $sql .= " and bo_use_cert = '' ";
 $sql .= " order by bo_order ";
@@ -44,6 +44,22 @@ for ($i=0; $row=sql_fetch_array($result); $i++) {
 }
 ?>
 <!-- 메인화면 최신글 끝 -->
+<script>
+
+$(document).ready(function(){
+    $('.lat ul').bxSlider({
+        maxSlides:4,
+        minSlides:4,
+        pager:false,
+        controls:true,
+        auto:true,
+        //slideMargin:20
+        nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+        prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>'
+    });
+});
+</script>
+
 </div>
 <?php
 include_once(G5_THEME_PATH.'/tail.php');

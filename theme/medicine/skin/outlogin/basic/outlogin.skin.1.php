@@ -34,7 +34,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$outlogin_skin_url.'/style.css">'
 	
 	<div id="ol_svc">
         <a href="<?php echo G5_BBS_URL ?>/register.php"><b>회원가입</b></a>
-        <a href="<?php echo G5_BBS_URL ?>/password_lost.php" id="ol_password_lost">정보찾기</a>
+        <a href="<?php echo G5_BBS_URL ?>/password_lost.php">정보찾기</a>
     </div>
 </section>
 <button class="login_cls_btn"><i class="fa fa-times" aria-hidden="true"></i><span class="sound_only">닫기</span></button>

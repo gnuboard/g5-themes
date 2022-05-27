@@ -147,7 +147,7 @@
 #bo_sch select {float:left;border:0;margin-right:5px;height:40px;background:#fff;border:1px solid #dcdcdc}
 #bo_sch .sch_area {position:relative;width:310px;height:40px}
 #bo_sch .sch_input {float:left;width:200px;height:40px;border:0;padding:0;background:#fff !important;border:1px solid #dcdcdc}
-#bo_sch .sch_btn_bo {position:absolute;right:0;top:0;height:38px;float:left;background:none;border:0;width:40px;font-size:15px}
+#bo_sch .sch_btn_bo {position:absolute;right:20px;top:0;height:38px;float:left;background:none;border:0;width:40px;font-size:15px}
 
 /* 게시판 쓰기 */
 #char_count_desc {display:block;margin:0 0 5px;padding:0}

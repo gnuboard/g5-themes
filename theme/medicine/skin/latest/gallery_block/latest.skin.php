@@ -24,10 +24,10 @@ $thumb_height = 250;
     $img_content = '<img src="'.$img.'" alt="'.$thumb['alt'].'" >';
     ?>
     <li>
-    	<div class="pic_inner">
+        <div class="pic_inner">
             <a href="<?php echo $list[$i]['href'] ?>" class="lt_img">
-            	<?php echo $img_content; ?>
-            	<span class="more">자세히</span>
+                <?php echo $img_content; ?>
+                <span class="more">자세히</span>
             </a>
             <?php
             echo "<a href=\"".$list[$i]['href']."\" class=\"all_b_tit\"> ";
@@ -39,7 +39,7 @@ $thumb_height = 250;
             echo "</a>";
             ?>
             <div class="lat_detail">
-            	<?php echo get_text(strip_tags($list[$i]['wr_content']), 100); ?>
+                <?php echo get_text(strip_tags($list[$i]['wr_content']), 100); ?>
             </div>
         </div>
     </li>

@@ -20,18 +20,18 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
             <input type="password" name="mb_password" id="login_pw" required class="frm_input required" size="20" maxLength="20" placeholder="비밀번호">
             <button type="submit" class="btn_submit">로그인</button>
             <input type="checkbox" name="auto_login" id="login_auto_login">
-        	<label for="login_auto_login">자동로그인</label>
+            <label for="login_auto_login">자동로그인</label>
         </fieldset> 
         
         <?php @include_once(get_social_skin_path().'/social_login.skin.php'); // 소셜로그인 사용시 소셜로그인 버튼 ?>
         
 		<aside id="login_info">
-	        <h2>회원로그인 안내</h2>
-	        <div>
-	            <a href="<?php echo G5_BBS_URL ?>/password_lost.php" target="_blank" id="login_password_lost">아이디 비밀번호 찾기</a>
-	            <a href="./register.php">회원 가입</a>
-	        </div>
-	    </aside>
+            <h2>회원로그인 안내</h2>
+            <div>
+                <a href="<?php echo G5_BBS_URL ?>/password_lost.php" target="_blank" id="login_password_lost">아이디 비밀번호 찾기</a>
+                <a href="./register.php">회원 가입</a>
+            </div>
+        </aside>
     </form>
 </div>
 

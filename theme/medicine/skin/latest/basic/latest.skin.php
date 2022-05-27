@@ -26,13 +26,13 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/owl.carousel.min.js"></script>'
 			</div>
 			
 			<div class="lat_detail">
-            	<?php echo get_text(cut_str(strip_tags($list[$i]['wr_content']), $content_length), 1); ?>
+                <?php echo get_text(cut_str(strip_tags($list[$i]['wr_content']), $content_length), 1); ?>
             </div>
 			<div class="lat_info">
 				<span class="lt_date">날짜 <?php echo $list[$i]['datetime2'] ?></span>
 				<?php
 				if ($list[$i]['comment_cnt'])  echo "
-	            <span class=\"lt_cmt\">댓글 ".$list[$i]['comment_cnt']."</span>";
+                <span class=\"lt_cmt\">댓글 ".$list[$i]['comment_cnt']."</span>";
 				?>
 			</div>
 			<?php echo "</a>" ?>
@@ -43,18 +43,3 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/owl.carousel.min.js"></script>'
     <?php }  ?>
     </ul>
 </div>
-<script>
-
-$(document).ready(function(){
-    $('.lat ul').bxSlider({
-        maxSlides:4,
-        minSlides:4,
-        pager:false,
-        controls:true,
-        auto:true,
-        //slideMargin:20
-    	nextText: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
-        prevText: '<i class="fa fa-angle-left" aria-hidden="true"></i>'
-    });
-});
-</script>

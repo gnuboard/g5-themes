@@ -20,7 +20,7 @@
 #ol_main_svc {position:relative;margin:0}
 #ol_main_svc:after {display:block;visibility:hidden;clear:both;content:""}
 #ol_main_svc a {float:left;display:inline-block;width:50%;padding:10px 0;color:#555;text-align:center}
-#ol_main_svc a#ol_password_lost {background:url(./img/division_bg.png) left 13px no-repeat}
+#ol_main_svc a:nth-child(2) {background:url(./img/division_bg.png) left 13px no-repeat}
 #ol_main_svc b {color:#0060ff}
 
 #main_login_after {text-align:center;background:#c9d89e;font-family:"Nanum Square";font-size:1.6em}

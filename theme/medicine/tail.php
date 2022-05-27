@@ -14,7 +14,7 @@ if (G5_IS_MOBILE) {
 <!-- 하단 시작 { -->
 <div id="ft">
     <div id="ft_wr">
-    	<ul id="ft_menu">
+        <ul id="ft_menu">
             <li><a href="<?php echo G5_BBS_URL ?>/faq.php">FAQ</a></li>
             <li><a href="<?php echo G5_BBS_URL ?>/qalist.php">1:1문의</a></li>
             <li><a href="<?php echo G5_BBS_URL ?>/new.php">새글</a></li>
@@ -22,24 +22,24 @@ if (G5_IS_MOBILE) {
         </ul>
         <?php echo visit('theme/basic'); // 접속자집계, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?> 
         <div id="ft_link">
-        	<a href="<?php echo get_pretty_url('content', 'company'); ?>">병원소개</a>
-	        <a href="<a href="<?php echo get_pretty_url('content', 'privacy'); ?>">개인정보처리방침</a>
-	        <a href="<?php echo get_pretty_url('content', 'provision'); ?>">서비스이용약관</a>
-	        <!-- <a href="<?php echo get_device_change_url(); ?>">모바일버전</a> -->
-	    </div>
+            <a href="<?php echo get_pretty_url('content', 'company'); ?>">병원소개</a>
+            <a href="<?php echo get_pretty_url('content', 'privacy'); ?>">개인정보처리방침</a>
+            <a href="<?php echo get_pretty_url('content', 'provision'); ?>">서비스이용약관</a>
+            <!-- <a href="<?php echo get_device_change_url(); ?>">모바일버전</a> -->
+        </div>
         <span class="ft_adds">서울특별시 역삼동 123-456 에스아이알병원 / 대표전화 : 1234-1234</span>
-	    <div id="ft_copy">Copyright &copy; <b>소유하신 도메인.</b> All rights reserved.</div>	  
+        <div id="ft_copy">Copyright &copy; <b>소유하신 도메인.</b> All rights reserved.</div>	  
     </div>
     <div id="ft_fix">
-    	<div class="innr">
-			<span class="quick_tit">퀵메뉴 <i class="fa fa-plus-circle" aria-hidden="true"></i></span>
-	    	<ul>
-	    		<li><a href="#">퀵메뉴</a></li>
-	    		<li><a href="#">퀵메뉴</a></li>
-	    		<li><a href="#">퀵메뉴</a></li>
-	    		<li><a href="#">퀵메뉴</a></li>
-	    	</ul>
-    	</div>  
+        <div class="innr">
+            <span class="quick_tit">퀵메뉴 <i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+            <ul>
+                <li><a href="#">퀵메뉴</a></li>
+                <li><a href="#">퀵메뉴</a></li>
+                <li><a href="#">퀵메뉴</a></li>
+                <li><a href="#">퀵메뉴</a></li>
+            </ul>
+        </div>
     </div>
     <div id="top_btn">
         <div class="top_btn_wp">
@@ -66,9 +66,9 @@ if (G5_IS_MOBILE) {
         });
 
         $("#top_btn .scroll-bottom").on("click", function(e) {
-        	e.preventDefault();
+            e.preventDefault();
 
-        	var scrollBottom = $("html,body").scrollTop + $("html,body").height();
+            var scrollBottom = $("html,body").scrollTop + $("html,body").height();
 
             $("html, body").animate({scrollTop:$(document).height()}, '500');
             return false;

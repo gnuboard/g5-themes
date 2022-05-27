@@ -116,9 +116,9 @@
 #fregisterform .frm_address {margin:5px 0 0}
 #fregisterform #mb_addr3 {display:inline-block;margin:5px 0 0;vertical-align:middle}
 #fregisterform #mb_addr_jibeon {display:block;margin:5px 0 0}
-#fregisterform .btn_confirm {display:inline-block;text-align:center;margin:0 0 20px 0 !important}
-#fregisterform .btn_confirm .btn_submit {float:left;width:49%;height:45px;margin:0 2% 0 0;padding:0 30px;font-weight:bold;font-size:1.083em;line-height:40px}
-#fregisterform .btn_confirm .btn_cancel {float:left;width:49%;line-height:45px;height:45px;padding:0 30px;font-weight:bold;font-size:1.083em;border-radius:2px}
+#fregisterform .btn_confirm {display:block;text-align:center;margin:50px auto 30px !important;width:400px;}
+#fregisterform .btn_confirm .btn_submit {width:48%;height:45px;padding:0 30px;font-weight:bold;font-size:1.083em;line-height:40px}
+#fregisterform .btn_confirm .btn_cancel {width:48%;margin:0 2% 0 0;line-height:45px;height:45px;padding:0 30px;font-weight:bold;font-size:1.083em;border-radius:2px}
 #fregisterform .frm_info {display:block;text-align:left;color:#3497d9;font-size:0.92em;margin:5px 0}
 #fregisterform .form_01 div {margin:0 0 30px}
 #fregisterform .captcha {display:block;margin:5px 0 0}
@@ -254,6 +254,12 @@
 #pw_confirm label {letter-spacing:-0.1em}
 #pw_confirm_id {display:inline-block;margin-right:20px;font-weight:bold}
 #mb_confirm_id {}
+
+/* 회원 비밀번호 확인 */
+#mb_confirm {width: 700px;padding: 50px;}
+#mb_confirm p {margin: 30px auto;}
+#mb_confirm .confirm_id {font-weight:bold;}
+#mb_confirm #confirm_mb_password {margin-top:20px;}
 
 /* 폼메일 */
 #formmail textarea {height:100px}
