@@ -45,7 +45,7 @@ include_once(G5_THEME_PATH.'/head.php');
     $result = sql_query($sql);
     for ($i=0; $row=sql_fetch_array($result); $i++) {
 		$lt_style = '';
-    	if ($i%3 !== 0 ) $lt_style = "margin-left:2%";
+        if ($i%3 !== 0 ) $lt_style = "margin-left:2%";
     ?>
     <div style="float:left;<?php echo $lt_style ?>" class="lt_wr">
         <?php

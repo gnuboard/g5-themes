@@ -13,7 +13,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
     for ($i=0; $i<$count; $i++) {
     ?>
         <li>
-        	<span class="lt_writer"><?php echo get_member_profile_img($list[$i]['mb_id']); ?></span>
+            <span class="lt_writer"><?php echo get_member_profile_img($list[$i]['mb_id']); ?></span>
             <?php
 			if ($list[$i]['icon_secret']) echo "<i class=\"fa fa-lock\" aria-hidden=\"true\"></i> ";
 			
@@ -37,5 +37,4 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
         echo '<li class="empty_li">게시물이 없습니다.</li>'.PHP_EOL;
     ?>	 
 	</ul>
-	<a href="<?php echo get_pretty_url($bo_table); ?>" class="lt_more"><i class="fas fa-ellipsis-v"></i><span class="sound_only"><?php echo $bo_subject ?> 더보기</span></a>
 </div>

@@ -9,20 +9,20 @@ add_stylesheet('<link rel="stylesheet" href="'.$outlogin_skin_url.'/style.css">'
 <section id="ol_s_before" class="ol">
     <h2>회원로그인</h2>
     <div id="ol_svc">
-    	<span>로그인</span>
+        <span>로그인</span>
         <a href="<?php echo G5_BBS_URL ?>/register.php">회원가입</a>
     </div>
     <form name="foutlogin" action="<?php echo $outlogin_action_url ?>" onsubmit="return fhead_submit(this);" method="post" autocomplete="off">
     <fieldset>
         <div class="ol_wr">
-        	<div class="i1">
-            	<input type="hidden" name="url" value="<?php echo $outlogin_url ?>">
-            	<label for="ol_id" id="ol_idlabel" class="sound_only">회원아이디<strong>필수</strong></label>
-            	<input type="text" id="ol_id" name="mb_id" required maxlength="20" placeholder="아이디">
+            <div class="i1">
+                <input type="hidden" name="url" value="<?php echo $outlogin_url ?>">
+                <label for="ol_id" id="ol_idlabel" class="sound_only">회원아이디<strong>필수</strong></label>
+                <input type="text" id="ol_id" name="mb_id" required maxlength="20" placeholder="아이디">
             </div>
             <div class="i2">
-            	<label for="ol_pw" id="ol_pwlabel" class="sound_only">비밀번호<strong>필수</strong></label>
-            	<input type="password" name="mb_password" id="ol_pw" required maxlength="20" placeholder="비밀번호">
+                <label for="ol_pw" id="ol_pwlabel" class="sound_only">비밀번호<strong>필수</strong></label>
+                <input type="password" name="mb_password" id="ol_pw" required maxlength="20" placeholder="비밀번호">
             </div>
             <button type="submit" id="ol_s_submit" class="btn_b02">로그인</button>
         </div>
@@ -31,7 +31,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$outlogin_skin_url.'/style.css">'
                 <input type="checkbox" name="auto_login" value="1" id="auto_login" class="selec_chk">
                 <label for="auto_login" id="auto_login_label"><span></span>자동로그인</label>
             </div>
-            <a href="<?php echo G5_BBS_URL ?>/password_lost.php" id="ol_password_lost">정보찾기</a>
+            <a href="<?php echo G5_BBS_URL ?>/password_lost.php" class="ol_password_lost">정보찾기</a>
         </div>
         <?php
         // 소셜로그인 사용시 소셜로그인 버튼

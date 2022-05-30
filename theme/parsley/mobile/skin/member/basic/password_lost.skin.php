@@ -19,11 +19,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         </fieldset>
         <?php echo captcha_html(); ?>
 
-	    <div class="win_btn">
-	        <button type="submit" class="btn_submit">정보찾기</button>
-	        <button type="button" onclick="window.close();" class="btn_close">창닫기</button>
-	    </div>
-	    </form>
+        <div class="win_btn">
+            <button type="submit" class="btn_submit">정보찾기</button>
+        </div>
+        </form>
     </div>
 </div>
 

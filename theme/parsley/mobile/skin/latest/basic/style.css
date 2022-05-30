@@ -1,11 +1,11 @@
 @charset "utf-8";
 
 /* 최근게시물 스킨 (latest) */
-.lt_basic {width:100%}
+.lt_basic {width:100%;}
 .lt_basic .lt_title {display:block;padding:0 0 20px;border-bottom:1px solid #e9e9e9;text-align:left;font-size:1.2em}
 
 .lt_basic ul {margin:0;padding:0;list-style:none}
-.lt_basic li {border-bottom:1px solid #f7f7f7;line-height:24px;text-align:left;padding:15px 0 10px}
+.lt_basic li {border-bottom:1px solid #f7f7f7;line-height:24px;text-align:left;padding:15px 15px 10px 0}
 .lt_basic li:last-child {border-bottom:0}
 .lt_basic .lt_writer img {width:25px;height:25px;border-radius:25px}
 .lt_basic .lt_tit {display:inline-block;height:20px;font-size:1.083em;vertical-align:top;font-weight:bold;overflow:hidden}
@@ -24,6 +24,10 @@
 
 .lt_basic li:hover {transition-duration:.5s}
 .lt_basic li:hover {border-left:4px solid #f7f7f7;padding-left:10px}
+
+@media (max-width:767px){
+    .lt_basic {padding:20px;}
+}
 
 @media (max-width:430px){
     .lt_basic .lt_tit {max-width:65%;text-overflow:ellipsis;white-space:nowrap}
