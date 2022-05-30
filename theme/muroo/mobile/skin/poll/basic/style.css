@@ -48,9 +48,10 @@
 #poll .click_on i {color:#fff;border:1px solid #694ecc;background:#694ecc}
 
 #poll li {padding:10px 0;line-height:15px;margin-bottom:10px}
+#poll li label {cursor:pointer;}
 #poll li i {display:inline-block;float:left;font-size:1.2em}
-#poll li:hover {color:#694ecc}
-#poll li:hover i {color:#fff;border:1px solid #694ecc;background:#694ecc}
+#poll li input[type=radio]:checked + label, #poll li:hover {color:#694ecc}
+#poll li input[type=radio]:checked ~ i, #poll li:hover i {color:#fff;border:1px solid #694ecc;background:#694ecc}
 #poll button {width:49.5%;height:40px;font-weight:bold;float:left;margin-right:1%}
 #poll .btn_result {display:inline-block;width:49.5%;height:40px;line-height:40px;text-align:center;background:#e3e7ef;color:#787878}
 
@@ -93,7 +94,7 @@ box-shadow:0 0 5px -1px #ccc}
 #poll_result_cmt fieldset {margin-bottom:0;text-align:left}
 #poll_result_cmt fieldset p {margin:0 0 15px;padding:3px 0 0px;text-align:left}
 #poll_result_cmt footer {text-align:right}
-#poll_result_cmt .btn_submit {float:right;padding:0 20px}
+#poll_result_cmt .btn_submit {padding:0 20px}
 
 .poll_result_wcmt {margin-bottom:10px}
 .poll_result_wcmt h3 {padding:15px 10px;border:1px solid #d9dee9;border-bottom:0;background:#fff}

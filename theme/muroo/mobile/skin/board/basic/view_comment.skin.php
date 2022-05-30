@@ -67,6 +67,7 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
         <input type="hidden" id="secret_comment_<?php echo $comment_id ?>" value="<?php echo strstr($list[$i]['wr_option'],"secret") ?>">
 		<textarea id="save_comment_<?php echo $comment_id ?>" style="display:none"><?php echo get_text($list[$i]['content1'], 0) ?></textarea>
         
+        <?php if ($list[$i]['is_edit'] || $list[$i]['is_del']) { ?>
         <div class="bo_vl_opt">
             <button type="button" class="cmt_opt"><span class="sound_only">댓글 옵션</span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
             <ul class="bo_vl_act">
@@ -74,10 +75,11 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
                 <?php if ($list[$i]['is_del']) { ?><li><a href="<?php echo $list[$i]['del_link']; ?>" onclick="return comment_delete();">삭제 <i class="fa fa-trash-o" aria-hidden="true"></i></a></li><?php } ?>
             </ul>
         </div>
+        <?php } ?>
         <?php if ($list[$i]['is_reply']) { ?><a href="<?php echo $c_reply_href; ?>" onclick="comment_box('<?php echo $comment_id ?>', 'c'); return false;" class="reply_btn">답변</a><?php } ?>
 	</article>
-    <?php } ?>        
-        
+    <?php } ?>
+
 	<?php if ($i == 0) { //댓글이 없다면 ?><p id="bo_vc_empty">등록된 댓글이 없습니다.</p><?php } ?>
 
 </section>
@@ -137,14 +139,14 @@ var char_max = parseInt(<?php echo $comment_max ?>); // 최대
     
     <div class="bo_vc_w_wr">           
         <div class="btn_confirm">
-        	<label for="wr_secret" class="wr_secret_ck">비밀글</label>
-        	<input type="checkbox" name="wr_secret" value="secret" id="wr_secret">
+            <label for="wr_secret" class="wr_secret_ck">비밀글</label>
+            <input type="checkbox" name="wr_secret" value="secret" id="wr_secret">
             <button type="submit" id="btn_submit" class="btn_submit">댓글등록</button>
             <script>
-		        $(document).on("click", "#wr_secret", function() {
-		            $(".wr_secret_ck").toggleClass("click_on");
-		        });
-		    </script>
+                $(document).on("click", "#wr_secret", function() {
+                    $(".wr_secret_ck").toggleClass("click_on");
+                });
+            </script>
         </div>
     </div>
     </form>

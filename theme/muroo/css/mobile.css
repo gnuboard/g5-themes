@@ -98,7 +98,7 @@ ul,li,dl,dt,dd {list-style:none;padding:0;margin:0}
 #container {padding:20px;max-width:1658px;margin:69px auto 0}
 #container:after {display:block;visibility:hidden;clear:both;content:""}
 #container_title {font-size:1.6em;font-weight:bold;padding:10px;line-height:30px;color:#333;text-align:center}
-#container .conle {width:75%;float:left}
+#container .conle {width:75%;float:left;padding:10px;}
 #container .conri {width:24%;float:left;margin-left:1%}
 
 .conle_idx_top {}

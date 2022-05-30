@@ -18,40 +18,42 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
     <?php } ?>
     
     <div class="list_top">
-	    <?php if ($is_checkbox) { ?>
-	    <div class="list_chk all_chk">
-	        <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);" class="selec_chk">
-	        <label for="chkall"><span class="sound_only">현재 페이지 게시물 </span> 전체선택</label>
-	    </div>
-	    <?php } ?>
-	    
-	    <!-- qa 검색 시작 { -->
-		<fieldset id="bo_sch" class="m_bo_sch">
-		    <legend>게시물 검색</legend>
-		    <form name="fsearch" method="get">
-		    <input type="hidden" name="sca" value="<?php echo $sca ?>">
-		    <label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
-		    <input type="text" name="stx" value="<?php echo stripslashes($stx) ?>" required placeholder="검색어를 입력하세요" id="stx" class="sch_input" size="15" maxlength="15">
-		    <button type="submit" value="검색" class="sch_btn"><i class="fa fa-search" aria-hidden="true"></i> <span class="sound_only">검색</span></button>
-		    </form>
-		</fieldset>
-		<script>
-			$(document).ready(function(){
-				$(".mb_sch_bth").click(function(){
-					$(".m_bo_sch").toggle();
-				});
-			});
-		</script>
-		<!-- } qa 검색 끝 -->
+        <?php if ($is_checkbox) { ?>
+        <div class="list_chk all_chk">
+            <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);" class="selec_chk">
+            <label for="chkall"><span class="sound_only">현재 페이지 게시물 </span> 전체선택</label>
+        </div>
+        <?php } ?>
 
-		<?php if ($admin_href || $write_href) { ?>
-		<ul class="btn_top2">
-		    <li class="mb_sch_bth"><button class="btn_b01"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">모바일 게시판 검색 열기</span></button></li>
-		    <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b01"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">문의등록</span></a></li><?php } ?>
-		    <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_b01"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
-		    <li>
+        <!-- qa 검색 시작 { -->
+        <fieldset id="bo_sch" class="m_bo_sch">
+            <legend>게시물 검색</legend>
+            <form name="fsearch" method="get">
+            <input type="hidden" name="sca" value="<?php echo $sca ?>">
+            <label for="stx" class="sound_only">검색어<strong class="sound_only"> 필수</strong></label>
+            <input type="text" name="stx" value="<?php echo stripslashes($stx) ?>" required placeholder="검색어를 입력하세요" id="stx" class="sch_input" size="15" maxlength="15">
+            <button type="submit" value="검색" class="sch_btn"><i class="fa fa-search" aria-hidden="true"></i> <span class="sound_only">검색</span></button>
+            </form>
+        </fieldset>
+        <script>
+            $(document).ready(function(){
+                $(".mb_sch_bth").click(function(){
+                    $(".m_bo_sch").toggle();
+                });
+            });
+        </script>
+        <!-- } qa 검색 끝 -->
+
+        <?php if ($admin_href || $write_href) { ?>
+        <ul class="btn_top2">
+            <li class="mb_sch_bth"><button class="btn_b01"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">모바일 게시판 검색 열기</span></button></li>
+            <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b01"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">문의등록</span></a></li><?php } ?>
+            <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_b01"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
+            <?php if ($list_href || $is_checkbox) { ?>
+            <li>
 				<button type="button" class="btn_more btn_b01"><span class="sound_only">글쓰기 옵션 더보기</span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
 			</li>
+            <?php } ?>
 		</ul>
 		<?php } ?>
 	</div>
@@ -76,10 +78,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
     
     <!-- 게시판 페이지 정보 및 버튼 시작 { -->
     <div id="bo_list_total">
-	    <span>전체 <?php echo number_format($total_count) ?>건</span>
-	    <?php echo $page ?> 페이지
-	</div>
-	<!-- } 게시판 페이지 정보 및 버튼 끝 -->
+        <span>전체 <?php echo number_format($total_count) ?>건</span>
+        <?php echo $page ?> 페이지
+    </div>
+    <!-- } 게시판 페이지 정보 및 버튼 끝 -->
 
     <div class="list_03">
         <ul>
@@ -87,20 +89,20 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
             for ($i=0; $i<count($list); $i++) {
             ?>
             <li class="bo_li<?php if ($is_checkbox) echo ' bo_adm'; ?>">
-				<div class="li_title">
-					<?php if ($is_checkbox) { ?>	
-	                <span class="bo_chk li_chk">
-	                	<label for="chk_qa_id_<?php echo $i ?>"><span class="sound_only"><?php echo $list[$i]['subject'] ?></span></label>
-	                    <input type="checkbox" name="chk_qa_id[]" value="<?php echo $list[$i]['qa_id'] ?>" id="chk_qa_id_<?php echo $i ?>">
-	                </span>
-	                <?php } ?>
-	                <div class="li_stat <?php echo ($list[$i]['qa_status'] ? 'txt_done' : 'txt_rdy'); ?>"><?php echo ($list[$i]['qa_status'] ? '답변완료' : '답변대기'); ?></div>
-                	<strong><?php echo $list[$i]['category']; ?></strong>	
-                	<a href="<?php echo $list[$i]['view_href']; ?>" class="li_sbj">
+                <div class="li_title">
+                    <?php if ($is_checkbox) { ?>
+                    <span class="bo_chk li_chk">
+                        <label for="chk_qa_id_<?php echo $i ?>"><span class="sound_only"><?php echo $list[$i]['subject'] ?></span></label>
+                        <input type="checkbox" name="chk_qa_id[]" value="<?php echo $list[$i]['qa_id'] ?>" id="chk_qa_id_<?php echo $i ?>">
+                    </span>
+                    <?php } ?>
+                    <div class="li_stat <?php echo ($list[$i]['qa_status'] ? 'txt_done' : 'txt_rdy'); ?>"><?php echo ($list[$i]['qa_status'] ? '답변완료' : '답변대기'); ?></div>
+                    <strong><?php echo $list[$i]['category']; ?></strong>
+                    <a href="<?php echo $list[$i]['view_href']; ?>" class="li_sbj">
                         <?php echo $list[$i]['subject']; ?>
                         <span><?php if ($list[$i]['icon_file']) echo " <i class=\"fa fa-download\" aria-hidden=\"true\"></i>" ; ?></span>
                     </a>
-	            </div>
+                </div>
                 <div class="li_info">
                     <span class="li_nick"><span class="sound_only">작성자</span><?php echo $list[$i]['name']; ?></span>
                     <span><i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $list[$i]['date']; ?></span> 

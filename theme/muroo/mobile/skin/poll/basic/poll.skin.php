@@ -15,18 +15,19 @@ add_stylesheet('<link rel="stylesheet" href="'.$poll_skin_url.'/style.css">', 0)
         <?php if ($is_admin == "super") { ?><a href="<?php echo G5_ADMIN_URL ?>/poll_form.php?w=u&amp;po_id=<?php echo $po_id ?>" class="btn_admin btn">설문조사 관리</a><?php } ?>
     </header>
     <div class="poll_cnt">
-	    <p><?php echo $po['po_subject'] ?></p>
-	    <ul>
-	        <?php for ($i=1; $i<=9 && $po["po_poll{$i}"]; $i++) { ?>
-	        <li class="chk_box">
-	        	<input type="radio" name="gb_poll" value="<?php echo $i ?>" id="gb_poll_<?php echo $i ?>">
-	        	<label for="gb_poll_<?php echo $i ?>"><?php echo $po['po_poll'.$i] ?></label>
-	        	<i class="fa fa-check"></i>
-	        </li>
-	        <?php } ?>
-	    </ul>
-	    <button type="submit" class="btn_b02">투표하기</button>
-	    <a href="<?php echo G5_BBS_URL."/poll_result.php?po_id=$po_id&amp;skin_dir=".urlencode($skin_dir); ?>" target="_blank" onclick="poll_result(this.href); return false;" class="btn_result">결과보기</a>
+        <p><?php echo $po['po_subject'] ?></p>
+        <ul>
+            <?php for ($i=1; $i<=9 && $po["po_poll{$i}"]; $i++) { ?>
+            <li class="chk_box">
+                <input type="radio" name="gb_poll" value="<?php echo $i ?>" id="gb_poll_<?php echo $i ?>">
+                <label for="gb_poll_<?php echo $i ?>"><?php echo $po['po_poll'.$i] ?>
+            </label>
+                <i class="fa fa-check"></i>
+            </li>
+            <?php } ?>
+        </ul>
+        <button type="submit" class="btn_b02">투표하기</button>
+        <a href="<?php echo G5_BBS_URL."/poll_result.php?po_id=$po_id&amp;skin_dir=".urlencode($skin_dir); ?>" target="_blank" onclick="poll_result(this.href); return false;" class="btn_result">결과보기</a>
     </div>
 </aside>
 </form>

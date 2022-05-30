@@ -21,46 +21,48 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <?php } ?>
     
     <div class="list_top">	
-	    <?php if ($is_checkbox) { ?>
-	    <div class="list_chk all_chk">
-	        <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);">
-	    	<label for="chkall"><span class="sound_only">현재 페이지 게시물 </span>전체선택</label>
-	    </div>
-	    <?php } ?>
-	    
-	    <!-- 게시판 검색 시작 { -->
-	    <fieldset id="bo_sch" class="m_bo_sch">
-		    <legend>게시물 검색</legend>
-		    <form name="fsearch" method="get">
-		    <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
-		    <input type="hidden" name="sca" value="<?php echo $sca ?>">
-		    <input type="hidden" name="sop" value="and">
-		    <label for="sfl" class="sound_only">검색대상</label>
-		    <select name="sfl" id="sfl">
-		        <?php echo get_board_sfl_select_options($sfl); ?>
-		    </select>
-		    <input name="stx" value="<?php echo stripslashes($stx) ?>" placeholder="검색어를 입력하세요" required id="stx" class="sch_input" size="15" maxlength="20">
-		    <button type="submit" value="검색" class="sch_btn"><i class="fa fa-search" aria-hidden="true"></i> <span class="sound_only">검색</span></button>
-		    </form>
-		</fieldset>
-		<script>
-		$(document).ready(function(){
-				$(".mb_sch_bth").click(function(){
-					$(".m_bo_sch").toggle();
-				});
-			});
-		</script>
-		<!-- } 게시판 검색 끝 -->
-		
-		<?php if ($rss_href || $write_href) { ?>
-		<ul class="<?php echo isset($view) ? 'view_is_list btn_top' : 'btn_top2';?>">
-			<li class="mb_sch_bth"><button class="btn_b01"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">모바일 게시판 검색 열기</span></button></li>
-			<?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01"><i class="fa fa-rss" aria-hidden="true"></i><span class="sound_only">RSS</span></a></li><?php } ?>
-		    <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b01"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">글쓰기</span></a></li><?php } ?>
-		    <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_b01"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
-		    <li>
+        <?php if ($is_checkbox) { ?>
+        <div class="list_chk all_chk">
+            <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);">
+            <label for="chkall"><span class="sound_only">현재 페이지 게시물 </span>전체선택</label>
+        </div>
+        <?php } ?>
+
+        <!-- 게시판 검색 시작 { -->
+        <fieldset id="bo_sch" class="m_bo_sch">
+            <legend>게시물 검색</legend>
+            <form name="fsearch" method="get">
+            <input type="hidden" name="bo_table" value="<?php echo $bo_table ?>">
+            <input type="hidden" name="sca" value="<?php echo $sca ?>">
+            <input type="hidden" name="sop" value="and">
+            <label for="sfl" class="sound_only">검색대상</label>
+            <select name="sfl" id="sfl">
+                <?php echo get_board_sfl_select_options($sfl); ?>
+            </select>
+            <input name="stx" value="<?php echo stripslashes($stx) ?>" placeholder="검색어를 입력하세요" required id="stx" class="sch_input" size="15" maxlength="20">
+            <button type="submit" value="검색" class="sch_btn"><i class="fa fa-search" aria-hidden="true"></i> <span class="sound_only">검색</span></button>
+            </form>
+        </fieldset>
+        <script>
+        $(document).ready(function(){
+                $(".mb_sch_bth").click(function(){
+                    $(".m_bo_sch").toggle();
+                });
+            });
+        </script>
+        <!-- } 게시판 검색 끝 -->
+
+        <?php if ($rss_href || $write_href) { ?>
+        <ul class="<?php echo isset($view) ? 'view_is_list btn_top' : 'btn_top2';?>">
+            <li class="mb_sch_bth"><button class="btn_b01"><i class="fa fa-search" aria-hidden="true"></i><span class="sound_only">모바일 게시판 검색 열기</span></button></li>
+            <?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01"><i class="fa fa-rss" aria-hidden="true"></i><span class="sound_only">RSS</span></a></li><?php } ?>
+            <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b01"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">글쓰기</span></a></li><?php } ?>
+            <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_b01"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
+            <?php if ($list_href || $is_checkbox) { ?>
+            <li>
 				<button type="button" class="btn_more btn_b01"><span class="sound_only">글쓰기 옵션 더보기</span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
 			</li>
+            <?php } ?>
 		</ul>
 		<?php } ?>
 	</div>
@@ -97,9 +99,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <?php } ?>
     
     <div class="bo_list_total">
-	    <span>전체 <?php echo number_format($total_count) ?>건</span>
-	    <?php echo $page ?> 페이지
-	</div>
+        <span>전체 <?php echo number_format($total_count) ?>건</span>
+        <?php echo $page ?> 페이지
+    </div>
 
     <h2>이미지 목록</h2>
     <ul id="gall_ul">
@@ -109,8 +111,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 
                 <?php if ($is_checkbox) { // 게시글별 체크박스 ?>
                 <span class="gall_li_chk bo_chk li_chk">
-                	<label for="chk_wr_id_<?php echo $i ?>"><span class="sound_only"><?php echo $list[$i]['subject'] ?></span></label>
-                	<input type="checkbox" name="chk_wr_id[]" value="<?php echo $list[$i]['wr_id'] ?>" id="chk_wr_id_<?php echo $i ?>">
+                    <label for="chk_wr_id_<?php echo $i ?>"><span class="sound_only"><?php echo $list[$i]['subject'] ?></span></label>
+                    <input type="checkbox" name="chk_wr_id[]" value="<?php echo $list[$i]['wr_id'] ?>" id="chk_wr_id_<?php echo $i ?>">
                 </span>
                 <?php } ?>
                 
@@ -124,56 +126,56 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 </span>
                 
                 <div class="gall_img_area">
-	                <a href="<?php echo $list[$i]['href'] ?>" class="gall_img">
-	                <?php
-	                if ($list[$i]['is_notice']) { // 공지사항 ?>
-	                    <strong style="width:<?php echo $board['bo_mobile_gallery_width'] ?>px;height:<?php echo $board['bo_mobile_gallery_height'] ?>px" class="sound_only">공지</strong><img src="<?php echo G5_THEME_URL.'/mobile/skin/board/gallery/img/notice_img.png'.$config['cf_mobile_logo_file'] ?>">
-	                <?php
-	                } else {
-	                    $thumb = get_list_thumbnail($board['bo_table'], $list[$i]['wr_id'], $board['bo_mobile_gallery_width'], $board['bo_mobile_gallery_height']);
-	
-	                    if($thumb['src']) {
-	                        $img_content = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" width="'.$board['bo_mobile_gallery_width'].'" height="'.$board['bo_mobile_gallery_height'].'">';
-	                    } else {
-	                        $img_content = '<span class="no-img"><i class="fa fa-picture-o" aria-hidden="true"></i></span>';
-	                    }
-	
-	                    echo $img_content;
-	                }
-	                ?>
-	                </a>
-	                <div class="gall_recomm">
+                    <a href="<?php echo $list[$i]['href'] ?>" class="gall_img">
+                    <?php
+                    if ($list[$i]['is_notice']) { // 공지사항 ?>
+                        <strong style="width:<?php echo $board['bo_mobile_gallery_width'] ?>px;height:<?php echo $board['bo_mobile_gallery_height'] ?>px" class="sound_only">공지</strong><img src="<?php echo G5_THEME_URL.'/mobile/skin/board/gallery/img/notice_img.png'.$config['cf_mobile_logo_file'] ?>">
+                    <?php
+                    } else {
+                        $thumb = get_list_thumbnail($board['bo_table'], $list[$i]['wr_id'], $board['bo_mobile_gallery_width'], $board['bo_mobile_gallery_height']);
+
+                        if($thumb['src']) {
+                            $img_content = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" width="'.$board['bo_mobile_gallery_width'].'" height="'.$board['bo_mobile_gallery_height'].'">';
+                        } else {
+                            $img_content = '<span class="no-img"><i class="fa fa-picture-o" aria-hidden="true"></i></span>';
+                        }
+
+                        echo $img_content;
+                    }
+                    ?>
+                    </a>
+                    <div class="gall_recomm">
                         <?php if ($is_good) { ?><span class="reco reco_good"><span class="sound_only">추천</span><strong><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <?php echo $list[$i]['wr_good'] ?></strong></span><?php } ?>
                         <?php if ($is_nogood) { ?><span class="reco reco_nogood"><span class="sound_only">비추천</span><strong><i class="fa fa-thumbs-o-down" aria-hidden="true"></i> <?php echo $list[$i]['wr_nogood'] ?></strong></span><?php } ?>
                     </div> 
-	            </div>
-	            
-	            <?php if ($is_category && $list[$i]['ca_name']) { ?>
+                </div>
+
+                <?php if ($is_category && $list[$i]['ca_name']) { ?>
                 <a href="<?php echo $list[$i]['ca_name_href'] ?>" class="bo_cate_link"><?php echo $list[$i]['ca_name'] ?></a>
                 <?php } ?>
-	            
+
                 <div class="gall_text_href">
                     <a href="<?php echo $list[$i]['href'] ?>" class="gall_li_tit">
-                    	<?php echo $list[$i]['subject'] ?>
-                    	<?php if ($list[$i]['comment_cnt']) { ?><span class="sound_only">댓글</span><?php echo $list[$i]['comment_cnt']; ?><span class="sound_only">개</span><?php } ?>
-						<?php if ($list[$i]['icon_new']) { ?>
-			            <span class="new_icon">N<span class="sound_only">새글</span></span>
-				        <?php } ?>
-					</a>
+                        <?php echo $list[$i]['subject'] ?>
+                        <?php if ($list[$i]['comment_cnt']) { ?><span class="sound_only">댓글</span><?php echo $list[$i]['comment_cnt']; ?><span class="sound_only">개</span><?php } ?>
+                        <?php if ($list[$i]['icon_new']) { ?>
+                        <span class="new_icon">N<span class="sound_only">새글</span></span>
+                        <?php } ?>
+                    </a>
                     <div class="gall_writer">      
-	                    <span class="sound_only">작성자 </span><?php echo $list[$i]['name'] ?>
-						<?php
-	                    // if ($list[$i]['link']['count']) { echo '['.$list[$i]['link']['count']}.']'; }
-	                    // if ($list[$i]['file']['count']) { echo '<'.$list[$i]['file']['count'].'>'; }
-	                    if (isset($list[$i]['icon_hot'])) echo $list[$i]['icon_hot'];
-	                    //if (isset($list[$i]['icon_file'])) echo $list[$i]['icon_file'];
-	                    //if (isset($list[$i]['icon_link'])) echo $list[$i]['icon_link'];
-	                    //if (isset($list[$i]['icon_secret'])) echo $list[$i]['icon_secret'];
-	                    ?>
-						<div class="gall_info">
-	                    	<span class="sound_only">작성일 </span><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo $list[$i]['datetime2'] ?></span>
-							<span class="sound_only">조회 </span><strong><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $list[$i]['wr_hit'] ?></strong>  
-						</div>
+                        <span class="sound_only">작성자 </span><?php echo $list[$i]['name'] ?>
+                        <?php
+                        // if ($list[$i]['link']['count']) { echo '['.$list[$i]['link']['count']}.']'; }
+                        // if ($list[$i]['file']['count']) { echo '<'.$list[$i]['file']['count'].'>'; }
+                        if (isset($list[$i]['icon_hot'])) echo $list[$i]['icon_hot'];
+                        //if (isset($list[$i]['icon_file'])) echo $list[$i]['icon_file'];
+                        //if (isset($list[$i]['icon_link'])) echo $list[$i]['icon_link'];
+                        //if (isset($list[$i]['icon_secret'])) echo $list[$i]['icon_secret'];
+                        ?>
+                        <div class="gall_info">
+                            <span class="sound_only">작성일 </span><span class="date"><i class="fa fa-calendar" aria-hidden="true"></i> <?php echo $list[$i]['datetime2'] ?></span>
+                            <span class="sound_only">조회 </span><strong><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $list[$i]['wr_hit'] ?></strong>  
+                        </div>
                     </div>               
                 </div>
             </div>
