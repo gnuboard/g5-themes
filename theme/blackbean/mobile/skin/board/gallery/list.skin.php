@@ -31,40 +31,40 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <?php } ?>
     
     <div id="bo_top_option">
-	    <div id="bo_list_total">
-		    <span>전체 <?php echo number_format($total_count) ?>건</span>
-		    <?php echo $page ?> 페이지
-		</div>
-		
-		<?php if ($rss_href || $write_href) { ?>
-		<ul class="<?php echo isset($view) ? 'view_is_list btn_top' : 'btn_top top btn_bo_user';?>">
-			<?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin btn2" title="관리자"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
-		    <?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01 btn2" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i><span class="sound_only">RSS</span></a></li><?php } ?>
-		    <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="fix_btn btn_b01 btn2 write_btn" title="글쓰기"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">글쓰기</span></a></li><?php } ?>
-			<?php if ($is_admin == 'super' || $is_auth) {  ?>
-			<li>
-				<button type="button" class="btn_more_opt btn_b01 btn2 is_list_btn" title="게시판 리스트 옵션"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">게시판 리스트 옵션</span></button>
-				<?php if ($is_checkbox) { ?>	
-		        <ul class="more_opt is_list_btn">
-		            <li><button type="submit" name="btn_submit" value="선택삭제" onclick="document.pressed=this.value"><i class="fa fa-trash-o" aria-hidden="true"></i> 선택삭제</button></li>
-		            <li><button type="submit" name="btn_submit" value="선택복사" onclick="document.pressed=this.value"><i class="fa fa-files-o" aria-hidden="true"></i> 선택복사</button></li>
-		            <li><button type="submit" name="btn_submit" value="선택이동" onclick="document.pressed=this.value"><i class="fa fa-arrows" aria-hidden="true"></i> 선택이동</button></li>
-		        </ul>
-		        <?php } ?>
-			</li>
-		    <?php } ?>
-		</ul>
-		<?php } ?>
-	</div>
+        <div id="bo_list_total">
+            <span>전체 <?php echo number_format($total_count) ?>건</span>
+            <?php echo $page ?> 페이지
+        </div>
+        
+        <?php if ($rss_href || $write_href) { ?>
+        <ul class="<?php echo isset($view) ? 'view_is_list btn_top' : 'btn_top top btn_bo_user';?>">
+            <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin btn2" title="관리자"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
+            <?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01 btn2" title="RSS"><i class="fa fa-rss" aria-hidden="true"></i><span class="sound_only">RSS</span></a></li><?php } ?>
+            <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="fix_btn btn_b01 btn2 write_btn" title="글쓰기"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">글쓰기</span></a></li><?php } ?>
+            <?php if ($is_admin == 'super' || $is_auth) {  ?>
+            <li>
+                <button type="button" class="btn_more_opt btn_b01 btn2 is_list_btn" title="게시판 리스트 옵션"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">게시판 리스트 옵션</span></button>
+                <?php if ($is_checkbox) { ?>	
+                <ul class="more_opt is_list_btn">
+                    <li><button type="submit" name="btn_submit" value="선택삭제" onclick="document.pressed=this.value"><i class="fa fa-trash-o" aria-hidden="true"></i> 선택삭제</button></li>
+                    <li><button type="submit" name="btn_submit" value="선택복사" onclick="document.pressed=this.value"><i class="fa fa-files-o" aria-hidden="true"></i> 선택복사</button></li>
+                    <li><button type="submit" name="btn_submit" value="선택이동" onclick="document.pressed=this.value"><i class="fa fa-arrows" aria-hidden="true"></i> 선택이동</button></li>
+                </ul>
+                <?php } ?>
+            </li>
+            <?php } ?>
+        </ul>
+        <?php } ?>
+    </div>
 
     <h2>이미지 목록</h2>
 
     <?php if ($is_checkbox) { ?>
     <div id="gall_allchk" class="all_chk chk_box">
         <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);" class="selec_chk">
-    	<label for="chkall">
-        	<span></span>
-        	<b class="sound_only">현재 페이지 게시물 </b> 전체선택
+        <label for="chkall">
+            <span></span>
+            <b class="sound_only">현재 페이지 게시물 </b> 전체선택
         </label>
     </div>
     <?php } ?>

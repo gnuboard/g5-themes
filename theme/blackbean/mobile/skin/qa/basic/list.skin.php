@@ -25,41 +25,41 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
     
 	<div id="bo_top_option">
 		<div id="bo_list_total">
-		    <span>전체 <?php echo number_format($total_count) ?>건</span>
-		    <?php echo $page ?> 페이지
-		</div>
-	
-		<?php if ($admin_href || $write_href) { ?>
-		<ul class="btn_top top btn_bo_user">
-		    <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin btn"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
-			<?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="fix_btn btn_b01 btn2"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">문의등록</span></a></li><?php } ?>
-			<?php if ($is_admin == 'super' || $is_auth) {  ?>
-			<li>
-				<button type="button" class="btn_more_opt btn_b01 btn2"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">게시판 리스트 옵션</span></button>
-				<?php if ($is_checkbox) { ?>	
-		        <ul class="more_opt">
-		            <li><button type="submit" name="btn_submit" value="선택삭제" onclick="document.pressed=this.value"><i class="fa fa-trash-o" aria-hidden="true"></i> 선택삭제</button></li>
-		        </ul>
-		        <?php } ?>
-		
-		        <script>
-		        // 게시판 리스트 관리자 옵션
-				$(".btn_more_opt").on("click", function() {
-				    $(".more_opt").toggle();
-				})
-				</script>
-			</li>
-			<?php } ?>
-		</ul>
-		<?php } ?>
-	</div>
+            <span>전체 <?php echo number_format($total_count) ?>건</span>
+            <?php echo $page ?> 페이지
+        </div>
+
+        <?php if ($admin_href || $write_href) { ?>
+        <ul class="btn_top top btn_bo_user">
+            <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin btn"><i class="fa fa-cog fa-spin fa-fw"></i><span class="sound_only">관리자</span></a></li><?php } ?>
+            <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="fix_btn btn_b01 btn2"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">문의등록</span></a></li><?php } ?>
+            <?php if ($is_admin == 'super' || $is_auth) {  ?>
+            <li>
+                <button type="button" class="btn_more_opt btn_b01 btn2"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">게시판 리스트 옵션</span></button>
+                <?php if ($is_checkbox) { ?>
+                <ul class="more_opt">
+                    <li><button type="submit" name="btn_submit" value="선택삭제" onclick="document.pressed=this.value"><i class="fa fa-trash-o" aria-hidden="true"></i> 선택삭제</button></li>
+                </ul>
+                <?php } ?>
+
+                <script>
+                // 게시판 리스트 관리자 옵션
+                $(".btn_more_opt").on("click", function() {
+                    $(".more_opt").toggle();
+                })
+                </script>
+            </li>
+            <?php } ?>
+        </ul>
+        <?php } ?>
+    </div>
 
     <?php if ($is_checkbox) { ?>
     <div class="all_chk chk_box">
         <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);" class="selec_chk">
         <label for="chkall">
-        	<span></span>
-        	<b class="sound_only">현재 페이지 게시물 </b> 전체선택
+            <span></span>
+            <b class="sound_only">현재 페이지 게시물 </b> 전체선택
         </label>
     </div>
     <?php } ?>
@@ -73,16 +73,16 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
                 <?php if ($is_checkbox) { ?>
                 <div class="bo_chk chk_box">
                     <input type="checkbox" name="chk_qa_id[]" value="<?php echo $list[$i]['qa_id'] ?>" id="chk_qa_id_<?php echo $i ?>" class="selec_chk">
-                	<label for="chk_qa_id_<?php echo $i ?>">
-                    	<span></span>
-                    	<b class="sound_only"><?php echo $list[$i]['subject'] ?></b>
+                    <label for="chk_qa_id_<?php echo $i ?>">
+                        <span></span>
+                        <b class="sound_only"><?php echo $list[$i]['subject'] ?></b>
                     </label>
                 </div>
                 <?php } ?>
                 <div class="bo_cnt">
-                	<div>
-                		<strong class="bo_cate_link"><?php echo $list[$i]['category']; ?></strong>	
-                	</div>
+                    <div>
+                        <strong class="bo_cate_link"><?php echo $list[$i]['category']; ?></strong>
+                    </div>
                     <a href="<?php echo $list[$i]['view_href']; ?>" class="bo_subject">
                         <?php echo $list[$i]['subject']; ?>
                         <?php if ($list[$i]['icon_file']) echo " <i class=\"fa fa-download\" aria-hidden=\"true\"></i>" ; ?>

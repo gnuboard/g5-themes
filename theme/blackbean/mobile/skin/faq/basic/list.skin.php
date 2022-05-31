@@ -58,12 +58,10 @@ if( count($faq_master_list) ){
             ?>
             <li>
                 <h3>
-                	<span class="tit_bg">Q</span><a href="#none" onclick="return faq_open(this);"><?php echo conv_content($v['fa_subject'], 1); ?></a>
-                	<button class="tit_btn" onclick="return faq_open(this);"><i class="fa fa-plus" aria-hidden="true"></i><span class="sound_only">열기</span></button>
+                    <a href="#none" onclick="return faq_open(this);"><span class="tit_bg">Q</span><?php echo conv_content($v['fa_subject'], 1); ?></a>
                 </h3>
                 <div class="con_inner">
                     <?php echo conv_content($v['fa_content'], 1); ?>
-                    <button type="button" class="closer_btn"><i class="fa fa-minus" aria-hidden="true"></i><span class="sound_only">닫기</span></button>
                 </div>
             </li>
             <?php
