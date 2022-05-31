@@ -12,36 +12,37 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
 <article id="bo_v">
 	<div class="bo_v_wr">
 		<header>
-	        <h2 id="bo_v_title">
-	            <span><?php echo $view['category'] ; // 분류 출력 끝 ?></span>
-	            <?php echo $view['subject']; // 글제목 출력  ?>
-	        </h2>
-	    </header>
+            <h2 id="bo_v_title">
+                <span><?php echo $view['category'] ; // 분류 출력 끝 ?></span>
+                <?php echo $view['subject']; // 글제목 출력  ?>
+            </h2>
+        </header>
         <section id="bo_v_info">
-	        <h2>페이지 정보</h2>
-	        <span class="sound_only">작성자</span><strong><?php echo $view['name'] ?></strong>
-	        <span class="sound_only">작성일</span><strong><i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $view['datetime']; ?></strong>
-			
-			<button class="bo_v_opt"><span class="sound_only">게시물 옵션</span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
-			<ul id="bo_v_opt" class="bo_v_com">
-	        	<?php if ($delete_href) { ?><li><a href="<?php echo $delete_href ?>" onclick="del(this.href); return false;"><i class="fa fa-trash-o" aria-hidden="true"></i> 삭제</a></li><?php } ?>
-				<?php if ($update_href) { ?><li><a href="<?php echo $update_href ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 수정</a></li><?php } ?>
-			</ul>
-			
-			<script>
-			//게시글 옵션
-		    $(".bo_v_opt").click(function(){
-		        $("#bo_v_opt").fadeIn();
-	
-		    });
-	
-		    $(document).mouseup(function (e) {
-		        var container = $("#bo_v_opt");
-		        if (!container.is(e.target) && container.has(e.target).length === 0){
-		        container.css("display","none");
-		        }
-		    });
-			</script>
+            <h2>페이지 정보</h2>
+            <span class="sound_only">작성자</span><strong><?php echo $view['name'] ?></strong>
+            <span class="sound_only">작성일</span><strong><i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $view['datetime']; ?></strong>
+            
+            <?php if ($delete_href || $update_href) { ?>
+            <button class="bo_v_opt"><span class="sound_only">게시물 옵션</span><i class="fa fa-ellipsis-v" aria-hidden="true"></i></button>
+            <ul id="bo_v_opt" class="bo_v_com">
+                <?php if ($delete_href) { ?><li><a href="<?php echo $delete_href ?>" onclick="del(this.href); return false;"><i class="fa fa-trash-o" aria-hidden="true"></i> 삭제</a></li><?php } ?>
+                <?php if ($update_href) { ?><li><a href="<?php echo $update_href ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 수정</a></li><?php } ?>
+            </ul>
+            <?php } ?>
+
+            <script>
+            //게시글 옵션
+            $(".bo_v_opt").click(function(){
+                $("#bo_v_opt").fadeIn();
+            });
+
+            $(document).mouseup(function (e) {
+                var container = $("#bo_v_opt");
+                if (!container.is(e.target) && container.has(e.target).length === 0){
+                container.css("display","none");
+                }
+            });
+            </script>
 		</section>
 		
 		<?php if($view['email'] || $view['hp']) { ?>
@@ -61,75 +62,75 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
         <?php } ?>
         
         <section id="bo_v_atc">
-        	<h2 id="bo_v_atc_title">본문</h2>
-        	
-        	<?php
-	        // 파일 출력
-	        if($view['img_count']) {
-	            echo "<div id=\"bo_v_img\">\n";
-	
-	            for ($i=0; $i<$view['img_count']; $i++) {
-	                //echo $view['img_file'][$i];
-	                echo get_view_thumbnail($view['img_file'][$i], $qaconfig['qa_image_width']);
-	            }
-	
-	            echo "</div>\n";
-	        }
-			?>
-			
-			<!-- 본문 내용 시작 { -->
-	        <div id="bo_v_con"><?php echo get_view_thumbnail($view['content'], $qaconfig['qa_image_width']); ?></div>
-	        <!-- } 본문 내용 끝 -->
-	        
-	        <?php if($view['qa_type']) { ?>
-	        <div><a href="<?php echo $rewrite_href; ?>" class="btn_b01">추가질문</a></div>
-	        <?php } ?>
-	        
-	        <?php if($view['download_count']) { ?>
-	        <!-- 첨부파일 시작 { -->
-	        <section id="bo_v_file">
-	            <h2>첨부파일</h2>
-	            <ul>
-	            <?php
-	            // 가변 파일
-	            for ($i=0; $i<$view['download_count']; $i++) {
-	             ?>
-	                <li>
-	                    <a href="<?php echo $view['download_href'][$i];  ?>" class="view_file_download">
-	                        <img src="<?php echo $qa_skin_url ?>/img/icon_file.gif" alt="첨부">
-	                        <strong><?php echo $view['download_source'][$i] ?></strong>
-	                    </a>
-	                </li>
-	            <?php
-	            }
-	             ?>
-	            </ul>
-	        </section>
-	        <!-- } 첨부파일 끝 -->
-	        <?php } ?>
-	    </section>
+            <h2 id="bo_v_atc_title">본문</h2>
+
+            <?php
+            // 파일 출력
+            if($view['img_count']) {
+                echo "<div id=\"bo_v_img\">\n";
+
+                for ($i=0; $i<$view['img_count']; $i++) {
+                    //echo $view['img_file'][$i];
+                    echo get_view_thumbnail($view['img_file'][$i], $qaconfig['qa_image_width']);
+                }
+
+                echo "</div>\n";
+            }
+            ?>
+
+            <!-- 본문 내용 시작 { -->
+            <div id="bo_v_con"><?php echo get_view_thumbnail($view['content'], $qaconfig['qa_image_width']); ?></div>
+            <!-- } 본문 내용 끝 -->
+
+            <?php if($view['qa_type']) { ?>
+            <div><a href="<?php echo $rewrite_href; ?>" class="btn_b01">추가질문</a></div>
+            <?php } ?>
+
+            <?php if($view['download_count']) { ?>
+            <!-- 첨부파일 시작 { -->
+            <section id="bo_v_file">
+                <h2>첨부파일</h2>
+                <ul>
+                <?php
+                // 가변 파일
+                for ($i=0; $i<$view['download_count']; $i++) {
+                ?>
+                    <li>
+                        <a href="<?php echo $view['download_href'][$i];  ?>" class="view_file_download">
+                            <img src="<?php echo $qa_skin_url ?>/img/icon_file.gif" alt="첨부">
+                            <strong><?php echo $view['download_source'][$i] ?></strong>
+                        </a>
+                    </li>
+                <?php
+                }
+                ?>
+                </ul>
+            </section>
+            <!-- } 첨부파일 끝 -->
+            <?php } ?>
+        </section>
     </div>
     
     <div class="btn_top top">
         <ul>
-             <li><a href="<?php echo $list_href ?>" class="btn_b01">목록</a></li>
+            <li><a href="<?php echo $list_href ?>" class="btn_b01">목록</a></li>
             <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b02">글쓰기</a></li><?php } ?>
         </ul>
     </div>	    
-	
-	<?php
-	// 질문글에서 답변이 있으면 답변 출력, 답변이 없고 관리자이면 답변등록폼 출력
-	if(!$view['qa_type']) {
-	    if($view['qa_status'] && $answer['qa_id'])
-	        include_once($qa_skin_path.'/view.answer.skin.php');
-	    else
-	        include_once($qa_skin_path.'/view.answerform.skin.php');
-	}
-	?>
-	
-	<?php if($view['rel_count']) { ?>
-	<section id="bo_v_rel">
-	    <h2>연관질문</h2>
+
+    <?php
+    // 질문글에서 답변이 있으면 답변 출력, 답변이 없고 관리자이면 답변등록폼 출력
+    if(!$view['qa_type']) {
+        if($view['qa_status'] && $answer['qa_id'])
+            include_once($qa_skin_path.'/view.answer.skin.php');
+        else
+            include_once($qa_skin_path.'/view.answerform.skin.php');
+    }
+    ?>
+
+    <?php if($view['rel_count']) { ?>
+    <section id="bo_v_rel">
+        <h2>연관질문</h2>
         <ul>
         <?php
             for($i=0; $i<$view['rel_count']; $i++) {
@@ -137,8 +138,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
             <li>
                 <div class="li_title">
                     <a href="<?php echo $rel_list[$i]['view_href']; ?>" class="li_sbj">
-                    	<span class="li_stat <?php echo ($list[$i]['qa_status'] ? 'txt_done' : 'txt_rdy'); ?>"><?php echo ($rel_list[$i]['qa_status'] ? '답변완료' : '답변대기'); ?></span>
-                    	<strong><?php echo get_text($rel_list[$i]['category']); ?></strong>
+                        <span class="li_stat <?php echo ($list[$i]['qa_status'] ? 'txt_done' : 'txt_rdy'); ?>"><?php echo ($rel_list[$i]['qa_status'] ? '답변완료' : '답변대기'); ?></span>
+                        <strong><?php echo get_text($rel_list[$i]['category']); ?></strong>
                         <?php echo $rel_list[$i]['subject']; ?>
                         <span class="li_date"><?php echo $rel_list[$i]['date']; ?></span>
                     </a>

@@ -48,7 +48,7 @@
 #poll .click_on {color:#f68931}
 #poll .click_on i {color:#f68931}
 
-#poll li {position:relative;padding:10px;color:#697884;border:1px solid #e6e9ed;border-top:0}
+#poll li {position:relative;padding:10px;color:#697884;border:1px solid #e6e9ed;border-top:0;cursor:pointer;}
 #poll li:first-child {margin-top:-1px}
 #poll li i {display:inline-block;float:right;font-size:1.2em}
 #poll li:hover {color:#f68931}

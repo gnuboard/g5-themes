@@ -116,16 +116,18 @@
 #fregisterform #mb_addr_jibeon {display:block;margin:5px 0 0}
 
 #fregisterform:after {display:block;visibility:hidden;clear:both;content:""}
+#fregisterform .form_01 div, #fregisterform .form_01 .filebox, #fregisterform .form_01 .chk_box {text-align:left;}
 #fregisterform .form_01 h2 {padding:15px;background:#317af6;color:#fff;font-size:1.167em;text-align:left}
-#fregisterform .form_01 label {float:left;width:25%;padding:10px 0;text-align:left}
-#fregisterform .form_01 input {float:left;width:75%;margin-bottom:5px;background:#f1f3f6;border-radius:3px}
+#fregisterform .form_01 input {width:100%;margin-bottom:5px;background:#f1f3f6;border-radius:3px}
+#fregisterform .form_01 input[type=checkbox] {width:auto;margin:0;}
 #fregisterform .form_01 #reg_mb_zip {width:55%}
 #fregisterform .form_01:after {display:block;visibility:hidden;clear:both;content:""}
-#fregisterform .frm_info {display:block;padding:5px 0;margin-left:27%;text-align:left;color:#317af6;font-size:0.92em}
+#fregisterform .frm_info {display:block;padding:5px 0;text-align:left;color:#317af6;font-size:0.92em}
 #fregisterform .frm_center {margin-left:0 !important;text-align:center;margin:5px 0}
 #fregisterform .btn_frmline2 {display:inline-block;float:left;margin-left:5px;padding:0 5px;height:40px;border:0;background:#1ec679;border:1px solid #12b46a;color:#fff;text-decoration:none;vertical-align:top;border-radius:3px}
-#fregisterform .btn_frmline {height:40px;padding:0 10px}
+#fregisterform .btn_frmline {height:40px;padding:0 10px;color:#000;}
 #fregisterform .rgs_name_li button {margin:5px 0 0}
+#fregisterform .chk_li {display: inline-block;}
 
 .btn_confirm {text-align:center;margin:20px 0}
 .btn_confirm .btn_submit {height:45px;padding:0 30px;font-weight:bold;font-size:1.083em}
