@@ -8,7 +8,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
 <!-- 회원가입결과 시작 { -->
 <div id="reg_result" class="register">
     <p class="reg_result_p">
-    	<i class="fa fa-gift" aria-hidden="true"></i><br>
+        <i class="fa fa-gift" aria-hidden="true"></i><br>
         <strong><?php echo get_text($mb['mb_name']); ?></strong>님의 회원가입을 진심으로 축하합니다.
     </p>
 

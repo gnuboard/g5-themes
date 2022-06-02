@@ -20,10 +20,10 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <section id="about" class="about">
     <div class="container">
-    	<div class="row justify-content-center text-center">
-			<div class="col-xl-8 col-lg-9">
-            	<h2 class="display-4 mx-xl-6 text-center">ABOUT</h2>
-            	<p class="lead">안녕하세요 ○○○ 입니다.</p>
+        <div class="row justify-content-center text-center">
+            <div class="col-xl-8 col-lg-9">
+                <h2 class="display-4 mx-xl-6 text-center">ABOUT</h2>
+                <p class="lead">안녕하세요 ○○○ 입니다.</p>
 			</div>
 		</div>
 		<div class="row">
@@ -65,65 +65,65 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <section id="resume" class="resume">
     <div class="container">
-    	<div class="row justify-content-center text-center">
-        	<div class="col-xl-8 col-lg-9">
-            	<h2 class="display-4 mx-xl-6">RESUME</h2>
-            	<p class="lead">포트폴리오 테마 이력입니다.</p>
-			</div>
+        <div class="row justify-content-center text-center">
+            <div class="col-xl-8 col-lg-9">
+                <h2 class="display-4 mx-xl-6">RESUME</h2>
+                <p class="lead">포트폴리오 테마 이력입니다.</p>
+            </div>
         </div>
         <div class="row text-center">
-	        <?php
-	        // 포트폴리오 게시판 테이블에서 제목 RESUME 을 가져옴
-	        $sql = " select * from ".G5_WRITE_PORTFOLIO_TABLE." where wr_subject = 'RESUME' ";
-	        $row = sql_fetch($sql);
-	        $arr = explode("\n", $row['wr_content']);
-	        $i=0;
+            <?php
+            // 포트폴리오 게시판 테이블에서 제목 RESUME 을 가져옴
+            $sql = " select * from ".G5_WRITE_PORTFOLIO_TABLE." where wr_subject = 'RESUME' ";
+            $row = sql_fetch($sql);
+            $arr = explode("\n", $row['wr_content']);
+            $i=0;
             $resume = array();
-	        foreach($arr as $str) {
-	            // 공백이 있는 라인으로 구분함
-	            if (trim($str) == '') {
-	                $i++;
-	            }
-	            $resume[$i] = $str."\n"; 
-	        }
-	        $education  = explode("\n", $resume[0]);
-	        $license    = explode("\n", $resume[1]);
-	        $experience = explode("\n", $resume[2]);
-	        ?>
-	        <dl class="col-md-4 col-lg-4 aos-init aos-animate re_edu text-center" data-aos="fade-up" data-aos-delay="100">
-	            <dt>Education</dt>
-	            <?php
-	            foreach($education as $str){
-	                echo '<dd>'.$str.'</dd>';
-	            }
-	            ?>
-	        </dl>   
-	        <dl class="col-md-4 col-lg-4 aos-init aos-animate re_lic text-center" data-aos="fade-up" data-aos-delay="100">
-	            <dt>License</dt>
-	            <?php
-	            foreach($license as $str){
-	                echo '<dd>'.$str.'</dd>';
-	            }
-	            ?>
-	        </dl>
-	        <dl class="col-md-4 col-lg-4 aos-init aos-animate re_exp text-center" data-aos="fade-up" data-aos-delay="100">
-	            <dt>Experience</dt>
-	            <?php
-	            foreach($experience as $str){
-	                echo '<dd>'.$str.'</dd>';
-	            }
-	            ?>
-	        </dl>
+            foreach($arr as $str) {
+                // 공백이 있는 라인으로 구분함
+                if (trim($str) == '') {
+                    $i++;
+                }
+                $resume[$i] = $str."\n";
+            }
+            $education  = explode("\n", $resume[0]);
+            $license    = explode("\n", $resume[1]);
+            $experience = explode("\n", $resume[2]);
+            ?>
+            <dl class="col-md-4 col-lg-4 aos-init aos-animate re_edu text-center" data-aos="fade-up" data-aos-delay="100">
+                <dt>Education</dt>
+                <?php
+                foreach($education as $str){
+                    echo '<dd>'.$str.'</dd>';
+                }
+                ?>
+            </dl>
+            <dl class="col-md-4 col-lg-4 aos-init aos-animate re_lic text-center" data-aos="fade-up" data-aos-delay="100">
+                <dt>License</dt>
+                <?php
+                foreach($license as $str){
+                    echo '<dd>'.$str.'</dd>';
+                }
+                ?>
+            </dl>
+            <dl class="col-md-4 col-lg-4 aos-init aos-animate re_exp text-center" data-aos="fade-up" data-aos-delay="100">
+                <dt>Experience</dt>
+                <?php
+                foreach($experience as $str){
+                    echo '<dd>'.$str.'</dd>';
+                }
+                ?>
+            </dl>
         </div>
-	</div>
+    </div>
 </section>
         
 <section id="skills" class="skills">
     <div class="container">
         <div class="row justify-content-center text-center">
-        	<div class="col-xl-8 col-lg-9">
-            	<h2 class="display-4 mx-xl-6">SKILLS</h2>
-            	<p class="lead">포트폴리오 테마 기술 능력입니다.</p>
+            <div class="col-xl-8 col-lg-9">
+                <h2 class="display-4 mx-xl-6">SKILLS</h2>
+                <p class="lead">포트폴리오 테마 기술 능력입니다.</p>
 			</div>
         </div>
         <div class="row">
@@ -149,9 +149,9 @@ include_once(G5_THEME_PATH.'/head.php');
 <section id="news" class="news">
     <div class="container">
         <div class="row justify-content-center text-center">
-			<div class="col-xl-8 col-lg-9">
-            	<h2 class="display-4 mx-xl-6"><a href="<?php echo get_pretty_url('news'); ?>">NEWS</a></h2>
-            	<p class="lead">포트폴리오 테마 소식입니다.</p>
+            <div class="col-xl-8 col-lg-9">
+                <h2 class="display-4 mx-xl-6"><a href="<?php echo get_pretty_url('news'); ?>">NEWS</a></h2>
+                <p class="lead">포트폴리오 테마 소식입니다.</p>
 			</div>
         </div>
         <?php echo latest('theme/basic', 'news', 6, 25); ?>
@@ -160,10 +160,10 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <section id="work" class="work">
 	<div class="container">
-    	<div class="row justify-content-center text-center">
-			<div class="col-xl-8 col-lg-9">
-            	<h2 class="display-4 mx-xl-6"><a href="<?php echo get_pretty_url('works'); ?>">WORKS</a></h2>
-            	<p class="lead">포트폴리오 테마 갤러리 작업물입니다.</p>
+        <div class="row justify-content-center text-center">
+            <div class="col-xl-8 col-lg-9">
+                <h2 class="display-4 mx-xl-6"><a href="<?php echo get_pretty_url('works'); ?>">WORKS</a></h2>
+                <p class="lead">포트폴리오 테마 갤러리 작업물입니다.</p>
 			</div>
         </div>
 	</div>
@@ -187,10 +187,10 @@ include_once(G5_THEME_PATH.'/head.php');
 
 <section id="contact" class="contact">
     <div class="container">
-		<div class="row justify-content-center text-center">
-			<div class="col-xl-8 col-lg-9">
-            	<h2 class="display-4 mx-xl-6">CONTACT</h2>
-            	<p class="lead">연락처를 남겨주세요.</p>
+        <div class="row justify-content-center text-center">
+            <div class="col-xl-8 col-lg-9">
+                <h2 class="display-4 mx-xl-6">CONTACT</h2>
+                <p class="lead">연락처를 남겨주세요.</p>
 			</div>
         </div>
         <div id="contact_from" data-aos="flip-left" class="container">
@@ -198,23 +198,23 @@ include_once(G5_THEME_PATH.'/head.php');
                 <fieldset id="contact_fs">
                     <legend>Contact</legend>             
                     <p>
-                    	<label for="con_name">이름</label>
-                    	<input type="text" name="con_name" id="con_name" required class="frm_input required" minlength="2" maxlength="100" placeholder=" 보내실 분의 이름을 입력해 주세요.">
+                        <label for="con_name">이름</label>
+                        <input type="text" name="con_name" id="con_name" required class="frm_input required" minlength="2" maxlength="100" placeholder=" 보내실 분의 이름을 입력해 주세요.">
                     </p>
                     <p>
-                    	<label for="con_name">이메일</label>
-                    	<input type="text" name="con_email" id="con_email" required class="frm_input required email" maxlength="100" placeholder=" 보내실 분의 이메일을 입력해 주세요.">
+                        <label for="con_name">이메일</label>
+                        <input type="text" name="con_email" id="con_email" required class="frm_input required email" maxlength="100" placeholder=" 보내실 분의 이메일을 입력해 주세요.">
                     </p>
                     <p>
-                    	<label for="con_tel">연락처</label>
-                    	<input type="text" name="con_tel" id="con_tel" required class="frm_input required telnum" maxlength="20" placeholder=" 예) 010-1234-5678">
+                        <label for="con_tel">연락처</label>
+                        <input type="text" name="con_tel" id="con_tel" required class="frm_input required telnum" maxlength="20" placeholder=" 예) 010-1234-5678">
                     </p>
                     <p>
-                    	<label for="con_message">메시지</label>
-                    	<textarea name="con_message" rows="10" cols="100%" id="con_message" title="내용쓰기" required class="required" placeholder=" 내용을 입력해주세요."></textarea>
+                        <label for="con_message">메시지</label>
+                        <textarea name="con_message" rows="10" cols="100%" id="con_message" title="내용쓰기" required class="required" placeholder=" 내용을 입력해주세요."></textarea>
                     </p>
                     <p class="captcha">
-                    	<?php echo captcha_html(); ?>
+                        <?php echo captcha_html(); ?>
                     </p>
                     <button type="submit" id="btn_submit" class="btn_submit">보내기</button>
                 </fieldset>
@@ -242,7 +242,7 @@ include_once(G5_THEME_PATH.'/head.php');
         //var container_top = $("#container").position().top;
         //console.log( container_top );
         //$("html, body").animate({scrollTop:0}, '500');
-       
+
         $(".sub_sbtn").on("click", function() {
             $("html, body").animate({scrollTop:0}, '500');
             return false;
