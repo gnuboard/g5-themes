@@ -14,15 +14,17 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
     <li><a href="<?php echo $write_href ?>" class="btn_b03 btn"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">글쓰기</a></li>
     <?php } ?>
 	<li>
-		<button type="button" class="btn_more_opt btn_b03 btn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">게시판 리스트 옵션</span></button>
-    	<?php ob_start(); ?>
+        <?php if ($delete_href || $update_href) { ?>
+        <button type="button" class="btn_more_opt btn_b03 btn"><i class="fa fa-ellipsis-v" aria-hidden="true"></i><span class="sound_only">게시판 리스트 옵션</span></button>
+        <?php ob_start(); ?>
         <ul class="more_opt">
-        	<?php if ($delete_href) { ?><li><a href="<?php echo $delete_href ?>" onclick="del(this.href); return false;"><i class="fa fa-trash-o" aria-hidden="true"></i> 삭제</a></li><?php } ?>
+            <?php if ($delete_href) { ?><li><a href="<?php echo $delete_href ?>" onclick="del(this.href); return false;"><i class="fa fa-trash-o" aria-hidden="true"></i> 삭제</a></li><?php } ?>
 			<?php if ($update_href) { ?><li><a href="<?php echo $update_href ?>"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> 수정</a></li><?php } ?>
 		</ul>
 		<?php
         $link_buttons = ob_get_contents();
         ob_end_flush();
+        }
 		?>
 	</li>
 </ul>
@@ -41,12 +43,12 @@ $(".btn_more_opt").on("click", function() {
             <span class="bo_v_tit"><?php echo $view['subject']; // 글제목 출력  ?></span>
         </h2>
         <div id="bo_v_info">
-	        <h2>페이지 정보</h2>
+            <h2>페이지 정보</h2>
 
-	        <span class="sound_only">작성자</span><strong><?php echo $view['name'] ?></strong>
-	        <span class="sound_only">작성일</span><strong><i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $view['datetime']; ?></strong>
+            <span class="sound_only">작성자</span><strong><?php echo $view['name'] ?></strong>
+            <span class="sound_only">작성일</span><strong><i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $view['datetime']; ?></strong>
 
-		</div>
+        </div>
 		<?php if($view['email'] || $view['hp']) { ?>
         <div id="bo_v_contact">
             <h2>연락처정보</h2>
@@ -97,7 +99,7 @@ $(".btn_more_opt").on("click", function() {
             <?php
             // 가변 파일
             for ($i=0; $i<$view['download_count']; $i++) {
-             ?>
+            ?>
                 <li>
                     <a href="<?php echo $view['download_href'][$i];  ?>" class="view_file_download">
                         <img src="<?php echo $qa_skin_url ?>/img/icon_file.gif" alt="첨부">
@@ -106,7 +108,7 @@ $(".btn_more_opt").on("click", function() {
                 </li>
             <?php
             }
-             ?>
+            ?>
             </ul>
         </section>
         <!-- } 첨부파일 끝 -->

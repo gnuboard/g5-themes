@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* ### 기본 스타일 커스터마이징 시작 ### */
-.mbskin {text-align:center;margin:20px auto}
+.mbskin {text-align:center;margin:20px auto;max-width: 320px;box-sizing:border-box;}
 .mbskin h1 {font-size:1.75em;margin:40px 0 25px}
 .mbskin p {padding-bottom:20px;border-bottom:1px solid #c8c8c8}
 .mbskin p strong {color:#4162ff;padding-bottom:5px;display:block;font-size:1.083em}
@@ -125,7 +125,7 @@
 .chk_box input[type="checkbox"] + label:hover{color:#2172f8}
 .chk_box input[type="checkbox"] + label span {position:absolute;top:1px;left:0;width:17px;height:17px;display:block;background:#fff;border:1px solid #d0d4df;border-radius:3px}
 .chk_box input[type="checkbox"]:checked + label {color:#000}
-.chk_box input[type="checkbox"]:checked + label span {background:url('./img/chk.png') no-repeat 50% 50% #7d7463;border-color:#1471f6;border-radius:3px}
+.chk_box input[type="checkbox"]:checked + label span {background:url('./img/chk.png') no-repeat 50% 50% #7d7463;border-color:#7d7463;border-radius:3px}
 .chk_li {padding-left:10px;line-height:20px}
 
 .selec_chk {position:absolute;top:0;left:0;width:0;height:0;opacity:0;outline:0;z-index:-1;overflow:hidden}
@@ -317,7 +317,7 @@
 /* 비밀글 비밀번호 확인 */
 #pw_confirm fieldset {position:relative;margin:0 0 5px;padding:15px 0;border-top:1px solid #fffefe}
 #pw_wr_password {width:100%}
-#pw_confirm .btn_submit {margin:5px 0;width:100%;border-radius:3px;height:45px;font-weight:bold;font-size:1.083em}
+#pw_confirm .btn_submit {margin:5px auto;width:100%;border-radius:3px;height:45px;font-weight:bold;font-size:1.083em}
 
 /* 폼메일 */
 #formmail #subject {width:100%}
