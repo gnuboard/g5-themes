@@ -1,4 +1,5 @@
-Theme Name: 포트폴리오 5.5
+Theme Name: 포트폴리오
+Theme URI: http://theme.sir.co.kr/gnuboard54/demo/portfolio54
 Maker: SIR
 Maker URI: http://sir.kr
 Version: 5.5.7
