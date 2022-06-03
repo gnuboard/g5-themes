@@ -169,7 +169,7 @@
 .filebox .fileName {display:inline-block;position:relative;width:100%;height:45px;padding-left:45px;line-height:30px;border:1px solid #d0d3db;background-color:#fff;color:red;vertical-align:middle;border-radius:0}
 .filebox input[type="file"] {position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
 
-#bo_w .btn_confirm {text-align:center;margin:20px 0}
+#bo_w .btn_confirm {width:100%;text-align:center;margin:20px 0}
 #bo_w .btn_submit {width:49%;height:45px;padding:0 30px;font-weight:bold;font-size:1.083em}
 #bo_w .btn_cancel {width:49%;line-height:45px;height:45px;padding:0 30px;font-weight:bold;font-size:1.083em;background:#fff;border-radius:3px;border:1px solid #dcdcdc}
 

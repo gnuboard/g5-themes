@@ -53,7 +53,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
                 <input type="email" name="qa_email" value="<?php echo get_text($write['qa_email']); ?>" id="qa_email" <?php echo $req_email; ?> class="<?php echo $req_email.' '; ?>frm_input full_input email" maxlength="100" placeholder="이메일">
                 <div class="chk_op chk_box">
 					<input type="checkbox" name="qa_email_recv" value="1" id="qa_email_recv" <?php if($write['qa_email_recv']) echo 'checked="checked"'; ?> class="selec_chk">
-                	<label for="qa_email_recv"><span></span>답변받기</label>                  
+                    <label for="qa_email_recv"><span></span>답변받기</label>                  
                 </div>
             </li>
             <?php } ?>
@@ -64,8 +64,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
                 <input type="text" name="qa_hp" value="<?php echo get_text($write['qa_hp']); ?>" id="qa_hp" <?php echo $req_hp; ?> class="<?php echo $req_hp.' '; ?>frm_input full_input" size="30" placeholder="휴대폰">
                 <?php if($qaconfig['qa_use_sms']) { ?>
                 <div class="chk_op chk_box">
-                	<input type="checkbox" name="qa_sms_recv" value="1" id="qa_sms_recv" <?php if($write['qa_sms_recv']) echo 'checked="checked"'; ?> class="selec_chk">
-                	<label for="qa_sms_recv"><span></span>답변등록 SMS알림 수신</label>                  
+                    <input type="checkbox" name="qa_sms_recv" value="1" id="qa_sms_recv" <?php if($write['qa_sms_recv']) echo 'checked="checked"'; ?> class="selec_chk">
+                    <label for="qa_sms_recv"><span></span>답변등록 SMS알림 수신</label>                  
                 </div>
                 <?php } ?>
             </li>
@@ -77,7 +77,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
             </li>
 
             <li>
-               <label for="qa_content" class="sound_only">내용<strong>필수</strong></label>
+            <label for="qa_content" class="sound_only">내용<strong>필수</strong></label>
                 <div class="wr_content">
                     <?php echo $editor_html; // 에디터 사용시는 에디터로, 아니면 textarea 로 노출 ?>
                 </div>
@@ -85,17 +85,17 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
 
             <li class="bo_w_flie">
                 <div class="file_wr filebox">
-                	<input type="text" class="fileName" readonly="readonly" placeholder="파일을 첨부하세요">
+                    <input type="text" class="fileName" readonly="readonly" placeholder="파일을 첨부하세요">
                     <label for="bf_file[1]"><i class="fa fa-download lb_icon" aria-hidden="true"></i><span class="sound_only">파일 #1</span><span class="btn_file">파일첨부</span></label>
                     <input type="file" name="bf_file[1]" id="bf_file[1]" title="파일첨부 1 :  용량 <?php echo $upload_max_filesize; ?> 이하만 업로드 가능" class="frm_file uploadBtn">
-                	<?php if($w == 'u' && $write['qa_file1']) { ?>
-                		<input type="checkbox" id="bf_file_del1" name="bf_file_del[1]" value="1">
-                		<label for="bf_file_del1"><?php echo $write['qa_source1']; ?> 파일 삭제</label>
-                	<?php } ?>
+                    <?php if($w == 'u' && $write['qa_file1']) { ?>
+                        <input type="checkbox" id="bf_file_del1" name="bf_file_del[1]" value="1">
+                        <label for="bf_file_del1"><?php echo $write['qa_source1']; ?> 파일 삭제</label>
+                    <?php } ?>
                 </div>
-				<br>
+                <br>
                 <div class="file_wr filebox">
-                	<input type="text" class="fileName" readonly="readonly" placeholder="파일을 첨부하세요">
+                    <input type="text" class="fileName" readonly="readonly" placeholder="파일을 첨부하세요">
                     <label for="bf_file[2]"><i class="fa fa-download lb_icon" aria-hidden="true"></i><span class="sound_only">파일 #2</span><span class="btn_file">파일첨부</span></label>
                     <input type="file" name="bf_file[2]" id="bf_file[2]" title="파일첨부 2 :  용량 <?php echo $upload_max_filesize; ?> 이하만 업로드 가능" class="frm_file uploadBtn">
                     <?php if($w == 'u' && $write['qa_file2']) { ?>
