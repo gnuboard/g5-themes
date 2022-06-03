@@ -54,6 +54,7 @@ $thumb_height = 180;
 				<?php
 				if ($list[$i]['comment_cnt'])  echo "
 	            <span class=\"lt_cmt\"><i class=\"fa fa-commenting-o\"></i> ".$list[$i]['comment_cnt']."</span>";
+				$content_length = 100;
 				?>
 			</div>
 			<div class="lat_detail">
