@@ -95,6 +95,7 @@
 #fregisterform .btn_confirm {text-align:center;margin:20px 0}
 #fregisterform .btn_confirm .btn_submit {width:49%;height:45px;padding:0 30px;font-weight:bold;font-size:1.083em}
 #fregisterform .btn_confirm .btn_cancel {width:49%;line-height:45px;height:45px;padding:0 30px;font-weight:bold;border-radius:3px;border:1px solid #dcdcdc;font-size:1.083em;background:#fff}
+#fregisterform .btn_confirm .btn_close {display:inline-block;height:45px;width:49%;overflow:hidden;cursor:pointer;line-height:45px;vertical-align:middle;}
 
 #fregisterform #reg_mb_email, #fregisterform .frm_address {width:100%}
 #fregisterform textarea {width:100%;height:84px}
@@ -108,7 +109,7 @@
 #fregisterform .form_01 h2 {font-size:1.167em;margin:0 0 5px}
 #fregisterform .frm_label {display:block;font-size:1.083em;margin:15px 0 5px;color:#555}
 #fregisterform .btn_frmline {width:70px;height:30px;line-height:30px;padding:0 10px;font-weight:bold}
-#fregisterform .rgs_name_li button {margin:5px 0 0}
+#fregisterform .rgs_name_li button {margin:5px 0 0;width: auto;}
 #fregisterform .reg_mb_img_file {margin-bottom:30px}
 #fregisterform .reg_mb_img_file img {max-width:100%;height:auto}
 

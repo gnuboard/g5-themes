@@ -19,9 +19,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
 
         <script>
         // 게시판 리스트 관리자 옵션
-		$(".btn_more_opt").on("click", function() {
-		    $(".more_opt").toggle();
-		})
+        $(".btn_more_opt").on("click", function() {
+            $(".more_opt").toggle();
+        })
 		</script>
 	</li>
 	<?php } ?>
@@ -50,8 +50,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
     <div class="all_chk chk_box">
         <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);" class="selec_chk">
         <label for="chkall">
-        	<span></span>
-        	<b class="sound_only">현재 페이지 게시물 </b> 전체선택
+            <span></span>
+            <b class="sound_only">현재 페이지 게시물 </b> 전체선택
         </label>
     </div>
     <?php } ?>
@@ -65,16 +65,16 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
                 <?php if ($is_checkbox) { ?>
                 <div class="bo_chk chk_box">
                     <input type="checkbox" name="chk_qa_id[]" value="<?php echo $list[$i]['qa_id'] ?>" id="chk_qa_id_<?php echo $i ?>" class="selec_chk">
-                	<label for="chk_qa_id_<?php echo $i ?>">
-                    	<span></span>
-                    	<b class="sound_only"><?php echo $list[$i]['subject'] ?></b>
+                    <label for="chk_qa_id_<?php echo $i ?>">
+                        <span></span>
+                        <b class="sound_only"><?php echo $list[$i]['subject'] ?></b>
                     </label>
                 </div>
                 <?php } ?>
                 <div class="bo_cnt">
-                	<div>
-                		<strong class="bo_cate_link"><?php echo $list[$i]['category']; ?></strong>	
-                	</div>
+                    <div>
+                        <strong class="bo_cate_link"><?php echo $list[$i]['category']; ?></strong>
+                    </div>
                     <a href="<?php echo $list[$i]['view_href']; ?>" class="bo_subject">
                         <?php echo $list[$i]['subject']; ?>
                         <?php if ($list[$i]['icon_file']) echo " <i class=\"fa fa-download\" aria-hidden=\"true\"></i>" ; ?>

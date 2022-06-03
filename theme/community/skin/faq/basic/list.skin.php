@@ -8,10 +8,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$faq_skin_url.'/style.css">', 0);
 <!-- FAQ 시작 { -->
 <?php
 if ($himg_src)
-    echo '<div id="faq_himg" class="faq_img"><img src="'.$himg_src.'" alt=""></div>';
+    // echo '<div id="faq_himg" class="faq_img"><img src="'.$himg_src.'" alt=""></div>';
 
 // 상단 HTML
-echo '<div id="faq_hhtml">'.conv_content($fm['fm_head_html'], 1).'</div>';
+// echo '<div id="faq_hhtml">'.conv_content($fm['fm_head_html'], 1).'</div>';
 ?>
 
 <fieldset id="faq_sch">
@@ -62,8 +62,8 @@ if( count($faq_master_list) ){
             ?>
             <li>
                 <h3>
-                	<span class="tit_bg">Q</span><a href="#none" onclick="return faq_open(this);"><?php echo conv_content($v['fa_subject'], 1); ?></a>
-                	<button class="tit_btn" onclick="return faq_open(this);"><i class="fa fa-plus" aria-hidden="true"></i><span class="sound_only">열기</span></button>
+                    <span class="tit_bg">Q</span><a href="#none" onclick="return faq_open(this);"><?php echo conv_content($v['fa_subject'], 1); ?></a>
+                    <button class="tit_btn" onclick="return faq_open(this);"><i class="fa fa-plus" aria-hidden="true"></i><span class="sound_only">열기</span></button>
                 </h3>
                 <div class="con_inner">
                     <?php echo conv_content($v['fa_content'], 1); ?>
@@ -94,10 +94,10 @@ if( count($faq_master_list) ){
 
 <?php
 // 하단 HTML
-echo '<div id="faq_thtml">'.conv_content($fm['fm_tail_html'], 1).'</div>';
+// echo '<div id="faq_thtml">'.conv_content($fm['fm_tail_html'], 1).'</div>';
 
 if ($timg_src)
-    echo '<div id="faq_timg" class="faq_img"><img src="'.$timg_src.'" alt=""></div>';
+    // echo '<div id="faq_timg" class="faq_img"><img src="'.$timg_src.'" alt=""></div>';
 ?>
 
 

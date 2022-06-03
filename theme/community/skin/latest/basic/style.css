@@ -1,6 +1,8 @@
 @charset "utf-8";
 
 /* 새글 스킨 (latest) */
+.latest_wr {display:flex;flex-flow:wrap;}
+.lt_wr {position:relative;margin: 10px 0 20px; width: 49%;}
 .lt {}
 .lt .lt_title {display:block;margin-bottom:15px;font-size:14px}
 .lt .lt_box {min-height:200px;border:1px solid #e8e8e8;padding:20px;background:#fff}

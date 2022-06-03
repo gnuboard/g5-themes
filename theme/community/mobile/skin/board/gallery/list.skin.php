@@ -55,9 +55,9 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <?php if ($is_checkbox) { ?>
     <div id="gall_allchk" class="all_chk chk_box">
         <input type="checkbox" id="chkall" onclick="if (this.checked) all_checked(true); else all_checked(false);" class="selec_chk">
-    	<label for="chkall">
-        	<span></span>
-        	<b class="sound_only">현재 페이지 게시물 </b> 전체선택
+        <label for="chkall">
+            <span></span>
+            <b class="sound_only">현재 페이지 게시물 </b> 전체선택
         </label>
     </div>
     <?php } ?>
@@ -70,10 +70,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 <?php if ($is_checkbox) { ?>
                 <span class="gall_li_chk chk_box">
                     <input type="checkbox" name="chk_wr_id[]" value="<?php echo $list[$i]['wr_id'] ?>" id="chk_wr_id_<?php echo $i ?>" class="selec_chk">
-                	<label for="chk_wr_id_<?php echo $i ?>">
-                		<span></span>
-                		<b class="sound_only"><?php echo $list[$i]['subject'] ?></b>
-                	</label>
+                    <label for="chk_wr_id_<?php echo $i ?>">
+                        <span></span>
+                        <b class="sound_only"><?php echo $list[$i]['subject'] ?></b>
+                    </label>
                 </span>
                 <?php } ?>
                 <span class="sound_only">
@@ -115,22 +115,22 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                         <?php if (isset($list[$i]['icon_secret'])) echo $list[$i]['icon_secret']; ?>
                         <?php echo $list[$i]['subject'] ?>
                         <?php if ($list[$i]['comment_cnt']) { ?>
-	                    <span class="bo_cmt">
-							<span class="sound_only">댓글</span>
-							<?php echo $list[$i]['comment_cnt']; ?>
-							<span class="sound_only">개</span>
-	                    </span>
-	                    <?php } ?>
-						<?php
-	                    // if ($list[$i]['file']['count']) { echo '<'.$list[$i]['file']['count'].'>'; }	
-	                    if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>";
-	                    if (isset($list[$i]['icon_hot'])) echo $list[$i]['icon_hot'];
-	                    //if (isset($list[$i]['icon_file'])) echo $list[$i]['icon_file'];
-	                    //if (isset($list[$i]['icon_link'])) echo $list[$i]['icon_link'];
-	                    ?>
-					</a>                  
+                        <span class="bo_cmt">
+                            <span class="sound_only">댓글</span>
+                            <?php echo $list[$i]['comment_cnt']; ?>
+                            <span class="sound_only">개</span>
+                        </span>
+                        <?php } ?>
+                        <?php
+                        // if ($list[$i]['file']['count']) { echo '<'.$list[$i]['file']['count'].'>'; }
+                        if ($list[$i]['icon_new']) echo "<span class=\"new_icon\">N<span class=\"sound_only\">새글</span></span>";
+                        if (isset($list[$i]['icon_hot'])) echo $list[$i]['icon_hot'];
+                        //if (isset($list[$i]['icon_file'])) echo $list[$i]['icon_file'];
+                        //if (isset($list[$i]['icon_link'])) echo $list[$i]['icon_link'];
+                        ?>
+                    </a>
                     <div class="gall_info">
-                    	<span class="sound_only">작성자 </span><?php echo $list[$i]['name'] ?>
+                        <span class="sound_only">작성자 </span><?php echo $list[$i]['name'] ?>
                         <span class="sound_only">작성일 </span><span class="date"><i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $list[$i]['datetime2'] ?></span>
                         <span class="sound_only">조회 </span><strong><i class="fa fa-eye" aria-hidden="true"></i> <?php echo $list[$i]['wr_hit'] ?></strong>
                         <?php if ($is_good) { ?><span class="sound_only">추천</span><strong><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> <?php echo $list[$i]['wr_good'] ?></strong><?php } ?>
