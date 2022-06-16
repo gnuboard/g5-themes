@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* 새글 스킨 (latest) */
+.lat {;margin:0 auto;max-width:1200px;;padding:10px;line-height:30px}
+.lt_wr{position:relative;padding-left:100px}
+.lat .lat_title {position:absolute;top:10px;left:0;font-size: 1.167em;line-height: 1em;font-weight:400}
+.lat li{font-size: 1.083em;font-weight:300}
+.lat li .new_icon{display:inline-block;line-height:16px;background:#f4af07;width:16px;text-align:center;font-size:10px;border-radius:3px;color:#fff}
