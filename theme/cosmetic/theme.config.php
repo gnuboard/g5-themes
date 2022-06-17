@@ -147,6 +147,7 @@ $theme_config = array(
     'ca_mobile_list_best_row'       => 3,       // 모바일 상품리스트 베스트상품 이미지 줄 수
 );
 
-
+define('G5_THEME_ADM_DIR', '/theme/cosmetic/theme_adm/footerinfo.php');
+define('G5_THEME_ADM_URL', G5_URL.'/'.G5_THEME_ADM_DIR);
 
 ?>
