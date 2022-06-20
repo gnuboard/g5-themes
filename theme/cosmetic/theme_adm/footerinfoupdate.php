@@ -1,10 +1,10 @@
 <?php
 include_once('./_common.php');
 
-@mkdir(G5_DATA_PATH."/cache/theme", G5_DIR_PERMISSION);
-@chmod(G5_DATA_PATH."/cache/theme", G5_DIR_PERMISSION);
-@mkdir(G5_DATA_PATH."/cache/theme/cosmetic", G5_DIR_PERMISSION);
-@chmod(G5_DATA_PATH."/cache/theme/cosmetic", G5_DIR_PERMISSION);
+@mkdir(G5_DATA_PATH."/theme", G5_DIR_PERMISSION);
+@chmod(G5_DATA_PATH."/theme", G5_DIR_PERMISSION);
+@mkdir(G5_DATA_PATH."/theme/cosmetic", G5_DIR_PERMISSION);
+@chmod(G5_DATA_PATH."/theme/cosmetic", G5_DIR_PERMISSION);
 
 $data = array();
 
@@ -22,10 +22,9 @@ if(!$tel)
     alert('전화번호를 입력해 주십시오.');
 
 
-
 $data = array('tel' => $tel, 'etc' => $etc, 'depositor' => $depositor, 'account' => $account);
 
-$save_file = G5_DATA_PATH.'/cache/theme/cosmetic/footerinfo.php';
+$save_file = G5_DATA_PATH.'/theme/cosmetic/footerinfo.php';
 
 // 캐시파일로 저장
 $cache_fwrite = true;
