@@ -11,17 +11,16 @@ include_once('./head.php');
 <div id="keyword" class="con_wr">
     <ol>
     <?php
-    $save_file = G5_DATA_PATH.'/cache/theme/cosmetic/keyword.php';
+    $save_file = G5_DATA_PATH.'/theme/cosmetic/keyword.php';
     if(is_file($save_file))
         include($save_file);
-
     for($i=0; $i<10; $i++) {
     ?>
         <li class="li_clear">
             <div class="li_wr">
                 <span class="rank"><?php echo ($i + 1); ?></span>
                 <label for="word_<?php echo $i; ?>" class="sound_only">검색어</label>
-                <input type="text" name="word[]" id="word_<?php echo $i; ?>" class="frm_input" value="<?php echo get_text($keyword[$i]); ?>">
+                <input type="text" name="word[]" id="word_<?php echo $i; ?>" class="frm_input" value="<?php if(isset($keyword[$i])){echo get_text($keyword[$i]);} else {}  ?>">
             </div>
         </li>
     <?php
