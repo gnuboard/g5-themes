@@ -36,7 +36,7 @@ $admin = get_admin("super");
         <h3>CS CENTER</h3>
         <div>
             <?php
-            $save_file = G5_DATA_PATH.'/cache/theme/cosmetic/footerinfo.php';
+            $save_file = G5_DATA_PATH.'/theme/cosmetic/footerinfo.php';
             if(is_file($save_file))
                 include($save_file);
             ?>
