@@ -1,7 +1,7 @@
 <?php
 include_once('./_common.php');
 
-$save_file = G5_DATA_PATH.'/cache/theme/cosmetic/keyword.php';
+$save_file = G5_DATA_PATH.'/theme/cosmetic/keyword.php';
 
 $count = count($_POST['word']);
 $words = array();
@@ -19,7 +19,7 @@ for($i=0; $i<$count; $i++) {
 $cache_fwrite = true;
 if($cache_fwrite) {
     $handle = fopen($save_file, 'w');
-    $cache_content = "<?php\nif (!defined('_GNUBOARD_')) exit;";
+    $cache_content = "<?php \n if (!defined('_GNUBOARD_')) exit;";
     $cache_content .= "\n\n\$keyword=".var_export($words, true).";";
     fwrite($handle, $cache_content);
     fclose($handle);
