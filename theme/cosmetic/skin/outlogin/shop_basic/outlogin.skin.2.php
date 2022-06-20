@@ -5,6 +5,7 @@ if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가
 add_stylesheet('<link rel="stylesheet" href="'.$outlogin_skin_url.'/style.css">', 0);
 
 // 쿠폰
+global $cp_count;
 $cp_count = 0;
 $sql = " select cp_id
             from {$g5['g5_shop_coupon_table']}
@@ -16,6 +17,7 @@ $res = sql_query($sql);
 for($k=0; $cp=sql_fetch_array($res); $k++) {
     if(!is_used_coupon($member['mb_id'], $cp['cp_id']))
         $cp_count++;
+        
 }
 ?>
 
