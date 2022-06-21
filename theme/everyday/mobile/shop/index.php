@@ -12,7 +12,7 @@ include_once(G5_THEME_MSHOP_PATH.'/shop.head.php');
 
 <?php echo display_banner('메인', 'mainbanner.10.skin.php'); ?>
 <?php
-if (!$_COOKIE['ck_top_banner_close'])
+if (!isset($_COOKIE['ck_top_banner_close']))
     echo display_banner( '왼쪽');
 ?>
 
@@ -153,26 +153,26 @@ if (!$_COOKIE['ck_top_banner_close'])
         <!-- 메인리뷰-->
         <script>
         $(function(){    
-        $('#idx_review .review').owlCarousel({
-            loop:true,
-            margin:15,
-            nav:true,
-            autoplay:true,
-            responsive:{
-                0:{
-                    items:1
-                },
-                430:{
-                    items:2
-                },
-                600:{
-                    items:3
-                },
-                1000:{
-                    items:5
+            $('#idx_review .review').owlCarousel({
+                loop:true,
+                margin:15,
+                nav:true,
+                autoplay:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    430:{
+                        items:2
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:5
+                    }
                 }
-            }
-        })
+            })
         });
         </script>
 
