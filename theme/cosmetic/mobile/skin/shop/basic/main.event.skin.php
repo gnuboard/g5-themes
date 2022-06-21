@@ -7,7 +7,7 @@ $hresult = sql_query($hsql);
 
 if(sql_num_rows($hresult)) {
     // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
-    add_stylesheet('<link rel="stylesheet" href="'.G5_MHOP_SKIN_URL.'/style.css">', 0);
+    add_stylesheet('<link rel="stylesheet" href="'.G5_MSHOP_SKIN_URL.'/style.css">', 0);
 
 ?>
 <div id="sev">
@@ -16,7 +16,7 @@ if(sql_num_rows($hresult)) {
     <?php
     for ($i=0; $row=sql_fetch_array($hresult); $i++)
     {
-             echo '<li class="ev_li"><div class="ev_li_wr">';
+            echo '<li class="ev_li"><div class="ev_li_wr">';
         $href = G5_SHOP_URL.'/event.php?ev_id='.$row['ev_id'];
 
         $event_img = G5_DATA_PATH.'/event/'.$row['ev_id'].'_m'; // 이벤트 이미지
