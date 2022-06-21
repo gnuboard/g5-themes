@@ -21,7 +21,7 @@ $admin = get_admin("super");
             <h3><a href="<?php echo G5_BBS_URL; ?>/faq.php">CS CENTER</a></h3>
             <div>
                 <?php
-                $save_file = G5_DATA_PATH.'/cache/theme/everyday/footerinfo.php';
+                $save_file = G5_DATA_PATH.'/theme/everyday/footerinfo.php';
                 if(is_file($save_file))
                     include($save_file);
                 ?>
@@ -34,7 +34,7 @@ $admin = get_admin("super");
             <h3>BANK INFO</h3>
             <div>
                 <?php
-                $save_file = G5_DATA_PATH.'/cache/theme/everyday/footerinfo.php';
+                $save_file = G5_DATA_PATH.'/theme/everyday/footerinfo.php';
                 if(is_file($save_file))
                     include($save_file);
                 ?>

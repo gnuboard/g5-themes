@@ -48,12 +48,12 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     <div id="ssch_cate" class="sct_ct">
         <ul>
         <?php
-        $total_cnt = 0;
-        echo '<li><a href="#" onclick="set_ca_id(\'\'); return false;" class="btn_hover box all">전체분류 <span>'.$total_cnt.'</span></a></li>'.PHP_EOL;
-        foreach( $categorys as $row ){
-            echo "<li><a href=\"#\" onclick=\"set_ca_id('{$row['ca_id']}'); return false;\" class=\"btn_hover box\">{$row['ca_name']} <span>".$row['cnt']."</span></a></li>\n";
-            $total_cnt += $row['cnt'];
-        }
+            $total_cnt = 0;
+            echo '<li><a href="#" onclick="set_ca_id(\'\'); return false;" class="btn_hover box all">전체분류 <span>'.$total_cnt.'</span></a></li>'.PHP_EOL;
+            foreach( $categorys as $row ){
+                echo "<li><a href=\"#\" onclick=\"set_ca_id('{$row['ca_id']}'); return false;\" class=\"btn_hover box\">{$row['ca_name']} <span>".$row['cnt']."</span></a></li>\n";
+                $total_cnt += $row['cnt'];
+            }
         ?>
         </ul>
     </div>
@@ -62,8 +62,8 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
     <!-- 검색결과 시작 { -->
     <div>
         <?php
-        // 리스트 유형별로 출력
-        define('G5_SHOP_CSS_URL', G5_MSHOP_SKIN_URL);
+      
+        
         $list_file = G5_MSHOP_SKIN_PATH.'/'.$default['de_mobile_search_list_skin'];
         if (file_exists($list_file)) {
             $list = new item_list($list_file, $default['de_mobile_search_list_mod'], $default['de_mobile_search_list_row'], $default['de_mobile_search_img_width'], $default['de_mobile_search_img_height']);
