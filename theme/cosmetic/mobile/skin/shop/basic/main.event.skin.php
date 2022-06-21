@@ -7,7 +7,9 @@ $hresult = sql_query($hsql);
 
 if(sql_num_rows($hresult)) {
     // add_stylesheet('css 구문', 출력순서); 숫자가 작을 수록 먼저 출력됨
-    add_stylesheet('<link rel="stylesheet" href="'.G5_MHOP_SKIN_URL.'/style.css">', 0);
+    add_stylesheet('<link rel="stylesheet" href="'.G5_MSHOP_SKIN_URL.'/style.css">', 0);
+    
+
 
 ?>
 <div id="sev">
