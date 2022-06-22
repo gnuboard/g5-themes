@@ -95,7 +95,7 @@ box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);}
 #ppl_word .word-rank {display:inline-block;width:20px;line-height:20px;background: #ccc;color: #fff;text-align: center;margin-right:10px;font-size:10px}
 #ppl_word .word-rank1,#ppl_word .word-rank2,#ppl_word .word-rank3{background: #3b3334;color:#fff}
 
- .hd-admin{background:#333;text-align:left;
+.hd-admin{background:#333;text-align:left;
 -webkit-box-shadow:0 3px 5px #ccc; 
 -moz-box-shadow:0 3px 5px #ccc;
 box-shadow:0 3px 5px #ccc;}
@@ -107,7 +107,7 @@ box-shadow:0 3px 5px #ccc;}
 
 
 /* 중간 레이아웃 */
-#wrapper {z-index:5;padding-bottom:40px;position:relative;zoom:1}
+#wrapper {width:100%;min-width:1200px;z-index:5;padding-bottom:40px;position:relative;zoom:1}
 .fixed #wrapper{padding-top:100px}
 #wrapper:after {display:block;visibility:hidden;clear:both;content:""}
 #wrapper_title {margin:40px 0 20px;font-size:2em;font-weight:bold}
