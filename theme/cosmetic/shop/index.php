@@ -15,7 +15,7 @@ include_once(G5_THEME_SHOP_PATH.'/shop.head.php');
 <?php echo display_banner('메인', 'mainbanner.10.skin.php'); ?>
 <!-- } 메인이미지 끝 -->
 
- <?php if($default['de_type4_list_use']) { ?>
+<?php if($default['de_type4_list_use']) { ?>
 <!-- 인기상품 시작 { -->
 <section class="sct_wrap sct_best">
     <h2><a href="<?php echo G5_SHOP_URL; ?>/listtype.php?type=4">인기상품</a></h2>
