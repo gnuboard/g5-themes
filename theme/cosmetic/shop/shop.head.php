@@ -18,6 +18,7 @@ set_cart_id(0);
 $tmp_cart_id = get_session('ss_cart_id');
 add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 0);
 
+$q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : '';
 ?>
 <?php if ($is_admin) {  ?>
 <div class="hd-admin">
