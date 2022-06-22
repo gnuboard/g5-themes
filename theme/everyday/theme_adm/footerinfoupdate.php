@@ -1,10 +1,10 @@
 <?php
 include_once('./_common.php');
 
-@mkdir(G5_DATA_PATH."/cache/theme", G5_DIR_PERMISSION);
-@chmod(G5_DATA_PATH."/cache/theme", G5_DIR_PERMISSION);
-@mkdir(G5_DATA_PATH."/cache/theme/everyday", G5_DIR_PERMISSION);
-@chmod(G5_DATA_PATH."/cache/theme/everyday", G5_DIR_PERMISSION);
+@mkdir(G5_DATA_PATH."/theme", '777');
+@chmod(G5_DATA_PATH."/theme", '777');
+@mkdir(G5_DATA_PATH."/theme/everyday", '777');
+@chmod(G5_DATA_PATH."/theme/everyday", '777');
 
 $data = array();
 
@@ -27,7 +27,7 @@ if(!$etc)
 
 $data = array('tel' => $tel, 'etc' => $etc, 'depositor' => $depositor, 'account' => $account);
 
-$save_file = G5_DATA_PATH.'/cache/theme/everyday/footerinfo.php';
+$save_file = G5_DATA_PATH.'/theme/everyday/footerinfo.php';
 
 // 캐시파일로 저장
 $cache_fwrite = true;
