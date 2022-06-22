@@ -194,7 +194,7 @@ border: 1px solid #558ab7 !important;
 .sod_list .total_price{background:#f5f5f5;border:1px solid #e2e2e2;display:block;clear:both;margin:10px;text-align:right;padding:5px 10px;line-height:20px}
 .sod_list .total_price span{float:left}
 .sod_list .total_price strong{font-size:1.25em;color:#ff006c}
-.sod_opt li {padding-left: 10px;background: url('../img/bullet.gif') no-repeat 3px 50%;color: #777;margin: 3px 0;line-height: 1.3em;}
+.sod_opt li {padding-left: 10px;color: #777;margin: 3px 0;line-height: 1.3em;}
 
 
 #sit_opt_added {margin:0;padding:0;border-bottom:0;background:#fff;list-style:none;}
