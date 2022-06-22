@@ -191,12 +191,12 @@ for($k=0; $cp=sql_fetch_array($res); $k++) {
                 }
             }
 
-            if($com_href && $com_name) {
+            if(isset($com_href) && $com_name) {
             ?>
             <li><a href="<?php echo $com_href; ?>/"><?php echo $com_name; ?></a></li>
             <?php } ?>
             <li><a href="<?php echo G5_SHOP_URL; ?>/personalpay.php">개인결제</a></li>
-            <?php if(!$com_href || !$com_name) { ?>
+            <?php if(!isset($com_href) || !$com_name) { ?>
             <li><a href="<?php echo G5_SHOP_URL; ?>/listtype.php?type=5">세일상품</a></li>
             <?php } ?>
         </ul>
