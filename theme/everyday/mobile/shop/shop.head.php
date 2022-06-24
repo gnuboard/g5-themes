@@ -65,7 +65,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_JS_URL.'/owl.carousel.cs
                 $hd_sch.css("display","block");
             });
             $("#hd_sch .pop_close").click(function(){
-                $hd_sch.css("display","none");
+                $hd_sch.css("display","");
             });
         });
 
