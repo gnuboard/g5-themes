@@ -150,8 +150,8 @@ $theme_config = array(
 if(!defined('G5_IS_ADMIN'))
     include_once(G5_THEME_LIB_PATH.'/theme.lib.php');
 
-define('G5_THEME_ADM_DIR', 'theme_adm');
-define('G5_THEME_ADM_URL', G5_THEME_URL.'/'.G5_THEME_ADM_DIR);
+define('G5_THEME_ADM_DIR', '/theme/shoes/theme_adm/footerinfo.php');
+define('G5_THEME_ADM_URL', G5_URL.'/'.G5_THEME_ADM_DIR);
 
 
 ?>
