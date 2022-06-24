@@ -1,0 +1,31 @@
+@charset "utf-8";
+.ol {position:relative;padding:10px 0 ;text-align:center;}
+.ol h2 {width:0;height:0;overflow:hidden}
+
+#ol_before{border-bottom:1px solid #444}
+#ol_before input[type=text], #ol_before input[type=password] {width:100%;border:1px solid #333;background:transparent;background:rgba(255,255,255,0.1);color:#fff;height:35px;;margin-top:-1px;padding:10px;}
+#ol_submit {width:100%;height:35px;background:#b80909;color:#fff;font-weight:bold;font-size:1.083em; }
+#ol_svc {text-align:left;color:#777;font-size:0.92em;margin: 10px 0px}
+#ol_password_lost{border-left:1px solid #777}
+#ol_before .btn_join{border:1px solid #d1d1d1;display:block;margin:5px 0;line-height:35px;color:#d1d1d1}
+
+#ol_after_hd{text-align:left;position:relative;height:70px;padding-left:70px}
+#ol_after_hd strong {display:block;color:#fff;}
+#ol_after_hd .profile_img{display:inline-block;position:absolute;top:0px;left:0px;margin:0 0 10px}
+#ol_after_hd .profile_img img{border-radius:50%;}
+#ol_after_info{position:absolute;bottom:-5px;right:-5px;text-align:center;background:#333;color:#fff;width:30px;height:30px;line-height:30px;font-size:15px;border-radius:50%}
+
+#ol_after_private {margin:0;padding:0;list-style:none;border-bottom:1px solid #444}
+#ol_after_private:after {display:block;visibility:hidden;clear:both;content:""}
+#ol_after_private li {position:relative;text-align:right}
+#ol_after_private a {color:#333;line-height:20px;color:#fff;display:block;padding:10px}
+#ol_after_private i{display:block;font-size:15px;margin: 5px 0}
+#ol_after_pt {background:url(icon-po.png) 0px 50% no-repeat;background-size:18px}
+#ol_after_coupon {background:url(micon-cp.png) 0px 50% no-repeat;background-size:18px}
+
+#ol_after_btn {margin:5px 0}
+#ol_after_btn a{display:inline-block;padding:0 10px;line-height:25px;font-weight:bold;border:1px solid #ddd;vertical-align:top}
+#ol_after_btn .btn_admin {display:inline-block;padding:0 10px;border:0;text-align:center;margin:0;line-height:27px}
+
+#ol_after_logout{background:#fff;color:#555}
+
