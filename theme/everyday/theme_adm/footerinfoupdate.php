@@ -1,10 +1,10 @@
 <?php
 include_once('./_common.php');
 
-@mkdir(G5_DATA_PATH."/theme", '777');
-@chmod(G5_DATA_PATH."/theme", '777');
-@mkdir(G5_DATA_PATH."/theme/everyday", '777');
-@chmod(G5_DATA_PATH."/theme/everyday", '777');
+@mkdir(G5_DATA_PATH."/theme", G5_DIR_PERMISSION);
+@chmod(G5_DATA_PATH."/theme", G5_DIR_PERMISSION);
+@mkdir(G5_DATA_PATH."/theme/everyday", G5_DIR_PERMISSION);
+@chmod(G5_DATA_PATH."/theme/everyday", G5_DIR_PERMISSION);
 
 $data = array();
 
