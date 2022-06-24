@@ -130,7 +130,7 @@ if (!$_COOKIE['ck_top_banner_close'])
                 }
                 </script>
                 <?php
-                $save_file = G5_DATA_PATH.'/cache/theme/shoes/keyword.php';
+                $save_file = G5_DATA_PATH.'/theme/shoes/keyword.php';
                 if(is_file($save_file))
                     include($save_file);
 
@@ -302,7 +302,7 @@ $(function() {
             <h2>CS CENTER</h2>
             <div>
                 <?php
-                $save_file = G5_DATA_PATH.'/cache/theme/shoes/footerinfo.php';
+                $save_file = G5_DATA_PATH.'/theme/shoes/footerinfo.php';
                 if(is_file($save_file))
                     include($save_file);
                 ?>

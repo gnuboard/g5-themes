@@ -20,7 +20,7 @@ include_once('./head.php');
         <p>최대 6개 등록가능합니다</p>
         <ul>
         <?php
-        $save_file = G5_DATA_PATH.'/cache/theme/shoes/mainbestcategory.php';
+        $save_file = G5_DATA_PATH.'/theme/shoes/mainbestcategory.php';
         if(is_file($save_file))
             include($save_file);
 

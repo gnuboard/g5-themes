@@ -1,7 +1,7 @@
 <?php
 include_once('./_common.php');
 
-$save_file = G5_DATA_PATH.'/cache/theme/shoes/mainbestcategory.php';
+$save_file = G5_DATA_PATH.'/theme/shoes/mainbestcategory.php';
 
 $count  = count($_POST['ca_id']);
 $ca_ids = array();

@@ -4,7 +4,7 @@ include_once('_common.php');
 $g5['title'] = '하단정보';
 include_once('./head.php');
 
-$save_file = G5_DATA_PATH.'/cache/theme/shoes/footerinfo.php';
+$save_file = G5_DATA_PATH.'/theme/shoes/footerinfo.php';
 if(is_file($save_file))
     include($save_file);
 ?>

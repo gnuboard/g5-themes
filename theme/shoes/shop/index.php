@@ -115,7 +115,7 @@ include_once(G5_THEME_SHOP_PATH.'/shop.head.php');
 
     <?php
     if($default['de_type4_list_use']) {
-        $save_file = G5_DATA_PATH.'/cache/theme/shoes/mainbestcategory.php';
+        $save_file = G5_DATA_PATH.'/theme/shoes/mainbestcategory.php';
         if(is_file($save_file))
             include($save_file);
 
