@@ -20,12 +20,11 @@ $admin = get_admin("super");
 </div>
 <!-- 쇼핑몰 배너 시작 { -->
 <?php
-if (!$_COOKIE['ck_top_banner_close'])
-    echo display_banner( '왼쪽');
+if (!isset($_COOKIE['ck_top_banner_close']))
+    echo display_banner('왼쪽');
 ?>
 
 <!-- } 쇼핑몰 배너 끝 -->
-
 <div id="quick"  class="tab-wr">
     <ul class="qk_btn">
 
@@ -58,14 +57,13 @@ if (!$_COOKIE['ck_top_banner_close'])
     </div>
 
     <div  class="tabsCon">
-          <div class="qk_con" id="qk_menu">
+        <div class="qk_con" id="qk_menu">
             <div class="qk_con_wr">
                 <h3><a href="<?php echo G5_SHOP_URL; ?>/cart.php">전체분류</a></h3>
                 <?php include_once(G5_THEME_SHOP_PATH.'/category.php'); // 분류 ?>
             </div>
             <button type="button" class="con_close"><i class="fa fa-times-circle" aria-hidden="true"></i><span class="sound_only">나의정보 닫기</span></button>
         </div>
-
         <div class="qk_con" id="qk_my">
             <div class="qk_con_wr">
                 <h3><a href="<?php echo G5_SHOP_URL; ?>/cart.php">나의정보</a></h3>
@@ -89,7 +87,7 @@ if (!$_COOKIE['ck_top_banner_close'])
             <h3><a href="<?php echo G5_SHOP_URL; ?>/cart.php">장바구니</a></h3>
             <div class="hdqk_wr">
                 <div class="hdqk_wr" id="q_cart_wr"></div>
-             <script>
+            <script>
             $(function(){
                 $(".cart_op_btn").on("click", function() {
                     var $this = $(this);
@@ -108,6 +106,7 @@ if (!$_COOKIE['ck_top_banner_close'])
             </div>
         </div>
 
+        <?php $q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : ''; ?>
         <div class="qk_con" id="qk_sch">
             <div class="qk_con_wr">
                 <h3>쇼핑몰 검색</h3>
@@ -162,6 +161,7 @@ if (!$_COOKIE['ck_top_banner_close'])
             <?php include_once(G5_SHOP_SKIN_PATH.'/boxwish.skin.php'); // 위시리스트 ?>
             <button type="button" class="con_close"><i class="fa fa-times-circle" aria-hidden="true"></i><span class="sound_only">위시리스트닫기 </span></button>
             </div>
+            
         </div>
 
         
@@ -265,7 +265,6 @@ $(function() {
     });
 });
 </script>
-
 
 
 <div id="ft">
