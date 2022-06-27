@@ -415,7 +415,7 @@ filter: none;
 #sit_sel_option,#sit_tot_price{padding:0 }
 
 @media (max-width: 970px){
-    #sit_ov{width:100%;float:none;clear:both;padding:10px}
+    #sit_ov{width:100%;clear:both;padding:10px}
     .sit_ov_height{clear:both}
 
 }
