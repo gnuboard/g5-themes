@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* 새글 스킨 (latest) */
+.lat {position:relative;}
+.lat ul {;padding:0;list-style:none;}
+.lat li {line-height:30px;padding-left:10px;position:relative}
+.lat li:before{position:absolute;top:50%;left:0;width:4px;height:4px;background:#ddd;margin-top:-2px;content:''}
+.lat li .fa-heart{color:#ff0000}
+.lat li .new_icon{display:inline-block;padding: 0 3px;line-height:14px ;font-size:0.833em;color:#fff;background:#c56bed}
+.lat li .cnt_cmt{color:#ff3970}
+.lat_title {display:block;font-size:1.5em;margin:0 0 10px}
+.lat_more {position:absolute;top:10px;right:0;}

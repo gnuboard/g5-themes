@@ -1,0 +1,9 @@
+@charset "utf-8";
+#visit {position: relative;margin:3% 0 ;background: #fff;border: 1px solid #dbe1e9;}
+#visit .btn_admin{position:absolute;top:7px;right:10px;height:25px;line-height:25px;padding:0 5px;border-radius:3px}
+#visit h2 {border-bottom: 1px solid #dbe1e9;padding: 0 15px;font-size: 1.167em;line-height: 40px;}
+#visit dl {padding:10px 15px;border-radius:5px;position:relative;line-height:30px;color:#3f4156}
+#visit dl:after {display:block;visibility:hidden;clear:both;content:""} 
+#visit dt{display:inline-block;float:left;padding-left:10px;clear:both;position:relative}
+#visit dt:before{display:inline-block;width:4px ;height:4px;background:#3176eb;position:absolute;top:50%;left:0;margin-top:-2px;content:'';border-radius:5px}
+#visit dd{float:right;}
