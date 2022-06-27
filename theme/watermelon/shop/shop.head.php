@@ -16,7 +16,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 
 set_cart_id(0);
 $tmp_cart_id = get_session('ss_cart_id');
-
+$q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : '';
 ?>
 
 <!-- 상단 시작 { -->
@@ -59,7 +59,7 @@ $tmp_cart_id = get_session('ss_cart_id');
             }
             </script>
             <?php
-            $save_file = G5_DATA_PATH.'/cache/theme/watermelon/keyword.php';
+            $save_file = G5_DATA_PATH.'/theme/watermelon/keyword.php';
             if(is_file($save_file))
                 include($save_file);
 

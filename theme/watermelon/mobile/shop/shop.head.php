@@ -43,7 +43,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
                 <button type="submit" value="검색" class="sch_submit"><i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
             <?php
-            $save_file = G5_DATA_PATH.'/cache/theme/watermelon/keyword.php';
+            $save_file = G5_DATA_PATH.'/theme/watermelon/keyword.php';
             if(is_file($save_file))
                 include($save_file);
 

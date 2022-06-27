@@ -24,7 +24,7 @@ $admin = get_admin("super");
             <h2>고객센터</h2>
             <div>
                 <?php
-                $save_file = G5_DATA_PATH.'/cache/theme/watermelon/footerinfo.php';
+                $save_file = G5_DATA_PATH.'/theme/watermelon/footerinfo.php';
                 if(is_file($save_file))
                     include($save_file);
                 ?>
