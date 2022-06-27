@@ -21,7 +21,7 @@ include_once('./head.php');
             <div class="li_wr">
                 <span class="rank"><?php echo ($i + 1); ?></span>
                 <label for="word_<?php echo $i; ?>" class="sound_only">검색어</label>
-                <input type="text" name="word[]" id="word_<?php echo $i; ?>" class="frm_input" value="<?php echo get_text($keyword[$i]); ?>">
+                <input type="text" name="word[]" id="word_<?php echo $i; ?>" class="frm_input" value="<?php if(isset($keyword[$i])){echo get_text($keyword[$i]);} else {}  ?>">
             </div>
         </li>
     <?php
