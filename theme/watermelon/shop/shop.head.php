@@ -6,6 +6,9 @@ if(G5_IS_MOBILE) {
     return;
 }
 
+if(!defined('G5_IS_ADMIN'))
+    include_once(G5_THEME_LIB_PATH.'/theme.lib.php');
+
 include_once(G5_THEME_PATH.'/head.sub.php');
 include_once(G5_LIB_PATH.'/outlogin.lib.php');
 include_once(G5_LIB_PATH.'/poll.lib.php');

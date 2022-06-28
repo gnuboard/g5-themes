@@ -1,6 +1,9 @@
 <?php
 if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가
 
+if(!defined('G5_IS_ADMIN'))
+    include_once(G5_THEME_LIB_PATH.'/theme.lib.php');
+
 include_once(G5_THEME_PATH.'/head.sub.php');
 include_once(G5_LIB_PATH.'/outlogin.lib.php');
 include_once(G5_LIB_PATH.'/visit.lib.php');
