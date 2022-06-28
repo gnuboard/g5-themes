@@ -187,7 +187,8 @@ box-shadow: 0 2px 0px rgba(0,0,0,0.05);}
 .sod_list .sod_li {background:#fff;border-bottom: 1px solid #ccc;margin:10px 0;}
 .sod_list .li_name{border-bottom:1px solid #dcdcdc;line-height:1.3em;padding: 10px 10px;font-size:1.083em}
 .sod_list .li_op_wr{position:relative;margin:10px;padding-left:90px;min-height:80px}
-.sod_list .total_img{position:absolute;top:0;left:0}
+.sod_list .li_chk {float:left;margin-right:5px;line-height: 35px;}
+.sod_list .total_img{position:absolute;top:10px;left:10px}
 .sod_list .mod_options{padding: 0 7px;border: 1px solid #38b2b9;color: #38b2b9;background: #fff;height: 23px;line-height: 21px;margin: 5px 0 0;}
 .sod_list .li_prqty{margin:10px 10px ;border-top:1px solid #dcdcdc;padding:10px 0 0}
 .sod_list .li_prqty:after {display:block;visibility:hidden;clear:both;content:''}
