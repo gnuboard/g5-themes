@@ -44,7 +44,7 @@ function item_icon2($it)
 function soldout_icon($it)
 {
     global $g5;
-
+    $icon = '<span class="sct_icon">';
     // 품절
     if (is_soldout($it['it_id']))
         $icon .= '<span class="icon_soldout"><span class="soldout_txt">SOLD OUT</span></span>';
