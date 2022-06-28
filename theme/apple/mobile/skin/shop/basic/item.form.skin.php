@@ -21,6 +21,8 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_SHOP_CSS_URL.'/style.css">', 0
 
 <div id="sit_ov_wrap">
     <?php
+    $sns_title = get_text($it['it_name']).' | '.get_text($config['cf_title']);
+    $sns_url  = shop_item_url($it['it_id']);
     // 이미지(중) 썸네일
     $thumb_img = '';
     $thumb_img_w = 600; // 넓이
