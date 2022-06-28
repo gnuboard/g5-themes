@@ -1,0 +1,36 @@
+ @charset "utf-8";
+.pic2_lt .lat_title {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
+.pic2_lt ul:after {display:block;visibility:hidden;clear:both;content:""}
+.pic2_lt li{position:relative;border-bottom:1px solid #f4f4f4;padding:15px 10px}
+.pic2_lt li:after {display:block;visibility:hidden;clear:both;content:""}
+.pic2_lt li .lt_img img{width:100%;height:auto}
+.pic2_lt .li_0 .lat_detail{display:block;margin:10px 0 20px;line-height:1.5em;}
+
+.pic2_lt .lt_tit{display:block;margin:0 0 10px;font-size:1.077em;font-weight:bold;color:#484f56}
+.pic2_lt .lt_tit:hover{color:#68b880}
+.pic2_lt .lat_detail{display:none;}
+.pic2_lt .lt_info{color:#86909a}
+.pic2_lt .lt_info a{color:#86909a}
+.pic2_lt .lt_nick img{border-radius:50%;}
+.pic2_lt  .lt_date {margin:0 10px;display:inline-block}
+.pic2_lt .new_icon{display: inline-block;width: 16px; line-height: 16px;font-size: 11px; color: #ff0000;background: #f8e7e7;border-bottom: 1px solid #e7c4c4;text-align: center;border-radius: 5px;}
+.pic2_lt .hot_icon{display: inline-block;width: 16px;line-height: 16px;font-size: 11px; color: #8b00ff;background: #ece7f8;border-bottom: 1px solid #e5cbf8;text-align: center; border-radius: 5px;}
+.pic2_lt .fa-lock {display: inline-block;width: 16px;line-height: 16px;font-size: 11px;color: #aaa; background: #eee; border-bottom: 1px solid #ddd; text-align: center;border-radius: 5px; }
+.pic2_lt .more{display:block;margin:10px 0;text-align:center;background:#fafafa;color:#777;padding:10px 0}
+.pic2_lt .more:hover{color:#000;background:#f3f3f3}
+
+.pic2_lt li.li_0 .lt_tit{font-size:1.25em;margin:10px 0}
+
+@media (min-width: 640px){
+    .pic2_lt ul{padding-left:50%;position:relative}
+    .pic2_lt li.li_0{position:absolute;top:0;left:0;width:50%;border:0}
+    .pic2_lt .li_1 .lt_img,.pic2_lt .li_2 .lt_img,.pic2_lt .li_3 .lt_img,.pic2_lt .li_4 .lt_img{width:30%;float:left}
+    .pic2_lt .li_1 .li_txt,.pic2_lt .li_2 .li_txt,.pic2_lt .li_3 .li_txt,.pic2_lt .li_4 .li_txt{width:65%;float:right}
+
+    .pic2_lt .li_txt{float:left}
+
+}
+
+@media (max-width: 639px){
+     .pic2_lt .lt_tit{margin-top:10px}
+}
