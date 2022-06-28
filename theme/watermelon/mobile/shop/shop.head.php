@@ -8,6 +8,7 @@ include_once(G5_LIB_PATH.'/connect.lib.php');
 include_once(G5_LIB_PATH.'/popular.lib.php');
 include_once(G5_LIB_PATH.'/latest.lib.php');
 
+$q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : '';
 
 ?>
 
