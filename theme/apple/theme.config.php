@@ -9,7 +9,7 @@ if(! defined('G5_THEME_DEVICE')) define('G5_THEME_DEVICE', 'mobile');
 // 테마에서 커뮤니티 지원여부 설정
 // 커뮤니티 사용없이 쇼핑몰이 초기화면이라면 false로 설정
 // false 설정이면 게시판 head, tail 은 쇼핑몰의 그것이 적용됨
-if(! defined('G5_COMMUNITY_USE')) define('G5_COMMUNITY_USE', false);
+if(! defined('G5_COMMUNITY_USE')) define('G5_COMMUNITY_USE', true);
 
 $theme_config = array();
 
