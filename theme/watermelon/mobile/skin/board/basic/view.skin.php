@@ -121,7 +121,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <?php } ?>
 
     <?php
-    if ($view['link']['count']) {
+    if (isset($view['link']['count'])) {
         $cnt = 0;
         for ($i=0; $i<count($view['link']); $i++) {
             if (isset($view['link'][$i]['source']) && $view['link'][$i]['source'] && !$view['link'][$i]['view'])
@@ -166,11 +166,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         if($v_img_count) {
             echo "<div id=\"bo_v_img\">\n";
 
-            for ($i=0; $i<=count($view['file']); $i++) {
-                if ($view['file'][$i]['view']) {
-                    //echo $view['file'][$i]['view'];
-                    echo get_view_thumbnail($view['file'][$i]['view']);
-                }
+            foreach($view['file'] as $view_file) {
+                echo get_file_thumbnail($view_file);
             }
 
             echo "</div>\n";
@@ -178,7 +175,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
          ?>
 
         <div id="bo_v_con"><?php echo get_view_thumbnail($view['content']); ?></div>
-        <?php//echo $view['rich_content']; // {이미지:0} 과 같은 코드를 사용할 경우 ?>
+        <?php //echo $view['rich_content']; // {이미지:0} 과 같은 코드를 사용할 경우 ?>
 
         <?php if ($is_signature) { ?><p><?php echo $signature ?></p><?php } ?>
 
