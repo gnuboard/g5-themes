@@ -10,7 +10,7 @@
 .mbskin .btn_confirm {} /* 서식단계 진행 */
 .mbskin .btn_submit {}
 .mbskin button.btn_submit {}
-.mbskin fieldset .btn_submit {}
+.mbskin fieldset .btn_submit {display:block;padding:0 20px;margin:20px auto 0;}
 .mbskin .btn_cancel {}
 .mbskin button.btn_cancel {}
 .mbskin .btn_cancel:focus, .mbskin .btn_cancel:hover {}
