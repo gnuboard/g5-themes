@@ -7,7 +7,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 
 $thumb_width = 440;
 $thumb_height = 300;
 $content_length = 100;
-
+global $board;
 ?>
 
 <div class="pic_lt">
@@ -18,7 +18,7 @@ $content_length = 100;
     $thumb = get_list_thumbnail($bo_table, $list[$i]['wr_id'], $thumb_width, $thumb_height, false, true);
 
     if($thumb['src']) {
-        $img_content = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" width="'.$board['bo_gallery_width'].'" height="'.$board['bo_gallery_height'].'">';
+        $img_content = '<img src="'.$thumb['src'].'" alt="'.$thumb['alt'].'" width="'.$thumb_width.'" height="'.$thumb_height.'">';
     } else {
         $img_content = '';
     }
