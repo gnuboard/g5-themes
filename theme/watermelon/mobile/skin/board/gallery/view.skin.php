@@ -38,11 +38,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         ?>
 
         <ul class="bo_v_left">
-           <?php if ($scrap_href) { ?><li class="bo_btn_li"><a href="<?php echo $scrap_href;  ?>" target="_blank" class="view_btn" onclick="win_scrap(this.href); return false;"><i class="fa fa-thumb-tack" aria-hidden="true"></i><span class="sound_only">스크랩</span></a></li><?php } ?>
-            <?php
-            include_once($board_skin_path."/view.sns.skin.php");
-            ?> 
-           <li class="bo_btn_li"><a href="<?php echo $list_href ?>" class="view_btn"><i class="fa fa-list" aria-hidden="true"></i><span class="sound_only">목록</span></a></li>
+        <?php if ($scrap_href) { ?><li class="bo_btn_li"><a href="<?php echo $scrap_href;  ?>" target="_blank" class="view_btn" onclick="win_scrap(this.href); return false;"><i class="fa fa-thumb-tack" aria-hidden="true"></i><span class="sound_only">스크랩</span></a></li><?php } ?>
+        <li class="bo_btn_li"><a href="<?php echo $list_href ?>" class="view_btn"><i class="fa fa-list" aria-hidden="true"></i><span class="sound_only">목록</span></a></li>
             <?php if ($reply_href) { ?><li class="bo_btn_li"><a href="<?php echo $reply_href ?>" class="view_btn"><i class="fa fa-reply" aria-hidden="true"></i><span class="sound_only">답변</span></a></li><?php } ?>
             <?php if ($write_href) { ?><li class="bo_btn_li"><a href="<?php echo $write_href ?>" class="view_btn"><i class="fa fa-pencil" aria-hidden="true"></i><span class="sound_only">글쓰기</span></a></li><?php } ?>
 
@@ -64,7 +61,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <?php
         $link_buttons = ob_get_contents();
         ob_end_flush();
-         ?>
+        ?>
 
         <script>
         $(function(){
@@ -83,7 +80,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     </div>
     <!-- } 게시물 상단 버튼 끝 -->
 
-     
+
     <?php
     if ($view['file']['count']) {
         $cnt = 0;
@@ -92,7 +89,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 $cnt++;
         }
     }
-     ?>
+    ?>
 
     <?php if($cnt) { ?>
     <section id="bo_v_file">
@@ -102,7 +99,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         // 가변 파일
         for ($i=0; $i<count($view['file']); $i++) {
             if (isset($view['file'][$i]['source']) && $view['file'][$i]['source'] && !$view['file'][$i]['view']) {
-         ?>
+        ?>
             <li>
                 <a href="<?php echo $view['file'][$i]['href'];  ?>" class="view_file_download">
                     <i class="fa fa-download" aria-hidden="true"></i>
@@ -115,7 +112,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <?php
             }
         }
-         ?>
+        ?>
         </ul>
     </section>
     <?php } ?>
@@ -128,7 +125,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
                 $cnt++;
         }
     }
-     ?>
+    ?>
 
     <?php if($cnt) { ?>
     <section id="bo_v_link">
@@ -141,7 +138,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
             if ($view['link'][$i]) {
                 $cnt++;
                 $link = cut_str($view['link'][$i], 70);
-         ?>
+        ?>
             <li>
                 <a href="<?php echo $view['link_href'][$i] ?>" target="_blank">
                     <i class="fa fa-link" aria-hidden="true"></i>
@@ -152,7 +149,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
         <?php
             }
         }
-         ?>
+        ?>
         </ul>
     </section>
     <?php } ?>
@@ -175,10 +172,10 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
 
             echo "</div>\n";
         }
-         ?>
+        ?>
 
         <div id="bo_v_con"><?php echo get_view_thumbnail($view['content']); ?></div>
-        <?php//echo $view['rich_content']; // {이미지:0} 과 같은 코드를 사용할 경우 ?>
+        <?php //echo $view['rich_content']; // {이미지:0} 과 같은 코드를 사용할 경우 ?>
 
         <?php if ($is_signature) { ?><p><?php echo $signature ?></p><?php } ?>
 
@@ -229,7 +226,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$board_skin_url.'/style.css">', 0
     <?php
     // 코멘트 입출력
     include_once(G5_BBS_PATH.'/view_comment.php');
-     ?>
+    ?>
 
 </article>
 
@@ -289,7 +286,6 @@ $(function() {
     //sns공유
     $(".btn_share").click(function(){
         $("#bo_v_sns").fadeIn();
-   
     });
 
     $(document).mouseup(function (e) {

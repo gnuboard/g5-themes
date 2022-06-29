@@ -20,12 +20,11 @@ if(G5_COMMUNITY_USE === false) {
         <li><a href="<?php echo G5_BBS_URL ?>/current_connect.php" class="visit"><i class="fa fa-users" aria-hidden="true"></i><span>접속자</span><strong class="visit-num"><?php echo connect('theme/basic'); // 현재 접속자수, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정  ?></strong></a></li>
         <li><a href="<?php echo G5_BBS_URL ?>/new.php"><i class="fa fa-history" aria-hidden="true"></i><span>새글</span></a></li>
         <?php if(G5_COMMUNITY_USE) { ?>
-        <li class="tnb_left tnb_shop"><a href="<?php echo G5_SHOP_URL; ?>/"><i class="fa fa-shopping-bag" aria-hidden="true"></i> 쇼핑몰</a></li>
-        <li class="tnb_left tnb_community"><a href="<?php echo G5_URL; ?>/"><i class="fa fa-home" aria-hidden="true"></i> 커뮤니티</a></li>
+        <li class="tnb_left tnb_shop"><a href="<?php echo G5_SHOP_URL; ?>/"><i class="fa fa-shopping-bag" aria-hidden="true"></i>쇼핑몰</a></li>
+        <li class="tnb_left tnb_community"><a href="<?php echo G5_URL; ?>/"><i class="fa fa-home" aria-hidden="true"></i>커뮤니티</a></li>
         <?php } ?>
     </ul>
 </aside>
-           
 
 <div id="ft">
     <div id="ft_copy">
@@ -56,28 +55,24 @@ if(G5_COMMUNITY_USE === false) {
 jQuery(function($) {
 
     $( document ).ready( function() {
-
         // 폰트 리사이즈 쿠키있으면 실행
         font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+    });
 
-        }
-
-        //상단으로
-        $("#top_btn").on("click", function() {
-            $("html, body").animate({scrollTop:0}, '500');
-            return false;
-        });
-
+    //상단으로
+    $("#top_btn").on("click", function() {
+        $("html, body").animate({scrollTop:0}, '500');
+        return false;
     });
 });
 
 //상단고정
 $(window).scroll(function(){
-  var sticky = $('.top'),
-      scroll = $(window).scrollTop();
+var sticky = $('.top'),
+    scroll = $(window).scrollTop();
 
-  if (scroll >= 50) sticky.addClass('fixed');
-  else sticky.removeClass('fixed');
+if (scroll >= 50) sticky.addClass('fixed');
+else sticky.removeClass('fixed');
 });
 
 //상단으로

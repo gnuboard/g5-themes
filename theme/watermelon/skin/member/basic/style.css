@@ -33,8 +33,8 @@
 /* 기본박스 */
 .mbskin{position: relative;margin:100px auto 0;border:1px solid #ddd;width:400px;background:#fff;text-align:center; border-radius:5px;
 -webkit-box-shadow:0 0 10px rgba(0,0,0,0.1);
-  -moz-box-shadow:0 0 10px rgba(0,0,0,0.1);
-       box-shadow:0 0 10px rgba(0,0,0,0.1);
+-moz-box-shadow:0 0 10px rgba(0,0,0,0.1);
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 .mbskin .frm_input{width:100%}
@@ -96,7 +96,7 @@
 
 /* 회원가입 약관 */
 #fregister p{text-align:center;color: #c7254e;background: #f9f2f4;padding:10px;border:1px solid #ecc7d2;margin:0 0 5px}
-#fregister section {;margin:10px auto 30px;border:1px solid #dbdbdb;position:relative;border-radius:3px 3px 0 0 ;
+#fregister section {margin:10px auto 30px;border:1px solid #dbdbdb;position:relative;border-radius:3px 3px 0 0 ;
 -webkit-box-shadow:  0 1px 3px #eee;
 -moz-box-shadow:  0 1px 3px #eee;
 box-shadow: 0 1px 3px #eee;
@@ -123,10 +123,8 @@ box-shadow: 0 1px 3px #eee;
 #fregisterform .btn_confirm .btn_submit{height:45px;;padding:0 30px;font-weight:bold;font-size:1.083em}
 #fregisterform .btn_confirm .btn_cancel{line-height:45px;height:45px;padding:0 30px;font-weight:bold;font-size:1.083em}
 #fregisterform .frm_info{display:block;color:#3497d9;font-size:0.92em}
-#fregisterform .form_01 div{margin: 0 0 50px}
 #fregisterform .captcha{display:block;margin:5px 0 0}
-
-
+#fregisterform #reg_mb_zip {width:200px;}
 
 /* 회원가입 완료 */
 #reg_result {padding:100px 0 40px;text-align:center;background:#fff}
@@ -161,8 +159,8 @@ box-shadow: none}
 .login_logo {display:block;margin:0 0 30px;text-align:center}
 #mb_login #sns_login{ margin: 10px auto 0;border: 1px solid #ddd;max-width: 400px;background: #fff;text-align: center;border-radius: 5px;padding:10px 20px;
 -webkit-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-  -moz-box-shadow:0 2px 10px rgba(0,0,0,0.1);
-       box-shadow:0 2px 10px rgba(0,0,0,0.1);}
+-moz-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+box-shadow:0 2px 10px rgba(0,0,0,0.1);}
 #mb_login #sns_login:after {display:block;visibility:hidden;clear:both;content:""}
 #mb_login #sns_login h3 {float:left;margin:0 ;padding:0;line-height:30px;}
 #mb_login #sns_login .txt{display:none}
@@ -207,7 +205,7 @@ box-shadow: none}
 /* 스크랩 */
 #scrap .scrap_tit{font-weight:bold;display:block;font-size:1.083em;margin-bottom:5px;line-height:1.3em}
 #scrap .scrap_cate{ display:block;color:#3598db ;font-size:0.92em;float:left}
-#scrap .scrap_datetime{;color:#777;font-style:italic;float:right}
+#scrap .scrap_datetime{color:#777;font-style:italic;float:right}
 #scrap .scrap_del{position:absolute;top:5px;right:10px;font-size:18px;color:#49857c}
 #scrap .scrap_del:hover{color:#98ca69}
 #scrap_do table {margin:0 0 10px;width:100%}
@@ -232,7 +230,7 @@ box-shadow: none}
 #mb_confirm h1 {margin:60px 0 30px;font-size:2em}
 #mb_confirm p {padding:0 20px 40px;border-bottom:1px solid #e9e9e9;font-size:1.083em;line-height:1.4em;color:#656565}
 #mb_confirm p strong {display:block;color:#3ca1ff;font-size:1.167em;margin:0 0 5px}
-#mb_confirm fieldset {;padding:50px;text-align:left}
+#mb_confirm fieldset {padding:50px;text-align:left}
 #mb_confirm fieldset .frm_input {background-color:#fff !important}
 #mb_confirm label {letter-spacing:-0.1em}
 #mb_confirm_id {display:block;margin:5px 0 10px;font-weight:bold}
@@ -242,7 +240,7 @@ box-shadow: none}
 #pw_confirm h1 {margin:60px 20px 30px;font-size:2em}
 #pw_confirm p {padding:0 20px 40px;border-bottom:1px solid #e9e9e9;font-size:1.083em;line-height:1.4em;color:#656565}
 #pw_confirm p strong {display:block;color:#3ca1ff;font-size:1.167em;margin:0 0 5px}
-#pw_confirm fieldset {;padding:50px;text-align:center}
+#pw_confirm fieldset {padding:50px;text-align:center}
 #pw_confirm fieldset .frm_input {background-color:#fff !important}
 #pw_confirm label {letter-spacing:-0.1em}
 #pw_confirm_id {display:inline-block;margin-right:20px;font-weight:bold}

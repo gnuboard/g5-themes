@@ -95,7 +95,7 @@ box-shadow: 0 2px 3px #eee}
 .bo_notice td {background:#f7f7f7}
 .bo_notice td a {font-weight:bold}
 .td_num strong {color:#000}
-.bo_cate_link {;color:#3ca1ff !important;font-weight:bold;text-decoration:none;font-size:0.92em} /* 글제목줄 분류스타일 */
+.bo_cate_link {color:#3ca1ff !important;font-weight:bold;text-decoration:none;font-size:0.92em} /* 글제목줄 분류스타일 */
 .bo_subject{display:block;font-size:1.083em;font-weight:bold;margin:5px 0;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
 .bo_subject i{color: #8d96c2;font-size:12px}
 .bo_subject  .fa-heart{color:#ff0000}
@@ -122,7 +122,7 @@ box-shadow: 0 2px 3px #eee}
 .board_list{background:#fff;clear:both}
 .board_list li{border-top:1px solid #e7eaef;position:relative;padding:10px;}
 
-.all_chk{;padding:13px 10px;border-top:1px solid #e7eaef;color:#8a8f96}
+.all_chk{padding:13px 10px;border-top:1px solid #e7eaef;color:#8a8f96}
 
 /* 게시판 쓰기 */
 #bo_w #wr_email, #bo_w #wr_homepage, #bo_w #wr_subject {width:100%}
@@ -228,7 +228,7 @@ box-shadow: 0 1px 4px #ddd;}
 .bo_vc_hdinfo {display:inline-block;color:#777;font-size:0.92em}
 #bo_vc h1 {width:0;height:0;font-size:0;line-height:0;overflow:hidden}
 #bo_vc .cmt_contents {margin:10px 0 0 ;line-height:1.8em;border-bottom:1px solid #f1f1f1;padding-bottom:15px}
-#bo_vc .cmt_contents  p{font-size:1.083em}
+#bo_vc .cmt_contents p{font-size:1.083em}
 #bo_vc p a {text-decoration:underline}
 #bo_vc p a.s_cmt {text-decoration:underline;color:#ed6479}
 #bo_vc_empty {margin:0;padding:15px !important;text-align:center}
@@ -286,7 +286,7 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);}
 #bo_w .bo_w_tit .frm_input{padding-right:120px;}
 #bo_w .bo_w_tit #btn_autosave{position:absolute;top:5px;right:5px;line-height:30px;height:30px;}
 #bo_w .bo_w_flie .frm_input{margin:10px 0 0 }
-#bo_w .bo_w_flie .file_del{position:absolute;top:10px;right:10px;font-size:0.92em;color:#7d7d7d}
+#bo_w .bo_w_flie .file_del{position:absolute;top:0;right:0;font-size:0.92em;color:#7d7d7d}
 #bo_w .bo_w_select select{border:1px solid #3497d9;height:40px;border-radius:3px}
 #bo_w .btn_bottom {padding:0 15px 15px}
 #bo_w .btn_bottom  .btn_submit{width:100%;padding:10px}
