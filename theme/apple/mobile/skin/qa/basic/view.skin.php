@@ -20,7 +20,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
         </header>
         <section id="bo_v_info">
             <h2>페이지 정보</h2>
-             <span class="sound_only">작성자 </span><span class="pf-icon"><?php echo get_member_profile_img($view['mb_id']) ?></span><?php echo $view['name'] ?><span class="ip"><?php if ($is_ip_view) { echo "&nbsp;($ip)"; } ?></span>
+             <span class="sound_only">작성자 </span><span class="pf-icon"><?php echo get_member_profile_img($view['mb_id']) ?></span><?php echo $view['name'] ?><span class="ip"><?php if(isset($view['qa_ip'])){echo '('.$view['qa_ip'].')';} ?></span>
             <span class="date"><span class="sound_only">작성일</span> <?php echo $view['datetime']; ?></span>
         </section>
 
