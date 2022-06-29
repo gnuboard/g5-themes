@@ -72,7 +72,7 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
 
             </div>
 
-            <?php echo $list[$i]['name'] ?>
+         
             <ul id="gnb_1dul">
             <?php
             $sql = " select *
