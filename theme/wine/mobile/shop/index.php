@@ -1,7 +1,7 @@
 <?php
 include_once('./_common.php');
 
-define("_INDEX_", TRUE);
+if (!defined('_INDEX_')) define('_INDEX_', true);
 
 include_once(G5_THEME_MSHOP_PATH.'/shop.head.php');
 ?>
@@ -40,7 +40,7 @@ include_once(G5_THEME_MSHOP_PATH.'/shop.head.php');
     <?php include_once(G5_MSHOP_SKIN_PATH.'/main.event.skin.php'); // 이벤트 ?>
 
     <?php
-    if (!$_COOKIE['ck_top_banner_close'])
+    if (!isset($_COOKIE['ck_top_banner_close']))
         echo display_banner( '왼쪽');
     ?>
 
