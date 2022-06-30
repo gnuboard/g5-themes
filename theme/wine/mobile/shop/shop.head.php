@@ -34,7 +34,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
                 </div>
             </form>
              <?php
-            $save_file = G5_DATA_PATH.'/cache/theme/wine/keyword.php';
+            $save_file = G5_DATA_PATH.'/theme/wine/keyword.php';
             if(is_file($save_file))
                 include($save_file);
 

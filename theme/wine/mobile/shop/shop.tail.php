@@ -27,7 +27,7 @@ $admin = get_admin("super");
             <h3><a href="<?php echo G5_BBS_URL; ?>/faq.php">CS CENTER</a></h3>
             <div>
                 <?php
-                $save_file = G5_DATA_PATH.'/cache/theme/wine/footerinfo.php';
+                $save_file = G5_DATA_PATH.'/theme/wine/footerinfo.php';
                 if(is_file($save_file))
                     include($save_file);
                 ?>

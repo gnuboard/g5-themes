@@ -1,7 +1,7 @@
 <?php
 include_once('./_common.php');
 
-$save_file = G5_DATA_PATH.'/cache/theme/wine/keyword.php';
+$save_file = G5_DATA_PATH.'/theme/wine/keyword.php';
 
 $count = count($_POST['word']);
 $words = array();

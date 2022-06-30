@@ -28,7 +28,7 @@ echo '<div id="faq_hhtml">'.conv_content($fm['fm_mobile_head_html'], 1).'</div>'
         <div class="cs_top_wr cs_top_call">
             <h2>전화상담</h2>
             <?php
-            $save_file = G5_DATA_PATH.'/cache/theme/wine/footerinfo.php';
+            $save_file = G5_DATA_PATH.'/theme/wine/footerinfo.php';
             if(is_file($save_file))
                 include($save_file);
             ?>
