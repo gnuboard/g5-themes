@@ -116,9 +116,9 @@ $q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : '';
       }
     });
    </script>
-    <?php if ($is_admin) { ?><div class="admin"><a href="<?php echo G5_ADMIN_URL; ?>" target="_blank">관리자</a> <a href="<?php echo G5_THEME_ADM_URL; ?>/" target="_blank">테마관리</a></div> <?php } ?>
+    <?php if ($is_admin) { ?><div class="admin"><a href="<?php echo G5_ADMIN_URL; ?>" target="_blank">관리자</a> <a href="<?php echo G5_THEME_ADM_URL; ?>" target="_blank">테마관리</a></div> <?php } ?>
 </header>
-
+    <?php echo 'sdfsdfdsfs'.G5_THEME_ADM_URL; ?>
 <div id="container">
     <?php if (!defined('_INDEX_')) { ?><h1 id="container_title"><?php echo $g5['title'] ?></h1><?php } ?>
     <div class="con_c">
