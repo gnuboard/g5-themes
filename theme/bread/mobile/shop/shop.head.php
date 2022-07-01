@@ -11,6 +11,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 10);
 set_cart_id(0);
 $tmp_cart_id = get_session('ss_cart_id');
+$q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : '';
 ?>
 
 <header id="hd">
