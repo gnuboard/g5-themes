@@ -15,6 +15,8 @@ $cart_action_url = G5_SHOP_URL.'/cartupdate.php';
         
         <ul>
         <?php
+        $price = 0;
+        $total_price = 0;
         $cart_datas = get_boxcart_datas(true);
         $i = 0;
         foreach($cart_datas as $row)
