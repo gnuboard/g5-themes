@@ -35,7 +35,7 @@ input[type=text],input[type=password], textarea {
 -o-transition: all 0.30s ease-in-out;
 outline: none;
 }
- 
+
 input[type=text]:focus,input[type=password]:focus,  textarea:focus,select:focus {
 -webkit-box-shadow:  0 0 5px #9ed4ff;
 -moz-box-shadow:  0 0 5px #9ed4ff;
@@ -107,8 +107,8 @@ box-shadow:0 3px 5px rgba(0,0,0,0.3);}
     #hd_tnb {display:none;}
     #gnb_open {position:absolute;top:0;left:0;padding:0 ;height:52px;width:52px;border:0;background-size:70%;color:#fff;background:none; font-size: 16px;}
     #gnb {display:none;background:#27282d;position:fixed;top:0;left:0;z-index:99999;height:100%;overflow-y:auto;width:300px;
-    -webkit-box-shadow:0 0 5px  rgba(55,55,5,0.4));
-    -moz-box-shadow:0 0 5px  rgba(55,55,5,0.4));
+    -webkit-box-shadow:0 0 5px  rgba(55,55,5,0.4);
+    -moz-box-shadow:0 0 5px  rgba(55,55,5,0.4);
     box-shadow: 0 0 5px  rgba(55,55,5,0.4);}
     #gnb a {display:block}
     .tnb{border-bottom:1px solid #000;height:52px;color:#fff;padding:10px 40px 10px 10px;line-height:30px;}
@@ -116,9 +116,8 @@ box-shadow:0 3px 5px rgba(0,0,0,0.3);}
     .tnb img{width:25px;height:25px;margin-top:2px;margin-right:3px;border-radius:30px;float:left}
     .tnb a{float:right;display:inline-block;border:1px solid #888;color:#aaa;line-height:28px;padding:0 10px;margin:0 2px;border-radius:5px}
     #gnb_close{position:absolute;top:0;right:0;width:40px;height:51px;background:none;border:0;color:#fff;font-size:15px;color:#666}
-     #hd_sch #sch_stx,#sch_close,#hd_sch #sch_submit{height:52px}
+    #hd_sch #sch_stx,#sch_close,#hd_sch #sch_submit{height:52px}
 
-     
     .cate a {display:block;color:#fff;padding: 0 20px}
     .cate li{position:relative;line-height:50px;}
     .cate li button{position:absolute;top:0;right:0;border:0;width:50px;height:50px;overflow:hidden;border:0;background:url(../img/mobile/gnb_bg.png) no-repeat 50% 50%;text-indent:-9999px}
@@ -222,7 +221,7 @@ ul.tabs li.current{background: #fff;color: #222;border:1px solid #d7d7d7;border-
 
 
 @media (max-width: 639px){
-   ul.tabs li{width:25%;padding:10px 5px}
+    ul.tabs li{width:25%;padding:10px 5px}
 }
 
 
@@ -317,7 +316,7 @@ box-shadow: 1px 1px 5px rgba(0,0,0,0.4);}
 #mod_option_frm h2{height:45px;line-height:45px;font-size:1.167em;background:#333;color:#fff;padding:0 15px}
 #mod_option_frm  #sit_sel_option{margin:15px }
 #mod_option_frm #sit_tot_price{margin:15px }
-#mod_option_frm  #sit_sel_option ul{;background:#f3f3f3;border:0 }
+#mod_option_frm  #sit_sel_option ul{background:#f3f3f3;border:0 }
 #mod_option_frm h3{margin: 0 0 10px;color:#5772d5;}
 #mod_option_frm  .option_wr {margin:15px ; }
 #mod_option_frm  .option_wr label{margin: 0 0 5px;display:block}
@@ -379,7 +378,7 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 #m_sod_frm_paysel .samsung_pay{margin-left:-23px;background:url('../../../img/samsungpay.png') no-repeat 24px 3px;height:25px;width:106px;display:inline-block;overflow:hidden;text-indent:-999px}
 
 #sod_frm .sod_ta_wr{background: #fff;}
-#sod_frm .btn_confirm{;margin:10px 0}
+#sod_frm .btn_confirm{margin:10px 0}
 #sod_frm .btn_submit{width:100%;height:45px;font-size: 1.167em;font-weight: bold;margin:5px 0}
 #sod_frm .btn_cancel,#sod_frm .btn01{width:100%;height:45px;line-height:43px;font-size:1.167em;font-weight: bold;padding:0;border-radius:0}
 
@@ -387,9 +386,9 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 #sod_frm_pay h2{border-bottom: 1px solid #e1e1e1;background: #f3f3f3;line-height: 46px; padding: 0 15px;}
 #sod_frm_pay .cp_btn1,#sod_frm_pay .cp_cancel1{margin-top:0}
 .odf_tbl{position:relative}
-.odf_tbl table{;width:100%;border-collapse:collapse}
-.odf_tbl table th{;padding: 10px;text-align:left;width:120px;font-weight:normal}
-.odf_tbl table td{;padding:7px 10px;text-align:right}
+.odf_tbl table{width:100%;border-collapse:collapse}
+.odf_tbl table th{padding: 10px;text-align:left;width:120px;font-weight:normal}
+.odf_tbl table td{padding:7px 10px;text-align:right}
 
 #sod_frm_pt_alert{margin: 10px;padding: 10px;border: 1px solid #dbf2e0; color: #4ca667; background: #f3fcf5;}
 
@@ -516,7 +515,7 @@ box-shadow: 1px 1px 5px rgba(0,0,0,0.4);}
 #smb_my_ov {margin:0 0 20px;}
 #smb_my_ov h2 {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 #smb_my_ov .my_name{position:relative;line-height:20px;height:50px;padding: 15px;background:#525f78;color:#fff;font-weight:normal;font-size:1.083em}
-#smb_my_ov .my_name img{border-radius:50%;vertical-align:top}
+#smb_my_ov .my_name img{position:relative;top:-10px;border-radius:50%;vertical-align:top;width:40px;height:40px;object-fit:cover;}
 #smb_my_ov .smb_my_act{position:absolute;top:10px;right:10px}
 #smb_my_ov .smb_my_act li{display:inline-block;font-size:12px}
 #smb_my_ov .smb_my_act li a{line-height:28px;height:30px;vertical-align:middle;padding:0 5px;margin:0;border-radius:3px;background:#fff;}
@@ -601,8 +600,8 @@ box-shadow: 1px 1px 5px rgba(0,0,0,0.4);}
 /* 캡챠 자동등록(입력)방지 기본 -pc */
 #captcha {position:relative}
 #captcha legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden;}
-#captcha #captcha_img {;height:40px;border:1px solid #898989;;vertical-align:top;padding:0;margin:0}
-#captcha #captcha_mp3 {;margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;width:40px;height:40px;background:url('../../../img/captcha.png') no-repeat;text-indent:-999px;;border-radius:3px}
+#captcha #captcha_img {height:40px;border:1px solid #898989;;vertical-align:top;padding:0;margin:0}
+#captcha #captcha_mp3 {margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;width:40px;height:40px;background:url('../../../img/captcha.png') no-repeat;text-indent:-999px;;border-radius:3px}
 #captcha #captcha_reload {margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;background:url('../../../img/captcha.png') no-repeat  0 -40px;text-indent:-999px;border-radius:3px}
 #captcha #captcha_key {margin:0 0 0 3px;padding:0 5px;width:90px;height:40px;border:1px solid #ccc;background:#fff;font-size:1.333em;font-weight:bold;text-align:center;border-radius:3px;vertical-align:top}
 #captcha #captcha_info {display:block;margin:3px 0 5px ;font-size:0.95em;letter-spacing:-0.1em}
@@ -647,7 +646,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ffffff', e
 a.btn02:focus, .btn02:hover {text-decoration:none;background:#f3f3f3}
 button.btn02 {display:inline-block;margin:0;padding:7px;border:1px solid #3b3c3f;background:#4b545e;color:#fff;text-decoration:none;border-radius:5px}
 .btn_confirm {text-align:center} /* 서식단계 진행 */
-.btn_submit {;border:0;background:#68b880;border-bottom:2px solid #4ca667;color:#fff;cursor:pointer;border-radius:5px;font-weight:bold}
+.btn_submit {border:0;background:#68b880;border-bottom:2px solid #4ca667;color:#fff;cursor:pointer;border-radius:5px;font-weight:bold}
 .btn_submit:hover{background:#4ca667}
 fieldset .btn_submit {}
 a.btn_cancel {display:inline-block;background:#ddd;color:#444;text-decoration:none;vertical-align:middle;border-radius:5px}
@@ -713,7 +712,7 @@ a.btn_admin:focus, a.btn_admin:hover {}
 .wr_content textarea,.tbl_frm01 textarea,.form_01 textarea, .frm_input {border:1px solid #dbdbdb;background:none;height:45px;;margin:0 0 8px;padding:0 10px; border-radius:5px; font-size:1.077em;
 -webkit-box-shadow:inset 2px 2px 4px rgba(0,0,0,0.08);
 -moz-box-shadow: inset 2px 2px 4px rgba(0,0,0,0.08);
-box-shadow:inset 2px 2px 4px rgba(0,0,0,0.08);}
+box-shadow:inset 2px 2px 4px rgba(0,0,0,0.08);
 -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);}
@@ -899,7 +898,7 @@ box-shadow: 0 0 8px rgba(65,98,255,0.8);}
 #sod_frm_pay .pay_tbl td{text-align:right;padding: 10px;height:30px;border-bottom:1px solid #e7ebf1;background:#fff}
 #sod_frm_pay .pay_tbl td .cp_cancel{margin:0 0 0 2px}
 #sod_frm_pay .pay_tbl td .btn_frmline{padding: 0 7px;border: 1px solid #38b2b9;color: #38b2b9;background: #fff;height: 23px;line-height: 21px;margin: 0;}
-#od_tot_price{;background:#fff;line-height:40px;text-align:right;padding:0 10px}
+#od_tot_price{background:#fff;line-height:40px;text-align:right;padding:0 10px}
 #od_tot_price span{float:left;font-weight:bold}
 #od_tot_price strong{font-size:1.5em;color:#ff006c}
 
