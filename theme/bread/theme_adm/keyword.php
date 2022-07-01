@@ -11,7 +11,7 @@ include_once('./head.php');
 <div id="keyword" class="con_wr">
     <ol>
     <?php
-    $save_file = G5_DATA_PATH.'/cache/theme/bread/keyword.php';
+    $save_file = G5_DATA_PATH.'/theme/bread/keyword.php';
     if(is_file($save_file))
         include($save_file);
 

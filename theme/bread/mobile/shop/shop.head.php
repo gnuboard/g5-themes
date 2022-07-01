@@ -40,7 +40,7 @@ $q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : '';
             </div>
         </form>
          <?php
-        $save_file = G5_DATA_PATH.'/cache/theme/bread/keyword.php';    //고쳐야함
+        $save_file = G5_DATA_PATH.'/theme/bread/keyword.php';    //고쳐야함
         if(is_file($save_file))
             include($save_file);
 

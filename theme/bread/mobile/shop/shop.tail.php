@@ -15,7 +15,7 @@ $admin = get_admin("super");
             <h2>CS CENTER</h2>
             <div>
                 <?php
-                $save_file = G5_DATA_PATH.'/cache/theme/bread/footerinfo.php';
+                $save_file = G5_DATA_PATH.'/theme/bread/footerinfo.php';
                 if(is_file($save_file))
                     include($save_file);
                 ?>
