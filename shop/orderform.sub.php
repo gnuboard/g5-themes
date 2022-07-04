@@ -31,7 +31,19 @@ if($is_kakaopay_use) {
 <form name="forderform" id="forderform" method="post" action="<?php echo $order_action_url; ?>" autocomplete="off">
 <div id="sod_frm" class="sod_frm_pc">
     <!-- 주문상품 확인 시작 { -->
-        <ul class="sod_list">
+    <div class="tbl_head03 tbl_wrap od_prd_list">
+        <table id="sod_list">
+        <thead>
+        <tr>
+            <th scope="col">상품명</th>
+            <th scope="col">총수량</th>
+            <th scope="col">판매가</th>
+            <th scope="col">소계</th>
+            <th scope="col">포인트</th>
+            <th scope="col">배송비</th>
+        </tr>
+        </thead>
+        <tbody>
         <?php
         $tot_point = 0;
         $tot_sell_price = 0;
@@ -84,7 +96,7 @@ if($is_kakaopay_use) {
             {
                 //$goods = addslashes($row[it_name]);
                 //$goods = get_text($row[it_name]);
-                $goods = preg_replace("/\?|\'|\"|\||\,|\&|\;/", "", $row['it_name']);
+                $goods = preg_replace("/\'|\"|\||\,|\&|\;/", "", $row['it_name']);
                 $goods_it_id = $row['it_id'];
             }
             $goods_count++;
@@ -100,15 +112,13 @@ if($is_kakaopay_use) {
                 $good_info .= "good_amtx=".$row['ct_price'].chr(31);
             }
 
-            $a1 = '<strong>';
-            $a2 = '</strong>';
-            $image_width = 80;
-            $image_height = 80;
-            $image = get_it_image($row['it_id'], $image_width, $image_height);
+            $image = get_it_image($row['it_id'], 80, 80);
 
-            $it_name = $a1 . stripslashes($row['it_name']) . $a2;
+            $it_name = '<b>' . stripslashes($row['it_name']) . '</b>';
             $it_options = print_item_options($row['it_id'], $s_cart_id);
-
+            if($it_options) {
+                $it_name .= '<div class="sod_opt">'.$it_options.'</div>';
+            }
 
             // 복합과세금액
             if($default['de_tax_flag_use']) {
@@ -121,9 +131,9 @@ if($is_kakaopay_use) {
 
             $point      = $sum['point'];
             $sell_price = $sum['price'];
-            
-            $cp_button = '';
+
             // 쿠폰
+            $cp_button = '';
             if($is_member) {
                 $cp_count = 0;
 
@@ -148,7 +158,7 @@ if($is_kakaopay_use) {
                 }
 
                 if($cp_count) {
-                    $cp_button = '<div class="li_cp"><button type="button" class="cp_btn">쿠폰적용</button></div>';
+                    $cp_button = '<button type="button" class="cp_btn">쿠폰적용</button>';
                     $it_cp_count++;
                 }
             }
@@ -176,34 +186,30 @@ if($is_kakaopay_use) {
             }
         ?>
 
-        <li class="sod_li">
-            <input type="hidden" name="it_id[<?php echo $i; ?>]"    value="<?php echo $row['it_id']; ?>">
-            <input type="hidden" name="it_name[<?php echo $i; ?>]"  value="<?php echo get_text($row['it_name']); ?>">
-            <input type="hidden" name="it_price[<?php echo $i; ?>]" value="<?php echo $sell_price; ?>">
-            <?php if($default['de_tax_flag_use']) { ?>
-            <input type="hidden" name="it_notax[<?php echo $i; ?>]" value="<?php echo $row['it_notax']; ?>">
-            <?php } ?>
-            <input type="hidden" name="cp_id[<?php echo $i; ?>]" value="">
-            <input type="hidden" name="cp_price[<?php echo $i; ?>]" value="0">
-            <div class="li_name">
-                <?php echo $it_name; ?>
-            </div>
-            <div class="li_op_wr">
-                <span class="total_img"><?php echo $image; ?></span>
-                <div class="sod_opt"><?php echo $it_options; ?></div>
-                <div class="li_mod" ><?php echo $cp_button; ?></div>
-            </div>
+        <tr>
 
-            <div class="li_prqty">
-                <span class="prqty_price li_prqty_sp"><span>판매가 </span><?php echo number_format($row['ct_price']); ?></span>
-                <span class="prqty_qty li_prqty_sp"><span>수량 </span><?php echo number_format($sum['qty']); ?></span>
-                <span class="prqty_sc li_prqty_sp"><span>배송비 </span><?php echo $ct_send_cost; ?></span>
-                 <span class="total_point li_prqty_sp"><span>적립포인트 </span><strong><?php echo number_format($sum['point']); ?></strong></span>
+            <td class="td_prd">
+                <div class="sod_img"><?php echo $image; ?></div>
+                <div class="sod_name">
+                    <input type="hidden" name="it_id[<?php echo $i; ?>]"    value="<?php echo $row['it_id']; ?>">
+                    <input type="hidden" name="it_name[<?php echo $i; ?>]"  value="<?php echo get_text($row['it_name']); ?>">
+                    <input type="hidden" name="it_price[<?php echo $i; ?>]" value="<?php echo $sell_price; ?>">
+                    <input type="hidden" name="cp_id[<?php echo $i; ?>]" value="">
+                    <input type="hidden" name="cp_price[<?php echo $i; ?>]" value="0">
+                    <?php if($default['de_tax_flag_use']) { ?>
+                    <input type="hidden" name="it_notax[<?php echo $i; ?>]" value="<?php echo $row['it_notax']; ?>">
+                    <?php } ?>
+                    <?php echo $it_name; ?>
+                    <?php echo $cp_button; ?>
 
-            </div>
-            <div class="total_price total_span"><span>주문금액 </span><strong><?php echo number_format($sell_price); ?></strong></div>
-
-        </li>
+                 </div>
+            </td>
+            <td class="td_num"><?php echo number_format($sum['qty']); ?></td>
+            <td class="td_numbig  text_right"><?php echo number_format($row['ct_price']); ?></td>
+            <td class="td_numbig  text_right"><span class="total_price"><?php echo number_format($sell_price); ?></span></td>
+            <td class="td_numbig  text_right"><?php echo number_format($point); ?></td>
+            <td class="td_dvr"><?php echo $ct_send_cost; ?></td>
+        </tr>
 
         <?php
             $tot_point      += $point;
@@ -211,7 +217,7 @@ if($is_kakaopay_use) {
         } // for 끝
 
         if ($i == 0) {
-            //echo '<li class="empty_li">장바구니에 담긴 상품이 없습니다.</li>';
+            //echo '<tr><td colspan="7" class="empty_table">장바구니에 담긴 상품이 없습니다.</td></tr>';
             alert('장바구니가 비어 있습니다.', G5_SHOP_URL.'/cart.php');
         } else {
             // 배송비 계산
@@ -224,7 +230,9 @@ if($is_kakaopay_use) {
             $comm_vat_mny = ($tot_tax_mny + $send_cost) - $comm_tax_mny;
         }
         ?>
-    </ul>
+        </tbody>
+        </table>
+    </div>
 
     <?php if ($goods_count) $goods .= ' 외 '.$goods_count.'건'; ?>
     <!-- } 주문상품 확인 끝 -->
