@@ -197,8 +197,7 @@ html.no-overflowscrolling #autosave_pop {height:auto;max-height:10000px !importa
 #bo_v_title .bo_v_cate{display:inline-block;line-height:26px;background: #3497d9;color: #fff;font-weight: bold;border-bottom:1px solid #1977b5;padding:0 10px;border-radius:3px;
 -webkit-box-shadow: inset 0 2px 5px rgb(33, 135, 202);
 -moz-box-shadow: inset 0 2px 5px rgb(33, 135, 202);
-box-shadow: inset 0 2px 5px rgb(33, 135, 202);
-}
+box-shadow: inset 0 2px 5px rgb(33, 135, 202);}
 #bo_v_title .bo_v_tit{display:block;font-size:2em;margin:5px 0 0 }
 
 #bo_v_info {padding: 10px 0 15px;margin:0 0 20px;border-bottom:1px solid #ddd;color:#666}
@@ -236,12 +235,12 @@ box-shadow: inset 0 2px 5px rgb(33, 135, 202);
 #bo_v_top {zoom:1}
 #bo_v_top:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_top h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-#bo_v_top ul ;padding:0;list-style:none}
+#bo_v_top ul {padding:0;list-style:none}
 
 #bo_v_bot {zoom:1}
 #bo_v_bot:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_bot h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-#bo_v_bot ul {;padding:0;list-style:none}
+#bo_v_bot ul {padding:0;list-style:none}
 
 .bo_v_com {margin:20px 0;float:right}
 .bo_v_com li {float:left;margin-left:5px}

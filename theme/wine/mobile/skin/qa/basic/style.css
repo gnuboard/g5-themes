@@ -119,7 +119,7 @@
 .td_subject img {margin-left:3px}
 #bo_list .cnt_cmt {display:inline-block;margin:0 0 0 3px;font-weight:bold}
 
-#bo_sch {;float:left;position:relative;margin:10px;border-radius:3px}
+#bo_sch {float:left;position:relative;margin:10px;border-radius:3px}
 #bo_sch:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_sch .sch_input{height:40px;border:0;padding:0;background-color:#fff;float:left;width:60%;padding:0 40px 0 10px;width:300px}
 #bo_sch .sch_btn{height:40px;position:absolute;top:0;right:0;border:0;width:40px;background:none;font-size:15px}
