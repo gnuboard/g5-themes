@@ -18,7 +18,7 @@ if(sql_num_rows($hresult)) {
     {
         echo '<li class="ev_li"><div class="ev_li_wr">';
         $href = G5_SHOP_URL.'/event.php?ev_id='.$row['ev_id'];
-
+        $k = 0;
         $event_img = G5_DATA_PATH.'/event/'.$row['ev_id'].'_m'; // 이벤트 이미지
         echo '<div class="sev_img_wr">'.PHP_EOL;
             echo '<a href="'.$href.'" class="sev_img "><img src="'.G5_DATA_URL.'/event/'.$row['ev_id'].'_m" alt="'.$row['ev_subject'].'"></a>'.PHP_EOL;
