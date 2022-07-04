@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* 새글 스킨 (latest) */
+.lat {position:relative;}
+.lat li {line-height:25px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.lat li .cnt_cmt{color:#ff3970}
+.lat li a{color:#848a92;font-weight:300}
+.lat h2 a{color: #848a92; }
+.lat_more {position:absolute;top:10px;right:0;}
