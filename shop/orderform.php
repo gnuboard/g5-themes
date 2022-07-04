@@ -50,13 +50,8 @@ if ($default['de_hope_date_use']) {
 }
 
 // 기기별 주문폼 include
-if($is_mobile_order) {
-    $order_action_url = G5_HTTPS_MSHOP_URL.'/orderformupdate.php';
-    require_once(G5_MSHOP_PATH.'/orderform.sub.php');
-} else {
     $order_action_url = G5_HTTPS_SHOP_URL.'/orderformupdate.php';
-    require_once(G5_SHOP_PATH.'/orderform.sub.php');
-}
+    require_once(G5_MSHOP_PATH.'/orderform.sub.php');
 
 if(G5_IS_MOBILE)
     include_once(G5_MSHOP_PATH.'/_tail.php');
