@@ -9,8 +9,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
     <h1 id="win_title"><?php echo $g5['title'] ?></h1>
 
     <ul class="win_ul">
-        <li><a href="./memo.php?kind=recv" class="selected">받은쪽지</a></li>
-        <li><a href="./memo.php?kind=send">보낸쪽지</a></li>
+        <li><a href="./memo.php?kind=recv" <?php echo ($kind == "recv") ? 'class="selected"' : ''; ?>>받은쪽지</a></li>
+        <li><a href="./memo.php?kind=send" <?php echo ($kind == "send") ? 'class="selected"' : ''; ?>>보낸쪽지</a></li>
         <li><a href="./memo_form.php">쪽지쓰기</a></li>
     </ul>
     <div class="new_win_con">
