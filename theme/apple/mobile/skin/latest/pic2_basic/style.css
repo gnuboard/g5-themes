@@ -1,4 +1,4 @@
- @charset "utf-8";
+@charset "utf-8";
 .pic2_lt .lat_title {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 .pic2_lt ul:after {display:block;visibility:hidden;clear:both;content:""}
 .pic2_lt li{position:relative;border-bottom:1px solid #f4f4f4;padding:15px 10px}
@@ -22,7 +22,7 @@
 .pic2_lt li.li_0 .lt_tit{font-size:1.25em;margin:10px 0}
 
 @media (min-width: 640px){
-    .pic2_lt ul{padding-left:50%;position:relative}
+    .pic2_lt ul{padding-left:50%;position:relative;min-height:400px;}
     .pic2_lt li.li_0{position:absolute;top:0;left:0;width:50%;border:0}
     .pic2_lt .li_1 .lt_img,.pic2_lt .li_2 .lt_img,.pic2_lt .li_3 .lt_img,.pic2_lt .li_4 .lt_img{width:30%;float:left}
     .pic2_lt .li_1 .li_txt,.pic2_lt .li_2 .li_txt,.pic2_lt .li_3 .li_txt,.pic2_lt .li_4 .li_txt{width:65%;float:right}
@@ -32,5 +32,5 @@
 }
 
 @media (max-width: 639px){
-     .pic2_lt .lt_tit{margin-top:10px}
+    .pic2_lt .lt_tit{margin-top:10px}
 }

@@ -37,6 +37,6 @@
 #ol_after_private li:nth-child(even) a{background:#e5e9ea}
 #ol_after_private a strong {display:block;color:#ff6f6f}
 #ol_after_private li a:hover{background:#bec3c7}
-#ol_after_memo {;margin-right:1px}
+#ol_after_memo {margin-right:1px}
 #ol_after_pt {margin-right:1px}
 #ol_after_logout{display:block;height:40px;font-size:1.083em;line-height:38px;text-align:center;font-weight:bold;border-radius:3px;margin:10px 0 0px}
