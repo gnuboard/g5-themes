@@ -31,7 +31,7 @@ box-shadow:inset 2px 2px 4px rgba(0,0,0,0.08);}
 #ol_after_private {margin:0;padding:0;list-style:none}
 #ol_after_private:after {display:block;visibility:hidden;clear:both;content:""}
 #ol_after_private li {border-top:1px solid #f4f4f4;}
-#ol_after_private a {;display:block;line-height:40px;padding:0 15px;position:relative;}
+#ol_after_private a {display:block;line-height:40px;padding:0 15px;position:relative;}
 #ol_after_private a:hover{background:#f8f8f8;}
 #ol_after_private i{width:25px;text-align:center;margin-right:5px;color:#b4b7b9;font-size:14px}
 #ol_after_private strong{display:inline-block;position:absolute;top:10px;right:15px;background:#6082e5;line-height:20px;color:#fff;padding:0 5px;border-radius:30px;font-size:0.923em}
@@ -42,5 +42,5 @@ box-shadow:inset 2px 2px 4px rgba(0,0,0,0.08);}
 #ol_after_btn a{display:inline-block;padding:0 10px;line-height:26px;font-weight:bold}
 
 
-#ol_before .login-sns h3{;border-top:1px solid #e1e1e1;text-align:left}
+#ol_before .login-sns h3{border-top:1px solid #e1e1e1;text-align:left}
 #ol_before .sns-wrap {text-align:left}

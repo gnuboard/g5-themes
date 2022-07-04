@@ -224,8 +224,8 @@ ul.tabs li.current{background: #fff;color: #222;border:1px solid #d7d7d7;border-
 /* 캡챠 자동등록(입력)방지 기본 -pc */
 #captcha {position:relative}
 #captcha legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden;}
-#captcha #captcha_img {;height:40px;border:1px solid #898989;;vertical-align:top;padding:0;margin:0}
-#captcha #captcha_mp3 {;margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;width:40px;height:40px;background:url('../../../img/captcha2.png') no-repeat;text-indent:-999px;;border-radius:3px}
+#captcha #captcha_img {height:40px;border:1px solid #898989;;vertical-align:top;padding:0;margin:0}
+#captcha #captcha_mp3 {margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;width:40px;height:40px;background:url('../../../img/captcha2.png') no-repeat;text-indent:-999px;;border-radius:3px}
 #captcha #captcha_reload {margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;background:url('../../../img/captcha2.png') no-repeat  0 -40px;text-indent:-999px;border-radius:3px}
 #captcha #captcha_key {margin:0 0 0 3px;padding:0 5px;width:90px;height:40px;border:1px solid #ccc;background:#fff;font-size:1.333em;font-weight:bold;text-align:center;border-radius:3px;vertical-align:top}
 #captcha #captcha_info {display:block;margin:3px 0 5px ;font-size:0.95em;letter-spacing:-0.1em}
@@ -268,7 +268,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6ffffff', e
 a.btn02:focus, .btn02:hover {text-decoration:none;background:#f3f3f3}
 button.btn02 {display:inline-block;margin:0;padding:7px;border:1px solid #3b3c3f;background:#4b545e;color:#fff;text-decoration:none;border-radius:5px}
 .btn_confirm {text-align:center} /* 서식단계 진행 */
-.btn_submit {;border:0;background:#68b880;border-bottom:2px solid #4ca667;color:#fff;cursor:pointer;border-radius:5px;font-weight:bold}
+.btn_submit {border:0;background:#68b880;border-bottom:2px solid #4ca667;color:#fff;cursor:pointer;border-radius:5px;font-weight:bold}
 .btn_submit:hover{background:#4ca667;color:#fff}
 fieldset .btn_submit {}
 a.btn_cancel {display:inline-block;background:#ddd;color:#444;text-decoration:none;vertical-align:middle;border-radius:5px}

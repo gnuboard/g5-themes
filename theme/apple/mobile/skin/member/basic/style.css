@@ -79,7 +79,7 @@
 #fregister .chk_all{padding:20px;border: 1px solid #dbf2e0;color:#4ca667;background: #f3fcf5;text-align:left;margin-top:20px}
 #fregister h2 {text-align:left;padding:10px 0;line-height:1.7em;font-size:1.167em}
 #fregister textarea {display:block;padding:15px;width:100%;border:0;background: #eff1f4; border: 1px solid #d3dae5;;height:180px;line-height:1.5em;color:#6d7b91}
-.fregister_agree {;padding:10px 0;line-height:1.7em;text-align:left;font-size:1.083em}
+.fregister_agree {padding:10px 0;line-height:1.7em;text-align:left;font-size:1.083em}
 .fregister_agree label {display:inline-block;margin-right:5px}
 #fregister p {border:0;padding:0 0 5px;}
 #fregister .btn_confirm {margin:15px 0}
@@ -140,7 +140,7 @@
 #flogin{background:#fff;padding:20px;}
 
 #mb_login_notmb{background:#fff;border-bottom:1px solid #ccc;padding:20px;}
-#mb_login_notmb h2{font-size:1.5em;padding:10px;t}
+#mb_login_notmb h2{font-size:1.5em;padding:10px;}
 #mb_login_notmb p{padding: 10px;border: 1px solid #dbf2e0;color: #4ca667; background: #f3fcf5; text-align: left;}
 #guest_privacy p{border:1px solid #ddd;background:#f3f3f3;color:#666;min-height:20px;height:200px;padding:10px;text-align:left;overflow-y:auto;margin:10px 0}
 #mb_login_notmb .btn_submit{width:100%;display:block;height:40px;line-height:40px}
@@ -151,7 +151,7 @@
 #mb_login_odinfo{margin:10px 0 0 ;background:#f3f3f3;padding:10px}
 #mb_login_odinfo h2{font-size:1.167em}
 
-#mb_login #sns_login{;margin:0;position:relative;padding-top:20px;border-top-color:#d7d7d7}
+#mb_login #sns_login{margin:0;position:relative;padding-top:20px;border-top-color:#d7d7d7}
 #mb_login #sns_login .sns-icon {border-radius:5px}
 #mb_login #sns_login .txt {border:0}
 #mb_login #sns_login h3 {display:none}
@@ -198,7 +198,7 @@ box-shadow: 0 1px 5px rgba(50,50,50,0.2);}
 #scrap_do label{color:#666}
 
 /* 포인트 */
-#point_ul {;padding:0;border-top:1px solid #e9e9e9;list-style:none}
+#point_ul {padding:0;border-top:1px solid #e9e9e9;list-style:none}
 #point_ul li {position:relative;}
 #point_ul li:after {display:block;visibility:hidden;clear:both;content:""}
 #point_ul .point_wrap01 {float:left}
