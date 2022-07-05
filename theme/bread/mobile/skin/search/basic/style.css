@@ -37,7 +37,7 @@ box-shadow: 0 0 8px  rgba(65,98,255,0.8);}
 .sch_res_new{position:absolute;top:10px;right:0;font-size:0.92em;color:#777;width:20px;height:20px;line-height:20px;display:block;background:#eee;text-align:center}
 .sch_res_list p {margin:0 0 10px;line-height:1.4em;color:#777;font-size:0.92em}
 .sch_more {padding:0 0 30px;font-size:0.92em;text-align:right }
-.sch_more a{;color:#f2664f}
+.sch_more a {color:#f2664f}
 .sch_more  i{font-size:13px}
 .sch_datetime{float:right;font-style:italic}
 .sch_res_info .profile_img img{border-radius:50%}
