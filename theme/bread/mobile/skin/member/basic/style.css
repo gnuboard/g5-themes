@@ -110,14 +110,16 @@ box-shadow:none}
 
 #fregisterform:after {display:block;visibility:hidden;clear:both;content:""}
 #fregisterform .form_01 h2 {padding:15px;background:#ececec;color:#000;font-size:1.167em;text-align:left}
-#fregisterform .form_01 label {float:left;width:25%;padding:10px 0;text-align:left}
-#fregisterform .form_01 input {float:left;width:75%;margin-bottom:5px;background:#fff}
+#fregisterform .form_01 label {width:25%;padding:10px 0;text-align:left}
+#fregisterform .form_01 input {width:100%;margin-bottom:5px;background:#fff}
+#fregisterform .form_01 input[type="checkbox"] {width:auto;}
 #fregisterform .form_01 #reg_mb_zip {width:54%}
 #fregisterform .form_01:after {display:block;visibility:hidden;clear:both;content:""}
-#fregisterform .frm_info {display:block;padding:5px 0;margin-left:27%;text-align:left;color:#b1b1b1;font-size:0.92em}
+#fregisterform .frm_info {display:block;padding:5px 0;width:100%;text-align:left;font-size:0.92em}
 #fregisterform .btn_frmline2 {display:inline-block;float:left;margin-left:5px;padding:0 5px;height:45px;border:0;background:#1ec679;border:1px solid #12b46a;color:#fff;text-decoration:none;vertical-align:top;border-radius:3px}
 #fregisterform .btn_frmline {height:40px;padding:0 10px}
 #fregisterform .rgs_name_li button {margin:5px 0 0}
+#fregisterform .btn_confirm .btn_cancel {padding:0 7px;line-height: 45px;}
 
 .btn_confirm {text-align:right;margin:20px 0}
 
@@ -201,6 +203,7 @@ box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
 #mb_login_od_wr{background:#fff;border-bottom:1px solid #ccc;padding:20px;}
 #mb_login_od_wr p{border:0;text-align:left;}
 #mb_login_od_wr p strong{display:inline}
+#mb_login_od_wr input {width:100%;margin-bottom:5px;}
 #mb_login_odinfo{margin:10px 0 0 ;background:#f3f3f3;padding:10px}
 #mb_login_odinfo h2{font-size:1.167em}
 
