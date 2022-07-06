@@ -16,6 +16,7 @@ if(sql_num_rows($hresult)) {
     <?php
     for ($i=0; $row=sql_fetch_array($hresult); $i++)
     {
+        $k = 0;
         echo '<li class="ev_li"><div class="ev_li_wr">';
         $href = G5_SHOP_URL.'/event.php?ev_id='.$row['ev_id'];
 
