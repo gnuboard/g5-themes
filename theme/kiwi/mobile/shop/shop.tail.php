@@ -5,6 +5,8 @@ $admin = get_admin("super");
 
 // 사용자 화면 우측과 하단을 담당하는 페이지입니다.
 // 우측, 하단 화면을 꾸미려면 이 파일을 수정합니다.
+
+$q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : '';
 ?>
 </div><!-- container End -->
 
