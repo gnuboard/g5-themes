@@ -25,16 +25,14 @@ a {color:#000;text-decoration:none}
 *, :after, :before {
 -webkit-box-sizing: border-box;
 -moz-box-sizing: border-box;
-box-sizing: border-box;
-}
+box-sizing: border-box;}
 
 input[type=text],input[type=password], textarea {
 -webkit-transition: all 0.30s ease-in-out;
 -moz-transition: all 0.30s ease-in-out;
 -ms-transition: all 0.30s ease-in-out;
 -o-transition: all 0.30s ease-in-out;
-outline: none;
-}
+outline: none;}
 
 .placeholdersjs { color: #aaa !important; }
 
@@ -113,8 +111,7 @@ border-color: transparent transparent transparent rgba(0,0,0,0.7);}
 #quick .tabsCon{height:100%;text-align:left}
 #quick .btn_close{position:absolute;top:0;right:0;width:50px;height:60px;border:0;background:none;font-size:15px;color:rgba(0,0,0,0.3);}
 #quick .btn_close:hover{color:rgba(0,0,0,0.8);}
-#quick .qk_con{position:relative;background:#fff;height:100%;width:250px;display:none;
-}
+#quick .qk_con{position:relative;background:#fff;height:100%;width:250px;display:none;}
 #quick .qk_con h3{ padding:20px;font-size:1.25em;position:relative;font-weight:500}
 #quick .btn_scroll{position:absolute;bottom:0;left:0}
 #quick .btn_scroll button{display:block;width:40px;height:40px;border:0;background:none;border-top:1px solid #f0f0f0}
@@ -264,7 +261,7 @@ a.btn_b01,.btn_b01 {display:inline-block;background:none;border:1px solid #ddd;c
 .btn_b01:hover, .btn_b01:hover {background:#f3f3f3}
 a.btn_b02,.btn_b02 {display:inline-block;background:#111;padding:0 10px;color:#fff;text-decoration:none;border:0;vertical-align:middle}
 a.btn_b02:hover, .btn_b02:hover {background:#999}
-a.btn_b03, .btn_b03 {display:inline-block;background:#none;border:1px solid #6b5ced;color:#6b5ced;background:none;text-decoration:none;vertical-align:middle}
+a.btn_b03, .btn_b03 {display:inline-block;background:none;border:1px solid #6b5ced;color:#6b5ced;background:none;text-decoration:none;vertical-align:middle}
 a.btn_b03:hover, .btn_b03:hover {background:#f3f5ff}
 a.btn_admin,.btn_admin {display:inline-block;background:#d13f4a;color:#fff;text-decoration:none;vertical-align:middle;padding:0 10px} /* 관리자 전용 버튼 */
 .btn_admin:hover, a.btn_admin:hover {background:#ff3746}
@@ -578,8 +575,8 @@ box-shadow: 1px 2px 2px #eee;}
 #sod_frm  #sod_bsk_tot .sod_bsk_dvr:before{display:block;content:"+";position:absolute;top:25px;left:-10px;width:20px;height:20px;background:#fff;color:#ff006c;border-radius:50%;border:1px solid #e7ebf1;font-weight:bold;font-size: 16px;line-height: 14px;}
 #sod_frm  #sod_bsk_tot .sod_bsk_cnt strong{color:#ff006c;font-size:1.25em}
 
-.sod_left{display: table-cell;width:70%;background:#fafafa;padding:40px;vertical-align:top;}
-.sod_right{display: table-cell;width:30%;background:#eceff4;padding:40px;vertical-align:top;
+.sod_left{display: inline-block;width:69%;background:#fafafa;padding:40px;vertical-align:top;box-sizing:border-box;}
+.sod_right{display: inline-block;width:30%;background:#eceff4;padding:40px;vertical-align:top;box-sizing:border-box;
 -webkit-box-shadow: inset 7px 0 9px -7px rgba(0,0,0,0.2);
 -moz-box-shadow: inset 7px 0 9px -7px rgba(0,0,0,0.2);
 box-shadow: inset 7px 0 11px -5px #ced8e5;height:100%}

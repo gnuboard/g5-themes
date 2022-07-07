@@ -122,7 +122,7 @@ box-shadow: 0 1px 3px #eee;
 #fregisterform .form_01 div{margin: 0 0 50px}
 #fregisterform .captcha{display:block;margin:5px 0 0}
 #fregisterform .reg_mb_img_file img{max-width:100%;height:auto}
-
+#fregisterform .btn_frmline {line-height: 30px;}
 
 /* 회원가입 완료 */
 #reg_result {padding:100px 0 40px;text-align:center;background:#fff}

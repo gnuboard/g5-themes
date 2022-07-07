@@ -103,7 +103,7 @@ box-shadow: 2px 2px 3px 0px rgba(0,0,0,0.2);}
 #fregisterform .btn_frmline {height:40px;padding:0 10px}
 #fregisterform .rgs_name_li button{margin:5px 0 0 }
 #fregisterform .reg_mb_img_file img{max-width:100%;height:auto}
-#fregisterform .btn_submit{width:100%;height:40px}
+#fregisterform .btn_submit, #fregisterform .btn_cancel {margin-bottom:10px;padding:0 7px;width:100%;height:40px;line-height:40px;}
 
 /* 회원가입 완료 */
 #reg_result {padding:20px 10px 10px}
