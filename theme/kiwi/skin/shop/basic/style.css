@@ -26,9 +26,9 @@
 #sev .ev_prd {position:absolute;top:100px;left:0;width:100%;text-align:center;padding:0 50px}
 #sev .ev_tit a{display:block;margin:20px 0 40px;font-size:30px;font-weight:500;letter-spacing:-1px;line-height:38px;color:#fff}
 #sev .ev_tit span{display:inline-block;background:#fff;;padding:0 8px;line-height:23px;font-weight:300;letter-spacing:1px;
-    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.05);
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);}
+-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.05);
+-moz-box-shadow: 0 0 10px rgba(0,0,0,0.05);
+box-shadow: 0 0 10px rgba(0,0,0,0.05);}
 #sev .ev_prd_wr .ev_prd_tit{display:block;margin:20px 0 6px;font-size:13px;color:#fff}
 #sev .ev_prd_price{font-weight:700;color:#fff}
 #sev .bx-controls-direction {position:absolute;top:5px;right:0;}
@@ -45,7 +45,7 @@
 #scomm li a:hover{color:#be334a}
 
 /* 메인배너 */
-#main_bn {;position:relative;margin-bottom:40px}
+#main_bn {position:relative;margin-bottom:40px}
 #main_bn .slide-wrap{display:none}
 #main_bn .slide-wrap img{max-width:100%;height:auto}
 #main_bn .bx-prev{position:absolute;top:50%;left:0;margin-top:-35px;z-index:9;background:url(img/prev_btn.png) no-repeat 50% 50%;width:70px;height:70px;;text-indent:-999px;overflow:hidden;opacity:0.6}
@@ -221,7 +221,7 @@ border-color: transparent transparent transparent rgba(0,0,0,0.7);}
 .sct_cartop .cartopt_close_btn:hover{color:#000}
 .sct_cartop .cartopt_cart_btn {margin-top:10px;width:100%}
 
-.sct_10 .sct_img_02{;opacity:0;position:absolute;top:0;left:0;
+.sct_10 .sct_img_02{opacity:0;position:absolute;top:0;left:0;
 -webkit-transition: all 0.30s ease;
 -moz-transition: all 0.30s ease;
 -ms-transition: all 0.30s ease;
@@ -313,7 +313,7 @@ border-color: transparent transparent transparent rgba(0,0,0,0.7);}
 .sct_cartop .cartopt_close_btn:hover{color:#000}
 .sct_cartop .cartopt_cart_btn {margin-top:10px;width:100%}
 
-.sct_40 .sct_img_02{;opacity:0;position:absolute;top:0;left:0;
+.sct_40 .sct_img_02{opacity:0;position:absolute;top:0;left:0;
 -webkit-transition: all 0.30s ease;
 -moz-transition: all 0.30s ease;
 -ms-transition: all 0.30s ease;
@@ -440,7 +440,7 @@ border-color: transparent transparent transparent rgba(0,0,0,0.7);}
 /* 상품 목록 카테고리 목록 */
 .sct_ct {}
 .sct_ct h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-.sct_ct ul {;zoom:1}
+.sct_ct ul {zoom:1}
 .sct_ct ul:after {display:block;visibility:hidden;clear:both;content:""}
 .sct_ct a {text-decoration:none}
 .sct_ct_parent {font-weight:bold}
@@ -525,7 +525,7 @@ border-color: transparent transparent transparent rgba(0,0,0,0.7);}
 .sns_area #sit_btn_rec {font-size:15px;opacity:0.4;width:30px;text-align:center}
 .sns_area #sit_btn_rec:hover,.sns_area .share-facebook:hover,.sns_area .share-twitter:hover,.sns_area .share-googleplus:hover{opacity:1;-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
     filter: grayscale(0%);}
-.sns_area  #sit_btn_wish{;color:#828282;float:left}
+.sns_area  #sit_btn_wish{color:#828282;float:left}
 .sns_area .sns_wr{float:right}
 
 .sit_info{padding:10px 0 ;}
@@ -562,12 +562,12 @@ border-color: transparent transparent transparent rgba(0,0,0,0.7);}
 #sit_ov_btn button {width:100%;float:left;height:46px;margin:3px 0;font-weight:bold;font-size:1.25em}
 #sit_btn_alm{display:inline-block;width:100%;height:50px;line-height:50px;margin-bottom:10px;font-weight:bold;font-size:1.25em;background:#d50c0c;color:#fff;border:0;text-align:center;}
 
- #option_wr{position:absolute;top:0;right:0;;background:#fff;width:320px;border:1px solid #333; overflow-y:auto;overflow-x:hidden;;}
+#option_wr{position:absolute;top:0;right:0;;background:#fff;width:320px;border:1px solid #333; overflow-y:auto;overflow-x:hidden;;}
 .fixto-fixed{height:100%;}
- #option_cost{padding:15px 20px;border-bottom:1px solid #e9e9e9;line-height:25px}
- #option_cost .cust_price{text-decoration:line-through;color:#949494;display:inline-block;margin-left:5px}
- #option_cost strong{font-size:15px;}
- #option_cost .color1 {color:#339cff;text-align:center;display:block}
+#option_cost{padding:15px 20px;border-bottom:1px solid #e9e9e9;line-height:25px}
+#option_cost .cust_price{text-decoration:line-through;color:#949494;display:inline-block;margin-left:5px}
+#option_cost strong{font-size:15px;}
+#option_cost .color1 {color:#339cff;text-align:center;display:block}
 
 
 

@@ -3,7 +3,7 @@
 /* 최근게시물 스킨 (latest) */
 .lt {border-top:1px solid #eee;position:relative;margin:40px 0 0 ;padding:15px;padding-left:60px;text-align:center;z-index:1}
 .lt h2{text-align: left;position:absolute;top:15px;left:15px;line-height:20px}
-.lt ul {;padding:0;list-style:none}
+.lt ul {padding:0;list-style:none}
 .lt li{text-align:left;background:#fff;}
 .lt a {display:block;line-height:20px}
 .lt li i{color:#9da4bc}
