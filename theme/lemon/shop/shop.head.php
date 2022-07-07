@@ -75,7 +75,7 @@ add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 0);
             }
             </script>
             <?php
-            $save_file = G5_DATA_PATH.'/cache/theme/lemon/keyword.php';
+            $save_file = G5_DATA_PATH.'/theme/lemon/keyword.php';
             if(is_file($save_file))
                 include($save_file);
 
@@ -137,18 +137,21 @@ add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 0);
                 <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="menu_1da"><?php echo $row['me_name'] ?></a>
                 <?php
                 $k = 0;
-                foreach( (array) $row['sub'] as $row2 ){
+                if(!empty($row['sub'])){
+                    foreach( (array) $row['sub'] as $row2 ){
 
-                    if( empty($row2) ) continue; 
-
-                    if($k == 0)
-                        echo '<span class="bg"><i class="fa fa-chevron-down"></i></span><ul class="menu_2dul">'.PHP_EOL;
-                ?>
-                    <li class="menu_2dli"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" class="menu_2da"><?php echo $row2['me_name'] ?></a></li>
-                <?php
-                $k++;
-                }   //end foreach $row2
-
+                        if( empty($row2) ) continue; 
+    
+                        if($k == 0)
+                            echo '<span class="bg"><i class="fa fa-chevron-down"></i></span><ul class="menu_2dul">'.PHP_EOL;
+                    ?>
+                        <li class="menu_2dli"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" class="menu_2da"><?php echo $row2['me_name'] ?></a></li>
+                    <?php
+                        $k++;
+                    }   //end foreach $row2
+    
+                }
+                
                 if($k > 0)
                     echo '</ul>'.PHP_EOL;
                 ?>

@@ -34,7 +34,7 @@ include_once(G5_THEME_SHOP_PATH.'/shop.head.php');
     <div class="as_cs">
         <h2>고객센터</h2>
         <?php
-        $save_file = G5_DATA_PATH.'/cache/theme/lemon/footerinfo.php';
+        $save_file = G5_DATA_PATH.'/theme/lemon/footerinfo.php';
         if(is_file($save_file))
             include($save_file);
         ?>

@@ -31,7 +31,7 @@ $admin = get_admin("super");
     </form>
 
     <?php
-    $save_file = G5_DATA_PATH.'/cache/theme/lemon/keyword.php';
+    $save_file = G5_DATA_PATH.'/theme/lemon/keyword.php';
     if(is_file($save_file))
         include($save_file);
 
@@ -93,7 +93,7 @@ window.onscroll = function() {
     <div class="ft_cs">
         <h2>고객센터</h2>
         <?php
-        $save_file = G5_DATA_PATH.'/cache/theme/lemon/footerinfo.php';
+        $save_file = G5_DATA_PATH.'/theme/lemon/footerinfo.php';
         if(is_file($save_file))
             include($save_file);
         ?>
