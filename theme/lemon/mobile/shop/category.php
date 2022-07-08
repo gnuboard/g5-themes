@@ -56,25 +56,28 @@ function get_mshop_category($ca_id, $len)
                     <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="li_a_1"><?php echo $row['me_name'] ?></a>
                     <?php
                     $k = 0;
-                    foreach( (array) $row['sub'] as $row2 ){
+                    if(!empty($row['sub'])){
+                        foreach( (array) $row['sub'] as $row2 ){
 
-                        if( empty($row2) ) continue; 
-
-                        if($k == 0)
-                            echo '<button class="sub_ct_toggle ct_op">하위분류 열기</button><ul class="sub_cate">'.PHP_EOL;
-                    ?>
-                        <li class="li_2"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"><?php echo $row2['me_name'] ?></a></li>
+                            if( empty($row2) ) continue; 
+    
+                            if($k == 0)
+                                echo '<button class="sub_ct_toggle ct_op">하위분류 열기</button><ul class="sub_cate">'.PHP_EOL;
+                        ?>
+                            <li class="li_2"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"><?php echo $row2['me_name'] ?></a></li>
+                        <?php
+                        $k++;
+                        }   //end foreach $row2
+    
+                        if($k > 0)
+                            echo '</ul>'.PHP_EOL;
+                        ?>
+                    </li>
                     <?php
-                    $k++;
-                    }   //end foreach $row2
-
-                    if($k > 0)
-                        echo '</ul>'.PHP_EOL;
-                    ?>
-                </li>
-                <?php
-                $i++;
-                }   //end foreach $row
+                    $i++;
+                    }   //end foreach $row
+                    }
+                    
 
                 if ($i == 0) {  ?>
                     <li class="gnb_empty">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
