@@ -82,7 +82,7 @@ add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 0);
         }
         </script>
         <?php
-        $save_file = G5_DATA_PATH.'/cache/theme/cherry/keyword.php';
+        $save_file = G5_DATA_PATH.'/theme/cherry/keyword.php';
         if(is_file($save_file))
             include($save_file);
 

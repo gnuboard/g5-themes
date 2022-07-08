@@ -126,7 +126,7 @@ include_once(G5_THEME_MSHOP_PATH.'/shop.head.php');
         <div class="cs_con">
             <h2>고객센터</h2>
             <?php
-            $save_file = G5_DATA_PATH.'/cache/theme/cherry/footerinfo.php';
+            $save_file = G5_DATA_PATH.'/theme/cherry/footerinfo.php';
             if(is_file($save_file))
                 include($save_file);
             ?>
@@ -137,7 +137,7 @@ include_once(G5_THEME_MSHOP_PATH.'/shop.head.php');
             <h2>계좌정보</h2>
         
             <?php
-            $save_file = G5_DATA_PATH.'/cache/theme/cherry/footerinfo.php';
+            $save_file = G5_DATA_PATH.'/theme/cherry/footerinfo.php';
             if(is_file($save_file))
                 include($save_file);
             ?>
