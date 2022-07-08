@@ -155,6 +155,7 @@ include_once('./_head.php');
 
         if ($i == 0) {
             echo '<tr><td colspan="8" class="empty_table">장바구니에 담긴 상품이 없습니다.</td></tr>';
+            $send_cost = get_sendcost($s_cart_id, 0);
         } else {
             // 배송비 계산
             $send_cost = get_sendcost($s_cart_id, 0);
