@@ -15,7 +15,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_SHOP_SKIN_URL.'/style.css">', 
         $hresult = sql_query($hsql);
         for ($i=0; $row=sql_fetch_array($hresult); $i++)
         {
-            $gnb_zindex -= 1; // html 구조에서 앞선 gnb_1dli 에 더 높은 z-index 값 부여
+            $gnb_zindex = 1; // html 구조에서 앞선 gnb_1dli 에 더 높은 z-index 값 부여
             // 2단계 분류 판매 가능한 것만
             $sql2 = " select ca_id, ca_name from {$g5['g5_shop_category_table']} where LENGTH(ca_id) = '4' and SUBSTRING(ca_id,1,2) = '{$row['ca_id']}' and ca_use = '1' order by ca_order, ca_id ";
             $result2 = sql_query($sql2);
