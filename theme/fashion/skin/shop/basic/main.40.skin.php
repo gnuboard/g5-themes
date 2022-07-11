@@ -5,6 +5,13 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 add_stylesheet('<link rel="stylesheet" href="'.G5_SHOP_SKIN_URL.'/style.css">', 0);
 
 // 관련상품 스킨은 사품을 한줄에 하나만 표시하며 해당 상품에 관련상품이 등록되어 있는 경우 기본으로 7개까지 노출합니다.
+    $list_top_pad = 20;
+    $list_right_pad = 10;
+    $list_bottom_pad = 20;
+    $list_left_pad = 15;
+    $list_real_width = 360;
+    $list_width = $list_real_width - $list_right_pad - $list_left_pad;
+    $list_height = '208px';
 ?>
 
 <div class="slider40">
