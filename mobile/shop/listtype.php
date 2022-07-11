@@ -29,7 +29,7 @@ if ($sort != '')
 else
     $order_by = 'it_order, it_id desc';
 
-if (!$skin)
+if (!isset($skin))
     $skin = $default['de_mobile_listtype_list_skin'];
 else
     $skin = preg_replace('#\.+[\\\/]#', '', $skin);
