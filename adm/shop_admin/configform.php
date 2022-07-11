@@ -474,7 +474,8 @@ if(!$default['de_kakaopay_cancelpwd']){
                 <input type="checkbox" name="de_mobile_type1_list_use" value="1" id="de_mobile_type1_list_use" <?php echo $default['de_mobile_type1_list_use']?"checked":""; ?>>
                 <label for="de_mobile_type1_list_skin">스킨</label>
                 <select name="de_mobile_type1_list_skin" id="de_mobile_type1_list_skin">
-                    <?php echo get_list_skin_options("^main.[0-9]+\.skin\.php", G5_MSHOP_SKIN_PATH, $default['de_mobile_type1_list_skin']); ?>
+                    <?php echo get_list_skin_options("^main.[0-9]+\.skin\.php", G5_SHOP_SKIN_PATH, $default['de_mobile_type1_list_skin']); ?>
+                    
                 </select>
                 <label for="de_mobile_type1_list_mod">1줄당 이미지 수</label>
                 <input type="text" name="de_mobile_type1_list_mod" value="<?php echo get_sanitize_input($default['de_mobile_type1_list_mod']); ?>" id="de_mobile_type1_list_mod" class="frm_input" size="3">
@@ -492,7 +493,7 @@ if(!$default['de_kakaopay_cancelpwd']){
                 <label for="de_mobile_type2_list_use">출력</label> <input type="checkbox" name="de_mobile_type2_list_use" value="1" id="de_mobile_type2_list_use" <?php echo $default['de_mobile_type2_list_use']?"checked":""; ?>>
                 <label for="de_mobile_type2_list_skin">스킨 </label>
                 <select name="de_mobile_type2_list_skin" id="de_mobile_type2_list_skin">
-                    <?php echo get_list_skin_options("^main.[0-9]+\.skin\.php", G5_MSHOP_SKIN_PATH, $default['de_mobile_type2_list_skin']); ?>
+                    <?php echo get_list_skin_options("^main.[0-9]+\.skin\.php", G5_SHOP_SKIN_PATH, $default['de_mobile_type2_list_skin']); ?>
                 </select>
                 <label for="de_mobile_type2_list_mod">1줄당 이미지 수</label>
                 <input type="text" name="de_mobile_type2_list_mod" value="<?php echo get_sanitize_input($default['de_mobile_type2_list_mod']); ?>" id="de_mobile_type2_list_mod" class="frm_input" size="3">
@@ -511,7 +512,7 @@ if(!$default['de_kakaopay_cancelpwd']){
                 <input type="checkbox" name="de_mobile_type3_list_use" value="1" id="de_mobile_type3_list_use" <?php echo $default['de_mobile_type3_list_use']?"checked":""; ?>>
                 <label for="de_mobile_type3_list_skin">스킨</label>
                 <select name="de_mobile_type3_list_skin" id="de_mobile_type3_list_skin">
-                    <?php echo get_list_skin_options("^main.[0-9]+\.skin\.php", G5_MSHOP_SKIN_PATH, $default['de_mobile_type3_list_skin']); ?>
+                    <?php echo get_list_skin_options("^main.[0-9]+\.skin\.php", G5_SHOP_SKIN_PATH, $default['de_mobile_type3_list_skin']); ?>
                 </select>
                 <label for="de_mobile_type3_list_mod">1줄당 이미지 수</label>
                 <input type="text" name="de_mobile_type3_list_mod" value="<?php echo get_sanitize_input($default['de_mobile_type3_list_mod']); ?>" id="de_mobile_type3_list_mod" class="frm_input" size="3">
@@ -530,7 +531,7 @@ if(!$default['de_kakaopay_cancelpwd']){
                 <input type="checkbox" name="de_mobile_type4_list_use" value="1" id="de_mobile_type4_list_use" <?php echo $default['de_mobile_type4_list_use']?"checked":""; ?>>
                 <label for="de_mobile_type4_list_skin">스킨</label>
                 <select name="de_mobile_type4_list_skin" id="de_mobile_type4_list_skin">
-                    <?php echo get_list_skin_options("^main.[0-9]+\.skin\.php", G5_MSHOP_SKIN_PATH, $default['de_mobile_type4_list_skin']); ?>
+                    <?php echo get_list_skin_options("^main.[0-9]+\.skin\.php", G5_SHOP_SKIN_PATH, $default['de_mobile_type4_list_skin']); ?>
                 </select>
                 <label for="de_mobile_type4_list_mod">1줄당 이미지 수</label>
                 <input type="text" name="de_mobile_type4_list_mod" value="<?php echo get_sanitize_input($default['de_mobile_type4_list_mod']); ?>" id="de_mobile_type4_list_mod" class="frm_input" size="3">
@@ -549,7 +550,7 @@ if(!$default['de_kakaopay_cancelpwd']){
                 <input type="checkbox" name="de_mobile_type5_list_use" value="1" id="de_mobile_type5_list_use" <?php echo $default['de_mobile_type5_list_use']?"checked":""; ?>>
                 <label for="de_mobile_type5_list_skin">스킨</label>
                 <select id="de_mobile_type5_list_skin" name="de_mobile_type5_list_skin">
-                    <?php echo get_list_skin_options("^main.[0-9]+\.skin\.php", G5_MSHOP_SKIN_PATH, $default['de_mobile_type5_list_skin']); ?>
+                    <?php echo get_list_skin_options("^main.[0-9]+\.skin\.php", G5_SHOP_SKIN_PATH, $default['de_mobile_type5_list_skin']); ?>
                 </select>
                 <label for="de_mobile_type5_list_mod">1줄당 이미지 수</label>
                 <input type="text" name="de_mobile_type5_list_mod" value="<?php echo get_sanitize_input($default['de_mobile_type5_list_mod']); ?>" id="de_mobile_type5_list_mod" class="frm_input" size="3">
@@ -1173,7 +1174,7 @@ if(!$default['de_kakaopay_cancelpwd']){
                 <?php echo help("관련상품의 경우 등록된 상품은 모두 출력하므로 '출력할 줄 수'는 설정하지 않습니다. 이미지높이를 0으로 설정하면 상품이미지를 이미지폭에 비례하여 생성합니다."); ?>
                 <label for="de_mobile_rel_list_skin">스킨</label>
                 <select name="de_mobile_rel_list_skin" id="de_mobile_rel_list_skin">
-                    <?php echo get_list_skin_options("^relation.[0-9]+\.skin\.php", G5_MSHOP_SKIN_PATH, $default['de_mobile_rel_list_skin']); ?>
+                    <?php echo get_list_skin_options("^relation.[0-9]+\.skin\.php", G5_SHOP_SKIN_PATH, $default['de_mobile_rel_list_skin']); ?>
                 </select>
                 <label for="de_mobile_rel_img_width">이미지폭</label>
                 <input type="text" name="de_mobile_rel_img_width" value="<?php echo get_sanitize_input($default['de_mobile_rel_img_width']); ?>" id="de_mobile_rel_img_width" class="frm_input" size="3">
@@ -1207,7 +1208,7 @@ if(!$default['de_kakaopay_cancelpwd']){
             <td>
                 <label for="de_mobile_search_list_skin">스킨</label>
                 <select name="de_mobile_search_list_skin" id="de_mobile_search_list_skin">
-                    <?php echo get_list_skin_options("^list.[0-9]+\.skin\.php", G5_MSHOP_SKIN_PATH, $default['de_mobile_search_list_skin']); ?>
+                    <?php echo get_list_skin_options("^list.[0-9]+\.skin\.php", G5_SHOP_SKIN_PATH, $default['de_mobile_search_list_skin']); ?>
                 </select>
                 <label for="de_mobile_search_img_width">이미지폭</label>
                 <input type="text" name="de_mobile_search_img_width" value="<?php echo get_sanitize_input($default['de_mobile_search_img_width']); ?>" id="de_mobile_search_img_width" class="frm_input" size="3">
@@ -1241,7 +1242,7 @@ if(!$default['de_kakaopay_cancelpwd']){
             <td>
                 <label for="de_mobile_listtype_list_skin">스킨</label>
                 <select name="de_mobile_listtype_list_skin" id="de_mobile_listtype_list_skin">
-                    <?php echo get_list_skin_options("^list.[0-9]+\.skin\.php", G5_MSHOP_SKIN_PATH, $default['de_mobile_listtype_list_skin']); ?>
+                    <?php echo get_list_skin_options("^list.[0-9]+\.skin\.php", G5_SHOP_SKIN_PATH, $default['de_mobile_listtype_list_skin']); ?>
                 </select>
                 <label for="de_mobile_listtype_img_width">이미지폭</label>
                 <input type="text" name="de_mobile_listtype_img_width" value="<?php echo get_sanitize_input($default['de_mobile_listtype_img_width']); ?>" id="de_mobile_listtype_img_width" class="frm_input" size="3">
