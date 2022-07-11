@@ -106,7 +106,9 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 
         if ($i==0)
         {
-            echo '<div>'.$error.'</div>';
+            if(isset($error)){
+                echo '<div>'.$error.'</div>';
+            }
         }
 
         $query_string = 'qname='.$qname.'&amp;qexplan='.$qexplan.'&amp;qid='.$qid;
