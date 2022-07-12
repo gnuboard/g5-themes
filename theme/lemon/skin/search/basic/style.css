@@ -32,15 +32,12 @@
 -webkit-box-shadow: inset 0 2px 5px rgb(33, 135, 202);
 -moz-box-shadow: inset 0 2px 5px rgb(33, 135, 202);
 box-shadow:inset 0 2px 5px rgb(33, 135, 202);}
-#sch_res_board .sch_on:hover{;background:#3497d9;color:#fff;}
-
-
-
+#sch_res_board .sch_on:hover{background:#3497d9;color:#fff;}
 
 .sch_res_list {margin:0 0 10px;padding:10px 0 15px}
 .sch_res_list h2 {margin:0 0 10px;font-size:1.2em}
 .sch_res_list ul {margin:0;padding:0;list-style:none;border-top:1px solid #000}
-.sch_res_list li {;border-bottom:1px solid #e0e0e0;background:#fff;position:relative}
+.sch_res_list li {border-bottom:1px solid #e0e0e0;background:#fff;position:relative}
 .sch_res_list .sch_tit{display:block;background:#f4f4f4;padding:10px 70px 10px 10px}
 .sch_res_list .pop_a{position:absolute;top:10px;right:10px;color:#666;}
 .sch_res_title {display:inline-block;margin:0 0 5px}

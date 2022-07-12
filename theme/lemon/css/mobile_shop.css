@@ -34,7 +34,7 @@ input[type=text],input[type=password], textarea {
 -o-transition: all 0.30s ease-in-out;
 outline: none;
 }
- 
+
 input[type=text]:focus,input[type=password]:focus,  textarea:focus,select:focus {
 -webkit-box-shadow:  0 0 5px #9ed4ff;
 -moz-box-shadow:  0 0 5px #9ed4ff;
@@ -55,9 +55,9 @@ border: 1px solid #558ab7 !important;
 #hd {position:relative;z-index:53}
 #hd h1 {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 #hd_wr{position:relative;height:60px;padding:15px;background:#fff;
--webkit-box-shadow: 0 0 5px rgba(55,55,5,0.4));
-    -moz-box-shadow: 0 0 5px rgba(55,55,5,0.4));
-    box-shadow: 0 0 5px rgba(55,55,5,0.4);}
+-webkit-box-shadow: 0 0 5px rgba(55,55,5,0.4);
+-moz-box-shadow: 0 0 5px rgba(55,55,5,0.4);
+box-shadow: 0 0 5px rgba(55,55,5,0.4);}
 
 #hd #hd_btn button{height:60px;width:50px;border:0;background:0;font-size:16px;vertical-align:top;float:left}
 #hd #hd_btn i{color:#190570}
@@ -71,10 +71,10 @@ border: 1px solid #558ab7 !important;
 
 /*카테고리*/
 .menu {display:none;position:fixed;top:0;height:100%;;z-index:99999;-webkit-backface-visibility: hidden;width:100%}
-.menu .menu_wr{;width:100%;height:100%;overflow-y:auto;background:#eee;position:relative;z-index:199919;
- -webkit-box-shadow: 0 0 5px rgba(55,55,5,0.4));
-    -moz-box-shadow: 0 0 5px rgba(55,55,5,0.4));
-         box-shadow: 0 0 5px rgba(55,55,5,0.4);}
+.menu .menu_wr{width:100%;height:100%;overflow-y:auto;background:#eee;position:relative;z-index:199919;
+-webkit-box-shadow: 0 0 5px rgba(55,55,5,0.4);
+-moz-box-shadow: 0 0 5px rgba(55,55,5,0.4);
+box-shadow: 0 0 5px rgba(55,55,5,0.4);}
 .menu .menu_close {position:absolute;top:0;right:0;width:50px;height:50px;background:none;color:#ccc;font-size:15px;border:0;z-index:199999}
 .menu .con{background:#fff;border-bottom: 1px solid #eaeaea;margin:10px 0}
 
@@ -86,7 +86,7 @@ border: 1px solid #558ab7 !important;
 
 .sub_cate {display:none}
 .sub_cate li{border-bottom:0}
-.sub_cate a{;padding-left:30px;}
+.sub_cate a{padding-left:30px;}
 .sub_cate2 a{padding-left:40px;background-position:31px 17px}
 .sub_cate3 a{padding-left:50px;background-position:41px 17px}
 .sub_cate4 a{padding-left:60px;background-position:51px 17px}
@@ -102,7 +102,7 @@ border: 1px solid #558ab7 !important;
 #nav .nav_li i{font-size:18px;height:20px;color:#190570}
 #nav .nav_li button{border:0;background:none}
 #nav .nav_li .txt{display:block;line-height:20px;font-size:11px}
- 
+
 #hd_sch {display:none;position:absolute;bottom:55px;left:0;width:100%;z-index:60;background:#fff;padding:20px;border-top: 1px solid #e5e5e5;box-shadow: 0 -5px 5px rgba(0,0,0,0.06);}
 #hd_sch h2 {font-size:1.25em;margin-bottom:10px}
 #hd_sch .sch_inner {position:relative;}
@@ -118,7 +118,7 @@ border: 1px solid #558ab7 !important;
 
 /* 중간 레이아웃 */
 #container {padding:0 0 10px}
-#container_title { ;font-size:1.5em;text-align:center;font-weight:bold;padding:0 0px;font-size:1.25em;line-height:50px;border-bottom:1px solid #ddd;position:relative;background:#fff}
+#container_title {font-size:1.5em;text-align:center;font-weight:bold;padding:0 0px;font-size:1.25em;line-height:50px;border-bottom:1px solid #ddd;position:relative;background:#fff}
 #container_title a{position:absolute;top:0;left:0;line-height:50px;width:30px;text-align:center;font-size:20px;color:#888}
 
 /* 내용관리 */
@@ -191,7 +191,7 @@ box-shadow: 1px 1px 5px rgba(0,0,0,0.4);}
 #mod_option_frm h2{height:45px;line-height:45px;font-size:1.167em;background:#333;color:#fff;padding:0 15px}
 #mod_option_frm  #sit_sel_option{margin:15px }
 #mod_option_frm #sit_tot_price{margin:15px }
-#mod_option_frm  #sit_sel_option ul{;background:#f3f3f3;border:0 }
+#mod_option_frm  #sit_sel_option ul{background:#f3f3f3;border:0 }
 #mod_option_frm h3{margin: 0 0 10px;color:#5772d5;}
 #mod_option_frm  .option_wr {margin:15px ; }
 #mod_option_frm  .option_wr label{margin: 0 0 5px;display:block}
@@ -247,19 +247,16 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 #m_sod_frm_paysel .PAYNOW{background:url('../../../img/paynow.png') no-repeat;width:46px;height:15px;overflow:hidden;text-indent:-999px;display:inline-block;background-size:100%;}
 #m_sod_frm_paysel .PAYCO{background:url('../../../img/payco.png') no-repeat 1px;width:46px;height:15px;overflow:hidden;text-indent:-999px;display:inline-block;background-size:100%;}
 #m_sod_frm_paysel .inicis_lpay{background:url('../../../img/lpay_logo.png') no-repeat;width:35px;height:12px;overflow:hidden;text-indent:-999px;display:inline-block;background-size:100%;}
-<<<<<<< HEAD
 .kakaopay_icon{background:url('../../../img/kakao.png') no-repeat ;height:21px;width:74px;display:inline-block;overflow:hidden;text-indent:-999px;background-size:100%}
 .samsung_pay{background:url('../../../img/samsungpay.png') no-repeat ;height:12px;width:83px;display:inline-block;overflow:hidden;text-indent:-999px}
-
-#sod_frm .sod_ta_wr{background: #fff;padding: 15px;}
-#sod_frm .btn_confirm{;margin:0 10px 10px}
-#sod_frm .btn_submit{width:100%;height:45px;font-size: 1.167em;font-weight: bold;margin:5px 0}
-#sod_frm .btn_cancel,#sod_frm .btn01{width:100%;height:45px;line-height:43px;font-size:1.167em;font-weight: bold;padding:0;border-radius:0}
-=======
 #m_sod_frm_paysel .inicis_kakaopay{background:url('../../../img/kakao.png') no-repeat 50% 50% #ffeb00;border-radius:30px;height:22px;width:74px;display:inline-block;overflow:hidden;text-indent:-999px;background-size:35px auto}
 #m_sod_frm_paysel .kakaopay_icon{background:url('../../../img/kakao.png') no-repeat 50% 50% #ffeb00;border-radius:30px;height:22px;width:74px;display:inline-block;overflow:hidden;text-indent:-999px;background-size:35px auto}
 #m_sod_frm_paysel .samsung_pay{margin-left:-23px;background:url('../../../img/samsungpay.png') no-repeat 24px 3px;height:25px;width:106px;display:inline-block;overflow:hidden;text-indent:-999px}
->>>>>>> patch
+
+#sod_frm .sod_ta_wr{background: #fff;padding: 15px;}
+#sod_frm .btn_confirm{margin:0 10px 10px}
+#sod_frm .btn_submit{width:100%;height:45px;font-size: 1.167em;font-weight: bold;margin:5px 0}
+#sod_frm .btn_cancel,#sod_frm .btn01{width:100%;height:45px;line-height:43px;font-size:1.167em;font-weight: bold;padding:0;border-radius:0}
 
 #sod_frm_pay{padding:10px;;border-top:1px solid #f3f3f3}
 #sod_frm_pay h2{margin:10px 0;font-size:1.25em}
@@ -336,7 +333,7 @@ box-shadow: 1px 1px 5px rgba(0,0,0,0.4);}
 #sod_addr .del_address{display:block;width:32%;text-align:center;float:left;margin-right:1%;border:1px solid #aaa;background:none;color:#888;padding:0 5px;height:30px;line-height:28px;vertical-align:middle}
 #sod_addr input[type="radio"]{position:absolute;width:0;height:0;overflow:hidden;visibility:hidden;text-indent:-999px;left: 0;z-index: -1px;}
 #sod_addr .add_lb {display: inline-block;float:left;width:32%;text-align:center;border:1px solid #4162ff;color:#4162ff;height:30px;line-height:28px}
-#sod_addr input[type="radio"]:checked+.add_lb {;z-index:3;background:#4162ff;color:#fff}
+#sod_addr input[type="radio"]:checked+.add_lb {z-index:3;background:#4162ff;color:#fff}
 
 /* 주문내역 */
 #sod_v {margin:10px}
@@ -392,7 +389,7 @@ box-shadow: 1px 1px 5px rgba(0,0,0,0.4);}
 #smb_my_ov {margin:0 0 20px;}
 #smb_my_ov h2 {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 #smb_my_ov .my_name{position:relative;line-height:20px;height:50px;padding: 15px;background:#525f78;color:#fff;font-weight:normal;font-size:1.083em}
-#smb_my_ov .my_name img{border-radius:50%;vertical-align:top}
+#smb_my_ov .my_name img{border-radius:50%;vertical-align:top;position:relative;top:-17.5px;left:-2.5px}
 #smb_my_ov .smb_my_act{position:absolute;top:10px;right:10px}
 #smb_my_ov .smb_my_act li{display:inline-block;font-size:0.92em}
 #smb_my_ov .smb_my_act li a{line-height:28px;height:30px;vertical-align:middle;padding:0 5px;margin:0;border-radius:3px}
@@ -476,8 +473,8 @@ box-shadow: 1px 1px 5px rgba(0,0,0,0.4);}
 /* 캡챠 자동등록(입력)방지 기본 -pc */
 #captcha {position:relative}
 #captcha legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden;}
-#captcha #captcha_img {;height:40px;border:1px solid #898989;;vertical-align:top;padding:0;margin:0}
-#captcha #captcha_mp3 {;margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;width:40px;height:40px;background:url('../../../img/captcha.png') no-repeat;text-indent:-999px;;border-radius:3px}
+#captcha #captcha_img {height:40px;border:1px solid #898989;;vertical-align:top;padding:0;margin:0}
+#captcha #captcha_mp3 {margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;width:40px;height:40px;background:url('../../../img/captcha.png') no-repeat;text-indent:-999px;;border-radius:3px}
 #captcha #captcha_reload {margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;background:url('../../../img/captcha.png') no-repeat  0 -40px;text-indent:-999px;border-radius:3px}
 #captcha #captcha_key {margin:0 0 0 3px;padding:0 5px;width:90px;height:40px;border:1px solid #ccc;background:#fff;font-size:1.333em;font-weight:bold;text-align:center;border-radius:3px;vertical-align:top}
 #captcha #captcha_info {display:block;margin:3px 0 5px ;font-size:0.95em;letter-spacing:-0.1em}
