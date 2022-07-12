@@ -1,7 +1,7 @@
 @charset "utf-8";
 #bo_cate {margin:30px 15px ;background:#fff;border-radius:5px}
 #bo_cate h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-#bo_cate ul {;zoom:1}
+#bo_cate ul {zoom:1}
 #bo_cate ul:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_cate li {display:inline-block;}
 #bo_cate a {display:block;line-height:50px;padding:0 15px;color:#aaa}
