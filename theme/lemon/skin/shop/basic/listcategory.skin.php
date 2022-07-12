@@ -8,6 +8,14 @@ $ca_id_len = strlen($ca_id);
 $len2 = $ca_id_len + 2;
 $len4 = $ca_id_len + 4;
 
+$sct_sort_href = $_SERVER['SCRIPT_NAME'].'?';
+if($ca_id)
+    $sct_sort_href .= 'ca_id='.$ca_id;
+else if($ev_id)
+    $sct_sort_href .= 'ev_id='.$ev_id;
+if($skin)
+    $sct_sort_href .= '&amp;skin='.$skin;
+$sct_sort_href .= '&amp;sort=';
 // 최하위 분류의 경우 상단에 동일한 레벨의 분류를 출력해주는 코드
 if (!$exists) {
     $str = '';
@@ -73,6 +81,7 @@ if ($exists) {
     <section id="sct_sort">
         <h2>상품 정렬</h2>
         <ul>
+            
             <li><a href="<?php echo $sct_sort_href; ?>it_sum_qty&amp;sortodr=desc">판매많은순</a></li>
             <li><a href="<?php echo $sct_sort_href; ?>it_price&amp;sortodr=asc">낮은가격순</a></li>
             <li><a href="<?php echo $sct_sort_href; ?>it_price&amp;sortodr=desc">높은가격순</a></li>
