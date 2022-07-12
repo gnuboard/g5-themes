@@ -97,13 +97,14 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
             <li>
                 <label for="reg_mb_nick" class="sound_only">닉네임 (필수)</label>
 
+                <input type="hidden" name="mb_nick_default" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>">
+                <input type="text" name="mb_nick" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>" id="reg_mb_nick" required class="frm_input full_input required nospace" maxlength="20" placeholder="닉네임 (필수)">
+                <span id="msg_mb_nick"></span>
+                
                 <span class="frm_info">
                     공백없이 한글,영문,숫자만 입력 가능 (한글2자, 영문4자 이상)<br>
                     닉네임을 바꾸시면 앞으로 <?php echo (int)$config['cf_nick_modify'] ?>일 이내에는 변경 할 수 없습니다.
                 </span>
-                <input type="hidden" name="mb_nick_default" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>">
-                <input type="text" name="mb_nick" value="<?php echo isset($member['mb_nick'])?get_text($member['mb_nick']):''; ?>" id="reg_mb_nick" required class="frm_input full_input required nospace" maxlength="20" placeholder="닉네임 (필수)">
-                <span id="msg_mb_nick"></span>
             </li>
             <?php } ?>
 
@@ -185,10 +186,10 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
             <?php if ($config['cf_use_member_icon'] && $member['mb_level'] >= $config['cf_icon_level']) { ?>
             <li class="filebox">
                 <input type="file" name="mb_icon" id="reg_mb_icon" class="uploadBtn">
-                <span class="frm_info">
+                <div class="frm_info">
                     이미지 크기는 가로 <?php echo $config['cf_member_icon_width'] ?>픽셀, 세로 <?php echo $config['cf_member_icon_height'] ?>픽셀 이하로 해주세요.<br>
                     gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_member_icon_size']) ?>바이트 이하만 등록됩니다.
-                </span>
+                </div>
                 <?php if ($w == 'u' && file_exists($mb_icon_path)) { ?>
                 <img src="<?php echo $mb_icon_url ?>" alt="회원아이콘">
                 <input type="checkbox" name="del_mb_icon" value="1" id="del_mb_icon">
@@ -200,10 +201,10 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
             <?php if ($member['mb_level'] >= $config['cf_icon_level'] && $config['cf_member_img_size'] && $config['cf_member_img_width'] && $config['cf_member_img_height']) {  ?>
             <li class="reg_mb_img_file filebox">
                 <input type="file" name="mb_img" id="reg_mb_img" class="uploadBtn">
-                <span class="frm_info">
+                <div class="frm_info">
                     이미지 크기는 가로 <?php echo $config['cf_member_img_width'] ?>픽셀, 세로 <?php echo $config['cf_member_img_height'] ?>픽셀 이하로 해주세요.<br>
                     gif, jpg, png파일만 가능하며 용량 <?php echo number_format($config['cf_member_img_size']) ?>바이트 이하만 등록됩니다.
-                </span>
+                </div>
                 <?php if ($w == 'u' && file_exists($mb_img_path)) {  ?>
                 <img src="<?php echo $mb_img_url ?>" alt="회원아이콘">
                 <input type="checkbox" name="del_mb_img" value="1" id="del_mb_img">
