@@ -18,8 +18,9 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_MSHOP_SKIN_URL.'/style.css">',
     {
         echo '<li class="sev_li">';
         echo '<div class="sev_wr">';
-        echo '<a href="'.$href.'" class="sev_img"><img src="'.G5_DATA_URL.'/event/'.$row['ev_id'].'_m" alt="'.$row['ev_subject'].'"></a>'.PHP_EOL;
         $href = G5_SHOP_URL.'/event.php?ev_id='.$row['ev_id'];
+        echo '<a href="'.$href.'" class="sev_img"><img src="'.G5_DATA_URL.'/event/'.$row['ev_id'].'_m" alt="'.$row['ev_subject'].'"></a>'.PHP_EOL;
+        
         $event_img = G5_DATA_PATH.'/event/'.$row['ev_id'].'_m'; // 이벤트 이미지
         echo '<a href="'.$href.'" class="sev_text">';
         if ($row['ev_subject_strong']) echo '<strong>';
