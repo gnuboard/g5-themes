@@ -4,7 +4,19 @@ include_once('./_common.php');
 $g5['title'] = '마이페이지';
 
 include_once(G5_THEME_MSHOP_PATH.'/shop.head.php');
+// 쿠폰
+$cp_count = 0;
+$sql = " select cp_id
+            from {$g5['g5_shop_coupon_table']}
+            where mb_id IN ( '{$member['mb_id']}', '전체회원' )
+              and cp_start <= '".G5_TIME_YMD."'
+              and cp_end >= '".G5_TIME_YMD."' ";
+$res = sql_query($sql);
 
+for($k=0; $cp=sql_fetch_array($res); $k++) {
+    if(!is_used_coupon($member['mb_id'], $cp['cp_id']))
+        $cp_count++;
+}
 ?>
 <div id="smb_my">
 
