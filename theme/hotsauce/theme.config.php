@@ -5,12 +5,12 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 // 선언하지 않거나 값을 지정하지 않으면 그누보드5의 설정을 따른다.
 // G5_SET_DEVICE 상수 설정 보다 우선 적용됨
 
-define('G5_THEME_DEVICE', 'mobile');
+if(! defined('G5_THEME_DEVICE')) define('G5_THEME_DEVICE', 'mobile');
+
 // 테마에서 커뮤니티 지원여부 설정
 // 커뮤니티 사용없이 쇼핑몰이 초기화면이라면 false로 설정
 // false 설정이면 게시판 head, tail 은 쇼핑몰의 그것이 적용됨
-
-define('G5_COMMUNITY_USE', false);
+if(! defined('G5_COMMUNITY_USE')) define('G5_COMMUNITY_USE', false);
 
 $theme_config = array();
 // 갤러리 이미지 수 등의 설정을 지정하시면 게시판관리에서 해당 값을
@@ -150,15 +150,15 @@ $theme_config = array(
 if(!defined('G5_IS_ADMIN'))
     include_once(G5_THEME_LIB_PATH.'/theme.lib.php');
 
+
+
 // 소셜로그인
-define('G5_THEME_PLUGIN_PATH', G5_THEME_PATH.'/plugin');
-define('G5_THEME_PLUGIN_URL',  G5_THEME_URL.'/plugin');
-
-
-define('G5_THEME_ADM_DIR', 'theme_adm');
-define('G5_THEME_ADM_URL', G5_THEME_URL.'/'.G5_THEME_ADM_DIR);
-
+define('G5_THEME_PLUGIN_PATH', G5_PATH.'/theme/hotsauce/plugin');
+define('G5_THEME_PLUGIN_URL',  G5_URL.'/theme/hotsauce/plugin');
 
 if(!defined('G5_IS_ADMIN'))
     include_once(G5_THEME_PATH.'/theme.oauth.php');
+
+    define('G5_THEME_ADM_DIR', 'theme/hotsauce/theme_adm/footerinfo.php');
+    define('G5_THEME_ADM_URL', G5_URL.'/'.G5_THEME_ADM_DIR);
 ?>
