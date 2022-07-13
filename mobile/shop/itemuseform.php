@@ -5,10 +5,10 @@ include_once(G5_EDITOR_LIB);
 if (!$is_member) {
     alert_close("사용후기는 회원만 작성 가능합니다.");
 }
-
+$is_id = isset($_GET['is_id']) ? preg_replace('/[^0-9]/', '', $_GET['is_id']) : 0;
 $w     = isset($_REQUEST['w']) ? preg_replace('/[^0-9a-z]/i', '', trim($_REQUEST['w'])) : '';
 $it_id = isset($_REQUEST['it_id']) ? get_search_string(trim($_REQUEST['it_id'])) : '';
-$is_id = $_REQUEST['is_id'] ? preg_replace('/[^0-9]/', '', trim($_REQUEST['is_id'])) : 0;
+
 
 // 상품정보체크
 $row = get_shop_item($it_id, true);
