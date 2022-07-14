@@ -50,16 +50,16 @@
 #poll .poll_con p{text-align:center;font-size:1em;background:#fff;padding:10px}
 #poll_btn{}
 #poll_btn:after {display:block;visibility:hidden;clear:both;content:""}
-#poll_btn .btn_poll{width:49.5%}
+#poll_btn .btn_poll{width:49%;height:45px;line-height:45px;border:0;}
 #poll_btn .btn_result{text-align:center}
 
 
 /* 설문조사 결과 (새창) */
 #poll_result {}
 #poll_result section {margin:0 0 20px;padding:25px;border:1px solid #dbdbdb;background:#fff;
--webkit-box-shadow: 0 0 5px rgba(55,55,5,0.1));
-   -moz-box-shadow: 0 0 5px rgba(55,55,5,0.1));
-        box-shadow: 0 0 5px rgba(55,55,5,0.1); }
+-webkit-box-shadow: 0 0 5px rgba(55,55,5,0.1);
+-moz-box-shadow: 0 0 5px rgba(55,55,5,0.1);
+box-shadow: 0 0 5px rgba(55,55,5,0.1);}
 #poll_result .tbl_wrap {margin:0}
 #poll_result h2 {}
 #poll_result a {}

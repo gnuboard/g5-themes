@@ -22,7 +22,7 @@ ol,ul,li,dl,dt,dd{padding:0;margin:0;list-style:none}
 /*상단*/
 #hd_login_msg{position: absolute;top: 0;left: 0;width: 1px;height: 1px;overflow: hidden;}
 
-#head h1{;height:50px;line-height:50px;background:#3a3a3a;font-weight:bold;position:absolute;top:0;left:0;width:100%;;z-index:99;
+#head h1{height:50px;line-height:50px;background:#3a3a3a;font-weight:bold;position:absolute;top:0;left:0;width:100%;;z-index:99;
 -moz-box-shadow:    0px 2px 3px 0 rgba(0,0,0,0.4);
 -webkit-box-shadow: 0px 2px 3px 0 rgba(0,0,0,0.4);
 box-shadow:         0px 2px 3px 0 rgba(0,0,0,0.4)}
@@ -48,7 +48,7 @@ box-shadow:         0px 2px 3px 0 rgba(0,0,0,0.4)}
     #left_menu{display:none}
     #container{padding-left:0;padding-bottom:30px}
     .al_mn{display:block;width:50px;height:50px;background:none;border:0;color:#fff;position:absolute;top:0;left:0;z-index: 100;font-size:18px;}
-    #head h1{text-align:center}   
+    #head h1{text-align:center}
  }
 
 /*공통*/
@@ -114,7 +114,7 @@ a.btn_4{display:inline-block;background:#898989;color:#fff;border:0;height:25px;
 .add_cate ul li{border-top:1px solid #c6c6c6;position:relative;}
 .add_cate ul li .add_cate_info{line-height:20px;padding:10px 50px 10px 10px;background:#f3f3f3;line-height:20px;padding:10px 100px 10px 10px;}
 .add_cate ul li .btn_open{position:absolute;top:7px;right:10px;;}
-.add_cate ul li .file_add{;display:none;background:#fff;padding:10px;position:relative; }
+.add_cate ul li .file_add{display:none;background:#fff;padding:10px;position:relative;}
 .add_cate ul li .file_add .bn_di{margin-top:5px;display:block;color:#999;font-size:0.92em}
 .add_cate ul li .file_add .bn_img{margin-top:5px}
 .add_cate ul li .file_add .bn_link{margin:5px 0}

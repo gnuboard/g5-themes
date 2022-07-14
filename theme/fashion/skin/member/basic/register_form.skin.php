@@ -46,7 +46,7 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
         <h2>개인정보 입력</h2>
         <ul>
             <li>
-                <?php 
+                <?php
                 $desc_name = '';
                 $desc_phone = '';
 	            if ($config['cf_cert_use']) {
@@ -64,7 +64,7 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
                         echo '<button type="button" id="win_hp_cert" class="btn_frmline btn">휴대폰 본인확인</button>'.PHP_EOL;
                     if ($config['cf_cert_ipin'])
                         echo '<button type="button" id="win_ipin_cert" class="btn_frmline btn">아이핀 본인확인</button>'.PHP_EOL;
-	
+
                     echo '<span class="cert_req">(필수)</span>';
 	                echo '<noscript>본인확인을 위해서는 자바스크립트 사용이 가능해야합니다.</noscript>'.PHP_EOL;
 	            }
@@ -72,16 +72,16 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 	            <?php
 	            if ($config['cf_cert_use'] && $member['mb_certify']) {
 	                switch  ($member['mb_certify']) {
-                        case "simple": 
+                        case "simple":
                             $mb_cert = "간편인증";
                             break;
-                        case "ipin": 
+                        case "ipin":
                             $mb_cert = "아이핀";
                             break;
-                        case "hp": 
+                        case "hp":
                             $mb_cert = "휴대폰";
                             break;
-                    }    
+                    }
 	            ?>
 	            <div id="msg_certify">
 	                <strong><?php echo $mb_cert; ?> 본인확인</strong><?php if ($member['mb_adult']) { ?> 및 <strong>성인인증</strong><?php } ?> 완료
@@ -96,7 +96,6 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 	        <?php if ($req_nick) { ?>
 	        <li>
 	            <label for="reg_mb_nick" class="sound_only">닉네임 (필수)</label>
-	            
 	            <span class="frm_info">
 	                공백없이 한글,영문,숫자만 입력 가능 (한글2자, 영문4자 이상)<br>
 	                닉네임을 바꾸시면 앞으로 <?php echo (int)$config['cf_nick_modify'] ?>일 이내에는 변경 할 수 없습니다.
@@ -125,26 +124,25 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 	            <input type="text" name="mb_homepage" value="<?php echo get_text($member['mb_homepage']) ?>" id="reg_mb_homepage" class="frm_input full_input <?php echo $config['cf_req_homepage']?"required":""; ?>" maxlength="255" <?php echo $config['cf_req_homepage']?"required":""; ?> placeholder="홈페이지<?php if ($config['cf_req_homepage']){ ?> (필수)<?php } ?>">
 	        </li>
 	        <?php } ?>
-	
+
 	        <?php if ($config['cf_use_tel']) { ?>
 	        <li>
 	            <label for="reg_mb_tel" class="sound_only">전화번호<?php if ($config['cf_req_tel']) { ?> (필수)<?php } ?></label>
 	            <input type="text" name="mb_tel" value="<?php echo get_text($member['mb_tel']) ?>" id="reg_mb_tel" class="frm_input full_input <?php echo $config['cf_req_tel']?"required":""; ?>" <?php if ($config['cf_cert_use'] && ($config['cf_cert_hp'] || $config['cf_cert_simple']) && $member['mb_certify']) { echo "readonly"; } ?> maxlength="20" <?php echo $config['cf_req_tel']?"required":""; ?> placeholder="전화번호<?php if ($config['cf_req_tel']) { ?> (필수)<?php } ?>">
 	        </li>
 	        <?php } ?>
-	
+
 	        <?php if ($config['cf_use_hp'] || ($config["cf_cert_use"] && ($config['cf_cert_hp'] || $config['cf_cert_simple']))) {  ?>
 	        <li>
                 <label for="reg_mb_hp" class="sound_only">휴대폰번호<?php if (!empty($hp_required)) { ?> (필수)<?php } ?><?php echo $desc_phone ?></label>
-	                
+
                 <input type="text" name="mb_hp" value="<?php echo get_text($member['mb_hp']) ?>" id="reg_mb_hp" <?php echo $hp_required; ?> <?php echo $hp_readonly; ?> class="frm_input full_input <?php echo $hp_required; ?> <?php echo $hp_readonly; ?>" maxlength="20" placeholder="휴대폰번호<?php if (!empty($hp_required)) { ?> (필수)<?php } ?><?php echo $desc_phone ?>">
 	            <?php if ($config['cf_cert_use'] && ($config['cf_cert_hp'] || $config['cf_cert_simple'])) { ?>
 	            <input type="hidden" name="old_mb_hp" value="<?php echo get_text($member['mb_hp']) ?>">
 	            <?php } ?>
-	            
 	        </li>
 	        <?php } ?>
-	
+
 	        <?php if ($config['cf_use_addr']) { ?>
 	        <li>
 	        	<div class="adress">
@@ -161,13 +159,13 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 	            <label for="reg_mb_addr3" class="sound_only">참고항목</label>
 	            <input type="text" name="mb_addr3" value="<?php echo get_text($member['mb_addr3']) ?>" id="reg_mb_addr3" class="frm_input frm_address" size="50" readonly="readonly" placeholder="참고항목">
 	            <input type="hidden" name="mb_addr_jibeon" value="<?php echo get_text($member['mb_addr_jibeon']); ?>">
-	            
+
 	        </li>
 	        <?php } ?>
         </ul>
     </div>
 
-    <div class="form_01">  
+    <div class="form_01">
         <h2>기타 개인설정</h2>
 		<ul>
 			<?php if ($config['cf_use_signature']) { ?>
@@ -176,7 +174,7 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 	            <textarea name="mb_signature" id="reg_mb_signature" class="<?php echo $config['cf_req_signature']?"required":""; ?>" <?php echo $config['cf_req_signature']?"required":""; ?> placeholder="서명<?php if ($config['cf_req_signature']){ ?> (필수)<?php } ?>"><?php echo $member['mb_signature'] ?></textarea>
 	        </li>
 	        <?php } ?>
-	
+
 	        <?php if ($config['cf_use_profile']) { ?>
 	        <li>
 	            <label for="reg_mb_profile" class="sound_only">자기소개</label>
@@ -186,8 +184,6 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 
 	        <?php if ($config['cf_use_member_icon'] && $member['mb_level'] >= $config['cf_icon_level']) { ?>
 	        <li class="filebox">
-				<input type="text" class="fileName" readonly="readonly" placeholder="회원아이콘">
-	            <label for="reg_mb_icon" class="btn_file"><span class="sound_only">회원아이콘</span>이미지선택</label>
 	            <input type="file" name="mb_icon" id="reg_mb_icon" class="uploadBtn">
 	            <span class="frm_info">
 	                이미지 크기는 가로 <?php echo $config['cf_member_icon_width'] ?>픽셀, 세로 <?php echo $config['cf_member_icon_height'] ?>픽셀 이하로 해주세요.<br>
@@ -200,11 +196,9 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 	            <?php } ?>
 	        </li>
 	        <?php } ?>
-        
+
 	        <?php if ($member['mb_level'] >= $config['cf_icon_level'] && $config['cf_member_img_size'] && $config['cf_member_img_width'] && $config['cf_member_img_height']) {  ?>
 	        <li class="reg_mb_img_file filebox">
-	        	<input type="text" class="fileName" readonly="readonly" placeholder="회원이미지">
-	            <label for="reg_mb_img" class="btn_file"><span class="sound_only">회원이미지</span>이미지선택</label>
 	            <input type="file" name="mb_img" id="reg_mb_img" class="uploadBtn">
 	            <span class="frm_info">
 	                이미지 크기는 가로 <?php echo $config['cf_member_img_width'] ?>픽셀, 세로 <?php echo $config['cf_member_img_height'] ?>픽셀 이하로 해주세요.<br>
@@ -233,7 +227,7 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 	        	<label for="reg_mb_sms">
 	            	<span></span>
 	            	<b class="sound_only">SMS 수신여부</b>
-	            </label>        
+	            </label>
 	            <span class="chk_li">휴대폰 문자메세지를 받겠습니다.</span>
 	        </li>
 	        <?php } ?>
@@ -244,18 +238,17 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 	      		<label for="reg_mb_open">
 	      			<span></span>
 	      			<b class="sound_only">정보공개</b>
-	      		</label>      
+	      		</label>
 	            <span class="chk_li">다른분들이 나의 정보를 볼 수 있도록 합니다.</span>
 	            <span class="frm_info">
 	                정보공개를 바꾸시면 앞으로 <?php echo (int)$config['cf_open_modify'] ?>일 이내에는 변경이 안됩니다.
 	            </span>
-	            <input type="hidden" name="mb_open_default" value="<?php echo $member['mb_open'] ?>"> 
+	            <input type="hidden" name="mb_open_default" value="<?php echo $member['mb_open'] ?>">
 	        </li>
 	        <?php } else { ?>
 	        <li>
 	            <span  class="frm_label">정보공개</span>
 	            <input type="hidden" name="mb_open" value="<?php echo $member['mb_open'] ?>">
-	            
 	            <span class="frm_info">
 	                정보공개는 수정후 <?php echo (int)$config['cf_open_modify'] ?>일 이내, <?php echo date("Y년 m월 j일", isset($member['mb_open_date']) ? strtotime("{$member['mb_open_date']} 00:00:00")+$config['cf_open_modify']*86400:G5_SERVER_TIME+$config['cf_open_modify']*86400); ?> 까지는 변경이 안됩니다.<br>
 	                이렇게 하는 이유는 잦은 정보공개 수정으로 인하여 쪽지를 보낸 후 받지 않는 경우를 막기 위해서 입니다.
@@ -269,7 +262,7 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 	            social_member_provider_manage();
 	        }
 	        ?>
-	
+
 	        <?php if ($w == "" && $config['cf_use_recommend']) { ?>
 	        <li>
 	            <label for="reg_mb_recommend" class="sound_only">추천인아이디</label>
@@ -298,10 +291,10 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
         <?php if($config['cf_cert_use'] && $config['cf_cert_simple']) { ?>
         // 이니시스 간편인증
         var url = "<?php echo G5_INICERT_URL; ?>/ini_request.php";
-        var type = "";    
+        var type = "";
         var params = "";
         var request_url = "";
-        
+
         $(".win_sa_cert").click(function() {
             if(!cert_confirm()) return false;
             type = $(this).data("type");
@@ -328,9 +321,9 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
         $("#win_hp_cert").click(function() {
             if(!cert_confirm()) return false;
             params = "?" + pageTypeParam;
-            <?php     
+            <?php
             switch($config['cf_cert_hp']) {
-                case 'kcb':                    
+                case 'kcb':
                     $cert_url = G5_OKNAME_URL.'/hpcert1.php';
                     $cert_type = 'kcb-hp';
                     break;
@@ -347,7 +340,7 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
                     echo 'return false;';
                     break;
             }
-            ?>            
+            ?>
             certify_win_open("<?php echo $cert_type; ?>", "<?php echo $cert_url; ?>"+params);
             return;
         });

@@ -108,16 +108,19 @@
 #register_form {margin:15px auto;max-width:1240px}
 #register_form .frm_input {background:#f7f8fa;height:45px;margin-bottom:5px}
 .register_wr {margin:30px 0;background:#fff;border-radius:5px}
+#fregisterform {padding: 0 20px;}
 #fregisterform #msg_certify {margin:5px 0 0;padding:5px;border:1px solid #dbecff;background:#eaf4ff;text-align:center}
 #fregisterform .frm_address {margin:5px 0 0}
 #fregisterform #mb_addr3 {display:inline-block;margin:5px 0 0;vertical-align:middle}
 #fregisterform #mb_addr_jibeon {display:block;margin:5px 0 0}
+#fregisterform .btn_frmline {line-height:30px;}
 #fregisterform .btn_confirm {text-align:center;margin-bottom:20px}
 #fregisterform .btn_confirm .btn_submit {height:45px;padding:0 30px;font-weight:bold;font-size:1.083em}
 #fregisterform .btn_confirm .btn_cancel {line-height:45px;height:45px;padding:0 30px;font-weight:bold;font-size:1.083em}
 #fregisterform .frm_info {display:block;color:#fe8776;font-size:0.92em;margin:10px 0}
 #fregisterform .captcha {display:block;margin:5px 0 0}
 #fregisterform .reg_mb_img_file img {max-width:100%;height:auto}
+#fregisterform #reg_mb_zip {width:200px;}
 
 
 /* 회원가입 완료 */
