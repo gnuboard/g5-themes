@@ -168,18 +168,20 @@ include_once(G5_LIB_PATH.'/popular.lib.php');
                     <a href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>" class="gnb_1da"><?php echo $row['me_name'] ?></a>
                     <?php
                     $k = 0;
-                    foreach( (array) $row['sub'] as $row2 ){
 
-                        if( empty($row2) ) continue; 
+                    if(isset($row['sub'])){
+                        foreach( (array) $row['sub'] as $row2 ){
 
-                        if($k == 0)
-                            echo '<span class="bg">하위분류</span><div class="gnb_2dul"><ul class="gnb_2dul_box">'.PHP_EOL;
-                    ?>
-                        <li class="gnb_2dli"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" class="gnb_2da"><?php echo $row2['me_name'] ?></a></li>
-                    <?php
-                    $k++;
-                    }   //end foreach $row2
+                            if( empty($row2) ) continue; 
 
+                            if($k == 0)
+                                echo '<span class="bg">하위분류</span><div class="gnb_2dul"><ul class="gnb_2dul_box">'.PHP_EOL;
+                        ?>
+                            <li class="gnb_2dli"><a href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>" class="gnb_2da"><?php echo $row2['me_name'] ?></a></li>
+                        <?php
+                        $k++;
+                        }   //end foreach $row2
+                    }
                     if($k > 0)
                         echo '</ul>'.PHP_EOL;
                     ?>
