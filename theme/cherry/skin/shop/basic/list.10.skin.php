@@ -73,10 +73,10 @@ for ($i=1; $row=sql_fetch_array($result); $i++) {
     }
 
 
-    $s_core  =  (int)$row['it_use_avg']; 
-    if ($s_core > 0 ) { 
-        echo "<span class=\"sct_star\"><img src=".G5_SHOP_URL."/img/s_star".$s_core.".png></span>"; 
-    } 
+    $s_core  =  (int)$row['it_use_avg'];
+    if ($s_core > 0 ) {
+        echo "<span class=\"sct_star\"><img src=".G5_SHOP_URL."/img/s_star".$s_core.".png></span>";
+    }
 
 
     if ($this->href) {
@@ -108,16 +108,11 @@ for ($i=1; $row=sql_fetch_array($result); $i++) {
             echo "<span class=\"sct_discount\">".display_price($row['it_cust_price'])."</span>\n";
         }
 
- 
-
         echo "</div>\n";
 
     }
-
     echo "</div>\n";
 
-
-    
     echo "</li>\n";
 }
 
