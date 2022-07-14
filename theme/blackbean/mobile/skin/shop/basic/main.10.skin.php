@@ -22,7 +22,7 @@ $li_width_style = ' style="width:'.$li_width.'%;"';
 $i=0;
 
 for ($i=0; $row=sql_fetch_array($result); $i++) {
-	
+	$item_link_href = shop_item_url($row['it_id']);
 	$icon = '<span class="sit_icon">';
 	
 	if ($row['it_type1'])

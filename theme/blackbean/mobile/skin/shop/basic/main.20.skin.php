@@ -21,6 +21,7 @@ $li_width = intval(100 / $this->list_mod);
 $li_width_style = ' style="width:'.$li_width.'%;"';
 
 for ($i=0; $row=sql_fetch_array($result); $i++) {
+    $item_link_href = shop_item_url($row['it_id']);
     if ($i == 0) {
         if ($this->css) {
             echo "<ul class=\"{$this->css}\">\n";

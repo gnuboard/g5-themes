@@ -26,7 +26,7 @@ $li_width_style = ' style="width:'.$li_width.'%;"';
 $ul_sct_class = ($is_gallery_list === 'gallery') ? 'slt_10' : 'slt_20';
 
 for ($i=0; $row=sql_fetch_array($result); $i++) {
-	
+	$item_link_href = shop_item_url($row['it_id']);
     if ($i == 0) {
         if ($this->css) {
             echo "<ul id=\"sct_wrap\" class=\"{$this->css}\">\n";
@@ -44,7 +44,7 @@ for ($i=0; $row=sql_fetch_array($result); $i++) {
     echo "<li class=\"sct_li{$li_clear}\"$li_width_style><div class=\"li_wr is_view_type_list\">\n";
 
     if ($this->href) {
-        echo "<div class=\"sct_img\"><a href=\"{$item_link_href}{$row['it_id']}\">\n";
+        echo "<div class=\"sct_img\"><a href=\"{$item_link_href}\">\n";
     }
 
     if ($this->view_it_img) {
@@ -60,7 +60,7 @@ for ($i=0; $row=sql_fetch_array($result); $i++) {
     }
 
 	if ($this->href) {
-        echo "<div class=\"sct_txt\"><a href=\"{$this->href}{$row['it_id']}{$row['it_id']}\" class=\"sct_a\">\n";
+        echo "<div class=\"sct_txt\"><a href=\"{$this->href}{$row['it_id']}\" class=\"sct_a\">\n";
     }
 	
 	if ($this->view_it_name) {

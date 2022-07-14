@@ -27,6 +27,8 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_SHOP_CSS_URL.'/style.css">', 0
     $thumb_img_h = 280; // 높이
     for ($i=1; $i<=10; $i++)
     {
+        $sns_title = get_text($it['it_name']).' | '.get_text($config['cf_title']);
+        $sns_url  = shop_item_url($it['it_id']);
         if(!$it['it_img'.$i])
             continue;
 
