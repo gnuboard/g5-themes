@@ -18,7 +18,7 @@ $sql = " select wi_id from {$g5['g5_shop_wish_table']}
           where mb_id = '{$member['mb_id']}' and it_id = '$it_id' ";
 $row = sql_fetch($sql);
 
-if (!$row['wi_id']) {
+if (!isset($row['wi_id'])) {
     $sql = " insert {$g5['g5_shop_wish_table']}
                 set mb_id = '{$member['mb_id']}',
                     it_id = '$it_id',
