@@ -159,6 +159,6 @@ define('G5_THEME_PLUGIN_URL',  G5_URL.'/theme/hotsauce/plugin');
 if(!defined('G5_IS_ADMIN'))
     include_once(G5_THEME_PATH.'/theme.oauth.php');
 
-    define('G5_THEME_ADM_DIR', 'theme/hotsauce/theme_adm/footerinfo.php');
+    define('G5_THEME_ADM_DIR', 'theme/hotsauce/theme_adm');
     define('G5_THEME_ADM_URL', G5_URL.'/'.G5_THEME_ADM_DIR);
 ?>
