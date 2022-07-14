@@ -10,6 +10,7 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/jquery.shop.list.js"></script>'
 <?php
 // 상품진열 20 시작
 for ($i=1; $row=sql_fetch_array($result); $i++) {
+    $item_link_href = shop_item_url($row['it_id']);
 	$icon = '<span class="sit_icon">';
 	
 	if ($row['it_type1'])
@@ -70,7 +71,7 @@ for ($i=1; $row=sql_fetch_array($result); $i++) {
 	echo "<div class=\"sct_img\">\n";
 	
 	if ($this->href) {
-        echo "<a href=\"{$item_link_href}{$row['it_id']}\">\n";
+        echo "<a href=\"{$item_link_href}\">\n";
     }
 	
 	if ($this->view_it_img) {
@@ -100,7 +101,7 @@ for ($i=1; $row=sql_fetch_array($result); $i++) {
 	echo "<div class=\"sct_cnt\">\n";
 	
 	if ($this->href) {
-        echo "<div class=\"sct_txt\"><a href=\"{$item_link_href}{$row['it_id']}\">\n";
+        echo "<div class=\"sct_txt\"><a href=\"{$item_link_href}\">\n";
     }
 	
 	if ($this->view_it_name) {
