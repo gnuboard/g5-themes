@@ -12,7 +12,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_JS_URL.'/flexslider.css"
 
 set_cart_id(0);
 $tmp_cart_id = get_session('ss_cart_id');
-
+$q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : '';
 ?>
 
 <header id="hd">
