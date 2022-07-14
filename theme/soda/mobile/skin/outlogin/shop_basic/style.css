@@ -23,7 +23,7 @@
 #ol_auto label {letter-spacing:-0.1em}
 #ol_auto input {width:13px;height:13px;vertical-align:bottom} 
 
-#ol_after{;position:fixed;top:0;right:0;height:100%;width:300px;background:#2d2f3c;z-index:99999}
+#ol_after{position:fixed;top:0;right:0;height:100%;width:300px;background:#2d2f3c;z-index:99999}
 #ol_after h2{position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 #ol_after .btn_close {height:76px}
 #ol_after_hd{text-align:left;position:relative;padding:20px;padding-left:70px;border-bottom:1px solid #3e4150;line-height:36px}
