@@ -13,7 +13,7 @@ $admin = get_admin("super");
         <ul>
              <li class="ft_box">
                 <h2><i class="fa fa-phone"></i><br>고객센터</h2>
-                <strong>02-123-1234</strong>
+                <b>02-123-1234</b>
                 <p>월-금 am 9:00 - pm 05:00<br>점심시간 : am 12:00 - pm 01:00</p>
             </li>
              <li class="ft_box ft_info">
