@@ -90,12 +90,11 @@ add_stylesheet('<link rel="stylesheet" href="'.$qa_skin_url.'/style.css">', 0);
 	        <?php } ?>
 	    </ul>
 	
-	    <?php if ($rss_href || $write_href) { ?>
+	    <?php if ($write_href) { ?>
 	    <ul class="btn_bo_user">
 	        <?php if ($list_href) { ?>
 	        <li><a href="<?php echo $list_href ?>" class="btn_b01"> 목록</a></li>
 	        <?php } ?>
-	        <?php if ($rss_href) { ?><li><a href="<?php echo $rss_href ?>" class="btn_b01">RSS</a></li><?php } ?>
 	        <?php if ($admin_href) { ?><li><a href="<?php echo $admin_href ?>" class="btn_admin">관리자</a></li><?php } ?>
 	        <?php if ($write_href) { ?><li><a href="<?php echo $write_href ?>" class="btn_b02">글쓰기</a></li><?php } ?>
 	    </ul>
