@@ -44,8 +44,6 @@ $(".btn_more_opt").on("click", function() {
 	        <h2>페이지 정보</h2>
 	        <span class="sound_only">작성자</span><strong><?php echo $view['name'] ?></strong>
 	        <span class="sound_only">작성일</span><strong><i class="fa fa-clock-o" aria-hidden="true"></i> <?php echo $view['datetime']; ?></strong>
-	    	<span class="sound_only">조회</span><strong><i class="fa fa-eye" aria-hidden="true"></i> <?php echo number_format($view['wr_hit']) ?></strong>
-			<span class="sound_only">댓글</span><strong><i class="fa fa-commenting-o" aria-hidden="true"></i> <?php echo number_format($view['wr_comment']) ?></strong>
 		</div>
 		<?php if($view['email'] || $view['hp']) { ?>
         <div id="bo_v_contact">
@@ -115,8 +113,8 @@ $(".btn_more_opt").on("click", function() {
     
     <?php if ($prev_href || $next_href) { ?>
     <ul class="bo_v_nb">
-        <?php if ($prev_href) { ?><li class="bo_v_prev"><a href="<?php echo $prev_href ?>"><i class="fa fa-chevron-up" aria-hidden="true"></i> 이전글 <?php echo $prev_wr_subject;?></a></li><?php } ?>
-        <?php if ($next_href) { ?><li class="bo_v_next"><a href="<?php echo $next_href ?>"><i class="fa fa-chevron-down" aria-hidden="true"></i> 다음글 <?php echo $next_wr_subject;?></a></li><?php } ?>
+        <?php if ($prev_href) { ?><li class="bo_v_prev"><a href="<?php echo $prev_href ?>"><i class="fa fa-chevron-up" aria-hidden="true"></i> 이전글 </a></li><?php } ?>
+        <?php if ($next_href) { ?><li class="bo_v_next"><a href="<?php echo $next_href ?>"><i class="fa fa-chevron-down" aria-hidden="true"></i> 다음글 </a></li><?php } ?>
     </ul>
     <?php } ?>
 </article>
