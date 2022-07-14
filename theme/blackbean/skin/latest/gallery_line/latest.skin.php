@@ -6,6 +6,7 @@ include_once(G5_LIB_PATH.'/thumbnail.lib.php');
 add_stylesheet('<link rel="stylesheet" href="'.$latest_skin_url.'/style.css">', 0);
 $thumb_width = 210;
 $thumb_height = 150;
+$content_length = 150;
 ?>
 
 <div class="gall_l_lt">
