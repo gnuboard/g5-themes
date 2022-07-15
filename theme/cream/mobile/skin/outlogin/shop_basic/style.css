@@ -24,7 +24,7 @@
 #ol_auto label {letter-spacing:-0.1em}
 #ol_auto input {width:13px;height:13px;vertical-align:bottom} 
 
-.ol_after_wr{;position:fixed;top:0;right:0;width:100%;z-index:99999;height:100%;background:#000;background:rgba(0,0,0,0.6);}
+.ol_after_wr{position:fixed;top:0;right:0;width:100%;z-index:99999;height:100%;background:#000;background:rgba(0,0,0,0.6);}
 #ol_after{background:#fff;width:300px;float:right;height:100%;
 -webkit-box-shadow:0 2px 15px rgba(0,0,0,0.2);
 -moz-box-shadow: 0 2px 15px rgba(0,0,0,0.2);

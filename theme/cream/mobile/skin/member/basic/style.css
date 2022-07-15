@@ -121,12 +121,13 @@
 .personal_setting li.mem_pic .mem_pic_preview label {text-align:center !important;width:40px !important;padding:3px 0 !important}
 
 
- @media (max-width: 969px){
+@media (max-width: 969px){
     #fregisterform .frm_info {margin-left:0;clear:both}
     #fregisterform .form_01 ul {width:100%;padding:0 20px 20px}
     #fregisterform .form_01 label {width:100%}
     #fregisterform .form_01 input{width:100%}
- }
+}
+
 #fregisterform .frm_bar {clear:both;line-height:20px;text-align:left;padding:10px;margin-bottom:0 !important;border:1px solid #d9dee9;background:#fff;color:#000;vertical-align:middle}
 #fregisterform .frm_bar:after {display:block;visibility:hidden;clear:both;content:""}
 #fregisterform .frm_bar label {position:relative;display:inline-block;width:auto;padding:0}
@@ -227,7 +228,7 @@ box-shadow: 0 1px 5px rgba(50,50,50,0.2);}
 #scrap_do label{color:#666}
 
 /* 포인트 */
-#point_ul {;padding:0;list-style:none}
+#point_ul {padding:0;list-style:none}
 #point_ul li {position:relative;}
 #point_ul li:after {display:block;visibility:hidden;clear:both;content:""}
 #point_ul .point_wrap01 {float:left}

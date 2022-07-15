@@ -3,7 +3,7 @@
 #gnb {margin:0 0 5px;padding:0 0 10px;background:#333949;position:relative;min-height:425px}
 #gnb h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 #gnb button{width:100%;border:0;border-bottom:1px solid #2b313f;background:none;text-align:left;color:#fff;padding:0 20px;height:40px;font-weight:bold;font-size:1.167em}
-.gnb_1dli {; word-wrap: break-word;}
+.gnb_1dli {word-wrap: break-word;}
 .gnb_1dli_on {color:#fff;text-decoration:none}
 .gnb_1da {display:block;padding:0 20px;line-height:40px;color:#ccc;font-weight:bold;text-decoration:none;font-size:1.167em}
 .gnb_1dam {background:url('img/gnb_bg.png')  center right no-repeat}
@@ -314,7 +314,7 @@
 /* 상품 목록 카테고리 목록 */
 .sct_ct {margin:10px 0 20px}
 .sct_ct h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
-.sct_ct ul {;zoom:1}
+.sct_ct ul {zoom:1}
 .sct_ct ul:after {display:block;visibility:hidden;clear:both;content:""}
 .sct_ct a {text-decoration:none}
 .sct_ct_parent {font-weight:bold}

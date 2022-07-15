@@ -73,8 +73,8 @@
 #bo_cate{border-bottom:1px solid #d6d9e3;;}
 #bo_cate h2 {width:0;height:0;font-size:0;line-height:0;overflow:hidden}
 #bo_cate ul {white-space: nowrap;overflow-x: auto;
--webkit-overflow-scrolling: touch
- -ms-overflow-style: -ms-autohiding-scrollbar}
+-webkit-overflow-scrolling: touch;
+-ms-overflow-style: -ms-autohiding-scrollbar}
 #bo_cate ul:after {display:block;visibility:hidden;clear:both;content:""} 
 #bo_cate ul::-webkit-scrollbar {display: none;}
 #bo_cate li{display:inline-block;padding: 0 10px;}
@@ -175,8 +175,6 @@ box-shadow: 0 2px 3px #eee}
     #bo_sch .btn_close,#bo_sch .sch_btn{top:5px}
     #bo_gall .gall_li{width:50%}
     #bo_gall .gall_li:nth-child(2n+1) {clear:both}
-
-
 }
 
 /* 게시판 쓰기 */
@@ -291,7 +289,7 @@ box-shadow: 1px 2px 8px #e2e4f1}
 #bo_v_share .btn_scrap:hover{background:#f3f3f3}
 .btn_share{display:none;}
 .bo_v_snswr{position:relative;float:right}
-#bo_v_sns {;padding:0;list-style:none;zoom:1}
+#bo_v_sns {padding:0;list-style:none;zoom:1}
 #bo_v_sns:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_sns li {float:left;width:40px;text-align:center;margin-left:3px}
 #bo_v_sns li a{height:40px;padding:10px 0;border-radius:50px}
@@ -336,13 +334,13 @@ box-shadow: 1px 2px 8px #e2e4f1}
 .bo_vc_w:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_vc_w h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 .bo_vc_w #char_cnt {display:block;margin:0 0 5px}
-.bo_vc_w textarea{;width:100%;height:120px}
+.bo_vc_w textarea{width:100%;height:120px}
 #wr_secret{}
 .bo_vc_w_info{margin:5px 0}
 .bo_vc_w_info:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_vc_w_info .frm_input{float:left;;width:49.5%;margin: 0 0 5px 0}
 .bo_vc_w_info #wr_password{float:right;}
-.bo_vc_w_info #captcha{;display:block;clear:both}
+.bo_vc_w_info #captcha{display:block;clear:both}
 .bo_vc_w .btn_confirm{margin-top:5px;float:right;}
 .bo_vc_w .icon_lock{display:inline-block;padding: 5px;margin-right:5px;}
 .bo_vc_w_wr:after {display:block;visibility:hidden;clear:both;content:""}
