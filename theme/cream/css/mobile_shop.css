@@ -252,7 +252,7 @@ box-shadow:0 5px 10px rgba(0, 0, 0, .15);}
 .ft_wr ul:after {display:block;visibility:hidden;clear:both;content:""}
 .ft_wr .ft_box{float:left;width:25%;text-align:left;padding:0 20px}
 .ft_wr .ft_box h2{margin-bottom:15px}
-.ft_wr .ft_box strong{display:block;color:#000;margin-bottom:20px;font-size:1.5em}
+.ft_wr .ft_box b{display:block;color:#000;margin-bottom:20px;font-size:1.5em}
 .ft_wr .ft_box p{color:#9f9f9f;font-weight:300;line-height:1.7em;font-size:0.923em}
 .ft_wr .ft_box p span{display:inline-block;margin-right:8px;}
 .ft_wr .ft_info{width:50%}

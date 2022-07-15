@@ -9,17 +9,17 @@ $admin = get_admin("super");
 </div><!-- container End -->
 
 <div id="ft">
-   <div class="ft_wr">
+<div class="ft_wr">
         <ul>
-             <li class="ft_box">
+            <li class="ft_box">
                 <h2>고객센터</h2>
 
-                <strong class="cs_tel">01-234-5678</strong>
+                <b class="cs_tel">01-234-5678</b>
                 <p class="cs_info">월-금 am 9:00 - pm 05:00 <br>점심시간 : am 12:00 - pm 01:00</p>   
                 
             </li>
 
-             <li class="ft_box ft_info">
+            <li class="ft_box ft_info">
                 <h2><?php echo $config['cf_title']; ?> 정보</h2>
                 <p>
                 <span>주소 : <?php echo $default['de_admin_company_addr']; ?></span><br>
@@ -47,9 +47,8 @@ $admin = get_admin("super");
             <?php } ?>     
             <div class="ft_copy">Copyright &copy; 2001-2013 <?php echo $default['de_admin_company_name']; ?>. All Rights Reserved. </div>
         </div>
-       
-     </div>
-     <a href="#" id="ft_to_top"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></a>
+    </div>
+    <a href="#" id="ft_to_top"><i class="fa fa-arrow-up" aria-hidden="true"></i><span class="sound_only">상단으로</span></a>
 
 </div>
 

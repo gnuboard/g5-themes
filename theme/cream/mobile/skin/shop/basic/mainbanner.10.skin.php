@@ -78,28 +78,7 @@ $('.main_bn_slide').slick({
     variableWidth: true ,
     arrows:false,
     autoplay: true,
-    responsive: [
-    {
-      breakpoint: 1200,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '15%',
-        slidesToShow: 1,
-        variableWidth: false,
-      }
-    },
-    {
-      breakpoint: 970,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '0',
-        slidesToShow: 1  ,
-             variableWidth: false,
-      }
-    }
-  ]
+    variableWidth: false,
 });
 </script>
 

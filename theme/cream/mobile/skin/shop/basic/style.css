@@ -737,6 +737,8 @@ filter: grayscale(0);}
     .sit_qa_li_title,.sit_use_li_title{line-height:20px;padding:0 0 5px}
     .sit_use_li{padding:15px 0}
     .sit_use_dl dd img{margin:0}
+    .sit_qa_li_title {padding-top: 10px;}
+    .sit_qa_dl {padding: 0 0 10px;}
 }
 
 
