@@ -18,9 +18,8 @@ ob_start();
     <button type="submit" id="sch_submit" value="검색"><i class="fa fa-search"></i><span class="sound_only">검색</span></button>
 </form>
 
-<?php if($_POST['place'] == 'head') { ?>
-<button class="sch_more_close">닫기</button>
-<?php }
+
+<?php 
 
 $content = ob_get_contents();
 ob_end_clean();
