@@ -121,8 +121,6 @@ if ((stripos($_SERVER['REQUEST_URI'], 'register') !== false) || !(defined("_DONT
 		</div>
         <div id="bg"></div>
 	</aside>
-
-	<?php echo $side_menu_html; ?>
 		
 	<!-- con_right 시작 { -->
 	<div id="con_right">
