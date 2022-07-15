@@ -83,7 +83,7 @@ a:hover, a:focus, a:active {color:#000;text-decoration:underline}
 .ts_up2 {font-size:1.3em !important}
 
 /* 하단 레이아웃 */
-#ft {;border-top:1px solid #dde4e9;background:#f2f5f9}
+#ft {border-top:1px solid #dde4e9;background:#f2f5f9}
 #ft h1 {width:0;height:0;font-size:0;line-height:0;overflow:hidden}
 #ft p {margin:0;padding:10px 0;line-height:1.8em}
 

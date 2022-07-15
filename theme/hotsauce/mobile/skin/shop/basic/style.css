@@ -358,10 +358,10 @@
 #sit_star_sns .sns_area .share-twitter {background:#35b3dc}
 
 #sit_btn_rec {background:none;font-size:0.92em;color:#000;padding:0 3px;display:inline-block;font-size:16px}
- #sit_btn_rec i {line-height:30px;vertical-align:top}
+#sit_btn_rec i {line-height:30px;vertical-align:top}
 .sit_ov_tbl {margin:10px 0px 20px}
 .sit_ov_tbl table{border-collapse:collapse;width:100%;border:0;font-size:0.917em;color:#626262}
-.sit_ov_tbl th {;font-weight:normal;text-align:left;padding:5px }
+.sit_ov_tbl th {font-weight:normal;text-align:left;padding:5px }
 .sit_ov_tbl td {padding:5px 0}
 .sit_ov_tbl tr:first-child td,.sit_ov_tbl tr:first-child th{border:none}
 .sit_ov_ro {padding:2px 2px 3px;border:0;background:transparent;text-align:right;vertical-align:middle}
@@ -400,8 +400,8 @@
 #sit_btn_buy, #sit_btn_wish{border:1px solid #4A4A4A;background:#FFF;color:#4A4A4A}
 #sit_btn_buy:hover, #sit_btn_wish:hover {border:1px solid #FFB5BC;background:#FFFBFB;color:#FC4C5E}
 #sit_btn_buy:hover, #sit_btn_wish:hover{color:#4A4A4A}
-#sit_btn_buy{;width:40%;float:left;margin:0 1%}
-#sit_btn_wish{;width:18%;float:right;font-weight:bold}
+#sit_btn_buy{width:40%;float:left;margin:0 1%}
+#sit_btn_wish{width:18%;float:right;font-weight:bold}
 
 
 @media (max-width:970px){
