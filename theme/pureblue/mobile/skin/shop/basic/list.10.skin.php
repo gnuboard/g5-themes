@@ -25,6 +25,7 @@ $li_width_style = ' style="width:'.$li_width.'%;"';
 $ul_sct_class = ($is_gallery_list === 'gallery') ? 'sct_10' : 'sct_10_list';
 
 for ($i=0; $row=sql_fetch_array($result); $i++) {
+    $item_link_href = shop_item_url($row['it_id']);     // 상품링크
 	$icon = '<span class="sit_icon">';
 	
 	if ($row['it_type1'])
@@ -52,7 +53,7 @@ for ($i=0; $row=sql_fetch_array($result); $i++) {
         if ($this->css) {
             echo "<ul id=\"lct_wrap\" class=\"{$this->css}\">\n";
         } else {
-            echo "<ul id=\"lct_wrap\" class=\"lct ".$ul_lct_class."\">\n";
+            echo "<ul id=\"lct_wrap\" class=\"lct \">\n";
         }
     }
 
