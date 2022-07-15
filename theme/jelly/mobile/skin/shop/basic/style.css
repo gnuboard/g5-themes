@@ -49,7 +49,7 @@ text-shadow: 0 1px 2px rgba(0,0,0,0.2);}
 -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
-#main_bn .btn_detail:hover{ ; opacity:1;
+#main_bn .btn_detail:hover{opacity:1;
 -webkit-box-shadow: 0 6px 10px rgba(0,0,0,0.2);
 -moz-box-shadow: 0 6px 10px rgba(0,0,0,0.2);
 box-shadow: 0 6px 10px rgba(0,0,0,0.2);}
@@ -75,8 +75,8 @@ box-shadow: 0 0  8px 5px rgba(255,255,255,0.6);}
      #main_bn .bn-txt{font-size:2em;}
 
      #main_bn .btn_detail{height:38px;width:90px;margin-top:20px;background-size:cover}
-
 }
+
 /*사이드배너*/
 #sbn_side{}
 #sbn_side h2  {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
@@ -97,7 +97,7 @@ text-shadow: 0 1px 2px rgba(0,0,0,0.2);}
 -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.2);
 box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
-#sbn_side .btn_detail:hover{ ; opacity:1;
+#sbn_side .btn_detail:hover{opacity:1;
 -webkit-box-shadow: 0 6px 10px rgba(0,0,0,0.2);
 -moz-box-shadow: 0 6px 10px rgba(0,0,0,0.2);
 box-shadow: 0 6px 10px rgba(0,0,0,0.2);}
@@ -161,20 +161,19 @@ box-shadow: 0 3px 15px rgba(0,0,0,0.2);}
     #sev_tit a{display:inline-block;margin:0 10px 10px}
 
     #sev .sev_tit{padding:20px}
-    #sev .sev_text{;font-size:1.5em;}
+    #sev .sev_text{font-size:1.5em;}
     #sev .ev_prd {padding: 20px 20px  20px 0}
     #sev .ev_prd li{padding:10px}
     #sev .ev_prd li .ev_li_wr{padding:15px}
-
 }
+
 @media (max-width: 639px){
    #sev .sev_detail{display:none}
    #sev .ev_prd li{padding:5px}
    #sev .ev_prd li .ev_txt_wr{display:none}
    #sev .ev_prd {padding: 40px 20px  40px 0}
-
-
 }
+
 /* ##### maint.(nn).skin.php, list.(nn).skin.php 공통 적용 시작 ##### */
 /* 공통 */
 .sct_wrap {margin:130px 0;zoom:1}
@@ -212,14 +211,14 @@ box-shadow: 0 3px 15px rgba(0,0,0,0.2);}
 
 
  @media (max-width:639px){
-     .sct_wrap h2 {text-align:center;font-size:1.385em;margin:20px 0  }
-      .sct_wrap{margin:80px 0}
+    .sct_wrap h2 {text-align:center;font-size:1.385em;margin:20px 0  }
+    .sct_wrap{margin:80px 0}
  }
 
 /* 상품 목록 스킨 10 */
 .list_prd{margin:0 auto;max-width:1200px;padding:10px}
 .sct_10{padding:0 10px}
-.sct_10 .sct_li {;float:left;text-align:left;width:25% !important;padding:15px ;margin-bottom:10px;}
+.sct_10 .sct_li {float:left;text-align:left;width:25% !important;padding:15px ;margin-bottom:10px;}
 .sct_10 .sct_li:nth-child(4n+1){clear:both}
 .sct_10 .sct_li .li_wr{position:relative;}
 .sct_10 .sct_img{position:relative;overflow:hidden;border: 1px solid #ededed;}
@@ -263,7 +262,6 @@ box-shadow: 0 2px 5px rgba(0,0,0,0.08);}
    .sct_10 .sct_li:nth-child(2n+1){clear:both}
    .sct_10 .sct_icon {position:absolute;top:10px;left:10px;}
    .sct_10 .sct_discount{display:none}
-
 }
 
 /* 상품 목록 스킨 20 */
@@ -320,7 +318,6 @@ filter: alpha(opacity=100);
  
 @media (max-width:969px){
     .smt_20 .sct_discount{display:none}
-
 }
  @media (max-width:639px){
     .smt_20 li{width:50%;padding:10px}
@@ -447,14 +444,12 @@ box-shadow:0 5px 10px rgba(0, 0, 0, .15);}
 
 @media (min-width: 970px){
     .sct_ct ul li:nth-child(5n+1){clear:both}
-
 }
 
 
 @media (max-width: 639px){
     .sct_ct ul li{width:50%}
     .sct_ct ul li:nth-child(2n+1){clear:both}
-
 }
 
 /* 상품 정렬 */
@@ -607,7 +602,6 @@ filter: grayscale(0);}
 @media (min-width: 970px){
     .sit_pvi_thumb{position:absolute;top:20px;left:0}
     .sit_pvi_thumb a{display:block;margin:0 0 10px}
-
 }
 
 
@@ -617,7 +611,6 @@ filter: grayscale(0);}
     .sit_pvi_thumb{margin:20px 0}
     .sit_pvi_thumb a{display:inline-block;margin:0 10px}
     #sit_title{font-size:1.5em}
-
 }
 
 /* 상품 상세보기 - 구매하기  */
@@ -656,8 +649,6 @@ filter: grayscale(0);}
     #sit_buy .btn_close {background:url(./img/m-btn-op.png) no-repeat 50% 50% #fff;border:1px solid #aaa;border-bottom:0;margin-bottom:-1px;z-index:1;position:relative;text-indent:-999px;overflow:hidden;width:70px;height:24px;border-radius:10px 10px 0 0;display:inline-block}
 
     .buy_wr{background:#fff;border-top:1px solid #aaa;padding: 20px;max-height:200px;text-align:left;overflow-y:auto}
-
-
  }
 @media (min-width: 640px){
     #sit_buy{display:block !important}
@@ -735,7 +726,7 @@ filter: grayscale(0);}
 .sit_qa_dl dd.sit_qaa_yet,.sit_qa_dl dd.sit_qaa_done{display:inline-block;width:50px;text-align:center;font-weight:bold;margin:0}
 .sit_qa_dl dd.sit_qaa_done{color:#2060ff}
 .sit_qa_con {display:none}
-.sit_qa_p {;background:#f6f6f6;line-height:1.8em;}
+.sit_qa_p {background:#f6f6f6;line-height:1.8em;}
 .sit_qa_p strong {display:inline-block;margin:0 0 10px;}
 .sit_qa_qaq{margin-bottom:10px;padding:20px ;border-bottom:1px dotted #e3e3e3}
 .sit_qa_qaa{padding:20px}
@@ -791,7 +782,7 @@ filter: grayscale(0);}
 .sps_con_btn button {border: 1px solid #ddd;padding: 5px 8px;color: #666;font-size: 0.92em;margin: 5px 0;background: #fff;}
 
 .sps_reply{margin-top:10px;padding-top:10px;border-top:1px dotted #bbb;position:relative}
-.sps_reply .sps_img {;width:50px;text-align:center}
+.sps_reply .sps_img {width:50px;text-align:center}
 .sps_reply .sps_section h2{background:url('./img/use_reply.png') no-repeat 0 0;text-indent:30px;line-height:1.5em;}
 .sps_reply .sps_section{margin-left:70px;min-height:50px}
 #sps_empty{text-align:center;color:#777;padding:50px 0}
@@ -911,11 +902,9 @@ filter: grayscale(0);}
 @media (min-width: 640px)and (max-width:969px){
     .couponzone_list ul li{width:50%;float:left;padding:10px}
     .couponzone_list ul li:nth-child(2n+1){clear:both;}
-
 }
 @media (min-width: 970px){
     .couponzone_list ul li{width:25%;float:left;padding:10px}
     .couponzone_list ul li:nth-child(4n+1){clear:both;}
-
 }
 

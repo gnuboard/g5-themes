@@ -55,7 +55,7 @@
 
 
 @media (min-width: 970px){
-    #ol_after{;position:absolute;top:60px;right:0;width:300px;background:#fff;z-index:99999;
+    #ol_after{position:absolute;top:60px;right:0;width:300px;background:#fff;z-index:99999;
     -webkit-box-shadow:0 2px 15px rgba(0,0,0,0.2);
     -moz-box-shadow: 0 2px 15px rgba(0,0,0,0.2);
     box-shadow: 0 2px 15px rgba(0,0,0,0.2)}
@@ -71,5 +71,4 @@
     #ol_after_hd .profile_img{top:10px;left:10px}
     #ol_before{padding:30px}
     #ol_before h2{font-size:1.5em}
-
 }

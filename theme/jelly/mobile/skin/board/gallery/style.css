@@ -175,8 +175,6 @@ box-shadow: 0 2px 3px #eee}
     #bo_sch .btn_close,#bo_sch .sch_btn{top:5px}
     #bo_gall .gall_li{width:50%}
     #bo_gall .gall_li:nth-child(2n+1) {clear:both}
-
-
 }
 
 /* 게시판 쓰기 */
@@ -222,8 +220,7 @@ box-shadow: 0 2px 3px #eee}
 #bo_v_file li {padding: 10px 10px 10px 60px;border: 1px solid #e8e8e8;color:#aaa;margin:10px 0;border-radius:5px;position:relative;
 -webkit-box-shadow: 0 0 5px  #e2e4f1;
 -moz-box-shadow: 0 0 5px #e2e4f1;
-box-shadow: 1px 2px 8px #e2e4f1
-}
+box-shadow: 1px 2px 8px #e2e4f1}
 #bo_v_file li i{position:absolute;top:50%;left:10px;font-size:20px;;width:40px;line-height:40px;text-align:center;margin-top:-20px}
 #bo_v_file a {display:block;color:#aaa;text-decoration:none;margin:0 0 3px}
 #bo_v_file a strong{text-decoration:underline}
@@ -240,7 +237,7 @@ box-shadow: 1px 2px 8px #e2e4f1}
 
 #bo_v_link li i{position:absolute;top:50%;left:10px;font-size:20px;;width:40px;line-height:40px;text-align:center;margin-top:-20px}
 #bo_v_link a {display:block;color:#aaa;text-decoration:none;margin:0 0 3px}
-#bo_v_link li:hover,#bo_v_link li:hover a  {color:#a629e0;text-decoration:none}
+#bo_v_link li:hover,#bo_v_link li:hover a {color:#a629e0;text-decoration:none}
 #bo_v_link a strong{text-decoration:underline}
 #bo_v_link span {font-size:0.91em}
 .bo_v_link_cnt {font-size:0.92em}
@@ -291,7 +288,7 @@ box-shadow: 1px 2px 8px #e2e4f1}
 #bo_v_share .btn_scrap:hover{background:#f3f3f3}
 .btn_share{display:none;}
 .bo_v_snswr{position:relative;float:right}
-#bo_v_sns {;padding:0;list-style:none;zoom:1}
+#bo_v_sns {padding:0;list-style:none;zoom:1}
 #bo_v_sns:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_sns li {float:left;width:40px;text-align:center;margin-left:3px}
 #bo_v_sns li a{height:40px;padding:10px 0;border-radius:50px}
@@ -336,13 +333,13 @@ box-shadow: 1px 2px 8px #e2e4f1}
 .bo_vc_w:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_vc_w h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 .bo_vc_w #char_cnt {display:block;margin:0 0 5px}
-.bo_vc_w textarea{;width:100%;height:120px}
+.bo_vc_w textarea{width:100%;height:120px}
 #wr_secret{}
 .bo_vc_w_info{margin:5px 0}
 .bo_vc_w_info:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_vc_w_info .frm_input{float:left;;width:49.5%;margin: 0 0 5px 0}
 .bo_vc_w_info #wr_password{float:right;}
-.bo_vc_w_info #captcha{;display:block;clear:both}
+.bo_vc_w_info #captcha{display:block;clear:both}
 .bo_vc_w .btn_confirm{margin-top:5px;float:right;}
 .bo_vc_w .icon_lock{display:inline-block;padding: 5px;margin-right:5px;}
 .bo_vc_w_wr:after {display:block;visibility:hidden;clear:both;content:""}
@@ -364,10 +361,10 @@ box-shadow: 1px 2px 8px #e2e4f1}
     #bo_vc .cmt_contents{padding-bottom:30px}
     .bo_vc_hdinfo{display:inline-block;padding-left:5px;}
 }
+
 @media (max-width: 969px){
     #bo_vc header{padding-left:50px}
     #bo_vc,#bo_vc_w,.cmt_btn {margin: 10px}
-
 }
 
 /*글쓰기*/
