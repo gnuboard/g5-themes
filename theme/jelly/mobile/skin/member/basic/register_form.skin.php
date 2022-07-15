@@ -185,8 +185,6 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
 
 	        <?php if ($config['cf_use_member_icon'] && $member['mb_level'] >= $config['cf_icon_level']) { ?>
 	        <li class="filebox">
-				<input type="text" class="fileName" readonly="readonly" placeholder="회원아이콘">
-	            <label for="reg_mb_icon" class="btn_file"><span class="sound_only">회원아이콘</span>이미지선택</label>
 	            <input type="file" name="mb_icon" id="reg_mb_icon" class="uploadBtn">
 	            <span class="frm_info">
 	                이미지 크기는 가로 <?php echo $config['cf_member_icon_width'] ?>픽셀, 세로 <?php echo $config['cf_member_icon_height'] ?>픽셀 이하로 해주세요.<br>
@@ -202,8 +200,6 @@ if ($config['cf_cert_use'] && ($config['cf_cert_simple'] || $config['cf_cert_ipi
         
 	        <?php if ($member['mb_level'] >= $config['cf_icon_level'] && $config['cf_member_img_size'] && $config['cf_member_img_width'] && $config['cf_member_img_height']) {  ?>
 	        <li class="reg_mb_img_file filebox">
-	        	<input type="text" class="fileName" readonly="readonly" placeholder="회원이미지">
-	            <label for="reg_mb_img" class="btn_file"><span class="sound_only">회원이미지</span>이미지선택</label>
 	            <input type="file" name="mb_img" id="reg_mb_img" class="uploadBtn">
 	            <span class="frm_info">
 	                이미지 크기는 가로 <?php echo $config['cf_member_img_width'] ?>픽셀, 세로 <?php echo $config['cf_member_img_height'] ?>픽셀 이하로 해주세요.<br>

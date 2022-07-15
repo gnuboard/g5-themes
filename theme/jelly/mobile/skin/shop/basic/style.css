@@ -715,7 +715,7 @@ filter: grayscale(0);}
 
 /* 상품 상세보기 - 상품문의 */
 #sit_qa_ol {margin:0 0 5px;padding:0;border-top:1px solid #eee;list-style:none;}
-.sit_qa_li{position:relative;border-bottom:1px solid #eee;margin-top:-1px}
+.sit_qa_li{position:relative;border-bottom:1px solid #eee;margin-top:-1px;padding:10px 0;}
 .sit_qa_li_title {display:block;margin:0;padding:0 ;line-height:60px;width:100%;border:0;background:transparent;text-align:left;padding-right:260px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap}
 .sit_qa_li_title img{vertical-align:middle}
 .sit_qa_li_title b{font-weight:normal;margin-right:2px}
