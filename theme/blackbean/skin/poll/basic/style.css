@@ -47,7 +47,7 @@
 #poll_btn {padding:10px 0;text-align:right}
 #poll_btn:after {display:block;visibility:hidden;clear:both;content:""}
 #poll_btn .btn_poll{display:inline-block;height:30px;line-height:28px;padding: 0 10px}
-#poll_btn .btn_result{;display:inline-block;height:30px;line-height:30px;padding: 0 10px;font-weight:bold}
+#poll_btn .btn_result{display:inline-block;height:30px;line-height:30px;padding: 0 10px;font-weight:bold}
 
 
 /* 설문조사 결과 (새창) */
