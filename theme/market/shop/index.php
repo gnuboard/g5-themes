@@ -16,10 +16,10 @@ include_once(G5_THEME_SHOP_PATH.'/shop.head.php');
 	<div id="idx_bn_link">
 		<div id="bn_cnt_link">
 			<ul>
-				<li><a href=""><i class="fas fa-shopping-basket"></i><br>사용후기</a></li>
-				<li><a href=""><i class="fas fa-gift"></i><br>이벤트</a></li>
-				<li><a href=""><i class="fas fa-grin-alt"></i><br>커뮤니티</a></li>
-				<li><a href=""><i class="fas fa-comment-dots"></i><br>문의</a></li>
+				<li><a href="./itemuselist.php"><i class="fas fa-shopping-basket"></i><br>사용후기</a></li>
+				<li><a href=<?php echo G5_BBS_URL.'/qalist.php'  ?>><i class="fas fa-comment-dots"></i><br>1:1문의</a></li>
+				<li><a href=""><i class="fas fa-gift"></i><br>비어있음</a></li>
+				<li><a href=""><i class="fas fa-grin-alt"></i><br>비어있음</a></li>
 			</ul>
 		</div>
 	</div>
