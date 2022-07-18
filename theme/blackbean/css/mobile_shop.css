@@ -60,7 +60,7 @@ border:1px solid #558ab7 !important;
 #hd_btn > button {padding:0 10px;height:35px;width:35px;border:0;color:#fff;background:none;font-size:1.6em;text-align:center}
 #hd_btn button.btn_hdcate {position:absolute;top:10px;left:10px}
 #hd_btn button#user_btn {position:absolute;top:10px;right:50px;font-size:16px}
-#user_menu {display:none;position:absolute;top:0;right:0;width:100%;min-height:750px;max-height:1920px;z-index:9999;background:#2525257d;text-align:center;padding:50px 20px}
+#user_menu {display:none;position:fixed;top:0;right:0;left:0;bottom:0;width:100%;min-height:750px;max-height:1920px;z-index:9999;background:#2525257d;text-align:center;padding:50px 20px}
 #hd_btn button#sch_btn {position:absolute;top:8px;left:45px}
 
 #hd_sch {display:none;background:#232323;width:100%;position:absolute;left:0;top:0;padding:10px;z-index:9999999999}

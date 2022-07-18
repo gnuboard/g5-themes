@@ -87,6 +87,7 @@ box-shadow:0 0 5px rgba(55,55,5,0.1)}
 #poll_result_cmt fieldset p {margin:0 0 15px;padding:3px 0 0px;text-align:left}
 #poll_result_cmt footer {text-align:right}
 #poll_result_cmt .btn_submit {height:40px;padding:0 20px}
+#poll_result_cmt #pc_idea {height: 30px;border:1px solid #f6f6f6;}
 
 .poll_cmt_del a {display:inline-block;margin-left:5px;color:#49857c;font-size:15px;}
 .poll_cmt_del a:hover{color:#98ca69}

@@ -22,9 +22,9 @@ pre {overflow-x:scroll;font-size:1.1em}
 a {color:#000;text-decoration:none}
 
 *, :after, :before {
-  -webkit-box-sizing:border-box;
-  -moz-box-sizing:border-box;
-  box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
 }
 
 input[type=text],input[type=password], textarea {
@@ -179,6 +179,7 @@ box-shadow:0 2px 5px rgba(0,0,0,0.2)}
 
 #aside {clear:both;width:305px;padding:0;background:#e7ebf3;height:100%;border:1px solid #adbfd2;margin:20px 0 20px 20px}
 
+.latest_wr {padding: 20px 0;}
 .lt_wr {width:49%}
 .lt_wr:nth-child(2n+1) {clear:both}
 .latest_wr:after {display:block;visibility:hidden;clear:both;content:""}

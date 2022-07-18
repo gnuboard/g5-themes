@@ -628,6 +628,7 @@ a.btn_admin2,.btn_admin2 {display:inline-block;background:#fff;color:#000;border
 #sod_frm_taker .tbl_frm01 .btn_frmline {width:80px;height:30px;line-height:28px;background:#fff;border:1px solid #d4d6db;color:#606060;text-align:center;float:right}
 
 #sod_frm_taker .tbl_frm01 td input {width:100%}
+#sod_frm_taker .tbl_frm01 td input[type="checkbox"], #sod_frm_taker .tbl_frm01 td input[type="radio"] {width:auto;}
 #sod_frm_taker .tbl_frm01 td .addr input {width:20%}
 #sod_frm_taker .tbl_frm01 td .addr button {background:#434a54;color:#fff;width:128px;height:45px;border:0;border-radius:3px}
 #sod_frm_taker .tbl_frm01 td .ad_choice {padding:5px 0}
@@ -640,7 +641,7 @@ a.btn_admin2,.btn_admin2 {display:inline-block;background:#fff;color:#000;border
 /* 주문서 작성 - 오른쪽 */
 .sod_right {display:inline-block;float:left;width:340px;height:100%;vertical-align:top}
 
-.sod_right #sod_bsk_tot {border:1px solid #3a8afd}
+.sod_right #sod_bsk_tot {border:1px solid #3a8afd;padding:10px;}
 .sod_right #sod_bsk_tot:after {display:block;visibility:hidden;clear:both;content:""}
 .sod_right .sod_info li {position:relative;float:left;background:#fff;width:33.333%;height:70px;text-align:center;border-bottom:1px solid #e7ebf1;padding:15px 0}
 .sod_right .sod_info li:after {display:block;visibility:hidden;clear:both;content:""}
@@ -699,6 +700,7 @@ a.btn_admin2,.btn_admin2 {display:inline-block;background:#fff;color:#000;border
 #sod_frm_pay .lb_icon {display:inline-block;position:relative;cursor:pointer;z-index:1}
 #sod_frm_pay input[type="radio"]:checked+.lb_icon {color:#3a8afd;z-index:3}
 #sod_frm_pay input[type="radio"] + label span {top:7px}
+#sod_frm_pay #od_pay_sl {padding:10px;}
 
 #sod_frm_paysel {}
 #sod_frm_paysel legend {position:absolute;font-size:0;line-height:0;overflow:hidden}

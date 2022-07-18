@@ -558,7 +558,7 @@
 .sit_qa_dl dt {position:absolute;font-size:0;line-height:0;content:""}
 .sit_qa_dl dd {display:inline-block;margin-left:10px}
 .sit_qaa_done {background:#ff9000;color:#fff;height:25px;line-height:25px;display:inline-block;padding:0 8px;margin-right:10px;font-size:12px;font-weight:normal}
-.sit_qaa_yet {background:#fff;border:1px solid #ff9000;color:#ff9000;height:25px;line-height:23px;display:inline-block;margin-right:10px;font-size:12px;padding:0 8px;font-weight:normal}
+.sit_qaa_yet {background:#fff;border:1px solid #ff9000;color:#ff9000;height:25px;line-height:23px;display:inline-block;margin-right:10px;font-size:12px;padding:0 8px;font-weight:normal;float:right;}
 
 .sit_qa_con {display:none;clear:both;margin:20px 0 0}
 .sit_qa_p {margin:10px 0;background:#f3f3f3;line-height:1.5em}
