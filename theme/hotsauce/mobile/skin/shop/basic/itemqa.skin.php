@@ -10,6 +10,11 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_MSHOP_SKIN_URL.'/style.css">',
 <!-- 상품문의 목록 시작 { -->
 <div id="sit_qa_list">
 
+    <div id="sit_qa_wbtn">
+        <a href="<?php echo $itemqa_form; ?>" class="itemqa_form qa_wr">상품문의 쓰기<span class="sound_only"> 새 창</span></a>
+        <a href="<?php echo $itemqa_list; ?>" id="itemqa_list" class="btn01">더보기</a>
+    </div>
+
     <?php
     $thumbnail_width = 500;
     $iq_num = $total_count - ($page - 1) * $rows;
@@ -76,20 +81,20 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_MSHOP_SKIN_URL.'/style.css">',
                 </div>
                 <?php } ?>
                 <div id="sit_qa_con_<?php echo $i; ?>" class="sit_qa_con">
-	                <div class="sit_qa_p">
-	                    <div class="sit_qa_qaq">
-	                        <strong>문의내용</strong>
-	                        <?php echo $iq_question; // 상품 문의 내용 ?>
-	                    </div>
-	                    <?php if(!$is_secret) { ?>
-	                    <div class="sit_qa_qaa">
-	                        <strong>답변</strong>
-	                        <?php echo $iq_answer; ?>
-	                    </div>
-	                    <?php } ?>
-	                </div>
-	            </div>
-	            <button type="button" class="show-more">더보기</button>
+                    <div class="sit_qa_p">
+                        <div class="sit_qa_qaq">
+                            <strong>문의내용</strong>
+                            <?php echo $iq_question; // 상품 문의 내용 ?>
+                        </div>
+                        <?php if(!$is_secret) { ?>
+                        <div class="sit_qa_qaa">
+                            <strong>답변</strong>
+                            <?php echo $iq_answer; ?>
+                        </div>
+                        <?php } ?>
+                    </div>
+                </div>
+                <button type="button" class="btn01 show-more">더보기</button>
             </div>
         </li>
 
@@ -106,11 +111,6 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_MSHOP_SKIN_URL.'/style.css">',
 <?php
 echo itemqa_page($config['cf_mobile_pages'], $page, $total_page, G5_SHOP_URL."/itemqa.php?it_id=$it_id&amp;page=", "");
 ?>
-
-<div id="sit_qa_wbtn">
-    <a href="<?php echo $itemqa_form; ?>" class="itemqa_form qa_wr">상품문의 쓰기<span class="sound_only"> 새 창</span></a>
-    <a href="<?php echo $itemqa_list; ?>" id="itemqa_list" class="btn01">더보기</a>
-</div>
         
 <script>
 $(function(){

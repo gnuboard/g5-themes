@@ -85,7 +85,7 @@
 .bo_fx {margin-bottom:5px;padding:5px 0}
 .bo_fx:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_fx ul {margin:0;padding:0;list-style:none;text-align:right}
-#bo_list_total {float:left;padding:0;height:2.5em;line-height:2.5em}
+#bo_list_total {position:absolute;top:60px;height:2.5em;line-height:2.5em}
 .btn_bo_user {float:right;margin:15px;padding:0;list-style:none}
 .btn_bo_user li {float:left;margin-left:5px}
 .btn_top li>a,
@@ -107,6 +107,9 @@ a.bo_cate_link {color: #fff;background: #333;font-size: 0.92em;padding: 3px 5px;
 #bo_sch select{height:30px;}
 #bo_sch .btn_sch{height:30px;border:0;background:#444;color:#fff;padding:0 5px}
 
+@media (max-width: 970px){
+    #bo_list_total{top:30px}
+}
 
 .btn_bo_user > li {position:relative;float:left;text-align:center;margin-left:5px}
 .btn_bo_adm button {border:0;padding:0 10px;background:#d13f4a;color:#fff;text-decoration:none;vertical-align:middle}
