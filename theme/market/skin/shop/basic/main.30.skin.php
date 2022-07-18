@@ -10,6 +10,7 @@ add_javascript('<script src="'.G5_THEME_JS_URL.'/jquery.shop.list.js"></script>'
 <?php
 // 상품진열 30 시작
 for ($i=1; $row=sql_fetch_array($result); $i++) {
+    $item_link_href = shop_item_url($row['it_id']);
 	$icon = '<span class="sit_icon">';
 	
 	if ($row['it_type1'])
