@@ -14,6 +14,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_THEME_JS_URL.'/owl.carousel.cs
 
 add_javascript('<script src="'.G5_THEME_JS_URL.'/jquery.sidr.min.js"></script>', 0);
 add_javascript('<script src="'.G5_THEME_JS_URL.'/unslider.min.js"></script>', 10);
+$q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : '';
 ?>
 
 <header id="hd">
