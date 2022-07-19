@@ -18,19 +18,19 @@ include_once('./head.php');
         <li class="li_clear">
             <div class="li_wr">
                 <label for="facebook">페이스북</label>
-                <input type="text" name="facebook" id="facebook" class="frm_input" value="<?php echo get_text($snslink['facebook']); ?>">
+                <input type="text" name="facebook" id="facebook" class="frm_input" value="<?php if(isset($snslink['facebook'])){echo get_text($snslink['facebook']);} ?>">
             </div>
         </li>
         <li class="li_clear">
             <div class="li_wr">
                 <label for="twitter">트위터</label>
-                <input type="text" name="twitter" id="twitter" class="frm_input" value="<?php echo get_text($snslink['twitter']); ?>">
+                <input type="text" name="twitter" id="twitter" class="frm_input" value="<?php if(isset($snslink['twitter'])){echo get_text($snslink['twitter']);} ?>">
             </div>
         </li>
         <li class="li_clear">
             <div class="li_wr">
                 <label for="instagram">인스타그램</label>
-                <input type="text" name="instagram" id="instagram" class="frm_input" value="<?php echo get_text($snslink['instagram']); ?>">
+                <input type="text" name="instagram" id="instagram" class="frm_input" value="<?php if(isset($snslink['instagram'])){echo get_text($snslink['instagram']);} ?>">
             </div>
         </li>
 
