@@ -1,6 +1,6 @@
 <?php
 if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
-
+$q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : '';
 function get_mshop_category($ca_id, $len)
 {
     global $g5;
