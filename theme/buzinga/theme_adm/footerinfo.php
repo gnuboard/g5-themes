@@ -17,11 +17,11 @@ if(is_file($save_file))
     <ul>
         <li>
             <label for="tel">전화번호</label>
-            <input type="text" name="tel" id="tel" required class="frm_input required" value="<?php echo get_text($footerinfo['tel']); ?>">
+            <input type="text" name="tel" id="tel" required class="frm_input required" value="<?php if(isset($footerinfo['tel'])){echo get_text($footerinfo['tel']);} ?>">
         </li>
         <li>
             <label for="etc">기타정보</label>
-            <textarea name="etc" id="etc" required class="required"><?php echo $footerinfo['etc']; ?></textarea>
+            <textarea name="etc" id="etc" required class="required"><?php if(isset($footerinfo['etc'])){echo get_text($footerinfo['etc']);}?></textarea>
         </li>
     </ul>
 </div>
@@ -30,11 +30,11 @@ if(is_file($save_file))
     <ul>
         <li>
             <label for="depositor">예금주</label>
-            <input type="text" name="depositor" required class="frm_input required" value="<?php echo get_text($footerinfo['depositor']); ?>">
+            <input type="text" name="depositor" required class="frm_input required" value="<?php if(isset($footerinfo['depositor'])){echo get_text($footerinfo['depositor']);} ?>">
         </li>
         <li>
             <label for="account">계좌번호</label>
-            <textarea name="account" id="account" required class="required"><?php echo $footerinfo['account']; ?></textarea>
+            <textarea name="account" id="account" required class="required"><?php if(isset($footerinfo['account'])){echo get_text($footerinfo['account']);} ?></textarea>
         </li>
     </ul>
 </div>
