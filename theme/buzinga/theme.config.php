@@ -4,12 +4,12 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
 // 테마가 지원하는 장치 설정 pc, mobile
 // 선언하지 않거나 값을 지정하지 않으면 그누보드5의 설정을 따른다.
 // G5_SET_DEVICE 상수 설정 보다 우선 적용됨
-define('G5_THEME_DEVICE', 'mobile');
+if(! defined('G5_THEME_DEVICE')) define('G5_THEME_DEVICE', 'mobile');
 
 // 테마에서 커뮤니티 지원여부 설정
 // 커뮤니티 사용없이 쇼핑몰이 초기화면이라면 false로 설정
 // false 설정이면 게시판 head, tail 은 쇼핑몰의 그것이 적용됨
-define('G5_COMMUNITY_USE', false);
+if(! defined('G5_COMMUNITY_USE')) define('G5_COMMUNITY_USE', false);
 
 $theme_config = array();
 
@@ -153,12 +153,12 @@ if(!defined('G5_IS_ADMIN'))
     include_once(G5_THEME_LIB_PATH.'/theme.lib.php');
 
 // 소셜로그인
-define('G5_THEME_PLUGIN_PATH', G5_THEME_PATH.'/plugin');
-define('G5_THEME_PLUGIN_URL',  G5_THEME_URL.'/plugin');
+define('G5_THEME_PLUGIN_PATH', G5_PATH.'/theme/buzinga/plugin');
+define('G5_THEME_PLUGIN_URL',  G5_URL.'/theme/hotsauce/plugin');
 
 
-define('G5_THEME_ADM_DIR', 'theme_adm');
-define('G5_THEME_ADM_URL', G5_THEME_URL.'/'.G5_THEME_ADM_DIR);
+define('G5_THEME_ADM_DIR', 'theme/buzinga/theme_adm/');
+    define('G5_THEME_ADM_URL', G5_URL.'/'.G5_THEME_ADM_DIR);
 
 if( ! function_exists('buzinga54_add_theme_admin_menu') ){
 	// 관리자 메뉴 추가
