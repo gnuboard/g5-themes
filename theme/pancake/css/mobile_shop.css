@@ -388,7 +388,7 @@ box-shadow: 1px 1px 5px rgba(0,0,0,0.4);}
 #smb_my_ov {margin:0 0 20px;}
 #smb_my_ov h2 {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 #smb_my_ov .my_name{position:relative;line-height:20px;height:50px;padding: 15px;background:#525f78;color:#fff;font-weight:normal;font-size:1.083em}
-#smb_my_ov .my_name img{border-radius:50%;vertical-align:top}
+#smb_my_ov .my_name img{border-radius:50%;vertical-align:top;position:relative;top:-17.5px;left:-5px;}
 #smb_my_ov .smb_my_act{position:absolute;top:10px;right:10px}
 #smb_my_ov .smb_my_act li{display:inline-block;font-size:0.92em}
 #smb_my_ov .smb_my_act li a{line-height:28px;height:30px;vertical-align:middle;padding:0 5px;margin:0;border-radius:3px}
