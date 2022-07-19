@@ -50,7 +50,7 @@ outline: none;
 .hd_pops_footer .hd_pops_close{background:#393939;position:absolute;top:0;right:0}
 
 /* 상단 레이아웃 */
-#hd {;width:100%;min-width:1200px;text-align:center;background:#1a1e23; }
+#hd {width:100%;min-width:1200px;text-align:center;background:#1a1e23; }
 
 #hd_h1 {position:absolute;font-size:0;line-height:0;overflow:hidden}
 
@@ -152,7 +152,7 @@ box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);}
 #top_btn:hover{background:#fff}
 #ft .ft_wr{margin:0 auto;max-width:1540px;padding:60px 20px}
 #ft .ft_wr:after {display:block;visibility:hidden;clear:both;content:""}
-#ft .ft_ul{;float:left;width:25%;}
+#ft .ft_ul{float:left;width:25%;}
 #ft .ft_ul li{line-height:25px;font-weight:600;color:#555}  
 #ft .ft_info{float:left;width:50%;font-weight:300;line-height:1.7em;color:#999}
 #ft .ft_info b{font-weight:300}
@@ -476,7 +476,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0051', end
 .my_info dt{padding:15px 0 5px;border-top:1px dashed #c0abab;font-size:11px}
 .my_info dd{padding:5px 0 15px;color:#fff}
 
-.my_cou_wr{;background:#fff;border-radius:5px;margin:30px 0}
+.my_cou_wr{background:#fff;border-radius:5px;margin:30px 0}
 .my_cou_wr li{line-height: 45px;position: relative;;padding: 0 40px;}
 .my_cou_wr li i {width: 20px;margin-right: 10px;text-align: center; font-size: 15px;color: #ccc;}
 .my_cou_wr li:after {display:block;visibility:hidden;clear:both;content:""} 
@@ -492,7 +492,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f8f9', end
 #smb_my_ovaddt {border-bottom:0 !important}
 #smb_my_ovaddd {width:590px !important;border-bottom:0 !important}
 
-#smb_my_od {;position:relative;padding:40px;border-bottom:1px solid #eee}
+#smb_my_od {position:relative;padding:40px;border-bottom:1px solid #eee}
 #smb_my_od h2 {margin:0 0 20px;font-size:1.25em;}
 #smb_my_od  td{text-align:center}
 #smb_my_od  td a{font-weight:bold}
@@ -561,7 +561,7 @@ box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);}
 #sit_opt_added .num_input {float:left;border:0;width:40px;height:30px;border-top:1px solid #e6e6e6;border-bottom:1px solid #e6e6e6;text-align:center;}
 #sit_opt_added .num_input:focus{background:#f3f3f3;}
 #sit_opt_added .sit_opt_del{width:20px;height:20px;margin-top:5px;border:0; font-size: 12px;background:none;color: #999;}
-#sit_opt_added .sit_opt_del:hover{;color:#000}
+#sit_opt_added .sit_opt_del:hover{color:#000}
 #sit_opt_added .sit_opt_prc{display:block;float:left;width:100px;padding:0 3px;text-align:right;line-height:30px;font-size:1.083em;font-weight:bold}
 
 #mod_option_frm #sit_sel_option{margin:20px;}
@@ -659,7 +659,7 @@ box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);}
 #sod_frm_paysel .card_icon{background:url('../../../img/pay_icon4.png') no-repeat 17px 50% #fff}
 
 .sod_frm_point{clear:both;padding:10px 0}
-.sod_frm_point div{;background:#fff;margin-bottom:1px;padding:10px;text-align:left;text-align:right}
+.sod_frm_point div{background:#fff;margin-bottom:1px;padding:10px;text-align:left;text-align:right}
 .sod_frm_point div:after {display:block;visibility:hidden;clear:both;content:''}
 .sod_frm_point div label{float:left;line-height:30px}
 .sod_frm_point div span{display:block;font-size:0.92em}
@@ -699,7 +699,7 @@ box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);}
 #sod_addr input[type="radio"]:checked+.default_lb {background:#3476be;color:#fff}
 #sod_addr td{height:40px;vertical-align:top}
 #sod_addr .td_name {width:100px;}
-#sod_addr .frm_input {;height:30px}
+#sod_addr .frm_input {height:30px}
 #sod_addr .td_sbj{width:120px;text-align:left}
 #sod_addr .ad_tel{display:block;color:#666}
 #sod_addr .td_mng{width:100px;padding:10px}
@@ -869,7 +869,7 @@ box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);}
 
 #sod_frm_orderer #od_addr_jibeon, #sod_frm_taker #od_b_addr_jibeon {display:inline-block}
 #sod_frm .odf_tbl table{width:100%;margin:0;padding:0;border-top:1px solid #e9e9e9;border-left:1px solid #e9e9e9;border-right:1px solid #e9e9e9;border-collapse:collapse}
-#sod_frm .odf_tbl table tbody td,#sod_frm .odf_tbl table tbody th{;border-bottom:1px solid #e9e9e9;padding:5px 0px 5px 10px ;text-align:left;line-height:26px;position:relative;}
+#sod_frm .odf_tbl table tbody td,#sod_frm .odf_tbl table tbody th{border-bottom:1px solid #e9e9e9;padding:5px 0px 5px 10px ;text-align:left;line-height:26px;position:relative;}
 #sod_frm .odf_tbl table th{width:90px;color:#343434;font-weight:normal;letter-spacing:-0.1em}
 #sod_frm .odf_tbl table .frm_input{background-color:#fff !important;height:24px;line-height:24px;text-indent:5px}
 #sod_frm .odf_tbl table .frm_address{margin-top:5px}

@@ -8,7 +8,7 @@
 #ol_before a{display:block;line-height:14px}
 
 #ol_after{}
-#ol_after_hd{;background:#fff;margin-bottom:10px;border-bottom:1px solid #ddd;}
+#ol_after_hd{background:#fff;margin-bottom:10px;border-bottom:1px solid #ddd;}
 #ol_after_hd:after {display:block;visibility:hidden;clear:both;content:""}
 #ol_after .profile_img{padding:10px;line-height:30px;background:#fff;color:#000}
 #ol_after .profile_img img{width:30px;height:30px;border-radius:50%;vertical-align:top;}
