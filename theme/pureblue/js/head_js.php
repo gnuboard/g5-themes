@@ -67,7 +67,7 @@ function ajax_get_search_bar(id, place)
     var $el = $("#" + id);
 
         $.ajax({
-        url: "../theme/pureblue/mobile/ajax.searchbar.php",
+        url: g5_url + "/theme/pureblue/mobile/ajax.searchbar.php",
         type: 'post',
         data: {
             'place': place,

@@ -16,62 +16,62 @@ if ((stripos($_SERVER['REQUEST_URI'], 'register') !== false) || !(defined("_DONT
     <h1 id="hd_h1"><?php echo $g5['title'] ?></h1>
 
     <div class="to_content"><a href="#container">본문 바로가기</a></div>
-	<div id="mobile-indicator"></div>
+    <div id="mobile-indicator"></div>
     <?php
     if(defined('_INDEX_')) { // index에서만 실행
         include G5_MOBILE_PATH.'/newwin.inc.php'; // 팝업레이어
     } ?>
 
     <div id="hd_wrapper">
-		
-		<div class="m_side_gnb">
-			<button class="gnb_side"><i class="fa fa-bars"></i><span class="sound_only">전체메뉴</span></button>
-	    	<div id="m_sch">
-	        	<button class="sch_more">
-		        	<i class="fa fa-search"></i>
-		        </button>
-		        <fieldset id="m_hd_sch"></fieldset>
-	        </div>
-		</div>
-		
-        <div id="logo">
-        	<div class="logo_inner">
-            	<a href="<?php echo G5_URL ?>">
-            		<span class="sound_only"><?php echo $config['cf_title']; ?></span>
-            		<img src="<?php echo G5_IMG_URL ?>/logo.png" alt="<?php echo $config['cf_title']; ?>">
-            	</a>
-        	</div>
+
+        <div class="m_side_gnb">
+            <button class="gnb_side"><i class="fa fa-bars"></i><span class="sound_only">전체메뉴</span></button>
+            <div id="m_sch">
+                <button class="sch_more">
+                    <i class="fa fa-search"></i>
+                </button>
+                <fieldset id="m_hd_sch"></fieldset>
+            </div>
         </div>
-		
-		<div class="header_ct">
-			<div class="header_inner">
-		        <div class="hd_sch_wr">
-		            <fieldset id="hd_sch"></fieldset>
-		        </div>
-		        <div id="tnb">
-		        	<?php echo outlogin("theme/basic"); ?>
-			    </div>
-        	</div>
+
+        <div id="logo">
+            <div class="logo_inner">
+                <a href="<?php echo G5_URL ?>">
+                    <span class="sound_only"><?php echo $config['cf_title']; ?></span>
+                    <img src="<?php echo G5_IMG_URL ?>/logo.png" alt="<?php echo $config['cf_title']; ?>">
+                </a>
+            </div>
+        </div>
+
+        <div class="header_ct">
+            <div class="header_inner">
+                <div class="hd_sch_wr">
+                    <fieldset id="hd_sch"></fieldset>
+                </div>
+                <div id="tnb">
+                    <?php echo outlogin("theme/basic"); ?>
+                </div>
+            </div>
         </div>
         
-	</div>
+    </div>
 </header>
-	<!-- } 상단 끝 -->       
+<!-- } 상단 끝 -->
 
 
 <div id="wrapper">
-	
-	<aside id="con_left">
-		<div class="con_left_inner">
+    
+    <aside id="con_left">
+        <div class="con_left_inner">
             <div id="gnb">
-            	<div class="gnb_side">
-        			<h2>메인메뉴</h2>
-					<ul class="gnb_1dul">
+                <div class="gnb_side">
+                    <h2>메인메뉴</h2>
+                    <ul class="gnb_1dul">
                     <?php
                     $sql = " select *
                                 from {$g5['menu_table']}
                                 where me_mobile_use = '1'
-                                  and length(me_code) = '2'
+                                and length(me_code) = '2'
                                 order by me_order, me_id ";
                     $result = sql_query($sql, false);
 
@@ -83,8 +83,8 @@ if ((stripos($_SERVER['REQUEST_URI'], 'register') !== false) || !(defined("_DONT
                             $sql2 = " select *
                                         from {$g5['menu_table']}
                                         where me_mobile_use = '1'
-                                          and length(me_code) = '4'
-                                          and substring(me_code, 1, 2) = '{$row['me_code']}'
+                                        and length(me_code) = '4'
+                                        and substring(me_code, 1, 2) = '{$row['me_code']}'
                                         order by me_order, me_id ";
                             $result2 = sql_query($sql2);
 
@@ -107,9 +107,9 @@ if ((stripos($_SERVER['REQUEST_URI'], 'register') !== false) || !(defined("_DONT
                         <li id="gnb_empty">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <br><a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하세요.<?php } ?></li>
                     <?php } ?>
                     </ul>
-	            </div>
-			</div>
-			<ul class="shortcut">
+                </div>
+            </div>
+            <ul class="shortcut">
                 <li><a href="<?php echo G5_BBS_URL ?>/faq.php"><i class="fa fa-question-circle"></i> 자주묻는 질문</a></li>
                 <li><a href="<?php echo G5_BBS_URL ?>/qalist.php"><i class="fa fa-comments"></i> 1:1문의</a></li>
                 <li class="hd_visit">
@@ -118,16 +118,16 @@ if ((stripos($_SERVER['REQUEST_URI'], 'register') !== false) || !(defined("_DONT
                 <li><a href="<?php echo G5_BBS_URL ?>/new.php"><i class="fa fa-history"></i> 새글</a></li>
                 <li><a href="<?php echo G5_SHOP_URL; ?>/"><i class="fa fa-shopping-cart" aria-hidden="true"></i> 쇼핑몰</a></li>
             </ul>
-		</div>
+        </div>
         <div id="bg"></div>
-	</aside>
-		
-	<!-- con_right 시작 { -->
-	<div id="con_right">
-		<div id="container">
-		<?php } // if (!defined("_DONT_WRAP_IN_CONTAINER_")) 의 끝 ?>
-		<?php if (!defined("_INDEX_") && !(defined("_H2_TITLE_") && _H2_TITLE_ === true)) {?>
+    </aside>
+
+    <!-- con_right 시작 { -->
+    <div id="con_right">
+        <div id="container">
+        <?php } // if (!defined("_DONT_WRAP_IN_CONTAINER_")) 의 끝 ?>
+        <?php if (!defined("_INDEX_") && !(defined("_H2_TITLE_") && _H2_TITLE_ === true)) {?>
         <h2 id="container_title" class="top">
-        	<?php echo get_head_title($g5['title']) ?>
+            <?php echo get_head_title($g5['title']) ?>
         </h2>
         <?php } ?>

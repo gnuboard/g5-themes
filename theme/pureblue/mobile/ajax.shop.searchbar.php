@@ -15,7 +15,7 @@ ob_start();
 	<input type="text" name="q" value="<?php echo stripslashes(get_text(get_search_string($q))); ?>" id="sch_str" required class="frm_input" placeholder="검색어">
 	<button type="submit" value="검색" id="sch_submit"><i class="fa fa-search" aria-hidden="true"></i></button>
 </form>
-				        
+
 <?php if($_POST['place'] == 'head') { ?>
 <button class="sch_more_close">닫기</button>
 <?php }
