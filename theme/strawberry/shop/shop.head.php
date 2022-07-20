@@ -1,11 +1,9 @@
 <?php
 if (!defined("_GNUBOARD_")) exit; // 개별 페이지 접근 불가
-
 if(G5_IS_MOBILE) {
     include_once(G5_THEME_MSHOP_PATH.'/shop.head.php');
     return;
 }
-
 include_once(G5_THEME_PATH.'/head.sub.php');
 include_once(G5_LIB_PATH.'/outlogin.lib.php');
 include_once(G5_LIB_PATH.'/poll.lib.php');
@@ -17,6 +15,7 @@ include_once(G5_LIB_PATH.'/latest.lib.php');
 set_cart_id(0);
 $tmp_cart_id = get_session('ss_cart_id');
 add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 0);
+$q = isset($_GET['q']) ? clean_xss_tags($_GET['q'], 1, 1) : '';
 ?>
 
 <!-- 상단 시작 { -->
@@ -40,7 +39,7 @@ add_javascript('<script src="'.G5_JS_URL.'/jquery.bxslider.js"></script>', 0);
 
             <li><a href="<?php echo G5_BBS_URL; ?>/member_confirm.php?url=register_form.php">정보수정</a></li>
             <li><a href="<?php echo G5_BBS_URL; ?>/logout.php?url=shop">로그아웃</a></li>
-            <?php if ($is_admin) {  ?>
+            <?php if ($is_admin == 'super') {  ?>
             <li class="tnb_admin"><a href="<?php echo G5_ADMIN_URL; ?>/shop_admin/"><b>관리자</b></a></li>
             <?php }  ?>
             <?php } else { ?>
