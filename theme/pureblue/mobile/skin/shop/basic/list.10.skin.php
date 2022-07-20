@@ -26,47 +26,47 @@ $ul_sct_class = ($is_gallery_list === 'gallery') ? 'sct_10' : 'sct_10_list';
 
 for ($i=0; $row=sql_fetch_array($result); $i++) {
     $item_link_href = shop_item_url($row['it_id']);     // 상품링크
-	$icon = '<span class="sit_icon">';
-	
-	if ($row['it_type1'])
-	    $icon .= '<span class="shop_icon shop_icon_1">히트</span>';
-	
-	if ($row['it_type2'])
-	    $icon .= '<span class="shop_icon shop_icon_2">추천</span>';
-	
-	if ($row['it_type3'])
-	    $icon .= '<span class="shop_icon shop_icon_3">최신</span>';
-	
-	if ($row['it_type4'])
-	    $icon .= '<span class="shop_icon shop_icon_4">인기</span>';
-	
-	if ($row['it_type5'])
-	    $icon .= '<span class="shop_icon shop_icon_5">할인</span>';
-	
-	// 품절
-	if (is_soldout($row['it_id']))
-	    $icon .= '<span class="shop_icon_soldout">품절</span>';
-	
-	$icon .= '</span>';
+    $icon = '<span class="sit_icon">';
+
+    if ($row['it_type1'])
+        $icon .= '<span class="shop_icon shop_icon_1">히트</span>';
+
+    if ($row['it_type2'])
+        $icon .= '<span class="shop_icon shop_icon_2">추천</span>';
+
+    if ($row['it_type3'])
+        $icon .= '<span class="shop_icon shop_icon_3">최신</span>';
+
+    if ($row['it_type4'])
+        $icon .= '<span class="shop_icon shop_icon_4">인기</span>';
+
+    if ($row['it_type5'])
+        $icon .= '<span class="shop_icon shop_icon_5">할인</span>';
+
+    // 품절
+    if (is_soldout($row['it_id']))
+        $icon .= '<span class="shop_icon_soldout">품절</span>';
+
+    $icon .= '</span>';
 
     if ($i == 0) {
         if ($this->css) {
             echo "<ul id=\"lct_wrap\" class=\"{$this->css}\">\n";
         } else {
-            echo "<ul id=\"lct_wrap\" class=\"lct \">\n";
+            echo "<ul id=\"lct_wrap\" class=\"lct lct_10\">\n";
         }
     }
 
-	if($i % $this->list_mod == 0)
+    if($i % $this->list_mod == 0)
         $li_clear = ' sct_clear';
     else
         $li_clear = '';
 
     echo "<li class=\"lct_li{$li_clear}\"$li_width_style>\n";
-	echo "<div class=\"li_wr is_view_type_list\">\n";
-	
+    echo "<div class=\"li_wr is_view_type_list\">\n";
+
     if ($this->href) {
-        echo "<div class=\"lct_img\"><a href=\"{$item_link_href}{$row['it_id']}\">\n";
+        echo "<div class=\"lct_img\"><a href=\"{$item_link_href}\">\n";
     }
 
     if ($this->view_it_img) {
@@ -76,40 +76,40 @@ for ($i=0; $row=sql_fetch_array($result); $i++) {
     if ($this->href) {
         echo "</a></div>\n";
     }
-	
-	if ($this->view_it_id) {
+    
+    if ($this->view_it_id) {
         echo "<div class=\"sct_id\">&lt;".stripslashes($row['it_id'])."&gt;</div>\n";
     }
-	
-	if ($this->href) {
+    
+    if ($this->href) {
         echo "<div class=\"sct_txt\"><a href=\"{$item_link_href}{$row['it_id']}\" class=\"sct_a\">\n";
     }
-	
-	if ($this->view_it_name) {
+    
+    if ($this->view_it_name) {
         echo stripslashes($row['it_name'])."\n";
     }
-	
-	if ($this->href) {
+    
+    if ($this->href) {
         echo "</a></div>\n";
     }
-	
-	echo "<div class=\"sct_icon\">".$icon."</div>\n";
-	
-	if ($this->view_it_cust_price || $this->view_it_price) {
+
+    echo "<div class=\"sct_icon\">".$icon."</div>\n";
+
+    if ($this->view_it_cust_price || $this->view_it_price) {
         echo "<div class=\"lct_cost\">\n";
-		
-		if ($this->view_it_cust_price && $row['it_cust_price']) {
+    
+        if ($this->view_it_cust_price && $row['it_cust_price']) {
             echo "<span class=\"sct_discount\">".display_price($row['it_cust_price'])."</span>\n";
         }
-		
+
         if ($this->view_it_price) {
             echo display_price(get_price($row), $row['it_tel_inq'])."\n";
         }
-    	echo "</div>\n";
+        echo "</div>\n";
     }
 
     echo "<div class=\"sct_icon_btn\">\n";
-	
+
     if ($this->view_sns) {
         $sns_top = $this->img_height + 10;
         $sns_url  = $item_link_href;
@@ -121,12 +121,12 @@ for ($i=0; $row=sql_fetch_array($result); $i++) {
         echo get_sns_share_link('googleplus', $sns_url, $sns_title, G5_SHOP_SKIN_URL.'/img/gplus.png');
         echo "</div><button type=\"button\" class=\"btn_close\"><i class=\"fa fa-times\" aria-hidden=\"true\"></i></button></div><div class=\"bg\"></div></div>\n";
     }
-	
-    echo "</div>\n";
 
     echo "</div>\n";
 
-	echo "</li>\n";
+    echo "</div>\n";
+
+    echo "</li>\n";
 }
 
 if ($i > 0) echo "</ul>\n";
@@ -167,7 +167,7 @@ jQuery(function($){
         } else {
             shop_list_type_fn("list");
         }
-    });
+    }).click();
 });
 
 $('.btn_share').click(function(){
