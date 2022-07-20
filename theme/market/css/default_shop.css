@@ -85,24 +85,24 @@ input[type=text]:focus, input[type=password]:focus, textarea:focus, select:focus
 #hd_qnb li .join_btn {position:relative}
 
 .animated {
-  -webkit-animation-duration:1s;
-  animation-duration:1s;
-  -webkit-animation-fill-mode:both;
-  animation-fill-mode:both;
-  -webkit-animation-timing-function:linear;
-  animation-timing-function:linear;
-  animation-iteration-count:infinite;
-  -webkit-animation-iteration-count:infinite;
+    -webkit-animation-duration:1s;
+    animation-duration:1s;
+    -webkit-animation-fill-mode:both;
+    animation-fill-mode:both;
+    -webkit-animation-timing-function:linear;
+    animation-timing-function:linear;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count:infinite;
 }
 
 @-webkit-keyframes bounce {
-  0%, 100% {-webkit-transform:translateY(0)}
-  50% {-webkit-transform:translateY(-5px)}
+    0%, 100% {-webkit-transform:translateY(0)}
+    50% {-webkit-transform:translateY(-5px)}
 }
 
 @keyframes bounce {
-  0%, 100% {transform:translateY(0)}
-  50% {transform:translateY(-5px)}
+    0%, 100% {transform:translateY(0)}
+    50% {transform:translateY(-5px)}
 }
 .bounce {-webkit-animation-name:bounce;animation-name:bounce}
 #animated-example {width:45px;height:20px;line-height:20px;background-color:#c1c1c1;opacity:0.8;color:#fff;position:absolute;top:38px;left:11px;border-radius:3px}
@@ -164,7 +164,7 @@ a.gnb_2da:hover {background:#f02a2a;-moz-transition:all 0.3s ease-out;-o-transit
 .tnb_right li {float:left;line-height:50px;padding:0 10px;font-size:1.2em}
 .tnb_right a {display:inline-block;font-weight:bold;color:#404040;text-decoration:none}
 
-#menu_open {float:left;width:114px;line-height:50px;padding:0 15px;font-size:1.3em;font-weight:bold;border:0;border-left:1px solid #f2f2f2;border-right:1px solid #f2f2f2;color:#404040;background:transparent}
+#menu_open {float:left;width:auto;line-height:50px;padding:0 15px;font-size:1.3em;font-weight:bold;border:0;border-left:1px solid #f2f2f2;border-right:1px solid #f2f2f2;color:#404040;background:transparent}
 #menu_open i {vertical-align:middle;margin-right:5px;display:inline-block}
 
 #category {display:none;position:absolute;top:51px;left:0;width:100%;border:2px solid #444;background:#fff;z-index:100;text-align:left}
@@ -202,12 +202,7 @@ a.gnb_2da:hover {background:#f02a2a;-moz-transition:all 0.3s ease-out;-o-transit
 #bn_cnt_link {position:absolute;top:50px}
 #bn_cnt_link ul {width:75px}
 #bn_cnt_link li {display:inline-block;position:relative;background:#fff;font-size:1.2em;font-weight:bold;text-align:center;width:75px;height:95px;margin-bottom:2px;border-radius:3px}
-#bn_cnt_link li:hover { 
-  animation:shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform:translate3d(0, 0, 0);
-  backface-visibility:hidden;
-  perspective:1000px;
-}
+#bn_cnt_link li:hover {animation:shake 0.82s cubic-bezier(.36,.07,.19,.97) both;transform:translate3d(0, 0, 0);backface-visibility:hidden;perspective:1000px;}
 #bn_cnt_link li:hover i {background:#fff;}
 #bn_cnt_link li i {width:48px;height:48px;line-height:48px;margin:10px 0;font-size:2em;background:#f3f3f3;border-radius:50%}
 #bn_cnt_link li:nth-child(1) i {color:#e14a49}
@@ -216,21 +211,21 @@ a.gnb_2da:hover {background:#f02a2a;-moz-transition:all 0.3s ease-out;-o-transit
 #bn_cnt_link li:nth-child(4) i {color:#22be89}
 
 @keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
 
-  30%, 50%, 70% {
-    transform: translate3d(-3px, 0, 0);
-  }
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
 
-  40%, 60% {
-    transform: translate3d(3px, 0, 0);
-  }
+    30%, 50%, 70% {
+        transform: translate3d(-3px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(3px, 0, 0);
+    }
 }
 
 

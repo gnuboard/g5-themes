@@ -34,7 +34,7 @@ input[type=text],input[type=password], textarea {
 -o-transition:all 0.30s ease-in-out;
 outline:none;
 }
- 
+
 input[type=text]:focus,input[type=password]:focus,  textarea:focus,select:focus {
 -webkit-box-shadow: 0 0 5px #9ed4ff;
 -moz-box-shadow: 0 0 5px #9ed4ff;
@@ -64,10 +64,6 @@ border:1px solid #558ab7 !important;
 #hd_btn button#sch_btn {position:absolute;top:8px;left:45px;font-size:1.35em}
 
 #hd_sch {display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:#000;background:rgba(0,0,0,0.9);text-align:center;padding:0 0 10px;z-index:999;padding:20px;overflow-y:auto}
-    
-    /*
-{display:none;background:#232323;width:100%;height:100%;position:absolute;left:0;top:0;padding:10px;z-index:9999999999}*/
-
 #hd_sch h2 {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 #hd_sch .sch_inner {position:relative;width:100%;margin-top:50%;}
 #hd_sch #sch_str {width:100%;height:45px;padding-left:10px;padding-right:75px;color:#fff;border:0;border-bottom:3px solid #fff;background:transparent}
@@ -142,7 +138,7 @@ border:1px solid #558ab7 !important;
 .ft_info {width:100%;padding:20px;margin:0 auto;text-align:left;line-height:1.7em;color:#cacaca}
 .ft_info div {clear:both;padding-top:10px}
 .ft_call {display:inline-block;float:left;font-size:1.6em;margin:0;color:#777}
-.ft_sns {/*margin:15px 0*/display:inline-block;float:right;}
+.ft_sns {display:inline-block;float:right;}
 .ft_sns:after {display:block;visibility:hidden;clear:both;content:""}
 .ft_sns li {display:inline-block;float:left}
 .ft_sns li a {background:#868686;display:inline-block;width:25px;height:25px;color:#fff;line-height:25px;border-radius:25px;font-size:1em;text-align:center;margin-right:5px}
@@ -478,8 +474,8 @@ box-shadow:inset 1px 1px 5px rgba(0,0,0,0.1);}
 /* 캡챠 자동등록(입력)방지 기본 -pc */
 #captcha {position:relative}
 #captcha legend {position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999em;overflow:hidden}
-#captcha #captcha_img {;height:40px;border:1px solid #898989;;vertical-align:top;padding:0;margin:0}
-#captcha #captcha_mp3 {;margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;width:40px;height:40px;background:url('../../../img/captcha.png') no-repeat;text-indent:-999px;;border-radius:3px}
+#captcha #captcha_img {height:40px;border:1px solid #898989;;vertical-align:top;padding:0;margin:0}
+#captcha #captcha_mp3 {margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;width:40px;height:40px;background:url('../../../img/captcha.png') no-repeat;text-indent:-999px;;border-radius:3px}
 #captcha #captcha_reload {margin:0;padding:0;width:40px;height:40px;border:0;background:transparent;vertical-align:middle;overflow:hidden;cursor:pointer;background:url('../../../img/captcha.png') no-repeat  0 -40px;text-indent:-999px;border-radius:3px}
 #captcha #captcha_key {margin:0 0 0 3px;padding:0 5px;width:90px;height:40px;border:1px solid #ccc;background:#fff;font-size:1.333em;font-weight:bold;text-align:center;border-radius:3px;vertical-align:top}
 #captcha #captcha_info {display:block;margin:3px 0 5px ;font-size:0.95em;letter-spacing:-0.1em}
@@ -782,7 +778,7 @@ box-shadow:0 1px 4px #cbd1df;
 #sod_frm_paysel .samsung_pay{background:url('../../../img/samsungpay.png') no-repeat 0 3px;width:106px;display:inline-block;overflow:hidden;text-indent:-999px}
 
 #sod_bsk_tot {border:1px solid #f6514f}
- #sod_bsk_tot:after {display:block;visibility:hidden;clear:both;content:""}
+#sod_bsk_tot:after {display:block;visibility:hidden;clear:both;content:""}
 .sod_info li {position:relative;float:left;background:#fff;width:33.333%;height:70px;text-align:center;border-bottom:1px solid #e7ebf1;padding:15px 0}
 .sod_info li:after {display:block;visibility:hidden;clear:both;content:""}
 .sod_info li span {display:block;color:#777;margin-bottom:5px;font-weight:bold;color:#000}
