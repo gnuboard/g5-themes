@@ -23,11 +23,11 @@
 #main_bn .swiper-pagination-bullet-active {background:#3e976c;width:18px}
 
 /*사이드배너-왼쪽배너*/
-#sbn_side {position:relative;max-width:1120px;height:870px;margin:100px auto !important}
+#sbn_side {position:relative;max-width:1120px;margin:100px auto !important}
 #sbn_side:after {display:block;visibility:hidden;clear:both;content:""}
 #sbn_side h2 {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 .sb_bn:after {display:block;visibility:hidden;clear:both;content:""}
-.sb_bn li {position:absolute;width:550px}
+.sb_bn li {width:49%;float:left;}
 .sb_bn li.sb_0 {left:0;top:0}
 .sb_bn li.sb_1 {left:0;top:570px}
 .sb_bn li.sb_2 {right:0;top:0}
