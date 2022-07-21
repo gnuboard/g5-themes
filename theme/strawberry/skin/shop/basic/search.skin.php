@@ -81,7 +81,7 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
         // 리스트 유형별로 출력
         $list_file = G5_SHOP_SKIN_PATH.'/'.$default['de_search_list_skin'];
         if (file_exists($list_file)) {
-            define('G5_SHOP_CSS_URL', G5_SHOP_SKIN_URL);
+            if(! defined('G5_SHOP_CSS_URL')) define('G5_SHOP_CSS_URL', G5_MSHOP_SKIN_URL);
             $list = new item_list($list_file, $default['de_search_list_mod'], $default['de_search_list_row'], $default['de_search_img_width'], $default['de_search_img_height']);
             $list->set_query(" select * $sql_common $sql_where {$order_by} limit $from_record, $items ");
             $list->set_is_page(true);
@@ -101,10 +101,6 @@ if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
             $error = '<p class="sct_nofile">'.$list_file.' 파일을 찾을 수 없습니다.<br>관리자에게 알려주시면 감사하겠습니다.</p>';
         }
 
-        if ($i==0)
-        {
-            echo '<div>'.$error.'</div>';
-        }
 
         $query_string = 'qname='.$qname.'&amp;qexplan='.$qexplan.'&amp;qid='.$qid;
         if($qfrom && $qto) $query_string .= '&amp;qfrom='.$qfrom.'&amp;qto='.$qto;
