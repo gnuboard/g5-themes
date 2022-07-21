@@ -40,8 +40,8 @@ foreach((array) $list as $row){
         }
     }
 
- 
-   if($i % $this->list_mod == 0)
+
+    if($i % $this->list_mod == 0)
         $li_clear = ' sct_clear';
     else
         $li_clear = '';
@@ -96,6 +96,8 @@ foreach((array) $list as $row){
         echo "</div>\n";
     }
 	echo "</div></div></li>\n";
+
+    $i++;
 }
 
 if ($i > 0) echo "</ul>\n";
