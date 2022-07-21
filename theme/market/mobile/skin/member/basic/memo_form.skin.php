@@ -24,7 +24,7 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
                     
                     <input type="text" name="me_recv_mb_id" value="<?php echo $me_recv_mb_id; ?>" id="me_recv_mb_id" required class="frm_input full_input required" size="47" placeholder="받는 회원닉네임">
                     <span class="frm_info">여러 회원에게 보낼때는 컴마(,)로 구분하세요.
-                    	<?php if ($config['cf_memo_send_point']) { ?><br>쪽지 보낼때 회원당 <?php echo number_format($config['cf_memo_send_point']); ?>점의 포인트를 차감합니다.<?php } ?>
+                    <?php if ($config['cf_memo_send_point']) { ?><br>쪽지 보낼때 회원당 <?php echo number_format($config['cf_memo_send_point']); ?>점의 포인트를 차감합니다.<?php } ?>
                     </span>
                 </li>
                 <li>
@@ -41,8 +41,8 @@ add_stylesheet('<link rel="stylesheet" href="'.$member_skin_url.'/style.css">', 
         </div>
 
         <div class="win_btn">
-        	<button type="submit" id="btn_submit" class="btn btn_b02 reply_btn">보내기</button>
-        	<button type="button" onclick="window.close();" class="btn_close">창닫기</button>
+            <button type="submit" id="btn_submit" class="btn btn_b02 reply_btn">보내기</button>
+            <button type="button" onclick="window.close();" class="btn_close">창닫기</button>
         </div>
     </div>
     </form>

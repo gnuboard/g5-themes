@@ -97,7 +97,7 @@
 
 
 /* 상품 목록 스킨 10 */
-.slt_10 {margin:0 -5px}
+.slt_10 {margin:0 -5px;width:100%;}
 .slt_10:after {display:block;visibility:hidden;clear:both;content:""}
 .slt_10 .sct_li {display:inline-block;float:left;width:50% !important;text-align:center;background:#fff;padding:0 5px;margin-bottom:10px}
 .slt_10 .sct_li:nth-child(2n+1) {clear:both}
@@ -553,6 +553,7 @@
 .sps_section {margin-left:80px;display:block}
 .sps_section .is_use_reply {background:url('../mobile/shop/img/use_reply.png') no-repeat;text-indent:30px;line-height:1.5em}
 .sps_section p {padding:0;width:100%}
+.sps_section p a img {width:100%;}
 .sps_con_full {padding:0;height:auto !important}
 .sps_con_btn {margin:5px 0 0}
 .sps_con_btn button {border:1px solid #ddd;padding:5px 8px;color:#666;font-size:0.92em;margin:5px 0;background:#fff}

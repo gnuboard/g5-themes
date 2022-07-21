@@ -39,7 +39,7 @@
 #sev .ev_li .ev_prd li {float:left;position:relative;width:292px;margin-left:10px;border:1px solid transparent}
 #sev .ev_li .ev_prd li:first-child {margin-left:0}
 #sev .ev_li .ev_prd li:hover {border:1px solid #f54947}
-#sev .ev_li .ev_prd_img {display:block}
+#sev .ev_li .ev_prd_img {display:block;text-align:center;}
 #sev .ev_li .ev_txt {padding:30px;text-align:center}
 #sev .ev_li .ev_prd li:hover .ev_txt,
 #sev .ev_li .ev_prd li:hover a,
@@ -121,7 +121,7 @@
 .sct_li {position:relative}
 .sct_noitem {padding:100px 0;text-align:center;font-size:1.2em}
 .sct img {position:relative} /* 리스트뷰 갤러리뷰 변경 시 ie6,7 에서 이미지 사라지는 문제 해결하기 위해 */
-.shop_icon {display:inline-block;border-radius:30px;color:#fff;line-height:20px;padding:0 5px;font-size:0.95em;margin:1px}
+.shop_icon {display:inline-block;border-radius:30px;color:#fff;line-height:20px;padding:0 5px;font-size:0.95em;margin:1px;white-space:nowrap;}
 .shop_icon_1 {background:#f54a90}
 .shop_icon_2 {background:#ffbe00}
 .shop_icon_3 {background:#ff890c}
@@ -172,7 +172,7 @@
 .smt_10 .smt_li .sct_sns .share-twitter:hover {background:#35b3dc}
 .smt_10 .smt_li .sct_sns .share-googleplus:hover {background:#d5503a}
 .smt_10 .smt_li .sct_sns img {width:18px}
-   
+
 /* 메인 상품 목록 스킨 30 */
 .smt_30 .smt_li {position:relative;width:100% !important;background:#fff;margin-bottom:20px}
 .smt_30 .smt_li:after {display:block;visibility:hidden;clear:both;content:""}
@@ -313,7 +313,7 @@
 
 .sct_20 .sct_sns2 {}
 .sct_20 .sct_li .sct_sns2 {text-align:center;z-index:60;width:100%}
-.sct_20 .sct_li .sct_sns2 a {display:inline-block;border-radius:50%;margin:2px;width:30px;text-align:center;height:30px;line-height:30px;background:rgba(0,0,0,0.4)}
+.sct_20 .sct_li .sct_sns2 a {display:inline-block;border-radius:50%;margin:2px;width:30px;text-align:center;height:30px;line-height:27px;background:rgba(0,0,0,0.4)}
 .sct_20 .sct_li .sct_sns2 .share-facebook:hover {background:#415b92}
 .sct_20 .sct_li .sct_sns2 .share-twitter:hover {background:#35b3dc}
 .sct_20 .sct_li .sct_sns2 .share-googleplus:hover {background:#d5503a}
