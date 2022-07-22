@@ -484,7 +484,7 @@ transition-duration:0.5s}
 .sit_qa_dl:after {display:block;visibility:hidden;clear:both;content:""}
 .sit_qa_dl dt {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
 .sit_qa_dl dd {float:left;margin:0 10px 0 0;color:#888}
-.sit_qa_dl dd.sit_qaa_yet, .sit_qa_dl dd.sit_qaa_done {display:inline-block;width:50px;text-align:center;font-weight:bold;margin:0}
+.sit_qa_dl dd.sit_qaa_yet, .sit_qa_dl dd.sit_qaa_done {display:inline-block;width:100px;text-align:center;font-weight:bold;margin:0}
 .sit_qa_dl dd.sit_qaa_done {color:#ef7878}
 .sit_qa_con {display:none;padding:15px;border-top:1px solid #eee}
 .sit_qa_p {background:#fff;line-height:1.8em}

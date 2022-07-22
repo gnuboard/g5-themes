@@ -175,6 +175,7 @@
 .bo_v_com {float:right;margin-bottom:10px}
 .bo_v_com:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_v_com li {float:left;margin-right:5px}
+.bo_v_com li button, .bo_v_com li a {line-height:20px;}
 
 #bo_v_top:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_top h2 {position:absolute;font-size:0;line-height:0;overflow:hidden}
