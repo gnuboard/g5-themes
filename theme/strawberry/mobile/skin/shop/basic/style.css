@@ -21,8 +21,8 @@
 #main_bn .bx-next{position:absolute;top:50%;z-index:10;right:0;margin-top:-20px;background:url(img/btn_next.png) no-repeat 50% 50%;width:40px;height:40px;background-size:50%;text-indent:-999px;overflow:hidden;opacity:0.6}
 #main_bn .swiper-pagination-bullet{display:inline-block;margin:2px;opacity:1;width:10px;height:10px;background:#fff;border-radius:5px;text-indent:-999px;overflow:hidden;
 -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
-    box-shadow: 0 1px 3px rgba(0,0,0,0.2);}
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+box-shadow: 0 1px 3px rgba(0,0,0,0.2);}
 #main_bn .swiper-pagination-bullet-active{background:#555;width:18px}
 #main_bn .bx-pager{text-align:center;}
 #main_bn .swiper-pagination-bullet {display:inline-block;width:7px;height:7px;text-indent:-999px;overflow:hidden;margin:0 5px;background:#000;border-radius:5px;opacity:0.3}
@@ -44,7 +44,7 @@
 
 /* 쇼핑몰 이벤트 */
 #sev {text-align:center;margin:30px 10px;position:relative}
-#sev .bx-wrapper{;position:relative}
+#sev .bx-wrapper{position:relative}
 #sev h2 {text-align:center;font-size:1.25em;display:inline-block;padding-bottom:5px;margin: 0 0 10px;}
 #sev li img{width:100%}
 .sev_admin{margin:10px;text-align:right}
@@ -88,13 +88,13 @@
 
 /* 상품 목록 스킨 10 */
 .sct_10{margin:10px }
-.sct_10 .sct_li {;float:left;text-align:left;padding:5px;margin-bottom:10px;}
+.sct_10 .sct_li {float:left;text-align:left;padding:5px;margin-bottom:10px;}
 .sct_10 .sct_li .li_wr{position:relative;}
 .sct_10 .sct_img{margin-bottom:10px;vertical-align:top}
 .sct_10 .sct_img img{width:100%;height:auto;}
 .sct_10 .sct_clear{clear:both}
 .sct_10 .sct_id{margin:5px  10px;font-size:0.92em;color:#666 }
-.sct_10 .sct_txt{;margin:5px 0;line-height:1.3em}
+.sct_10 .sct_txt{margin:5px 0;line-height:1.3em}
 .sct_10 .sct_cost{font-weight:bold;margin:5px 0 }
 .sct_10 .sct_sns{margin:10px  0}
 .sct_10 .sct_icon {margin:5px 0 }
@@ -118,7 +118,7 @@
 .sct_20 .li_wr.is_view_type_list img{width:100%;height:auto}
 
 /* 상품 목록 스킨 30 */
-.sct_30 .sct_li{;width:100%;margin:5px 0; text-align:left;width:100%;float:left}
+.sct_30 .sct_li{width:100%;margin:5px 0; text-align:left;width:100%;float:left}
 .sct_30 .sct_img img{width:100%;height:auto} 
 .sct_30 .sct_img{border-bottom:1px solid #e6e6e6;font-size:0}
 .sct_30 .sct_txt_wr{padding:10px;border-bottom:1px solid #ddd;background:#fff}
@@ -136,7 +136,6 @@
 @media (min-width: 970px){
     .sct_30 .sct_li{width:25%;padding:0 5px}
     .sct_30 .sct_li:nth-child(4n+1){clear:both}
-
 }
 
 
@@ -174,7 +173,7 @@
 .sct_best .best_icon{padding:5px;position:absolute;top:0;left:0;background:#fb5861;color:#fff;font-size: 12px;}
 .bst_silde_btn{text-align:center;clear:both;margin:10px 0 }
 
-.bst_silde_btn button {;width:7px;height:7px;border:0;text-indent:-999px;overflow:hidden;margin:0 5px;background:#000;border-radius:5px;opacity:0.3}
+.bst_silde_btn button {width:7px;height:7px;border:0;text-indent:-999px;overflow:hidden;margin:0 5px;background:#000;border-radius:5px;opacity:0.3}
 .bst_silde_btn button.bst_sl{opacity:1}
 
 /* 개인결제 목록 */
@@ -207,7 +206,7 @@
 /* 상품 목록 카테고리 목록 */
 .sct_ct {text-align:center;width:100%}
 .sct_ct h2 {position:absolute;font-size:0;text-indent:-9999em;line-height:0;overflow:hidden}
-.sct_ct ul {;list-style:none;}
+.sct_ct ul {list-style:none;}
 .sct_ct ul:after {display:block;visibility:hidden;clear:both;content:""}
 .sct_ct ul li { background:#fff;float:left;width:50%;text-align:left;border-right:1px solid #eee;border-bottom:1px solid #eee}
 .sct_ct a {text-decoration:none;display:block;color:#656565;padding:10px;position:relative;padding-right:25px;position:relative;line-height:20px}
@@ -365,7 +364,7 @@ background:url(./img/select_bg.png) no-repeat right 50%}
 #sit_tab{margin:10px 0}
 #sit_tab .tab_tit:after {display:block;visibility:hidden;clear:both;content:""}
 #sit_tab .tab_tit li {float:left;width:25%;;text-align:center;}
-#sit_tab .tab_tit li button{display: block;width:100%;font-size:position: relative;height: 40px;background: #fff;border:0;;border-bottom: 1px solid #ddd;color: #666;line-height: 38px;text-align: center;z-index: 1;}
+#sit_tab .tab_tit li button{display: block;width:100%;position: relative;height: 40px;background: #fff;border:0;;border-bottom: 1px solid #ddd;color: #666;line-height: 38px;text-align: center;z-index: 1;}
 #sit_tab .tab_tit li .selected{border-bottom:2px solid #111;}
 #sit_tab .tab_con{padding:15px}
 
@@ -487,7 +486,7 @@ background:url(./img/select_bg.png) no-repeat right 50%}
 .sps_con_btn button {border: 1px solid #ddd;padding: 5px 8px;color: #666;font-size: 0.92em;margin: 5px 0;background: #fff;}
 
 .sps_reply{margin-top:10px;padding-top:10px;border-top:1px dotted #bbb;position:relative}
-.sps_reply .sps_img {;width:50px;text-align:center}
+.sps_reply .sps_img {width:50px;text-align:center}
 .sps_reply .sps_section h2{background:url('./img/use_reply.png') no-repeat 0 0;text-indent:30px;line-height:1.5em;}
 .sps_reply .sps_section{margin-left:70px;min-height:50px}
 #sps_empty{text-align:center;color:#777;padding:50px 0}
@@ -608,11 +607,9 @@ background:url(./img/select_bg.png) no-repeat right 50%}
 @media (min-width: 640px)and (max-width:969px){
     .couponzone_list ul li{width:50%;float:left;padding:10px}
     .couponzone_list ul li:nth-child(2n+1){clear:both;}
-
 }
 @media (min-width: 970px){
     .couponzone_list ul li{width:25%;float:left;padding:10px}
     .couponzone_list ul li:nth-child(4n+1){clear:both;}
-
 }
 

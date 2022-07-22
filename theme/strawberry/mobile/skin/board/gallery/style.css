@@ -80,7 +80,6 @@
 -moz-box-shadow:0 0 5px  rgba(65,98,255,0.8);
 box-shadow: 0 0 8px  rgba(65,98,255,0.8);}
 
-
 #bo_gall .gall_li {float:left;;width:50%;padding:5px}
 #bo_gall .gall_li_wr{background:#fff;position:relative;}
 #bo_gall .gall_li_chk{display:inline-block;padding:5px;position:absolute;top:0;left:0}
@@ -146,7 +145,7 @@ box-shadow: 0 1px 4px #ddd;}
 
 #bo_v_table {padding: 10px;color:#999;font-size:0.9em;font-weight:bold}
 
-#bo_v_title {;text-align:center}
+#bo_v_title {text-align:center}
 .bo_v_cate{display:inline-block;background: #4162ff;color: #fff;border-radius: 13px;line-height: 24px;padding: 0 10px;font-weight:normal;
 -webkit-box-shadow: 0 0 5px rgba(65,98,255,0.8);
 -moz-box-shadow: 0 0 5px rgba(65,98,255,0.8);
@@ -198,8 +197,8 @@ box-shadow: 0 0 8px rgba(65,98,255,0.8);}
 .bo_v_nb:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_v_nb li {}
 .bo_v_nb li a{display:inline-block;padding:10px;color:#777}
-.bo_v_nb .bo_v_next{;position:absolute;top:0;right:0;}
-.bo_v_nb .bo_v_prev{;position:absolute;top:0;left:0;}
+.bo_v_nb .bo_v_next{position:absolute;top:0;right:0;}
+.bo_v_nb .bo_v_prev{position:absolute;top:0;left:0;}
 
 #bo_v_atc {min-height:200px}
 #bo_v_atc_title {margin:0;padding:0;height:0;overflow:hidden}
@@ -227,7 +226,7 @@ box-shadow: 0 0 8px rgba(65,98,255,0.8);}
 
 .btn_share{display:none;}
 .bo_v_snswr{position:relative;float:right}
-#bo_v_sns {;padding:0;list-style:none;zoom:1}
+#bo_v_sns {padding:0;list-style:none;zoom:1}
 #bo_v_sns:after {display:block;visibility:hidden;clear:both;content:""}
 #bo_v_sns li {float:left;width:50px;text-align:center;margin-left:3px}
 #bo_v_sns li a{height:40px;padding:10px 0;}
@@ -274,7 +273,7 @@ box-shadow: 0 0 8px rgba(65,98,255,0.8);}
 .bo_vc_w_info:after {display:block;visibility:hidden;clear:both;content:""}
 .bo_vc_w_info .frm_input{float:left;;width:49.5%;margin: 0 0 5px 0}
 .bo_vc_w_info #wr_password{float:right;}
-.bo_vc_w_info #captcha{;display:block;clear:both}
+.bo_vc_w_info #captcha{display:block;clear:both}
 .bo_vc_w .btn_confirm{margin-top:5px;clear:both}
 .bo_vc_w .icon_lock{display:inline-block;font-size:17px;padding: 5px;margin-right:5px;}
 .bo_vc_w .btn_submit{height:50px;width:100%;padding:0 20px;border-radius:3px;font-weight:bold;font-size:1.083em;}

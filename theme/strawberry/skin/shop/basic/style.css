@@ -48,7 +48,7 @@
 
 /* 메인배너 */
 #main_bn {background:#e8ecef;padding:40px 0}
-#main_bn .slide-wrap-wr{;margin:0 auto;max-width:1240px;position:relative}
+#main_bn .slide-wrap-wr{margin:0 auto;max-width:1240px;position:relative}
 #main_bn .slide-wrap{display:none}
 #main_bn .slide-wrap li{padding:20px}
 #main_bn .slide-wrap img{max-width:100%;height:auto;
@@ -90,7 +90,7 @@ box-shadow:0 5px 15px rgba(0, 0, 0, .2);}
 .qk_cart_btn .qk_go_cart{width:100%;text-align:center;line-height:40px}
 .qk_cart_btn .qk_go_buy{width:100%;margin-bottom:5px;height:40px}
 
- #sbsk{height:100%;padding-bottom:210px}
+#sbsk{height:100%;padding-bottom:210px}
 #sbsk form{height:100%}
 #sbsk .go_cart{display:block;height:40px;line-height:38px;font-weight:bold;text-align:center;width:100%}
 #sbsk .btn_buy{height:40px;margin:5px 0;font-weight:bold;text-align:center;width:100%}
@@ -244,7 +244,7 @@ box-shadow:0 5px 15px rgba(0, 0, 0, .2);}
 
 /* 상품 목록 스킨 40 */
 .sct_40 .sct_li {position:relative;margin:0 20px 20px 0;border:1px solid #eee;background:#fff;width:100%;float:left}
-.sct_40 .sct_img{;position:absolute;top:0;left:0}
+.sct_40 .sct_img{position:absolute;top:0;left:0}
 .sct_40 .sct_img img{max-width:100%;height:auto}
 .sct_40 .sct_btn{display:none;position:absolute;bottom:0;left:0;width:100%;background:#fff;background:rgba(255,255,255,0.6)}
 .sct_40 .sct_li:hover .sct_btn{display:block}
@@ -408,7 +408,7 @@ box-shadow:0 5px 15px rgba(0, 0, 0, .2);}
 /* 상품리스트*/
 .con_left{float:left;width:270px;margin-bottom:20px;padding:0 20px;border:1px solid #ddd;margin-left:20px}
 .con_right{float: right;width:920px;}
- #sct_sortlst{display:none}
+#sct_sortlst{display:none}
 /* ##### main(nn).skin.php, list.(nn).skin..php 공통 적용 끝 ##### */
 
 /* 상품 목록 */
@@ -481,7 +481,7 @@ box-shadow:0 5px 15px rgba(0, 0, 0, .2);}
 #sit_pvi_big img {}
 #sit_pvi_thumb {float:left;width:100px;margin:0;padding:0 ;list-style:none;text-align:left;zoom:1}
 #sit_pvi_thumb:after {display:block;visibility:hidden;clear:both;content:""}
-#sit_pvi_thumb li {;margin:0 0 5px}
+#sit_pvi_thumb li {margin:0 0 5px}
 #sit_pvi_thumb .li_last {margin:0 !important}
 #sit_pvi_thumb img {}
 
@@ -580,7 +580,7 @@ box-shadow:0 5px 15px rgba(0, 0, 0, .2);}
 #sit_sms_new .prd_name{background:#f3f3f3;padding:15px 20px;font-weight:bold;font-size:1.167em}
 
 /* 상품 상세보기 - 상품정보 */
-.sit_wr{;padding-bottom:40px}
+.sit_wr{padding-bottom:40px}
 .sit_btn{position:relative;width:100%;border:0;background:none;text-align:left;height:70px;color:#999}
 .sit_btn.on{color:#000;font-weight:500}
 .sit_btn:hover{color:#000}
